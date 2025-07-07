@@ -1,9 +1,179 @@
-\chapter*[Introdução]{Introdução}
-\addcontentsline{toc}{chapter}{Introdução}
+\chapter[Introdução]{Introdução}
 
-Este documento apresenta considerações gerais e preliminares relacionadas 
-à redação de relatórios de Projeto de Graduação da Faculdade UnB Gama 
-(FGA). São abordados os diferentes aspectos sobre a estrutura do trabalho, 
-uso de programas de auxilio a edição, tiragem de cópias, encadernação, etc.
+Este capítulo introduz os conceitos fundamentais que norteiam este trabalho: 
+experimentação em Engenharia de Software, segurança de produtos de software e DevSecOps. 
+Adicionalmente, são apresentados o escopo do problema, a questão de pesquisa que guia a investigação 
+e a estrutura geral do documento e das atividades.
 
-Este template é uma adaptação do ABNTeX2\footnote{\url{https://github.com/abntex/abntex2/}}.
+\section{Contexto}
+
+Avaliar os fatores de qualidade de um software é de suma importância no desenvolvimento de software e, 
+para isso, faz-se necessária a utilização de um modelo que guie a avaliação, de forma a sistematizar o 
+processo e reduzir subjetividades (SIAVVAS et al., 2021). Nesse sentido, o modelo proposto por 
+McCall (MCCALL; RICHARDS; WALTERS, 1977) foi o primeiro modelo hierárquico para analisar a qualidade, 
+no qual os diferentes fatores eram analisados por critérios e avaliados por métricas. Subsequentemente, 
+o modelo de Boehm (BOEHM, 1978) evoluiu as ideias de McCall, e ambos se tornaram modelos seminais, 
+servindo de referência para os modelos subsequentes.
+
+A partir da ISO/IEC 9126 (2001), estabeleceu-se um padrão internacional para a qualidade de software que 
+decompunha essa qualidade em características e subcaracterísticas, em um modelo hierárquico, além de 
+definir os termos técnicos da área. A ISO/IEC 25010 (2011) surgiu como uma evolução da ISO 9126, expandindo
+seus conceitos e adaptando o modelo para a nova realidade da qualidade de software moderno. Diferentemente
+da ISO 9126, na ISO 25010 a segurança já é definida como um dos pilares da qualidade,
+e não como uma subcaracterística.
+
+Como padrão internacional de segurança da informação, tem-se a ISO/IEC 27001 (2022). 
+Ela se difere das normas de qualidade de software na medida em que seu foco está na especificação dos 
+requisitos necessários para estabelecer, implementar, manter e melhorar continuamente um Sistema de Gestão 
+de Segurança da Informação (SGSI).
+
+Contudo, tanto a ISO/IEC 25010 (2011) quanto a ISO/IEC 27001 (2022) não fornecem um método para avaliar a 
+segurança de software de maneira quantitativa. Assim, torna-se necessário recorrer a outros modelos e 
+ferramentas que ofereçam uma abordagem numérica para medir a segurança, por meio da definição de métricas, 
+do seu cálculo e do estabelecimento de valores de referência para avaliá-las.
+
+
+O DevOps é um paradigma que visa remover as barreiras entre os times de desenvolvimento e operações, 
+a fim de construir um ambiente colaborativo e integrado (RAJAPAKSE et al.). Seu objetivo é reduzir o ciclo 
+de vida do desenvolvimento de software, permitindo entregas mais frequentes. As principais práticas de 
+DevOps são a Integração Contínua (CI), que consiste em integrar o código desenvolvido na ramificação 
+principal com validação de build e testes de forma automática para detectar falhas, e a Entrega/Implantação
+Contínua (CD), que consiste em deixar o software pronto para entrar em produção e realizar o seu 
+lançamento de forma automatizada (RAJAPAKSE et al.).
+
+Já o DevSecOps integra os princípios e práticas do DevOps, adicionando o time de segurança ao processo. 
+Esse paradigma implementa uma abordagem de segurança chamada Shift-Left, na qual os processos de segurança
+são realizados desde o início do desenvolvimento, com o objetivo de evitar problemas decorrentes de uma 
+avaliação tardia. Além disso é formado por práticas de segurança como treinamento da equipe, 
+testes de segurança automatizados e feedback contínuo (RAJAPAKSE et al.).
+
+Nesse sentido, o modelo de maturidade de segurança OWASP DSOMM (DevSecOps Maturity Model) é uma importante 
+ferramenta na construção e avaliação de projetos DevSecOps. Ele define atividades, métricas e tecnologias 
+que devem ser usadas para construir um ambiente DevSecOps, além de proporcionar o acompanhamento da 
+maturidade da segurança do projeto em cinco dimensões: Build and Deployment, Culture and Organization, 
+Implementation, Information Gathering e Test and Verification (LANGE; KUNZ, 2024).
+
+\section{Problema}
+
+Medir a segurança de software representa um grande desafio(RAJAPAKSE et al.). A literatura atual carece de modelos que apresentem 
+formas sistematizadas de avaliação da segurança; frequentemente, os métodos são baseados em critérios 
+subjetivos, como a análise manual por especialistas, e não possuem validação empírica, o que afeta a 
+confiabilidade dos resultados (SIAVVAS et al., 2021).
+
+No contexto DevOps, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
+são impraticáveis devido à velocidade das entregas (RAJAPAKSE et al.). A medicao da seguranca se torna ainda
+mais desafiador ao lidar ciclos continuos de lançamento. A segurança é uma propriedade multifacetada, 
+emergente e dependente do contexto, o que complica sua quantificação (KUDRIAVTSEVA; GADYATSKAYA, 2024).
+
+\section{Questão de Pesquisa}
+
+A definição da questão de pesquisa foi elaborada utilizando a abordagem Goal 
+Question Metric (GQM). Essa é uma abordagem que tem como objetivo definir, de 
+maneira top-down e hierárquica, os objetivos a serem alcançados, as perguntas a 
+serem respondidas para cumprir tais objetivos e as métricas necessárias para 
+responder a cada pergunta de forma quantitativa, como mostra a Figura 1. Essa 
+estrutura foi adaptada para o contexto da pesquisa, conforme a Tabela 1, 
+resultando na seguinte questão:
+
+\begin{table}[h]
+    \centering
+    % Título acima da tabela
+	\caption{GQM Adaptado}
+    \begin{tabular}{|p{5cm}|p{9cm}|}
+        \hline
+        \textbf{Característica} & \textbf{Valor} \\
+        \hline
+        Analisar & A característica de qualidade de produto de software: \textbf{segurança} \\
+        \hline
+        Subcaracterísticas & Confidencialidade, integridade, autenticidade, responsabilidade, etc. \\
+        \hline
+        Visões & Interna e externa \\
+        \hline
+        Com o propósito de & Caracterizar \\
+        \hline
+        Com respeito a & Desenvolvimento e operação de produtos de software seguros (DevSecOps) \\
+        \hline
+        Do ponto de vista de & Pesquisador \\
+        \hline
+        No contexto de & Desenvolvimento de aplicações web seguras (software livre, organizações públicas e privadas) \\
+        \hline
+    \end{tabular} \\[0.5em]
+   	Fonte: Adaptado de BASILI, CALDIERA e ROMBACH (1994)
+	\label{tab:gqm-adaptado}
+\end{table}
+
+\begin{center}
+Como analisar a característica de segurança no desenvolvimento contínuo de sistemas web, considerando as 
+visões de qualidade interna e externa? 
+\end{center}
+
+\begin{figure}[h]
+    \centering
+	\caption{Abordagem GQM}
+    \includegraphics[width=0.7\textwidth]{figuras/GQM.png}
+
+    \label{fig:gqm}
+	Fonte: Adaptado de BASILI, CALDIERA e ROMBACH (1994)
+\end{figure}
+
+\section{Objetivos}
+
+O objetivo geral deste trabalho consiste em avaliar o impacto das práticas DevSecOps na qualidade interna 
+e externa de um produto de software, por meio de uma análise quantitativa. Para alcançar este propósito, 
+foram definidos os seguintes objetivos específicos:
+
+\begin{itemize}
+    \item Fundamentar teoricamente os conceitos de DevSecOps, modelos de segurança e metodologias de desenvolvimento seguro.
+    \item Incorporar um conjunto de práticas DevSecOps ao ciclo de desenvolvimento do produto de software sob análise.
+    \item Planejar um estudo de caso focado na observação das práticas implementadas.
+    \item Conduzir o estudo de caso, realizando a coleta e a análise das métricas de qualidade de software.
+    \item Apresentar as conclusões e os insights resultantes desta investigação.
+\end{itemize}
+
+\section{Estrutura do Trabalho}
+
+A seguir, são apresentados os capítulos que compõem a estrutura deste trabalho.
+
+\begin{itemize}
+    \item Introdução: apresenta a contextualização do trabalho, o problema de pesquisa, a definição da questão de pesquisa e dos objetivos do trabalho. Por fim, descreve a estrutura das atividades realizadas.
+    \item Revisão Estruturada da Literatura: explicita o processo empregado para seleção que fundamentam este trabalho incluindo o protocolo de pesquisa e filtragem dos estudos e os resultados obtidos.
+    \item Referencial Teórico: estabelece a fundamentação teórica da monografia, abordando os tópicos centrais da pesquisa: DevSecOps, qualidade de software, segurança de software e modelos de avaliação de maturidade.
+    \item Estudo de caso: descreve o protocolo utilizado para a condução do estudo de caso, detalhando seus objetivos, perguntas de pesquisa, atividades e resultados alcançados.
+    \item Conclusão: consolida os achados obtidos ao final do estudo e como esses resultados respondem à questão de pesquisa principal, bem como as limitações do estudo e as possibilidades de aprofundamento de trabalhos futuros.
+\end{itemize}
+
+\section{Cronograma e Atividades}
+
+\subsection{Primeira Etapa}
+Esta subseção detalha as atividades desenvolvidas na primeira etapa da monografia. A Figura 2 ilustra o 
+fluxo das atividades, enquanto a Figura 3 apresenta o cronograma correspondente.
+
+\begin{figure}[h]
+    \centering
+	\caption{Atividades da Primeira Etapa}
+    \includegraphics[width=1.0\textwidth]{figuras/fluxo-atividades.png}
+
+    \label{fig:fluxograma}
+	Fonte: Autor
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+	\caption{Cronograma da Primeira Etapa}
+    \includegraphics[width=1.0\textwidth]{figuras/cronograma.png}
+
+    \label{fig:cronograma}
+	Fonte: Autor
+\end{figure}
+
+\begin{itemize}
+    \item Contextualização sobre Engenharia de Software Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de Software, como revisão sistemática da literatura, survey, experimentos e estudo de caso (WOHLIN et al., 2024), fundamentais para a condução do trabalho.
+    \item Definição do GQM: Aplicação da abordagem Goal Question Metric (GQM) (BASILI; CALDIERA; ROMBACH, 1994) para a construção da questão principal de pesquisa, suas subquestões e as métricas que orientarão a revisão da literatura.
+    \item Elaboração do Protocolo de Revisão: Estruturação de um protocolo de revisão sistemática da literatura (KITCHENHAM; BRERETON, 2013) para pesquisar, selecionar e analisar os artigos. Este processo inclui a definição da string de busca (baseada no framework PICO), a elaboração de sinônimos, a definição dos critérios de inclusão e exclusão e o método para extração de dados.
+    \item Seleção dos Artigos: Execução da filtragem dos estudos por meio da leitura de títulos, resumos e palavras-chave, com a aplicação dos critérios de inclusão e exclusão definidos.
+    \item Análise do Material Selecionado: Leitura completa dos artigos selecionados para aprofundar o conhecimento sobre o estado da arte em métodos de avaliação de segurança de sistemas web e práticas de desenvolvimento seguro.
+    \item Definição da Proposta de Solução: Definição os modelos de segurança, as ferramentas e as atividades do estudo de caso.
+    \item Redação da Monografia: Escrita do texto da monografia, conforme a estrutura presente na Seção 1.5.
+    \item Revisão: Realização das correções e dos ajustes solicitados pelo orientador.
+    \item Defesa: Preparação do material e apresentação do trabalho final para a banca examinadora.
+\end{itemize}

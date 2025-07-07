@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.18)  18 JUN 2025 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.6)  7 JUL 2025 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/chaydson/Workspace/UnB/TCC/latex/tcc.tex
-(/home/chaydson/Workspace/UnB/TCC/latex/tcc.tex
+**/home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
+(/home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -478,15 +478,15 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language10). Reported on input line 105.
+(babel)             (\language72). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language10). Reported on input line 108.
+(babel)             (\language72). Reported on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language38). Reported on input line 91.
+(babel)             (\language82). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language38). Reported on input line 92.
+(babel)             (\language82). Reported on input line 92.
 \FB@stdchar=\count328
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -519,7 +519,7 @@ Package babel Info: Making > an active character on input line 722.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language68). Reported on input line 111.
+(babel)             (\language24). Reported on input line 111.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -752,10 +752,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 14
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package epstopdf Info: Source file: <figuras/capa.eps>
-(epstopdf)                    date: 2022-01-19 18:17:37
+(epstopdf)                    date: 2025-07-06 16:41:36
 (epstopdf)                    size: 12409969 bytes
 (epstopdf)             Output file: <figuras/capa-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-06-18 19:17:25
+(epstopdf)                    date: 2025-07-06 16:41:36
 (epstopdf)                    size: 1515776 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/capa-eps-converted-to.pdf figuras/capa.eps>
 (epstopdf)             \includegraphics on input line 14.
@@ -876,91 +876,105 @@ l.2 E
 
 ]) (./fixos/indiceAutomatico.tex (./tcc.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 12.
+(Font)              <14.4> on input line 24.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]) [26]) (./editaveis/introducao.tex) (./editaveis/aspectosgerais.tex [27
+ [25]) [26]) (./editaveis/introducao.tex [27
 
 
-] [28
-
-] [29] [30]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 27.
+] [28]
+<figuras/GQM.png, id=259, 542.025pt x 157.33781pt>
+File: figuras/GQM.png Graphic file (type png)
+<use figuras/GQM.png>
+Package pdftex.def Info: figuras/GQM.png  used on input line 113.
+(pdftex.def)             Requested size: 318.49861pt x 92.45638pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 126.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [31
+) [29{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./figuras/GQM.png (PNG copy)>]
+<figuras/fluxo-atividades.png, id=266, 1445.4pt x 813.0375pt>
+File: figuras/fluxo-atividades.png Graphic file (type png)
+<use figuras/fluxo-atividades.png>
+Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 154.
+(pdftex.def)             Requested size: 455.0pt x 255.93448pt.
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] [32]
-Overfull \hbox (6.28964pt too wide) in paragraph at lines 141--143
-[]\T1/lmr/m/n/12 Ainda com res-peito ao pre-en-chi-mento das pá-gi-nas, este deve ser oti-mi-zado, evitando-
- []
 
-[33]) (./editaveis/consideracoes.tex [34] [35
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-]) (./editaveis/textoepostexto.tex [36] [37
+<figuras/cronograma.png, id=267, 1445.4pt x 813.0375pt>
+File: figuras/cronograma.png Graphic file (type png)
+<use figuras/cronograma.png>
+Package pdftex.def Info: figuras/cronograma.png  used on input line 163.
+(pdftex.def)             Requested size: 455.0pt x 255.93448pt.
 
-] [38]) (./editaveis/elementosdotexto.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] [31 <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/consideracoes.tex [32 <./figuras/cronograma.png (PNG copy)>] [33
+
+]) (./editaveis/textoepostexto.tex [34] [35
+
+] [36]) (./editaveis/elementosdotexto.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 23.
- [39
+ [37
 
-] [40]
+] [38]
 Package epstopdf Info: Source file: <figuras/fig01.eps>
-(epstopdf)                    date: 2022-01-19 18:17:37
+(epstopdf)                    date: 2025-07-06 16:41:36
 (epstopdf)                    size: 2193446 bytes
 (epstopdf)             Output file: <figuras/fig01-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-06-18 19:17:27
+(epstopdf)                    date: 2025-07-06 16:41:36
 (epstopdf)                    size: 42557 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/fig01-eps-converted-to.pdf figuras/fig01.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/fig01-eps-converted-to.pdf, id=335, 1204.5pt x 903.375pt>
+<figuras/fig01-eps-converted-to.pdf, id=329, 1204.5pt x 903.375pt>
 File: figuras/fig01-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/fig01-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/fig01-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 361.35278pt x 271.01459pt.
- [41 <./figuras/fig01-eps-converted-to.pdf>] [42]) (./editaveis/elementosdopostexto.tex [43] [44
+ [39 <./figuras/fig01-eps-converted-to.pdf>] [40]) (./editaveis/elementosdopostexto.tex [41] [42
 
-] [45]) (./tcc.bbl (./tcc.brf)
+] [43]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [46]
+ [44]
 bibitemlist
-) (./editaveis/apendices.tex [47
+) (./editaveis/apendices.tex [45
 
-] [48
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 4.
-
-[49
-
-] [50] [51
-
-] [52
-
-]) (./editaveis/anexos.tex [53] [54
+] [46
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[55
+[47
 
-] [56] [57
+] [48] [49
 
-] [58
+] [50
 
-]) (./tcc.ind) [59]
+]) (./editaveis/anexos.tex [51] [52
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 4.
+
+[53
+
+] [54] [55
+
+] [56
+
+]) (./tcc.ind) [57]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -978,21 +992,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 895AC844E81794C39513525A802964FB;488.
+(rerunfilecheck)             Checksum: ACB4D0B42D78CB682EC394476FBF34CA;488.
  ) 
 Here is how much of TeX's memory you used:
- 17544 strings out of 474222
- 281958 string characters out of 5748733
+ 17554 strings out of 474222
+ 282280 string characters out of 5748734
  1935975 words of memory out of 5000000
- 39231 multiletter control sequences out of 15000+600000
- 652903 words of font info for 85 fonts, out of 8000000 for 9000
+ 39248 multiletter control sequences out of 15000+600000
+ 648632 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,726b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on tcc.pdf (61 pages, 1965769 bytes).
+ 99i,13n,107p,601b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on tcc.pdf (59 pages, 2151475 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 143 named destinations out of 1000 (max. 500000)
- 399 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 590 compressed objects within 6 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 
