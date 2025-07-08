@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.6)  7 JUL 2025 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.6)  7 JUL 2025 23:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,15 +876,12 @@ l.2 E
 
 ]) (./fixos/indiceAutomatico.tex (./tcc.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 24.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(Font)              <14.4> on input line 25.
  [25]) [26]) (./editaveis/introducao.tex [27
 
 
 ] [28]
-<figuras/GQM.png, id=259, 542.025pt x 157.33781pt>
+<figuras/GQM.png, id=263, 542.025pt x 157.33781pt>
 File: figuras/GQM.png Graphic file (type png)
 <use figuras/GQM.png>
 Package pdftex.def Info: figuras/GQM.png  used on input line 113.
@@ -893,7 +890,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 12
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [29{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./figuras/GQM.png (PNG copy)>]
-<figuras/fluxo-atividades.png, id=266, 1445.4pt x 813.0375pt>
+<figuras/fluxo-atividades.png, id=270, 1445.4pt x 813.0375pt>
 File: figuras/fluxo-atividades.png Graphic file (type png)
 <use figuras/fluxo-atividades.png>
 Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 154.
@@ -902,7 +899,7 @@ Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 154.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/cronograma.png, id=267, 1445.4pt x 813.0375pt>
+<figuras/cronograma.png, id=271, 1445.4pt x 813.0375pt>
 File: figuras/cronograma.png Graphic file (type png)
 <use figuras/cronograma.png>
 Package pdftex.def Info: figuras/cronograma.png  used on input line 163.
@@ -910,9 +907,22 @@ Package pdftex.def Info: figuras/cronograma.png  used on input line 163.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31 <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/consideracoes.tex [32 <./figuras/cronograma.png (PNG copy)>] [33
+[30] [31 <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/revisaodaliteratura.tex [32 <./figuras/cronograma.png (PNG copy)>]
+<figuras/pico.png, id=284, 551.05875pt x 383.18156pt>
+File: figuras/pico.png Graphic file (type png)
+<use figuras/pico.png>
+Package pdftex.def Info: figuras/pico.png  used on input line 27.
+(pdftex.def)             Requested size: 318.49861pt x 221.4795pt.
 
-]) (./editaveis/textoepostexto.tex [34] [35
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./editaveis/textoepostexto.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33
+
+] [34 <./figuras/pico.png (PNG copy)>] [35
 
 ] [36]) (./editaveis/elementosdotexto.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23.
@@ -933,7 +943,7 @@ Package epstopdf Info: Source file: <figuras/fig01.eps>
 (epstopdf)             Command: <repstopdf --outfile=figuras/fig01-eps-converted-to.pdf figuras/fig01.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/fig01-eps-converted-to.pdf, id=329, 1204.5pt x 903.375pt>
+<figuras/fig01-eps-converted-to.pdf, id=334, 1204.5pt x 903.375pt>
 File: figuras/fig01-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/fig01-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/fig01-eps-converted-to.pdf  used on input line 124.
@@ -995,18 +1005,18 @@ Package rerunfilecheck Info: File `tcc.brf' has not changed.
 (rerunfilecheck)             Checksum: ACB4D0B42D78CB682EC394476FBF34CA;488.
  ) 
 Here is how much of TeX's memory you used:
- 17554 strings out of 474222
- 282280 string characters out of 5748734
+ 17572 strings out of 474222
+ 282626 string characters out of 5748734
  1935975 words of memory out of 5000000
- 39248 multiletter control sequences out of 15000+600000
+ 39264 multiletter control sequences out of 15000+600000
  648632 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,601b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,531b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on tcc.pdf (59 pages, 2151475 bytes).
+Output written on tcc.pdf (59 pages, 2265279 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
- 590 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 597 compressed objects within 6 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

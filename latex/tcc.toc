@@ -17,10 +17,11 @@
 \contentsline {section}{\numberline {1.6}Cronograma e Atividades}{30}{section.1.6}%
 \contentsline {subsection}{\numberline {1.6.1}Primeira Etapa}{30}{subsection.1.6.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Considerações sobre os Elementos Textuais}}{33}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introdução}{33}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Desenvolvimento}{33}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Uso de editores de texto}{34}{section.2.3}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Revisão Estruturada da Literatura}}{33}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Protocolo}{33}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}String de Busca}{33}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Seleção dos Artigos}{34}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Resultados}{34}{section.2.3}%
 \contentsline {part}{\partnumberline {I}\MakeTextUppercase []{Texto e Pós Texto}}{35}{part.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Elementos do Texto}}{37}{chapter.3}%
