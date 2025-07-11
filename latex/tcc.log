@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.6)  11 JUL 2025 05:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  11 JUL 2025 10:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
-(/home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
+**/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex
+(/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -478,15 +478,15 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 105.
+(babel)             (\language13). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 108.
+(babel)             (\language13). Reported on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language82). Reported on input line 91.
+(babel)             (\language44). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language82). Reported on input line 92.
+(babel)             (\language44). Reported on input line 92.
 \FB@stdchar=\count328
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -519,7 +519,7 @@ Package babel Info: Making > an active character on input line 722.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language24). Reported on input line 111.
+(babel)             (\language82). Reported on input line 111.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -752,10 +752,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 14
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package epstopdf Info: Source file: <figuras/capa.eps>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 12409969 bytes
 (epstopdf)             Output file: <figuras/capa-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 1515776 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/capa-eps-converted-to.pdf figuras/capa.eps>
 (epstopdf)             \includegraphics on input line 14.
@@ -1073,7 +1073,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figuras/volume-anual-artigos.png, id=363, 451.6875pt x 301.125pt>
 File: figuras/volume-anual-artigos.png Graphic file (type png)
 <use figuras/volume-anual-artigos.png>
-Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 411.
+Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 413.
 (pdftex.def)             Requested size: 409.49722pt x 273.0133pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1081,90 +1081,92 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figuras/artigos-publicados.png, id=365, 451.6875pt x 321.2pt>
 File: figuras/artigos-publicados.png Graphic file (type png)
 <use figuras/artigos-publicados.png>
-Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 423.
+Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 427.
 (pdftex.def)             Requested size: 455.0pt x 323.57625pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/quantidade-experimental.png, id=366, 842.14626pt x 562.1pt>
+[38]
+<figuras/quantidade-experimental.png, id=370, 842.14626pt x 562.1pt>
 File: figuras/quantidade-experimental.png Graphic file (type png)
 <use figuras/quantidade-experimental.png>
-Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 435.
+Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 441.
 (pdftex.def)             Requested size: 455.0pt x 303.70102pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/tipos-validacao.png, id=367, 451.6875pt x 301.125pt>
+<figuras/tipos-validacao.png, id=371, 451.6875pt x 301.125pt>
 File: figuras/tipos-validacao.png Graphic file (type png)
 <use figuras/tipos-validacao.png>
-Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 447.
+Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 455.
 (pdftex.def)             Requested size: 455.0pt x 303.35272pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./editaveis/textoepostexto.tex [38] [39 <./figuras/volume-anual-artigos.png> <./figuras/artigos-publicados.png>] [40] [41] [42] [43] [44] [45] [46 <./figuras/quantidade-experimental.png> <./figuras/tipos-validacao.png>] [47
+) (./editaveis/textoepostexto.tex [39 <./figuras/volume-anual-artigos.png>] [40 <./figuras/artigos-publicados.png>] [41] [42] [43] [44] [45] [46] [47 <./figuras/quantidade-experimental.png> <./figuras/tipos-validacao.png>] [48
 
-] [48]) (./editaveis/elementosdotexto.tex
+] [49] [50]) (./editaveis/elementosdotexto.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 23.
- [49
+ [51
 
-] [50]
+] [52]
 Package epstopdf Info: Source file: <figuras/fig01.eps>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 2193446 bytes
 (epstopdf)             Output file: <figuras/fig01-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 42557 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/fig01-eps-converted-to.pdf figuras/fig01.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/fig01-eps-converted-to.pdf, id=488, 1204.5pt x 903.375pt>
+<figuras/fig01-eps-converted-to.pdf, id=496, 1204.5pt x 903.375pt>
 File: figuras/fig01-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/fig01-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/fig01-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 361.35278pt x 271.01459pt.
- [51 <./figuras/fig01-eps-converted-to.pdf>] [52]) (./editaveis/elementosdopostexto.tex [53] [54
+ [53 <./figuras/fig01-eps-converted-to.pdf>] [54]) (./editaveis/elementosdopostexto.tex [55] [56
 
-] [55]) (./tcc.bbl (./tcc.brf)
+] [57]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [56]
+ [58]
 bibitemlist
-) (./editaveis/apendices.tex [57
+) (./editaveis/apendices.tex [59
 
-] [58
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 4.
-
-[59
-
-] [60] [61
-
-] [62
-
-]) (./editaveis/anexos.tex [63] [64
+] [60
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[65
+[61
 
-] [66] [67
+] [62] [63
 
-] [68
+] [64
 
-]) (./tcc.ind) [69]
+]) (./editaveis/anexos.tex [65] [66
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 4.
+
+[67
+
+] [68] [69
+
+] [70
+
+]) (./tcc.ind) [71]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1182,21 +1184,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: EB6D49788A501403A7ED91DFA1EC0688;488.
+(rerunfilecheck)             Checksum: 547404C58B934CCBCB5B4602E2F466BF;488.
  ) 
 Here is how much of TeX's memory you used:
- 17728 strings out of 474222
- 285367 string characters out of 5748734
+ 17730 strings out of 474222
+ 285414 string characters out of 5748734
  1974975 words of memory out of 5000000
  39342 multiletter control sequences out of 15000+600000
  651998 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,1362b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,1373b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on tcc.pdf (71 pages, 2384398 bytes).
+Output written on tcc.pdf (73 pages, 2386645 bytes).
 PDF statistics:
- 902 PDF objects out of 1000 (max. 8388607)
- 781 compressed objects within 8 object streams
- 219 named destinations out of 1000 (max. 500000)
+ 912 PDF objects out of 1000 (max. 8388607)
+ 789 compressed objects within 8 object streams
+ 221 named destinations out of 1000 (max. 500000)
  524 words of extra memory for PDF output out of 10000 (max. 10000000)
 
