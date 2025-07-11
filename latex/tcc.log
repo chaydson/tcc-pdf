@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.6)  7 JUL 2025 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  11 JUL 2025 03:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
-(/home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
+**/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex
+(/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -478,15 +478,15 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 105.
+(babel)             (\language13). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 108.
+(babel)             (\language13). Reported on input line 108.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language82). Reported on input line 91.
+(babel)             (\language44). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language82). Reported on input line 92.
+(babel)             (\language44). Reported on input line 92.
 \FB@stdchar=\count328
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -519,7 +519,7 @@ Package babel Info: Making > an active character on input line 722.
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language24). Reported on input line 111.
+(babel)             (\language82). Reported on input line 111.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -752,10 +752,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 14
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package epstopdf Info: Source file: <figuras/capa.eps>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 12409969 bytes
 (epstopdf)             Output file: <figuras/capa-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 1515776 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/capa-eps-converted-to.pdf figuras/capa.eps>
 (epstopdf)             \includegraphics on input line 14.
@@ -876,39 +876,39 @@ l.2 E
 
 ]) (./fixos/indiceAutomatico.tex (./tcc.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 25.
+(Font)              <14.4> on input line 36.
  [25]) [26]) (./editaveis/introducao.tex [27
 
 
 ] [28]
-<figuras/GQM.png, id=263, 542.025pt x 157.33781pt>
+<figuras/GQM.png, id=310, 542.025pt x 157.33781pt>
 File: figuras/GQM.png Graphic file (type png)
 <use figuras/GQM.png>
-Package pdftex.def Info: figuras/GQM.png  used on input line 113.
+Package pdftex.def Info: figuras/GQM.png  used on input line 112.
 (pdftex.def)             Requested size: 318.49861pt x 92.45638pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 126.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 125.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [29{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./figuras/GQM.png (PNG copy)>]
-<figuras/fluxo-atividades.png, id=270, 1445.4pt x 813.0375pt>
+<figuras/fluxo-atividades.png, id=317, 1445.4pt x 813.0375pt>
 File: figuras/fluxo-atividades.png Graphic file (type png)
 <use figuras/fluxo-atividades.png>
-Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 154.
+Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 153.
 (pdftex.def)             Requested size: 455.0pt x 255.93448pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/cronograma.png, id=271, 1445.4pt x 813.0375pt>
+<figuras/cronograma.png, id=318, 1445.4pt x 813.0375pt>
 File: figuras/cronograma.png Graphic file (type png)
 <use figuras/cronograma.png>
-Package pdftex.def Info: figuras/cronograma.png  used on input line 163.
+Package pdftex.def Info: figuras/cronograma.png  used on input line 162.
 (pdftex.def)             Requested size: 455.0pt x 255.93448pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30] [31 <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/revisaodaliteratura.tex [32 <./figuras/cronograma.png (PNG copy)>]
-<figuras/pico.png, id=284, 551.05875pt x 383.18156pt>
+<figuras/pico.png, id=332, 551.05875pt x 383.18156pt>
 File: figuras/pico.png Graphic file (type png)
 <use figuras/pico.png>
 Package pdftex.def Info: figuras/pico.png  used on input line 27.
@@ -917,74 +917,251 @@ Package pdftex.def Info: figuras/pico.png  used on input line 27.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./editaveis/textoepostexto.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\T1/lmr/m/n/12 software de-ve-
+ []
 
-] [34 <./figuras/pico.png (PNG copy)>] [35
 
-] [36]) (./editaveis/elementosdotexto.tex
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]|\T1/lmr/m/n/12 software sys-tems, on-line
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]|\T1/lmr/m/n/12 cybersecurity prac-ti-ces,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/lmr/m/n/12 se-cu-rity au-to-ma-tion, se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/lmr/m/n/12 CI/CD, con-ti-nu-ous in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/lmr/m/n/12 te-gra-tion, con-ti-nu-ous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\T1/lmr/m/n/12 de-ploy-ment, con-ti-nu-ous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]|\T1/lmr/m/n/12 software se-cu-rity, ap-pli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/lmr/m/n/12 ca-tion se-cu-rity, se-cu-rity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/lmr/m/n/12 im-pro-ve-ment, se-cu-rity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/lmr/m/n/12 th-re-ats, sys-tem se-cu-rity,
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33
+
+]
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [34 <./figuras/pico.png (PNG copy)>]
+Underfull \vbox (badness 5607) has occurred while \output is active []
+
+ [35]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+[]|\T1/lmr/bx/n/12 Publicado em
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 168--168
+[]|\T1/lmr/m/n/12 Implementing and Au-to-ma-ting Se-cu-rity
+ []
+
+
+Overfull \hbox (36.01765pt too wide) in paragraph at lines 158--182
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+[]|\T1/lmr/bx/n/12 Publicado em
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 204--204
+[]|\T1/lmr/m/n/12 Microservices-based Dev-Se-cOps Plat-form
+ []
+
+
+Overfull \hbox (36.01765pt too wide) in paragraph at lines 190--214
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/lmr/bx/n/12 Publicado em
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 238--238
+[]|\T1/lmr/m/n/12 Challenges and so-lu-ti-ons when adop-ting
+ []
+
+
+Overfull \hbox (36.01765pt too wide) in paragraph at lines 222--246
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\T1/lmr/bx/n/12 Publicado em
+ []
+
+
+Overfull \hbox (36.01765pt too wide) in paragraph at lines 254--274
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/fluxograma-artigos.png, id=346, 770.88pt x 578.16pt>
+File: figuras/fluxograma-artigos.png Graphic file (type png)
+<use figuras/fluxograma-artigos.png>
+Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 282.
+(pdftex.def)             Requested size: 318.49861pt x 238.87328pt.
+[36 <./figuras/fluxograma-artigos.png (PNG copy)>]
+Overfull \hbox (7.77284pt too wide) in paragraph at lines 374--396
+[]\T1/lmr/m/n/12 Prometheus Gra-fana Loki Asylo Trivy Ter-ra-form Ku-ber-ne-tes Doc-ker Tek-ton GitHub
+ []
+
+<figuras/volume-anual-artigos.png, id=357, 451.6875pt x 301.125pt>
+File: figuras/volume-anual-artigos.png Graphic file (type png)
+<use figuras/volume-anual-artigos.png>
+Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 403.
+(pdftex.def)             Requested size: 409.49722pt x 273.0133pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/artigos-publicados.png, id=359, 451.6875pt x 321.2pt>
+File: figuras/artigos-publicados.png Graphic file (type png)
+<use figuras/artigos-publicados.png>
+Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 415.
+(pdftex.def)             Requested size: 455.0pt x 323.57625pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/quantidade-experimental.png, id=360, 842.14626pt x 562.1pt>
+File: figuras/quantidade-experimental.png Graphic file (type png)
+<use figuras/quantidade-experimental.png>
+Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 427.
+(pdftex.def)             Requested size: 455.0pt x 303.70102pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/tipos-validacao.png, id=361, 451.6875pt x 301.125pt>
+File: figuras/tipos-validacao.png Graphic file (type png)
+<use figuras/tipos-validacao.png>
+Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 439.
+(pdftex.def)             Requested size: 455.0pt x 303.35272pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./editaveis/textoepostexto.tex [37] [38 <./figuras/volume-anual-artigos.png> <./figuras/artigos-publicados.png>] [39] [40] [41] [42] [43] [44 <./figuras/quantidade-experimental.png>] [45 <./figuras/tipos-validacao.png>] [46
+
+] [47] [48]) (./editaveis/elementosdotexto.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 23.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 23.
- [37
+ [49
 
-] [38]
+] [50]
 Package epstopdf Info: Source file: <figuras/fig01.eps>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 2193446 bytes
 (epstopdf)             Output file: <figuras/fig01-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-06 16:41:36
+(epstopdf)                    date: 2025-07-08 23:16:38
 (epstopdf)                    size: 42557 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/fig01-eps-converted-to.pdf figuras/fig01.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/fig01-eps-converted-to.pdf, id=334, 1204.5pt x 903.375pt>
+<figuras/fig01-eps-converted-to.pdf, id=486, 1204.5pt x 903.375pt>
 File: figuras/fig01-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras/fig01-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/fig01-eps-converted-to.pdf  used on input line 124.
 (pdftex.def)             Requested size: 361.35278pt x 271.01459pt.
- [39 <./figuras/fig01-eps-converted-to.pdf>] [40]) (./editaveis/elementosdopostexto.tex [41] [42
+ [51 <./figuras/fig01-eps-converted-to.pdf>] [52]) (./editaveis/elementosdopostexto.tex [53] [54
 
-] [43]) (./tcc.bbl (./tcc.brf)
+] [55]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [44]
+ [56]
 bibitemlist
-) (./editaveis/apendices.tex [45
+) (./editaveis/apendices.tex [57
 
-] [46
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 4.
-
-[47
-
-] [48] [49
-
-] [50
-
-]) (./editaveis/anexos.tex [51] [52
+] [58
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[53
+[59
 
-] [54] [55
+] [60] [61
 
-] [56
+] [62
 
-]) (./tcc.ind) [57]
+]) (./editaveis/anexos.tex [63] [64
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 4.
+
+[65
+
+] [66] [67
+
+] [68
+
+]) (./tcc.ind) [69]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1002,21 +1179,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: ACB4D0B42D78CB682EC394476FBF34CA;488.
+(rerunfilecheck)             Checksum: EB6D49788A501403A7ED91DFA1EC0688;488.
  ) 
 Here is how much of TeX's memory you used:
- 17572 strings out of 474222
- 282626 string characters out of 5748734
- 1935975 words of memory out of 5000000
- 39264 multiletter control sequences out of 15000+600000
- 648632 words of font info for 84 fonts, out of 8000000 for 9000
+ 17726 strings out of 474222
+ 285368 string characters out of 5748734
+ 1968975 words of memory out of 5000000
+ 39341 multiletter control sequences out of 15000+600000
+ 651998 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,531b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,1373b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on tcc.pdf (59 pages, 2265279 bytes).
+Output written on tcc.pdf (71 pages, 2382620 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
- 143 named destinations out of 1000 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 779 compressed objects within 8 object streams
+ 218 named destinations out of 1000 (max. 500000)
+ 524 words of extra memory for PDF output out of 10000 (max. 10000000)
 

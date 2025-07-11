@@ -33,12 +33,411 @@ Figura 4 (PAI et al., 2004).
 Ao adaptar o modelo PICO para o presente trabalho, suas definições adquirem um novo significado no contexto da Engenharia de 
 Software. Por exemplo, Patient, outrora usado para indicar o perfil do paciente, passa a representar a área de aplicação, neste 
 caso, o desenvolvimento de software. Intervention também sofre adaptação, deixando de significar "tratamento médico" para se 
-referir à metodologia ou tecnologia avaliada. Por fim, Outcome (resultado) mantém seu sentido original, referindo-se aos efeitos 
-ou consequências observadas.
+referir à metodologia avaliada. Não obstantemente, Outcome mantém seu sentido original, referindo-se aos efeitos 
+ou consequências observadas. Por fim, Comparison que está relacionada a investigar como a intervenção proposta se relaciona com 
+outras propostas de intervenção não pode ser adotada, devido a estar muito mais alinhada com os objetivos da médicina que da engenharia de software.
+Assim, a definição de cada um dos elementos usados do modelo estão definidos na Tabela 2.
 
+\begin{table}[h]
+    \centering
+	\caption{GQM Adaptado}
+    \begin{tabular}{|p{4cm}|p{3cm}|p{5cm}|}
+        \hline
+        \textbf{Elementos} & \textbf{Termo Central} & \textbf{Sinônimos e Termos Relacionados} \\
+        \hline
+        Population & software development & software systems, online systems, software applications, systems development, application development \\
+        \hline
+        Intervention & DevSecOps & cybersecurity practices, security automation, secure software development, CI/CD, continuous integration, continuous deployment, continuous delivery, DevOps, security development culture \\
+        \hline
+        Outcome & security quality & software security, application security, security improvement, security assurance, vulnerability reduction, protection against threats, system security, owasp, cwe, common weakness \\
+        \hline
+    \end{tabular} \\[0.5em]
+   	Fonte: Autor
+	\label{tab:pico}
+\end{table}
+
+Desta maneira, a string de busca foi construída usando o operador lógico OR entre os termos de cada elemento, com o objetivo de englobar todos os termos da pesquisa.
+Já o operador AND foi usado para conectar os diferentes elementos do protocolo PICO, assim restringindo a busca apenas aos estudos que apresentam os termos 
+necessários para responder as perguntas de pesquisa. Ademais, foram adicionados os termos própios da base de dados para a realização da consulta, resultando na seguinte string de busca:
+
+\begin{center}
+    TITLE-ABS-KEY ( ( "software development" OR "software developments" OR "software system" OR "software systems" OR "online system" OR "online systems" OR "software application" OR "software applications" OR "system development" OR "systems development" OR "application development" OR "applications development" ) AND ( "DevSecOps" OR "cybersecurity practice" OR "cybersecurity practices" OR "security automation" OR "security automations" OR "secure software development" OR "secure software developments" OR "CI/CD" OR "continuous integration" OR "continuous integrations" OR "continuous deployment" OR "continuous deployments" OR "continuous delivery" OR "continuous deliveries" OR "DevOps" OR "security development culture" OR "security development cultures" ) AND ( "security quality" OR "security qualities" OR "software security" OR "software securities" OR "application security" OR "application securities" OR "security improvement" OR "security improvements" OR "security assurance" OR "security assurances" OR "vulnerability reduction" OR "vulnerability reductions" OR "protection against threat" OR "protection against threats" OR "system security" OR "system securities" OR "OWASP" OR "CWE" OR "common weakness" OR "common weaknesses" ) )
+\end{center}
 
 \section{Seleção dos Artigos}
 
+Com a string de busca criada, foram estabelecidos os critérios de inclusão e exclusão visando selecionar apenas os artigos relacionados ao contexto da pesquisa. 
+Além disso, em primeiro momento, foram lidos o título, resumo e palavras-chave de todos os artigos resultantes da execução da string de busca, isso se deu para
+selecionar com maior rigor aqueles estudos que por ventura não correspondessem ao objetivo do trabalho. Posteriormente, os artigos que aprovados pelos critérios de escolha
+foram lidos e os dados relevantes para a formulação das respostas das perguntas de pesquisa foram extraídos em um formulário. A Tabela 3 e Tabela 4 contém o protocolo completo.
+
+Ao todo foram analisados 291 artigos resultantes da string de busca, desses 38 foram aceitos e lidos de maneira integral, sendo que esses artigos foram obtidos na base de dados Scopus (ELSEVIER, 2025) no dia 7 de maio de 2025. Afim de complementar os artigos selecionados de forma automatizada
+foi realizada uma busca manual com o objetivo de responder de maneira mais acertiva as perguntas de pesquisa, resultando em mais dois artigos, Accelerate State of DevOps 2024 (DORA, 2024) e Quantitative DevSecOps Metrics for Cloud-Based Web Microservices (ZHANG; ZHANG, 2024), usados para compor o referencial teórico, totalizando 40 artigos.
+Os artigos selecionados estão dispostos nas Tabela 5, 6, 7 e 8. Para facilitar a compreensão do protocolo de seleção de artigos pode-se verificar a Figura 5, que ilustra todas as etapas explanadas anteriormente.
+
+\begin{table}[h]
+    \centering
+	\caption{Protocolo de Busca}
+    \begin{tabular}{|p{5cm}|p{10cm}|}
+        \hline
+        Perguntas de Pesquisa &
+        \begin{enumerate}[leftmargin=*, label=\arabic*.]
+            \item How can the security aspect in the continuous development of web systems be analyzed considering internal and external quality perspectives?
+            \item Which DevSecOps practices are most prevalent in organizations?
+            \item Which security models are most commonly employed in DevSecOps environments?
+            \item Which measures are commonly used for security evaluation?	
+            \item How are security practices evaluated?	
+            \item In what ways are security measures evaluated in organizations?	
+            \item What types of vulnerabilities are mitigated by DevSecOps practices?	
+            \item What tools and technologies are used in DevSecOps?
+            \item What is the annual volume of DevSecOps publications from 2009 to 2025?	
+            \item How many articles were published in academic journals?	
+            \item How many studies have experimental validation?	
+            \item If the study has experimental validation, what type?	
+        \end{enumerate} \\
+        \hline
+        String de Busca & Tabela 2 \\
+        \hline
+        Critérios de Inclusão & 
+        \begin{enumerate}[leftmargin=*, label=\arabic*.]
+            \item Addresses the use of secure development practices
+            \item Emphasizes the security quality of web systems
+            \item Evaluates quality models with a focus on security
+            \item Focuses on software products
+            \item Includes experimental validation
+        \end{enumerate} \\
+        \hline
+    \end{tabular} \\[0.5em]
+   	Fonte: Autor
+	\label{tab:protocolo}
+\end{table}
+
+\begin{table}[h]
+    \centering
+	\caption{Continuação do Protocolo de Busca}
+    \begin{tabular}{|p{5cm}|p{10cm}|}
+        \hline
+        Perguntas de Exclusão &
+        \begin{enumerate}[leftmargin=*, label=\arabic*.]
+            \item Articles in languages other than English or Portuguese
+            \item Duplicate publication
+            \item Publications with a release date prior to 2009
+            \item Studies focusing on hardware, mobile, IoT security, or other topics unrelated to web systems.
+        \end{enumerate} \\
+        \hline
+        Formulário de Extração & 
+        \begin{enumerate}[leftmargin=*, label=\arabic*.]
+            \item Title
+            \item Abstract
+            \item Publication Year	
+            \item Publication Source	
+            \item Authors
+            \item Keywords
+            \item Prevalent DevSecOps Practices	
+            \item Security Models Employed	
+            \item Security Evaluation Measures	
+            \item Security Practices Evaluation	
+            \item Security Models Analysis	
+            \item Organizational Security Evaluation	
+            \item Mitigated Vulnerabilities	
+            \item Tools and Technologies
+            \item Published in Academic Journal	
+            \item Experimental Validation	
+            \item Type of Experimental Validation	
+            \item Secondary Research	
+        \end{enumerate} \\
+        \hline
+    \end{tabular} \\[0.5em]
+   	Fonte: Autor
+	\label{tab:protocolo-continuacao}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Artigos Selecionados}
+    \begin{tabular}{|p{1cm}|p{8cm}|p{3.5cm}|p{3cm}|}
+        \hline
+        \textbf{N°} & \textbf{Título} & \textbf{Publicado em Revista} & \textbf{Validação Experimental} \\
+        \hline
+        1 & Development of Secure Software Based on the New DevSecOps Technology & Sim & Não \\
+        \hline
+        2 & Automating Security in a Continuous Integration Pipeline & Não & Não \\
+        \hline
+        3 & Extensive Review of Threat Models for DevSecOps & Sim & Não \\
+        \hline
+        4 & Implementing and Automating Security Scanning to a DevSecOps CI/CD Pipeline & Sim & Não \\
+        \hline
+        5 & Automating Static Code Analysis Through CI/CD Pipeline Integration & Sim & Sim \\
+        \hline
+        6 & Design and Practice of Security Architecture via DevSecOps Technology & Sim & Sim \\
+        \hline
+        7 & Implementation of DevSecOps by Integrating Static and Dynamic Security Testing in CI/CD Pipelines & Sim & Não \\
+        \hline
+        8 & Research of Static Application Security Testing Technique Problems and Methods for Solving Them & Sim & Não \\
+        \hline
+        9 & A Large-scale Fine-grained Empirical Study on Security Concerns in Open-source Software & Sim & Sim \\
+        \hline
+        10 & Evolution of secure development lifecycles and maturity models in the context of hosted solutions & Não & Não \\
+        \hline
+    \end{tabular} \\[0.5em]
+    \label{tab:artigos-selecionados}
+    \small Fonte: Autor
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Continuação dos Artigos Selecionados}
+    \begin{tabular}{|p{1cm}|p{8cm}|p{3.5cm}|p{3cm}|}
+        \hline
+        \textbf{N°} & \textbf{Título} & \textbf{Publicado em Revista} & \textbf{Validação Experimental} \\
+        \hline
+        11 & Automation and DevSecOps: Streamlining Security Measures in Financial System & Sim & Não \\
+        \hline
+        12 & Securing the development and delivery of modern applications & Sim & Não \\
+        \hline
+        13 & You cannot improve what you do not measure: A triangulation study of software security metrics & Sim & Sim \\
+        \hline
+        14 & On DevSecOps and Risk Management in Critical Infrastructures: Practitioners' Insights on Needs and Goals & Sim & Sim \\
+        \hline
+        15 & Container Security in Cloud Environments: A Comprehensive Analysis and Future Directions for DevSecOps & Não & Sim \\
+        \hline
+        16 & Microservices-based DevSecOps Platform using Pipeline and Open Source Software & Não & Não \\
+        \hline
+        17 & Securing the Digital Frontier: A Proactive Approach to Software Development & Sim & Não \\
+        \hline
+        18 & A Secure Software Development Methodology for Enterprise Business Applications & Sim & Sim \\
+        \hline
+        19 & Building Resilient CICD Pipelines: A DevOps Security-First Framework & Sim & Não \\
+        \hline
+        20 & Review of Techniques for Integrating Security in Software Development Lifecycle & Não & Não \\
+        \hline
+    \end{tabular} \\[0.5em]
+    \label{tab:artigos-selecionados-2}
+    \small Fonte: Autor
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Continuação dos Artigos Selecionados (cont.)}
+    \begin{tabular}{|p{1cm}|p{8cm}|p{3.5cm}|p{3cm}|}
+        \hline
+        \textbf{N°} & \textbf{Título} & \textbf{Publicado em Revista} & \textbf{Validação Experimental} \\
+        \hline
+        21 & A hierarchical model for quantifying software security based on static analysis alerts and software metrics & Sim & Sim \\
+        \hline
+        22 & A preventive secure software development model for a software factory: A case study & Sim & Sim \\
+        \hline
+        23 & Security impacts of sub-optimal DevSecOps implementations in a highly regulated environment & Sim & Sim \\
+        \hline
+        24 & A survey and comparison of secure software development standards & Sim & Sim \\
+        \hline
+        25 & Continuous Security Testing: A Case Study on Integrating Dynamic Security Testing Tools in CI/CD Pipelines & Sim & Sim \\
+        \hline
+        26 & Infiltrating Security into Development: Exploring the World's Largest Software Security Study & Não & Sim \\
+        \hline
+        27 & Challenges and solutions when adopting DevSecOps: A systematic review & Sim & Não \\
+        \hline
+        28 & Systematic Mapping Study on Security Approaches in Secure Software Engineering & Sim & Não \\
+        \hline
+        29 & Systematic Literature Review on Security Risks and its Practices in Secure Software Development & Sim & Não \\
+        \hline
+        30 & BP: Security concerns and best practices for automation of software deployment processes: An industrial case study & Sim & Sim \\
+        \hline
+    \end{tabular} \\[0.5em]
+    \label{tab:artigos-selecionados-3}
+    \small Fonte: Autor
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Continuação dos Artigos Selecionados (cont.)}
+    \begin{tabular}{|p{1cm}|p{8cm}|p{3.5cm}|p{3cm}|}
+        \hline
+        \textbf{N°} & \textbf{Título} & \textbf{Publicado em Revista} & \textbf{Validação Experimental} \\
+        \hline
+        31 & Static analysis for web service security - Tools \& techniques for a secure development life cycle & Sim & Não \\
+        \hline
+        32 & Security characterization for evaluation of software architectures using ATAM & Sim & Sim \\
+        \hline
+        33 & Software security & Sim & Não \\
+        \hline
+        34 & Using the ISO/IEC 27034 as reference to develop an application security control library & Sim & Sim \\
+        \hline
+        35 & Hunting for aardvarks: Can software security be measured? & Não & Não \\
+        \hline
+        36 & Francois Raynaud on DevSecOps & Sim & Não \\
+        \hline
+        37 & Integrating application security into software development & Sim & Não \\
+        \hline
+        38 & Busting a myth: Review of agile security engineering methods & Sim & Não \\
+        \hline
+    \end{tabular} \\[0.5em]
+    \label{tab:artigos-selecionados-4}
+    \small Fonte: Autor
+\end{table}
+
+\begin{figure}[h]
+    \centering
+	\caption{Seleção dos Artigos}
+    \includegraphics[width=0.7\textwidth]{figuras/fluxograma-artigos.png}
+
+    \label{fig:fluxograma-artigos}
+	Fonte: Autor
+\end{figure}
 
 \section{Resultados}
 
+Esta seção apresentará os resultados obtidos com a leitura do material coletado. Durante o processo de leitura, com o objetivo de facilitar a elaboração das respostas da perguntas de pesquisa
+e para possibilitar a aferição da revisão da literatura, foi construída uma planilha 
+\footnote{Planilha com o resultado da revisão: \url{https://docs.google.com/spreadsheets/d/1HdgzzRaP8YlS_08hZhIKaUKV9HKP2dTaq4xWVKFzh84/edit?usp=sharing}} contendo todos os dados extraídos dos artigos, a planilha está separada em vários páginas, 
+pois cada página está relacionada com uma pergunta de pesquisa ou um conjunto de perguntas de pesquisa semelhantes, desse modo, possibilitando que o leitor consiga enxergar como cada artigo responde as perguntas de pesquisa.
+Assim, com os dados extraídos dos artigos foi possível estruturar o conhecimento para responder as perguntas de pesquisa baseado no estado da arte sobre o tema.
+
+Nas subseções a seguir são apresentadas as respostas para as perguntas de pesquisa.
+
+\subsection{Which DevSecOps practices are most prevalent in organizations?}
+CI/CD
+SAST
+DAST
+IAST
+IaC
+Shift Security Left
+Automation
+Monitoring
+Fuzz testing
+WAST
+BDST
+Logging
+Continuous Feedback
+Continuous Vulnerability Assessment
+Secure Infrastructure
+Container Security
+SAS
+
+
+
+\subsection{Which security models are most commonly employed in DevSecOps environments?}
+OWASP SAMM
+OWASP DSOMM
+BSIMM
+DORA
+
+
+
+\subsection{Which measures are commonly used for security evaluation?}
+Non-Comment Lines of Code
+Design Defect Ratio
+Shared or Unknown Library Ratio
+Technical Debt Ratio
+Continuous Deployment Cycles Score
+Mean Change Lead Time
+Mean Time to Recover
+Mean Number of Test Cases Per Parameter
+Points of Environmental Risk
+Time for Response
+Throughput
+Errors Per Time Unit
+
+
+
+\subsection{How are security practices evaluated?}
+auditorias
+avaliação da maturidade
+avaliação de métricas
+
+
+
+\subsection{In what ways are security measures evaluated in organizations?}
+Impacto das métricas nos KPIs
+Dashboards e relatórios automatizados
+
+
+
+\subsection{What types of vulnerabilities are mitigated by DevSecOps practices?	}
+SQL Injection
+Command Injection
+XSS
+XXE
+Buffer Overflow
+CSRF
+DDoS
+MITM
+Broken Authentication
+Broken Access Control
+Security Misconfiguration
+Session Hijacking
+SSRF
+
+
+
+\subsection{What tools and technologies are used in DevSecOps?}
+Prometheus
+Grafana
+Loki
+Asylo
+Trivy
+Terraform
+Kubernetes
+Docker
+Tekton
+GitHub Actions
+Jenkins
+GitLab CI/CD
+StackHawk
+JMeter
+OWASP ZAP
+Selenium
+Snyk
+OWASP Dependency-Check
+SonarQube
+FindBugs
+Detect Secrets
+ArgoCD
+
+
+
+\subsection{What is the annual volume of DevSecOps publications from 2009 to 2025?}
+\begin{figure}[h]
+    \centering
+	\caption{Seleção dos Artigos}
+    \includegraphics[width=0.9\textwidth]{figuras/volume-anual-artigos.png}
+
+    \label{fig:volume-anual}
+	Fonte: Autor
+\end{figure}
+
+
+
+\subsection{How many articles were published in academic journals?}
+\begin{figure}[h]
+    \centering
+	\caption{Seleção dos Artigos}
+    \includegraphics[width=1.0\textwidth]{figuras/artigos-publicados.png}
+
+    \label{fig:artigos-publicados}
+	Fonte: Autor
+\end{figure}
+
+
+
+\subsection{How many studies have experimental validation?}
+\begin{figure}[h]
+    \centering
+	\caption{Seleção dos Artigos}
+    \includegraphics[width=1.0\textwidth]{figuras/quantidade-experimental.png}
+
+    \label{fig:quantidade-experimental}
+	Fonte: Autor
+\end{figure}
+
+
+
+\subsection{If the study has experimental validation, what type?}
+\begin{figure}[h]
+    \centering
+	\caption{Seleção dos Artigos}
+    \includegraphics[width=1.0\textwidth]{figuras/tipos-validacao.png}
+
+    \label{fig:tipos-validacao}
+	Fonte: Autor
+\end{figure}
