@@ -1,9 +1,9 @@
-PWD /home/chaydson/Workspace/UnB/TCC/monografia/latex
+PWD /home/chaydson/Workspace/TCC/tcc/latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex
+INPUT /home/chaydson/Workspace/TCC/tcc/latex/tcc.tex
 OUTPUT tcc.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
