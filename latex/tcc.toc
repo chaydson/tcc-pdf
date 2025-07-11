@@ -25,14 +25,14 @@
 \contentsline {subsection}{\numberline {2.3.1}Which DevSecOps practices are most prevalent in organizations?}{36}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Which security models are most commonly employed in DevSecOps environments?}{37}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Which measures are commonly used for security evaluation?}{37}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}How are security practices evaluated?}{37}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}In what ways are security measures evaluated in organizations?}{37}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}What types of vulnerabilities are mitigated by DevSecOps practices? }{37}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}What tools and technologies are used in DevSecOps?}{37}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}What is the annual volume of DevSecOps publications from 2009 to 2025?}{37}{subsection.2.3.8}%
-\contentsline {subsection}{\numberline {2.3.9}How many articles were published in academic journals?}{37}{subsection.2.3.9}%
-\contentsline {subsection}{\numberline {2.3.10}How many studies have experimental validation?}{37}{subsection.2.3.10}%
-\contentsline {subsection}{\numberline {2.3.11}If the study has experimental validation, what type?}{37}{subsection.2.3.11}%
+\contentsline {subsection}{\numberline {2.3.4}How are security practices evaluated?}{38}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}In what ways are security measures evaluated in organizations?}{38}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}What types of vulnerabilities are mitigated by DevSecOps practices? }{38}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}What tools and technologies are used in DevSecOps?}{38}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}What is the annual volume of DevSecOps publications from 2009 to 2025?}{38}{subsection.2.3.8}%
+\contentsline {subsection}{\numberline {2.3.9}How many articles were published in academic journals?}{38}{subsection.2.3.9}%
+\contentsline {subsection}{\numberline {2.3.10}How many studies have experimental validation?}{38}{subsection.2.3.10}%
+\contentsline {subsection}{\numberline {2.3.11}If the study has experimental validation, what type?}{38}{subsection.2.3.11}%
 \contentsline {part}{\partnumberline {I}\MakeTextUppercase []{Texto e Pós Texto}}{47}{part.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Elementos do Texto}}{49}{chapter.3}%

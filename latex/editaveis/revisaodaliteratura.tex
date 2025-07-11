@@ -296,110 +296,118 @@ Assim, com os dados extraídos dos artigos foi possível estruturar o conhecimen
 Nas subseções a seguir são apresentadas as respostas para as perguntas de pesquisa.
 
 \subsection{Which DevSecOps practices are most prevalent in organizations?}
-CI/CD
-SAST
-DAST
-IAST
-IaC
-Shift Security Left
-Automation
-Monitoring
-Fuzz testing
-WAST
-BDST
-Logging
-Continuous Feedback
-Continuous Vulnerability Assessment
-Secure Infrastructure
-Container Security
-SAS
+\begin{itemize}
+    \item Metodologias e Cultura: CI/CD, Shift Security Left, Continuous Feedback, Continuous Vulnerability Assessment
+    \item Testes de Segurança: SAST, DAST, IAST, Fuzz testing, BDST, WAST, SAS
+    \item Infraestrutura e Operações: IaC, Secure Infrastructure, Container Security, 
+    \item Acompanhamento: Automation, Monitoring, Logging
+\end{itemize}
 
 
 
 \subsection{Which security models are most commonly employed in DevSecOps environments?}
-OWASP SAMM
-OWASP DSOMM
-BSIMM
-DORA
-
+\begin{itemize}
+    \item OWASP SAMM
+    \item OWASP DSOMM
+    \item BSIMM
+    \item DORA
+\end{itemize}
 
 
 \subsection{Which measures are commonly used for security evaluation?}
-Non-Comment Lines of Code
-Design Defect Ratio
-Shared or Unknown Library Ratio
-Technical Debt Ratio
-Continuous Deployment Cycles Score
-Mean Change Lead Time
-Mean Time to Recover
-Mean Number of Test Cases Per Parameter
-Points of Environmental Risk
-Time for Response
-Throughput
-Errors Per Time Unit
+\begin{itemize}
+    \item Non-Comment Lines of Code
+    \item Design Defect Ratio
+    \item Shared or Unknown Library Ratio
+    \item Technical Debt Ratio
+    \item Continuous Deployment Cycles Score
+    \item Mean Change Lead Time
+    \item Mean Time to Recover
+    \item Mean Number of Test Cases Per Parameter
+    \item Points of Environmental Risk
+    \item Time for Response
+    \item Throughput
+    \item Errors Per Time Unit
+    \item Change lead time
+    \item Deployment frequency
+    \item Change fail percentage
+    \item Failed deployment recovery time
+\end{itemize}
 
 
 
 \subsection{How are security practices evaluated?}
-auditorias
-avaliação da maturidade
-avaliação de métricas
+\begin{itemize}
+    \item auditorias
+    \item avaliação da maturidade
+    \item avaliação de métricas
+\end{itemize}
 
 
 
 \subsection{In what ways are security measures evaluated in organizations?}
-Impacto das métricas nos KPIs
-Dashboards e relatórios automatizados
-
+\begin{itemize}
+    \item Impacto das métricas nos KPIs
+    \item Dashboards e relatórios automatizados
+    \item Adaptação ao compliance/regulação
+\end{itemize}
 
 
 \subsection{What types of vulnerabilities are mitigated by DevSecOps practices?	}
-SQL Injection
-Command Injection
-XSS
-XXE
-Buffer Overflow
-CSRF
-DDoS
-MITM
-Broken Authentication
-Broken Access Control
-Security Misconfiguration
-Session Hijacking
-SSRF
+\begin{table}[h]
+    \centering
+    \caption{Vulnerabilidades Reduzidas}
+    \begin{tabular}{|p{5cm}|p{6cm}|p{4cm}|}
+        \hline
+        \textbf{Vulnerabilidade} & \textbf{Descrição} & \textbf{Referência} \\
+        \hline
+        SQL Injection & - & - \\
+        \hline
+        Command Injection & - & - \\
+        \hline
+        XSS & - & - \\
+        \hline
+        XXE & - & - \\
+        \hline
+        Buffer Overflow & - & - \\
+        \hline
+        CSRF & - & - \\
+        \hline
+        DDoS & - & - \\
+        \hline
+        MITM & - & - \\
+        \hline
+        Broken Authentication & - & - \\
+        \hline
+        Broken Access Control & - & - \\
+        \hline
+        Security Misconfiguration & - & - \\
+        \hline
+        Session Hijacking & - & - \\
+        \hline
+        SSRF & - & - \\
+        \hline
+    \end{tabular} \\[0.5em]
+    \label{tab:vulnerabilidades}
+    \small Fonte: Autor
+\end{table}
 
 
 
 \subsection{What tools and technologies are used in DevSecOps?}
-Prometheus
-Grafana
-Loki
-Asylo
-Trivy
-Terraform
-Kubernetes
-Docker
-Tekton
-GitHub Actions
-Jenkins
-GitLab CI/CD
-StackHawk
-JMeter
-OWASP ZAP
-Selenium
-Snyk
-OWASP Dependency-Check
-SonarQube
-FindBugs
-Detect Secrets
-ArgoCD
+\begin{itemize}
+    \item Monitoramento: Prometheus, Grafana, Loki
+    \item Infraestrutura: Terraform, Kubernetes, Docker
+    \item CI/CD: Jenkins, GitLab CI/CD, GitHub Actions, Tekton, ArgoCD
+    \item Testes: SonarQube, FindBugs, Snyk, OWASP Dependency-Check, OWASP ZAP, Trivy, Detect Secrets, Asylo, StackHawk, JMeter, Selenium
+\end{itemize}
 
 
 
 \subsection{What is the annual volume of DevSecOps publications from 2009 to 2025?}
 \begin{figure}[h]
     \centering
-	\caption{Seleção dos Artigos}
+	\caption{Volume Anual de Artigos entre 2009 e 2025}
     \includegraphics[width=0.9\textwidth]{figuras/volume-anual-artigos.png}
 
     \label{fig:volume-anual}
@@ -411,7 +419,7 @@ ArgoCD
 \subsection{How many articles were published in academic journals?}
 \begin{figure}[h]
     \centering
-	\caption{Seleção dos Artigos}
+	\caption{Artigos Publicados em Revistas}
     \includegraphics[width=1.0\textwidth]{figuras/artigos-publicados.png}
 
     \label{fig:artigos-publicados}
@@ -423,7 +431,7 @@ ArgoCD
 \subsection{How many studies have experimental validation?}
 \begin{figure}[h]
     \centering
-	\caption{Seleção dos Artigos}
+	\caption{Quantidade de Artigos com Validação Experimental}
     \includegraphics[width=1.0\textwidth]{figuras/quantidade-experimental.png}
 
     \label{fig:quantidade-experimental}
@@ -435,7 +443,7 @@ ArgoCD
 \subsection{If the study has experimental validation, what type?}
 \begin{figure}[h]
     \centering
-	\caption{Seleção dos Artigos}
+	\caption{Tipos de Validação Experimental dos Artigos}
     \includegraphics[width=1.0\textwidth]{figuras/tipos-validacao.png}
 
     \label{fig:tipos-validacao}
