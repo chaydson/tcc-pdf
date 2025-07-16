@@ -421,6 +421,11 @@ INPUT ./figuras/cronograma.png
 INPUT ./figuras/cronograma.png
 INPUT ./figuras/cronograma.png
 INPUT ./figuras/cronograma.png
+INPUT ./editaveis/referencialteorico.tex
+INPUT ./editaveis/referencialteorico.tex
+INPUT ./editaveis/referencialteorico.tex
+INPUT ./editaveis/referencialteorico.tex
+INPUT editaveis/referencialteorico.tex
 INPUT ./editaveis/revisaodaliteratura.tex
 INPUT ./editaveis/revisaodaliteratura.tex
 INPUT ./editaveis/revisaodaliteratura.tex
@@ -460,11 +465,6 @@ INPUT ./figuras/tipos-validacao.png
 INPUT ./figuras/tipos-validacao.png
 INPUT ./figuras/tipos-validacao.png
 INPUT ./figuras/tipos-validacao.png
-INPUT ./editaveis/referencialteorico.tex
-INPUT ./editaveis/referencialteorico.tex
-INPUT ./editaveis/referencialteorico.tex
-INPUT ./editaveis/referencialteorico.tex
-INPUT editaveis/referencialteorico.tex
 INPUT ./editaveis/planejamentoestudo.tex
 INPUT ./editaveis/planejamentoestudo.tex
 INPUT ./editaveis/planejamentoestudo.tex

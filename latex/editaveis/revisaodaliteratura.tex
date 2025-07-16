@@ -297,95 +297,121 @@ Nas subseções a seguir são apresentadas as respostas para as perguntas de pes
 
 \subsection{Which DevSecOps practices are most prevalent in organizations?}
 \begin{itemize}
-    \item Metodologias e Cultura: Segundo  Shift Security Left eh o principio fundamental do DevSecOps, Continuous Integration, Continuous Delivery, Continuous Deployment, Continuous Feedback, Continuous Vulnerability Assessment
-    \item Testes de Segurança: SAST, DAST, IAST, Fuzz testing, BDST, WAST, SAS
-    \item Infraestrutura e Operações: IaC, Secure Infrastructure, Container Security, 
-    \item Acompanhamento: Automation, Monitoring, Logging
+    \item Metodologias e Cultura
+    \begin{itemize}
+        \item Shift Security Left: é o principio fundamental do DevSecOps, ele consiste em deslocar as práticas de segurança para o inicio do processo de desenvolvimento do projeto, em vez de deixar no final como acontece em grande parte dos casos, essa postura eleva a prioridade da segurança no projeto, permitindo que as vulnerabilidades sejam tratadas mais cedo (RAJAPAKSE et al., 2021).
+        \item Continuos Vulnerability Assessment: Juntamente com Shift Left, a prática Avaliação Contínua de Vulnerabilidades forma os pilares do DevSecOps, nessa prática a segurança do software é continuamente verificada, não somente durante o desenvolvimento, mas também após a implantação do software, pois é necessário verificar a segurança do sistema durante todo o seu ciclo de vida (RAJAPAKSE et al., 2021).
+        \item CI/CD: Já Continuous Integration (CI) e Continuous Delivery/Deployment (CD) integram o DevSecOps, pois este se trata de uma evolução do DevOps, como esses conceitos são herdados é importante defini-los para completo entendimento da metodologia. CI se refere a prática de realizar continuamente integrações de código na branch principal do código, como essa atividade envolve a alteração da ramificação principal ela é validada por meio de verificadores de build e testes automatizados. Já CD visa a implatação automatica e contínua das atualizações do código no ambiente de produção depois de passar o novo código por verificações de qualidade e, se tudo estiver de acordo com a política de qualidade estabelecida, o código é publicado sem intervenção humana em produção através do pipeline (RAJAPAKSE et al., 2021).
+        \item Continuous Feedback: Obter feedback de maneira continua e rápida é vital em ambientes de entrega contínua. Nessa abordagem, os problemas são rapidamente identificados, assim, possibilitando que as informações cheguem rápido nas equipes para que as medidas necessárias sejam tomadas. Os métodos tradicionais de coleta de dados/feedback são demasiadamente lentos para a agilidade requisitada em ambientes DevSecOps, essa lentidão afeta a diretamente a velocidade de localização e resolução dos problemas (RAJAPAKSE et al., 2021).
+    \end{itemize}
+    \item Testes de Segurança
+    \begin{itemize}
+        \item SAST, DAST, IAST: Ferramentas SAST executam testes estáticos, ou seja, eles são realizados apenas sobre o conteúdo do código-fonte, elas podem indicar potenciais vulnerabilidades e práticas ruins, conhecidas como code smells no código. Por outro lado, as ferramentas DAST analisam o software em execução, o que possibilita testar o comportamento do sistema em uso. Ferramentas IAST, entretanto, fornecem uma abordagem híbrida incorporando características da análise estática e dinâmica são modernas e possuem boa integração em ambientes de desenvolvimento contínuo (RAJAPAKSE et al., 2021). 
+        \item Fuzz Testing: o teste de fuzzing, como também é conhecido, se destaca entre as práticas de teste de segurança. Eles consistem em fornecer para a aplicação entradas aleatórias, inválidas e inesperada, de forma a verificar possíveis casos de borda não testados (MASOOD; JAVA, 2015).
+        \item BDST: os testes BDST são baseados no BDD, porém aplicado ao contexto de textes de segurança. Como os testes descrevem o seu comportamento em linguagem natural, pessoas fora da área de desenvolvimento e segurança de software conseguem compreender os testes realizados (RANGNAU et al., 2020).
+    \end{itemize}
+    \item Infraestrutura
+    \begin{itemize}
+        \item IaC: essa prática consiste em definir a infraestrutura do projeto como código. É altamente usada em contextos DevSecOps, pois possibilita a configuração rápida da infraestrutura. Como a infraestrutura está definida como código, pode-se realizar o seu versionamneto, teste e implantação de forma ágil e adequado a ambientes complexos que necessitam de segurança robusta (RAJAPAKSE et al., 2021).
+    \end{itemize}
+    \item Acompanhamento
+    \begin{itemize}
+        \item Monitoring e Logging: muitas vezes o registro e documentação dos eventos relacionados a segurança são negligenciados pelas equipes, porém isso consiste em um grande erro, registrar e monitorar fornece feedback valioso que pode ser utilizado para tomar decisões estratégicas ou realizar auditorias (RAJAPAKSE et al., 2021).
+    \end{itemize}
 \end{itemize}
 
 
 
 \subsection{Which security models are most commonly employed in DevSecOps environments?}
 \begin{itemize}
-    \item OWASP SAMM: 
-    \item OWASP DSOMM:
-    \item BSIMM:
-    \item DORA: 
+    \item OWASP SAMM: o Software Assurance Maturity Model é um modelo prescritivo de maturidade de segurança de software, isso quer dizer que ele contém informa quais atividades precisam ser realizadas, diferentemente de um modelo descritivo que apenas descreve as atividades a serem realizadas. Sua estrutura é adequada para diferentes tipos e tamanhos de empresas, bem como diferentes metodologias de desenvolvimento, como por exemplo cascata e ágil (LANGE; KUNZ, 2024).
+    \item OWASP DSOMM: embora baseado no SAMM, o DevSecOps Maturity Model nasce devido a necessidade de um modelo adequado para ambientes DevOps onde a segurança é parte essencial do ciclo de vida. Também é prescritivo, mas diferentemente do SAMM, as suas atividades estão definidas em um nível mais perto do programador que da gestão, desse modo, ele fornece com detalhes tecnicos os requisitos necessários para atingir cada um dos níveis de maturidade em suas diferentes dimensões (LANGE; KUNZ, 2024).
+    \item BSIMM: diferentemente dos outros, esse é um modelo descritivo, ou seja, ela descreve atividades sem exigir que elas sejam implementadas. Outra diferença fundamental é que ele é um modelo proprietário, mantido pela Synopsys, que a aplicação do modelo, bem como sua metodologia de avaliação só são disponíveis mediante contratação dos serviços da empresa (LANGE; KUNZ, 2024).
 \end{itemize}
 
 
 \subsection{Which measures are commonly used for security evaluation?}
 \begin{itemize}
-    \item Non-Comment Lines of Code
-    \item Design Defect Ratio
-    \item Shared or Unknown Library Ratio
-    \item Technical Debt Ratio
-    \item Continuous Deployment Cycles Score
-    \item Mean Change Lead Time
-    \item Mean Time to Recover
-    \item Mean Number of Test Cases Per Parameter
-    \item Points of Environmental Risk
-    \item Time for Response
-    \item Throughput
-    \item Errors Per Time Unit
-    \item Change lead time
-    \item Deployment frequency
-    \item Change fail percentage
-    \item Failed deployment recovery time
+    \item Métricas de Zhang: Segundo Zhang e Zhang (2024) medir de forma eficaz característica de softwares web é fundamental, porém pouco explorado, para resolver este problema eles realizarem uma revisão sistemática da literatura e definiram doze métricas voltadas a atender as necessidades dos sistemas Web que usam DevSecOps como metodologia de desenvolvimento. Elas permitem quantificar o desempenho do serviço, segurança e eficiência da operação, assim apoiando as tomadas de decisão e melhoria contínua das práticas.  
+    \begin{itemize}
+        \item Non-Comment Lines of Code: tamanho do código de fonte, excluindo comentários e linhas em branco
+        \item Design Defect Ratio: proporção de defeito de design e linhas de código não comentadas
+        \item Shared or Unknown Library Ratio: proporção de bibliotecas compartilhadas ou não verificadas em um serviço
+        \item Technical Debt Ratio: compara o custo de resolução de um débito técnico com o custo total do código-fonte
+        \item Continuous Deployment Cycles Score: 
+        \item Mean Change Lead Time: tempo médio que uma mudança leva desde o commit até a chegar em produção
+        \item Mean Time to Recover: tempo médio para recuperação causados por falhas nas pipelines de CI/CD
+        \item Mean Number of Test Cases Per Parameter: média de testes por parâmetro
+        \item Points of Environmental Risk: toal de riscos de segurança não resolvidos em produção
+        \item Time for Response: tempo médio que os times de desenvolvimento levam para solucionar os incidentes de segurança
+        \item Throughput: mede a capacidade de processamento de um serviço
+        \item Errors Per Time Unit: taxa de erros em determinada unidade de tempo
+    \end{itemize}   
+    \item Métricas DORA: O DevOps Research and Assessment é um dos principais programas de pesquisa do mundo na área de DevOps. Esse programa faz parte do Google e depois de anos de estudos eles chegaram em quatro métricas chave para medir os aspectos DevOps de um projeto. As suas métricas passam por uma avaliação estatística rigorosa para possibilitar entender a relação entre as métricas medidas e o sucesso das organizações (DORA, 2024). 
+    \begin{itemize}
+        \item Change lead time: tempo que uma alteração leva para chegar em produção
+        \item Deployment frequency: frequência com que as alterações chegam em produção
+        \item Change fail percentage: porcentagem de implantações que causam falhas em produção
+        \item Failed deployment recovery time: tempo que leva para se recuperar de uma implatação com falha
+    \end{itemize}  
 \end{itemize}
 
 
 
 \subsection{How are security practices evaluated?}
-\begin{itemize}
-    \item auditorias
-    \item avaliação da maturidade
-    \item avaliação de métricas
-\end{itemize}
 
+É fundamental que as práticas de segurança sejam avaliadas para que seja possível avaliar a eficácia das práticas adotadas e conseguir evoluir já existentes ou adotar novas práticas que se adequem mais as necessidades da organização. Sendo assim, encontra-se na avaliação de métricas uma forma eficente e quantidativa de
+avaliar práticas de segurança, pois elas permitem acompanhar a evolução das atividades realizadas e verificar os resultados de cada atividade concluida. Outra forma de verificar as práticas de segurança é através de autitorias, dessa forma, verificando adequação da organização aos padrões de segurança e conformidade (RAJAPAKSE et al., 2021). 
 
+Por fim, pode-se usar modelos de avaliação da maturidade para avaliar as práticas pois eles introduzem uma linha de base para comparar com a organização avaliada. Eles permitem avaliar o estado atual da aplicação, além de identificar áreas de melhória e traçar um plano para alcançar um maior nível de segurança (LANGE; KUNZ, 2024).
 
 \subsection{In what ways are security measures evaluated in organizations?}
-\begin{itemize}
-    \item Impacto das métricas nos KPIs
-    \item Dashboards e relatórios automatizados
-    \item Adaptação ao compliance/regulação
-\end{itemize}
 
+As medidas de segurança são avaliadas de diversas formas dentro das organizações. Uma das principais formas de se avalia-las é analisando a repercussão das métricas de segurança nos KPIs da organização. KPIs são indicadores chave de desempenho, são as métricas centrais que medem a saúde dos projetos, é crucial criar alertas e dashboards para acompanhar o desenvolvimento das métricas e KPIs,
+pois assim, pode-se obter insights de como as métricas de segurança impactam nos KPIs da empresa, além de possibilitar o rastreio das métricas durante todo o periodo em que ela foi monitorada (JOSHI, 2024).
+
+Outra maneira que as medidas de segurança são avaliadas tem a ver com o quanto aquelas medidas se adequam ao compliance da orgranização ou a aspectos regulatórios. Muitas vezes as empresas precisam seguir rigídos padrões de conformidade relacionados as métricas, como por exemplo cobertura de testes, onde dependendo da área precisa ser extremamente alta, bem como áreas financeiras que alguma falha de segurança pode gerar um prejuizo bilionário.
 
 \subsection{What types of vulnerabilities are mitigated by DevSecOps practices?	}
+
+Existem diversos tipos de falhas de segurança que podem ocorrer durante o processo de desenvolvimento de software, entre elas, falhas que podem
+extrapolar o escopo do trabalho, por exemplo falhas relacionadas ao hardware utilizado. Por esse motivo, é necessário entender quais 
+problemas de segurança são afetados pelas práticas DevSecOps, pois, desse modo será possivel analisar de forma mais assertiva a repercussão
+da adoção dessa metodologia na qualidade da segurança. Assim, na Tabela 9, foram elencadas as principais vulnerabilidades que são impactadas
+por esse paradigma.
+
 \begin{table}[h]
     \centering
     \caption{Vulnerabilidades Reduzidas}
-    \begin{tabular}{|p{5cm}|p{6cm}|p{4cm}|}
+    \begin{tabular}{|p{5cm}|p{8cm}|}
         \hline
-        \textbf{Vulnerabilidade} & \textbf{Descrição} & \textbf{Referência} \\
+        \textbf{Vulnerabilidade} & \textbf{Referência} \\
         \hline
-        SQL Injection & - & - \\
+        SQL Injection  & (SAEED et al., 2025) \\
         \hline
-        Command Injection & - & - \\
+        Command Injection & (RAMIREZ; AIELLO; LINCKE, 2020) \\
         \hline
-        XSS & - & - \\
+        XSS  & (SAEED et al., 2025) \\
         \hline
-        XXE & - & - \\
+        XXE & (NOCERA et al., 2023) \\
         \hline
-        Buffer Overflow & - & - \\
+        Buffer Overflow  & (RAMIREZ; AIELLO; LINCKE, 2020) \\
         \hline
-        CSRF & - & - \\
+        CSRF  & (KUSHWAHA; DAVID; SUSEELA, 2024)  \\
         \hline
-        DDoS & - & - \\
+        DDoS  & (SAEED et al., 2025) \\
         \hline
-        MITM & - & - \\
+        MITM  & (NOCERA et al., 2023) \\
         \hline
-        Broken Authentication & - & - \\
+        Broken Authentication  & (SAEED et al., 2025) \\
         \hline
-        Broken Access Control & - & - \\
+        Broken Access Control  & (SAEED et al., 2025) \\
         \hline
-        Security Misconfiguration & - & - \\
+        Security Misconfiguration  & (SAEED et al., 2025) \\
         \hline
-        Session Hijacking & - & - \\
+        Session Hijacking  & (KUSHWAHA; DAVID; SUSEELA, 2024)  \\
         \hline
-        SSRF & - & - \\
+        SSRF  & (NOCERA et al., 2023)  \\
         \hline
     \end{tabular} \\[0.5em]
     \label{tab:vulnerabilidades}
