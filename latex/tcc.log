@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  20 JUL 2025 04:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  20 JUL 2025 05:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -934,57 +934,62 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 46--46
-[]|\T1/lmr/m/n/12 software de-ve-
+[]|\T1/lmr/m/it/12 software de-ve-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
-[]|\T1/lmr/m/n/12 software sys-tems, on-line
+[]|\T1/lmr/m/it/12 software sys-tems, on-line
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
-[]|\T1/lmr/m/n/12 cybersecurity prac-ti-ces,
+[]|\T1/lmr/m/it/12 cybersecurity prac-ti-ces,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
-\T1/lmr/m/n/12 se-cu-rity au-to-ma-tion, se-
+\T1/lmr/m/it/12 se-cu-rity au-to-ma-tion, se-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
-\T1/lmr/m/n/12 CI/CD, con-ti-nu-ous in-
+\T1/lmr/m/it/12 CI/CD, con-ti-nu-ous in-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
-\T1/lmr/m/n/12 te-gra-tion, con-ti-nu-ous
+\T1/lmr/m/it/12 te-gra-tion, con-ti-nu-ous
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
-\T1/lmr/m/n/12 de-ploy-ment, con-ti-nu-ous
+\T1/lmr/m/it/12 de-ploy-ment, con-ti-nu-ous
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 48--49
+\T1/lmr/m/it/12 de-li-very, De-vOps, se-cu-rity
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
-[]|\T1/lmr/m/n/12 software se-cu-rity, ap-pli-
+[]|\T1/lmr/m/it/12 software se-cu-rity, ap-pli-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/lmr/m/n/12 ca-tion se-cu-rity, se-cu-rity
+\T1/lmr/m/it/12 ca-tion se-cu-rity, se-cu-rity
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/lmr/m/n/12 im-pro-ve-ment, se-cu-rity
+\T1/lmr/m/it/12 im-pro-ve-ment, se-cu-rity
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
-\T1/lmr/m/n/12 th-re-ats, sys-tem se-cu-rity,
+\T1/lmr/m/it/12 th-re-ats, sys-tem se-cu-rity,
  []
 
 
@@ -1070,7 +1075,7 @@ Overfull \hbox (36.01765pt too wide) in paragraph at lines 252--272
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/fluxograma-artigos.png, id=429, 770.88pt x 578.16pt>
+<figuras/fluxograma-artigos.png, id=432, 770.88pt x 578.16pt>
 File: figuras/fluxograma-artigos.png Graphic file (type png)
 <use figuras/fluxograma-artigos.png>
 Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 280.
@@ -1079,7 +1084,7 @@ Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 280.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/volume-anual-artigos.png, id=522, 451.6875pt x 301.125pt>
+<figuras/volume-anual-artigos.png, id=527, 451.6875pt x 301.125pt>
 File: figuras/volume-anual-artigos.png Graphic file (type png)
 <use figuras/volume-anual-artigos.png>
 Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 430.
@@ -1087,7 +1092,7 @@ Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 43
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/artigos-publicados.png, id=524, 451.6875pt x 321.2pt>
+<figuras/artigos-publicados.png, id=529, 451.6875pt x 321.2pt>
 File: figuras/artigos-publicados.png Graphic file (type png)
 <use figuras/artigos-publicados.png>
 Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 444.
@@ -1096,7 +1101,7 @@ Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 444.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43]
-<figuras/quantidade-experimental.png, id=529, 842.14626pt x 562.1pt>
+<figuras/quantidade-experimental.png, id=534, 842.14626pt x 562.1pt>
 File: figuras/quantidade-experimental.png Graphic file (type png)
 <use figuras/quantidade-experimental.png>
 Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 458.
@@ -1105,7 +1110,7 @@ Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/tipos-validacao.png, id=530, 451.6875pt x 301.125pt>
+<figuras/tipos-validacao.png, id=535, 451.6875pt x 301.125pt>
 File: figuras/tipos-validacao.png Graphic file (type png)
 <use figuras/tipos-validacao.png>
 Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 471.
@@ -1168,21 +1173,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 15B9FD90B8156BBCCB77F3FEE338672A;3030.
+(rerunfilecheck)             Checksum: A98547B08BC0268C3CADDC3DF0D01D39;3127.
  ) 
 Here is how much of TeX's memory you used:
- 17756 strings out of 474222
- 285732 string characters out of 5748734
- 1973975 words of memory out of 5000000
- 39384 multiletter control sequences out of 15000+600000
+ 17766 strings out of 474222
+ 285864 string characters out of 5748734
+ 1974975 words of memory out of 5000000
+ 39393 multiletter control sequences out of 15000+600000
  642534 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,1373b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,107p,1382b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (71 pages, 2293301 bytes).
+Output written on tcc.pdf (71 pages, 2297430 bytes).
 PDF statistics:
- 1023 PDF objects out of 1200 (max. 8388607)
- 904 compressed objects within 10 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 1031 PDF objects out of 1200 (max. 8388607)
+ 912 compressed objects within 10 object streams
+ 222 named destinations out of 1000 (max. 500000)
  479 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -23,6 +23,11 @@ Rio de Janeiro, 2011. 15~p.}
 {{Elsevier}. \emph{{Scopus}}. 2025. Disponível via Portal de Periódicos da CAPES. \url{https://www.scopus.com/}.
 Acesso em: 20 de julho de 2025.}
 
+\bibitem[{Google} 2024]{DORA2024}
+\abntrefinfo{{Google}}{{Google}}{2024}
+{{Google}. \emph{{DORA}}.
+[S.l.], 2024. Acessado em: 20 de julho de 2025. Dispon{\'\i}vel em: \url{https://dora.dev}.}
+
 \bibitem[ISO/IEC 25010:2023 2023]{ISO25010}
 \abntrefinfo{ISO/IEC 25010:2023}{ISO/IEC 25010:2023}{2023}
 {ISO/IEC 25010:2023. \emph{{ISO/IEC 25010:2023 Systems and software engineering --- Systems and software Quality Requirements and Evaluation (SQuaRE) --- System and software quality models}}.

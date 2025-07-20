@@ -15,7 +15,7 @@ A busca em bases de dados acadêmicas requer o uso de um protocolo, pois elas in
 Seu uso incorreto pode acarretar em um número excessivo de artigos sem relação com o tema da pesquisa ou, inversamente, retornar
 um volume insuficiente de estudos para responder à questão de pesquisa.
 
-Por essa razão, o protocolo PICO foi utilizado para guiar a elaboração de uma string de busca adequada às necessidades da 
+Por essa razão, o protocolo PICO foi utilizado para guiar a elaboração de uma \textit{string} de busca adequada às necessidades da 
 monografia. O protocolo, no entanto, precisou ser adaptado, pois sua origem é na medicina e nem todos os seus elementos se 
 adequam ao nosso escopo. Uma representação visual que facilita a compreensão do protocolo pode ser vista na Figura 4 \cite{Pai2004}.
 
@@ -29,11 +29,11 @@ adequam ao nosso escopo. Uma representação visual que facilita a compreensão 
 \end{figure}
 
 Ao adaptar o modelo PICO para o presente trabalho, suas definições adquirem um novo significado no contexto da Engenharia de 
-Software. Por exemplo, Patient, outrora usado para indicar o perfil do paciente, passa a representar a área de aplicação, neste 
-caso, o desenvolvimento de software. Intervention também sofre adaptação, deixando de significar "tratamento médico" para se 
-referir à metodologia avaliada. Não obstantemente, Outcome mantém seu sentido original, referindo-se aos efeitos 
-ou consequências observadas. Por fim, Comparison que está relacionada a investigar como a intervenção proposta se relaciona com 
-outras propostas de intervenção não pode ser adotada, devido a estar muito mais alinhada com os objetivos da médicina que da engenharia de software.
+\textit{Software}. Por exemplo, \textit{Patient}, outrora usado para indicar o perfil do paciente, passa a representar a área de aplicação, neste 
+caso, o desenvolvimento de \textit{software}. \textit{Intervention} também sofre adaptação, deixando de significar "tratamento médico" para se 
+referir à metodologia avaliada. Não obstantemente, \textit{Outcome} mantém seu sentido original, referindo-se aos efeitos 
+ou consequências observadas. Por fim, \textit{Comparison} que está relacionada a investigar como a intervenção proposta se relaciona com 
+outras propostas de intervenção não pode ser adotada, devido a estar muito mais alinhada com os objetivos da médicina que da engenharia de \textit{software}.
 Assim, a definição de cada um dos elementos usados do modelo estão definidos na Tabela 2.
 
 \begin{table}[h]
@@ -43,34 +43,34 @@ Assim, a definição de cada um dos elementos usados do modelo estão definidos 
         \hline
         \textbf{Elementos} & \textbf{Termo Central} & \textbf{Sinônimos e Termos Relacionados} \\
         \hline
-        Population & software development & software systems, online systems, software applications, systems development, application development \\
+        \textit{Population} & \textit{software development} & \textit{software systems, online systems, software applications, systems development, application development} \\
         \hline
-        Intervention & DevSecOps & cybersecurity practices, security automation, secure software development, CI/CD, continuous integration, continuous deployment, continuous delivery, DevOps, security development culture \\
+        \textit{Intervention} & \textit{DevSecOps} & \textit{cybersecurity practices, security automation, secure software development, CI/CD, continuous integration, continuous deployment, continuous delivery, DevOps, security development culture} \\
         \hline
-        Outcome & security quality & software security, application security, security improvement, security assurance, vulnerability reduction, protection against threats, system security, owasp, cwe, common weakness \\
+        \textit{Outcome} & \textit{security quality} & \textit{software security, application security, security improvement, security assurance, vulnerability reduction, protection against threats, system security, owasp, cwe, common weakness} \\
         \hline
     \end{tabular} \\[0.5em]
    	Fonte: Autor
 	\label{tab:pico}
 \end{table}
 
-Desta maneira, a string de busca foi construída usando o operador lógico OR entre os termos de cada elemento, com o objetivo de englobar todos os termos da pesquisa.
-Já o operador AND foi usado para conectar os diferentes elementos do protocolo PICO, assim restringindo a busca apenas aos estudos que apresentam os termos 
-necessários para responder as perguntas de pesquisa. Ademais, foram adicionados os termos própios da base de dados para a realização da consulta, resultando na seguinte string de busca:
+Desta maneira, a \textit{string} de busca foi construída usando o operador lógico \textit{OR} entre os termos de cada elemento, com o objetivo de englobar todos os termos da pesquisa.
+Já o operador \textit{AND} foi usado para conectar os diferentes elementos do protocolo PICO, assim restringindo a busca apenas aos estudos que apresentam os termos 
+necessários para responder as perguntas de pesquisa. Ademais, foram adicionados os termos própios da base de dados para a realização da consulta, resultando na seguinte \textit{string} de busca:
 
 \begin{center}
-    TITLE-ABS-KEY ( ( "software development" OR "software developments" OR "software system" OR "software systems" OR "online system" OR "online systems" OR "software application" OR "software applications" OR "system development" OR "systems development" OR "application development" OR "applications development" ) AND ( "DevSecOps" OR "cybersecurity practice" OR "cybersecurity practices" OR "security automation" OR "security automations" OR "secure software development" OR "secure software developments" OR "CI/CD" OR "continuous integration" OR "continuous integrations" OR "continuous deployment" OR "continuous deployments" OR "continuous delivery" OR "continuous deliveries" OR "DevOps" OR "security development culture" OR "security development cultures" ) AND ( "security quality" OR "security qualities" OR "software security" OR "software securities" OR "application security" OR "application securities" OR "security improvement" OR "security improvements" OR "security assurance" OR "security assurances" OR "vulnerability reduction" OR "vulnerability reductions" OR "protection against threat" OR "protection against threats" OR "system security" OR "system securities" OR "OWASP" OR "CWE" OR "common weakness" OR "common weaknesses" ) )
+    \textit{TITLE-ABS-KEY ( ( "software development" OR "software developments" OR "software system" OR "software systems" OR "online system" OR "online systems" OR "software application" OR "software applications" OR "system development" OR "systems development" OR "application development" OR "applications development" ) AND ( "DevSecOps" OR "cybersecurity practice" OR "cybersecurity practices" OR "security automation" OR "security automations" OR "secure software development" OR "secure software developments" OR "CI/CD" OR "continuous integration" OR "continuous integrations" OR "continuous deployment" OR "continuous deployments" OR "continuous delivery" OR "continuous deliveries" OR "DevOps" OR "security development culture" OR "security development cultures" ) AND ( "security quality" OR "security qualities" OR "software security" OR "software securities" OR "application security" OR "application securities" OR "security improvement" OR "security improvements" OR "security assurance" OR "security assurances" OR "vulnerability reduction" OR "vulnerability reductions" OR "protection against threat" OR "protection against threats" OR "system security" OR "system securities" OR "OWASP" OR "CWE" OR "common weakness" OR "common weaknesses" ) )}
 \end{center}
 
 \section{Seleção dos Artigos}
 
-Com a string de busca criada, foram estabelecidos os critérios de inclusão e exclusão visando selecionar apenas os artigos relacionados ao contexto da pesquisa. 
-Além disso, em primeiro momento, foram lidos o título, resumo e palavras-chave de todos os artigos resultantes da execução da string de busca, isso se deu para
+Com a \textit{string} de busca criada, foram estabelecidos os critérios de inclusão e exclusão visando selecionar apenas os artigos relacionados ao contexto da pesquisa. 
+Além disso, em primeiro momento, foram lidos o título, resumo e palavras-chave de todos os artigos resultantes da execução da \textit{string} de busca, isso se deu para
 selecionar com maior rigor aqueles estudos que por ventura não correspondessem ao objetivo do trabalho. Posteriormente, os artigos que aprovados pelos critérios de escolha
 foram lidos e os dados relevantes para a formulação das respostas das perguntas de pesquisa foram extraídos em um formulário. A Tabela 3 e Tabela 4 contém o protocolo completo.
 
-Ao todo foram analisados 291 artigos resultantes da string de busca, desses 38 foram aceitos e lidos de maneira integral, sendo que esses artigos foram obtidos na base de dados \citeonline{Scopus2025} no dia 7 de maio de 2025. Afim de complementar os artigos selecionados de forma automatizada
-foi realizada uma busca manual com o objetivo de responder de maneira mais acertiva as perguntas de pesquisa, resultando em mais dois artigos, Accelerate State of DevOps 2024 (DORA, 2024) e Quantitative DevSecOps Metrics for Cloud-Based Web Microservices \cite{Zhang2024160317}, usados para compor o referencial teórico, totalizando 40 artigos.
+Ao todo foram analisados 291 artigos resultantes da \textit{string} de busca, desses 38 foram aceitos e lidos de maneira integral, sendo que esses artigos foram obtidos na base de dados \citeonline{Scopus2025} no dia 7 de maio de 2025. Afim de complementar os artigos selecionados de forma automatizada
+foi realizada uma busca manual com o objetivo de responder de maneira mais acertiva as perguntas de pesquisa, resultando em mais dois artigos, \textit{Accelerate State of DevOps 2024} \cite{DORA2024} e \textit{Quantitative DevSecOps Metrics for Cloud-Based Web Microservices} \cite{Zhang2024160317}, usados para compor o referencial teórico, totalizando 40 artigos.
 Os artigos selecionados estão dispostos nas Tabela 5, 6, 7 e 8. Para facilitar a compreensão do protocolo de seleção de artigos pode-se verificar a Figura 5, que ilustra todas as etapas explanadas anteriormente.
 
 \begin{table}[h]
@@ -297,24 +297,24 @@ Nas subseções a seguir são apresentadas as respostas para as perguntas de pes
 \begin{itemize}
     \item Metodologias e Cultura
     \begin{itemize}
-        \item Shift Security Left: É o princípio fundamental do DevSecOps. Ele consiste em deslocar as práticas de segurança para o início do processo de desenvolvimento do projeto, em vez de deixá-las para o final, como acontece na maioria dos casos. Essa postura eleva a prioridade da segurança no projeto, permitindo que as vulnerabilidades sejam tratadas mais cedo \cite{Rajapakse2022}.
-        \item Continuos Vulnerability Assessment: Juntamente com Shift Left, a Avaliação Contínua de Vulnerabilidades forma os pilares do DevSecOps. Nessa prática a segurança do software é continuamente verificada, não somente durante o desenvolvimento, mas também após a implantação do software, pois é necessário monitorar a segurança do sistema durante todo o seu ciclo de vida \cite{Rajapakse2022}.
-        \item CI/CD: Continuous Integration (CI) e Continuous Delivery/Deployment (CD) integram o DevSecOps, que se trata de uma evolução do DevOps. Como esses conceitos são herdados, é importante defini-los para o completo entendimento da metodologia. CI se refere à prática de realizar continuamente integrações de código na branch principal do código. Como essa atividade envolve a alteração da ramificação principal, ela é validada por meio de verificadores de build e testes automatizados. Já o CD visa à implantação automática e contínua das atualizações de código no ambiente de produção. Para isso, o novo código passa por verificações de qualidade e, se tudo estiver de acordo com a política estabelecida, é publicado sem intervenção humana por meio do pipeline \cite{Rajapakse2022}.
-        \item Continuous Feedback: Obter feedback de maneira contínua e rápida é vital em ambientes de entrega contínua. Nessa abordagem, os problemas são rapidamente identificados, possibilitando que as informações cheguem depressa às equipes para que as medidas necessárias sejam tomadas. Os métodos tradicionais de coleta de dados e feedback são lentos demais para a agilidade requisitada em ambientes DevSecOps, e essa lentidão afeta diretamente a velocidade de localização e resolução dos problemas \cite{Rajapakse2022}.
+        \item \textit{Shift Security Left}: É o princípio fundamental do \textit{DevSecOps}. Ele consiste em deslocar as práticas de segurança para o início do processo de desenvolvimento do projeto, em vez de deixá-las para o final, como acontece na maioria dos casos. Essa postura eleva a prioridade da segurança no projeto, permitindo que as vulnerabilidades sejam tratadas mais cedo \cite{Rajapakse2022}.
+        \item \textit{Continuos Vulnerability Assessment}: Juntamente com \textit{Shift Left}, a Avaliação Contínua de Vulnerabilidades forma os pilares do \textit{DevSecOps}. Nessa prática a segurança do \textit{software} é continuamente verificada, não somente durante o desenvolvimento, mas também após a implantação do \textit{software}, pois é necessário monitorar a segurança do sistema durante todo o seu ciclo de vida \cite{Rajapakse2022}.
+        \item \textit{CI/CD}: \textit{Continuous Integration} (\textit{CI}) e \textit{Continuous Delivery/Deployment} (\textit{CD}) integram o \textit{DevSecOps}, que se trata de uma evolução do \textit{DevOps}. Como esses conceitos são herdados, é importante defini-los para o completo entendimento da metodologia. \textit{CI} se refere à prática de realizar continuamente integrações de código na \textit{branch} principal do código. Como essa atividade envolve a alteração da ramificação principal, ela é validada por meio de verificadores de \textit{build} e testes automatizados. Já o \textit{CD} visa à implantação automática e contínua das atualizações de código no ambiente de produção. Para isso, o novo código passa por verificações de qualidade e, se tudo estiver de acordo com a política estabelecida, é publicado sem intervenção humana por meio do \textit{pipeline} \cite{Rajapakse2022}.
+        \item \textit{Continuous Feedback}: Obter \textit{feedback} de maneira contínua e rápida é vital em ambientes de entrega contínua. Nessa abordagem, os problemas são rapidamente identificados, possibilitando que as informações cheguem depressa às equipes para que as medidas necessárias sejam tomadas. Os métodos tradicionais de coleta de dados e \textit{feedback} são lentos demais para a agilidade requisitada em ambientes \textit{DevSecOps}, e essa lentidão afeta diretamente a velocidade de localização e resolução dos problemas \cite{Rajapakse2022}.
     \end{itemize}
     \item Testes de Segurança
     \begin{itemize}
-        \item SAST, DAST, IAST: Ferramentas SAST executam testes estáticos, ou seja, são realizados apenas sobre o código-fonte, podendo indicar potenciais vulnerabilidades e más práticas, conhecidas como code smells. Por outro lado, as ferramentas DAST analisam o software em execução, o que possibilita testar o comportamento do sistema em uso. As ferramentas IAST, por sua vez, fornecem uma abordagem híbrida, incorporando características da análise estática e dinâmica; são modernas e possuem boa integração com ambientes de desenvolvimento contínuo \cite{Rajapakse2022}. 
-        \item Fuzz Testing: O teste de fuzzing, como também é conhecido, destaca-se entre as práticas de teste de segurança. Ele consiste em fornecer à aplicação entradas aleatórias, inválidas e inesperadas, de forma a verificar possíveis casos de borda não testados \cite{Masood2015}.
-        \item BDST: Os testes BDST são baseados no BDD, porém aplicados ao contexto de testes de segurança. Como os testes descrevem seu comportamento em linguagem natural, pessoas de fora da área de desenvolvimento e segurança de software conseguem compreender os testes realizados \cite{Rangnau2020145}.
+        \item \textit{SAST, DAST, IAST}: Ferramentas \textit{SAST} executam testes estáticos, ou seja, são realizados apenas sobre o código-fonte, podendo indicar potenciais vulnerabilidades e más práticas, conhecidas como \textit{code smells}. Por outro lado, as ferramentas \textit{DAST} analisam o \textit{software} em execução, o que possibilita testar o comportamento do sistema em uso. As ferramentas \textit{IAST}, por sua vez, fornecem uma abordagem híbrida, incorporando características da análise estática e dinâmica; são modernas e possuem boa integração com ambientes de desenvolvimento contínuo \cite{Rajapakse2022}. 
+        \item \textit{Fuzz Testing}: O teste de \textit{fuzzing}, como também é conhecido, destaca-se entre as práticas de teste de segurança. Ele consiste em fornecer à aplicação entradas aleatórias, inválidas e inesperadas, de forma a verificar possíveis casos de borda não testados \cite{Masood2015}.
+        \item \textit{BDST}: Os testes \textit{BDST} são baseados no \textit{BDD}, porém aplicados ao contexto de testes de segurança. Como os testes descrevem seu comportamento em linguagem natural, pessoas de fora da área de desenvolvimento e segurança de \textit{software} conseguem compreender os testes realizados \cite{Rangnau2020145}.
     \end{itemize}
     \item Infraestrutura
     \begin{itemize}
-        \item IaC: Essa prática consiste em definir a infraestrutura do projeto como código. É altamente usada em contextos DevSecOps, pois possibilita a rápida configuração da infraestrutura. Como está definida em código, pode-se realizar seu versionamento, teste e implantação de forma ágil e adequada a ambientes complexos que necessitam de segurança robusta \cite{Rajapakse2022}.
+        \item \textit{IaC}: Essa prática consiste em definir a infraestrutura do projeto como código. É altamente usada em contextos \textit{DevSecOps}, pois possibilita a rápida configuração da infraestrutura. Como está definida em código, pode-se realizar seu versionamento, teste e implantação de forma ágil e adequada a ambientes complexos que necessitam de segurança robusta \cite{Rajapakse2022}.
     \end{itemize}
     \item Acompanhamento
     \begin{itemize}
-        \item Monitoring e Logging: Muitas vezes, o registro e a documentação dos eventos relacionados à segurança são negligenciados pelas equipes, o que consiste em um grande erro. Registrar e monitorar fornece um feedback valioso que pode ser utilizado para tomar decisões estratégicas ou realizar auditorias \cite{Rajapakse2022}.
+        \item \textit{Monitoring} e \textit{Logging}: Muitas vezes, o registro e a documentação dos eventos relacionados à segurança são negligenciados pelas equipes, o que consiste em um grande erro. Registrar e monitorar fornece um \textit{feedback} valioso que pode ser utilizado para tomar decisões estratégicas ou realizar auditorias \cite{Rajapakse2022}.
     \end{itemize}
 \end{itemize}
 
@@ -322,15 +322,15 @@ Nas subseções a seguir são apresentadas as respostas para as perguntas de pes
 
 \subsection{Which security models are most commonly employed in DevSecOps environments?}
 \begin{itemize}
-    \item OWASP SAMM: O Software Assurance Maturity Model é um modelo prescritivo de maturidade de segurança de software, ou seja, ele informa quais atividades precisam ser realizadas, diferentemente de um modelo descritivo, que apenas descreve as atividades. Sua estrutura é adequada para diferentes tipos e tamanhos de empresas, bem como para distintas metodologias de desenvolvimento, como cascata e ágil \cite{Lange2024}.
-    \item OWASP DSOMM: Embora baseado no SAMM, o DevSecOps Maturity Model nasce devido à necessidade de um modelo adequado para ambientes DevOps, onde a segurança é parte essencial do ciclo de vida. Também é prescritivo, mas, diferentemente do SAMM, suas atividades são definidas em um nível mais próximo do programador do que da gestão. Desse modo, ele fornece com detalhes técnicos os requisitos necessários para atingir cada um dos níveis de maturidade em suas diferentes dimensões \cite{Lange2024}.
-    \item BSIMM: Diferentemente dos outros, este é um modelo descritivo, ou seja, ele descreve atividades sem exigir que sejam implementadas. Outra diferença fundamental é que se trata de um modelo proprietário, mantido pela Synopsys. A aplicação do modelo, bem como sua metodologia de avaliação, só estão disponíveis mediante contratação dos serviços da empresa \cite{Lange2024}.
+    \item \textit{OWASP SAMM}: O \textit{Software Assurance Maturity Model} é um modelo prescritivo de maturidade de segurança de \textit{software}, ou seja, ele informa quais atividades precisam ser realizadas, diferentemente de um modelo descritivo, que apenas descreve as atividades. Sua estrutura é adequada para diferentes tipos e tamanhos de empresas, bem como para distintas metodologias de desenvolvimento, como cascata e ágil \cite{Lange2024}.
+    \item \textit{OWASP DSOMM}: Embora baseado no \textit{SAMM}, o \textit{DevSecOps Maturity Model} nasce devido à necessidade de um modelo adequado para ambientes \textit{DevOps}, onde a segurança é parte essencial do ciclo de vida. Também é prescritivo, mas, diferentemente do \textit{SAMM}, suas atividades são definidas em um nível mais próximo do programador do que da gestão. Desse modo, ele fornece com detalhes técnicos os requisitos necessários para atingir cada um dos níveis de maturidade em suas diferentes dimensões \cite{Lange2024}.
+    \item \textit{BSIMM}: Diferentemente dos outros, este é um modelo descritivo, ou seja, ele descreve atividades sem exigir que sejam implementadas. Outra diferença fundamental é que se trata de um modelo proprietário, mantido pela \textit{Synopsys}. A aplicação do modelo, bem como sua metodologia de avaliação, só estão disponíveis mediante contratação dos serviços da empresa \cite{Lange2024}.
 \end{itemize}
 
 
 \subsection{Which measures are commonly used for security evaluation?}
 \begin{itemize}
-    \item Métricas de Zhang: Segundo \citeonline{Zhang2024160317}, medir de forma eficaz as características de softwares web é fundamental, porém pouco explorado. Para resolver este problema, eles realizaram uma revisão sistemática da literatura e definiram doze métricas voltadas a atender às necessidades dos sistemas web que usam DevSecOps. Elas permitem quantificar o desempenho do serviço, a segurança e a eficiência da operação, apoiando, assim, as tomadas de decisão e a melhoria contínua das práticas.  
+    \item Métricas de Zhang: Segundo \citeonline{Zhang2024160317}, medir de forma eficaz as características de \textit{softwares web} é fundamental, porém pouco explorado. Para resolver este problema, eles realizaram uma revisão sistemática da literatura e definiram doze métricas voltadas a atender às necessidades dos sistemas \textit{web} que usam \textit{DevSecOps}. Elas permitem quantificar o desempenho do serviço, a segurança e a eficiência da operação, apoiando, assim, as tomadas de decisão e a melhoria contínua das práticas.  
     \begin{itemize}
         \item Non-Comment Lines of Code: Tamanho do código-fonte, excluindo comentários e linhas em branco.
         \item Design Defect Ratio: Proporção de defeitos de design em relação às linhas de código não comentadas.
@@ -345,7 +345,7 @@ Nas subseções a seguir são apresentadas as respostas para as perguntas de pes
         \item Throughput: Mede a capacidade de processamento de um serviço.
         \item Errors Per Time Unit: Taxa de erros em determinada unidade de tempo.
     \end{itemize}   
-    \item Métricas DORA: O DevOps Research and Assessment (DORA) é um dos principais programas de pesquisa do mundo na área de DevOps. Esse programa, que faz parte do Google, chegou, após anos de estudos, a quatro métricas-chave para medir os aspectos de DevOps de um projeto. Suas métricas passam por uma avaliação estatística rigorosa para possibilitar o entendimento da relação entre as medições e o sucesso das organizações (DORA, 2024). 
+    \item Métricas DORA: O DevOps Research and Assessment (DORA) é um dos principais programas de pesquisa do mundo na área de DevOps. Esse programa, que faz parte do Google, chegou, após anos de estudos, a quatro métricas-chave para medir os aspectos de DevOps de um projeto. Suas métricas passam por uma avaliação estatística rigorosa para possibilitar o entendimento da relação entre as medições e o sucesso das organizações \cite{DORA2024}. 
     \begin{itemize}
         \item Change lead time: Tempo que uma alteração leva para chegar à produção.
         \item Deployment frequency: Frequência com que as alterações chegam à produção.
@@ -366,11 +366,11 @@ Por fim, podem-se usar modelos de avaliação de maturidade, pois eles introduze
 
 As medidas de segurança são avaliadas de diversas formas dentro das organizações. Uma das principais é a análise da repercussão das métricas de segurança nos KPIs da organização. KPIs (Indicadores-Chave de Desempenho) são as métricas centrais que medem a saúde dos projetos. É crucial criar alertas e dashboards para acompanhar o desenvolvimento das métricas e KPIs, pois, assim, pode-se obter insights de como as métricas de segurança impactam nos indicadores da empresa, além de possibilitar o rastreio das métricas durante todo o período em que foram monitoradas \cite{Joshi20247}.
 
-Outra maneira de avaliar as medidas de segurança está relacionada ao quanto elas se adequam ao compliance da organização ou a aspectos regulatórios. Muitas vezes, as empresas precisam seguir rígidos padrões de conformidade relacionados às métricas — como a cobertura de testes, que, dependendo da área, precisa ser extremamente alta —, bem como em setores financeiros, onde uma falha de segurança pode gerar um prejuízo bilionário \cite{Kudriavtseva20241223}.
+Outra maneira de avaliar as medidas de segurança está relacionada ao quanto elas se adequam ao \textit{compliance} da organização ou a aspectos regulatórios. Muitas vezes, as empresas precisam seguir rígidos padrões de conformidade relacionados às métricas — como a cobertura de testes, que, dependendo da área, precisa ser extremamente alta —, bem como em setores financeiros, onde uma falha de segurança pode gerar um prejuízo bilionário \cite{Kudriavtseva20241223}.
 
 \subsection{What types of vulnerabilities are mitigated by DevSecOps practices?	}
 
-Existem diversos tipos de falhas de segurança que podem ocorrer durante o processo de desenvolvimento de software, entre elas, falhas que podem extrapolar o escopo do trabalho, como as relacionadas ao hardware utilizado. Por esse motivo, é necessário entender quais problemas de segurança são afetados pelas práticas DevSecOps, pois, desse modo, será possível analisar de forma mais assertiva a repercussão da adoção dessa metodologia na qualidade da segurança. Assim, na Tabela 9, foram elencadas as principais vulnerabilidades impactadas por esse paradigma.
+Existem diversos tipos de falhas de segurança que podem ocorrer durante o processo de desenvolvimento de \textit{software}, entre elas, falhas que podem extrapolar o escopo do trabalho, como as relacionadas ao \textit{hardware} utilizado. Por esse motivo, é necessário entender quais problemas de segurança são afetados pelas práticas \textit{DevSecOps}, pois, desse modo, será possível analisar de forma mais assertiva a repercussão da adoção dessa metodologia na qualidade da segurança. Assim, na Tabela 9, foram elencadas as principais vulnerabilidades impactadas por esse paradigma.
 
 \begin{table}[h]
     \centering

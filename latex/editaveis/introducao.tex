@@ -1,13 +1,13 @@
 \chapter[Introdução]{Introdução}
 
 Este capítulo introduz os conceitos fundamentais que norteiam este trabalho: 
-experimentação em Engenharia de Software, segurança de produtos de software e DevSecOps. 
+experimentação em Engenharia de \textit{Software}, segurança de produtos de \textit{software} e \textit{DevSecOps}. 
 Adicionalmente, são apresentados o escopo do problema, a questão de pesquisa que guia a investigação 
 e a estrutura geral do documento e das atividades.
 
 \section{Contexto}
 
-Avaliar os fatores de qualidade de um software é de suma importância no desenvolvimento de software e, 
+Avaliar os fatores de qualidade de um \textit{software} é de suma importância no desenvolvimento de \textit{software} e, 
 para isso, faz-se necessária a utilização de um modelo que guie a avaliação, de forma a sistematizar o 
 processo e reduzir subjetividades \cite{Siavvas2021431}. Nesse sentido, o modelo proposto por 
 \citeonline{McCall1977} foi o primeiro modelo hierárquico para analisar a qualidade, 
@@ -33,43 +33,43 @@ ferramentas que ofereçam uma abordagem numérica para medir a segurança, por m
 do seu cálculo e do estabelecimento de valores de referência para avaliá-las.
 
 
-O DevOps é um paradigma que visa remover as barreiras entre os times de desenvolvimento e operações, 
+O \textit{DevOps} é um paradigma que visa remover as barreiras entre os times de desenvolvimento e operações, 
 a fim de construir um ambiente colaborativo e integrado \cite{Rajapakse2022}. Seu objetivo é reduzir o ciclo 
-de vida do desenvolvimento de software, permitindo entregas mais frequentes. As principais práticas de 
-DevOps são a Integração Contínua (CI), que consiste em integrar o código desenvolvido na ramificação 
-principal com validação de build e testes de forma automática para detectar falhas, e a Entrega/Implantação
-Contínua (CD), que consiste em deixar o software pronto para entrar em produção e realizar o seu 
+de vida do desenvolvimento de \textit{software}, permitindo entregas mais frequentes. As principais práticas de 
+\textit{DevOps} são a Integração Contínua (\textit{CI}), que consiste em integrar o código desenvolvido na ramificação 
+principal com validação de \textit{build} e testes de forma automática para detectar falhas, e a Entrega/Implantação
+Contínua (\textit{CD}), que consiste em deixar o \textit{software} pronto para entrar em produção e realizar o seu 
 lançamento de forma automatizada \cite{Rajapakse2022}.
 
-Já o DevSecOps integra os princípios e práticas do DevOps, adicionando o time de segurança ao processo. 
-Esse paradigma implementa uma abordagem de segurança chamada Shift-Left, na qual os processos de segurança
+Já o \textit{DevSecOps} integra os princípios e práticas do \textit{DevOps}, adicionando o time de segurança ao processo. 
+Esse paradigma implementa uma abordagem de segurança chamada \textit{Shift-Left}, na qual os processos de segurança
 são realizados desde o início do desenvolvimento, com o objetivo de evitar problemas decorrentes de uma 
 avaliação tardia. Além disso é formado por práticas de segurança como treinamento da equipe, 
-testes de segurança automatizados e feedback contínuo \cite{Rajapakse2022}.
+testes de segurança automatizados e \textit{feedback} contínuo \cite{Rajapakse2022}.
 
-Nesse sentido, o modelo de maturidade de segurança OWASP DSOMM (DevSecOps Maturity Model) é uma importante 
-ferramenta na construção e avaliação de projetos DevSecOps. Ele define atividades, métricas e tecnologias 
-que devem ser usadas para construir um ambiente DevSecOps, além de proporcionar o acompanhamento da 
-maturidade da segurança do projeto em cinco dimensões: Build and Deployment, Culture and Organization, 
-Implementation, Information Gathering e Test and Verification \cite{Lange2024}.
+Nesse sentido, o modelo de maturidade de segurança OWASP DSOMM (\textit{DevSecOps Maturity Model}) é uma importante 
+ferramenta na construção e avaliação de projetos \textit{DevSecOps}. Ele define atividades, métricas e tecnologias 
+que devem ser usadas para construir um ambiente \textit{DevSecOps}, além de proporcionar o acompanhamento da 
+maturidade da segurança do projeto em cinco dimensões: \textit{Build and Deployment}, \textit{Culture and Organization}, 
+\textit{Implementation}, \textit{Information Gathering} e \textit{Test and Verification} \cite{Lange2024}.
 
 \section{Problema}
 
-Medir a segurança de software representa um grande desafio \cite{Rajapakse2022}. A literatura atual carece de modelos que apresentem 
+Medir a segurança de \textit{software} representa um grande desafio \cite{Rajapakse2022}. A literatura atual carece de modelos que apresentem 
 formas sistematizadas de avaliação da segurança; frequentemente, os métodos são baseados em critérios 
 subjetivos, como a análise manual por especialistas, e não possuem validação empírica, o que afeta a 
 confiabilidade dos resultados \cite{Siavvas2021431}.
 
-No contexto DevOps, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
+No contexto \textit{DevOps}, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
 são impraticáveis devido à velocidade das entregas \cite{Rajapakse2022}. A medicao da seguranca se torna ainda
 mais desafiador ao lidar ciclos continuos de lançamento. A segurança é uma propriedade multifacetada, 
 emergente e dependente do contexto, o que complica sua quantificação \cite{Kudriavtseva20241223}.
 
 \section{Questão de Pesquisa}
 
-A definição da questão de pesquisa foi elaborada utilizando a abordagem Goal 
-Question Metric (GQM). Essa é uma abordagem que tem como objetivo definir, de 
-maneira top-down e hierárquica, os objetivos a serem alcançados, as perguntas a 
+A definição da questão de pesquisa foi elaborada utilizando a abordagem \textit{Goal 
+Question Metric} (GQM). Essa é uma abordagem que tem como objetivo definir, de 
+maneira \textit{top-down} e hierárquica, os objetivos a serem alcançados, as perguntas a 
 serem respondidas para cumprir tais objetivos e as métricas necessárias para 
 responder a cada pergunta de forma quantitativa, como mostra a Figura 1. Essa 
 estrutura foi adaptada para o contexto da pesquisa, conforme a Tabela 1, 
@@ -82,7 +82,7 @@ resultando na seguinte questão:
         \hline
         \textbf{Característica} & \textbf{Valor} \\
         \hline
-        Analisar & A característica de qualidade de produto de software: \textbf{segurança} \\
+        Analisar & A característica de qualidade de produto de \textit{software}: \textbf{segurança} \\
         \hline
         Subcaracterísticas & Confidencialidade, integridade, autenticidade, responsabilidade, etc. \\
         \hline
@@ -90,11 +90,11 @@ resultando na seguinte questão:
         \hline
         Com o propósito de & Caracterizar \\
         \hline
-        Com respeito a & Desenvolvimento e operação de produtos de software seguros (DevSecOps) \\
+        Com respeito a & Desenvolvimento e operação de produtos de \textit{software} seguros (DevSecOps) \\
         \hline
         Do ponto de vista de & Pesquisador \\
         \hline
-        No contexto de & Desenvolvimento de aplicações web seguras (software livre, organizações públicas e privadas) \\
+        No contexto de & Desenvolvimento de aplicações web seguras (\textit{software} livre, organizações públicas e privadas) \\
         \hline
     \end{tabular} \\[0.5em]
    	Fonte: Adaptado de \citeonline{Basili1994}
@@ -102,7 +102,7 @@ resultando na seguinte questão:
 \end{table}
 
 \begin{center}
-Como analisar a característica de segurança no desenvolvimento contínuo de sistemas web, considerando as 
+Como analisar a característica de segurança no desenvolvimento contínuo de sistemas \textit{web}, considerando as 
 visões de qualidade interna e externa? 
 \end{center}
 
@@ -122,10 +122,10 @@ e externa de um produto de software, por meio de uma análise quantitativa. Para
 foram definidos os seguintes objetivos específicos:
 
 \begin{itemize}
-    \item Fundamentar teoricamente os conceitos de DevSecOps, modelos de segurança e metodologias de desenvolvimento seguro.
-    \item Incorporar um conjunto de práticas DevSecOps ao ciclo de desenvolvimento do produto de software sob análise.
+    \item Fundamentar teoricamente os conceitos de \textit{DevSecOps}, modelos de segurança e metodologias de desenvolvimento seguro.
+    \item Incorporar um conjunto de práticas \textit{DevSecOps} ao ciclo de desenvolvimento do produto de \textit{software} sob análise.
     \item Planejar um estudo de caso focado na observação das práticas implementadas.
-    \item Conduzir o estudo de caso, realizando a coleta e a análise das métricas de qualidade de software.
+    \item Conduzir o estudo de caso, realizando a coleta e a análise das métricas de qualidade de \textit{software}.
     \item Apresentar as conclusões e os insights resultantes desta investigação.
 \end{itemize}
 
@@ -136,7 +136,7 @@ A seguir, são apresentados os capítulos que compõem a estrutura deste trabalh
 \begin{itemize}
     \item Introdução: apresenta a contextualização do trabalho, o problema de pesquisa, a definição da questão de pesquisa e dos objetivos do trabalho. Por fim, descreve a estrutura das atividades realizadas.
     \item Revisão Estruturada da Literatura: explicita o processo empregado para seleção que fundamentam este trabalho incluindo o protocolo de pesquisa e filtragem dos estudos e os resultados obtidos.
-    \item Referencial Teórico: estabelece a fundamentação teórica da monografia, abordando os tópicos centrais da pesquisa: DevSecOps, qualidade de software, segurança de software e modelos de avaliação de maturidade.
+    \item Referencial Teórico: estabelece a fundamentação teórica da monografia, abordando os tópicos centrais da pesquisa: \textit{DevSecOps}, qualidade de \textit{software}, segurança de \textit{software} e modelos de avaliação de maturidade.
     \item Estudo de caso: descreve o protocolo utilizado para a condução do estudo de caso, detalhando seus objetivos, perguntas de pesquisa, atividades e resultados alcançados.
     \item Conclusão: consolida os achados obtidos ao final do estudo e como esses resultados respondem à questão de pesquisa principal, bem como as limitações do estudo e as possibilidades de aprofundamento de trabalhos futuros.
 \end{itemize}
@@ -166,9 +166,9 @@ fluxo das atividades, enquanto a Figura 3 apresenta o cronograma correspondente.
 \end{figure}
 
 \begin{itemize}
-    \item Contextualização sobre Engenharia de Software Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de Software, como revisão sistemática da literatura, survey, experimentos e estudo de caso, fundamentais para a condução do trabalho \cite{Wohlin2024}.
-    \item Definição do GQM: Aplicação da abordagem Goal Question Metric (GQM) para a construção da questão principal de pesquisa, suas subquestões e as métricas que orientarão a revisão da literatura \cite{Basili1994}.
-    \item Elaboração do Protocolo de Revisão: Estruturação de um protocolo de revisão sistemática da literatura para pesquisar, selecionar e analisar os artigos \cite{KITCHENHAM20132049}. Este processo inclui a definição da string de busca (baseada no framework PICO), a elaboração de sinônimos, a definição dos critérios de inclusão e exclusão e o método para extração de dados.
+    \item Contextualização sobre Engenharia de \textit{Software} Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de \textit{Software}, como revisão sistemática da literatura, \textit{survey}, experimentos e estudo de caso, fundamentais para a condução do trabalho \cite{Wohlin2024}.
+    \item Definição do GQM: Aplicação da abordagem \textit{Goal Question Metric} (GQM) para a construção da questão principal de pesquisa, suas subquestões e as métricas que orientarão a revisão da literatura \cite{Basili1994}.
+    \item Elaboração do Protocolo de Revisão: Estruturação de um protocolo de revisão sistemática da literatura para pesquisar, selecionar e analisar os artigos \cite{KITCHENHAM20132049}. Este processo inclui a definição da string de busca (baseada no \textit{framework} PICO), a elaboração de sinônimos, a definição dos critérios de inclusão e exclusão e o método para extração de dados.
     \item Seleção dos Artigos: Execução da filtragem dos estudos por meio da leitura de títulos, resumos e palavras-chave, com a aplicação dos critérios de inclusão e exclusão definidos.
     \item Análise do Material Selecionado: Leitura completa dos artigos selecionados para aprofundar o conhecimento sobre o estado da arte em métodos de avaliação de segurança de sistemas web e práticas de desenvolvimento seguro.
     \item Definição da Proposta de Solução: Definição os modelos de segurança, as ferramentas e as atividades do estudo de caso.
@@ -176,3 +176,4 @@ fluxo das atividades, enquanto a Figura 3 apresenta o cronograma correspondente.
     \item Revisão: Realização das correções e dos ajustes solicitados pelo orientador.
     \item Defesa: Preparação do material e apresentação do trabalho final para a banca examinadora.
 \end{itemize}
+
