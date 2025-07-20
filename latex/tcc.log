@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  20 JUL 2025 05:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  20 JUL 2025 07:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -874,12 +874,9 @@ l.2 E
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [24
 
-]) (./fixos/indiceAutomatico.tex (./tcc.toc
-Underfull \vbox (badness 2547) has occurred while \output is active []
-
- [25]
+]) (./fixos/indiceAutomatico.tex (./tcc.toc [25]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 51.
+(Font)              <14.4> on input line 59.
 ) [26]) (./editaveis/introducao.tex
 Overfull \hbox (15.71564pt too wide) in paragraph at lines 25--29
 []\T1/lmr/m/n/12 Como pa-drão in-ter-na-ci-o-nal de se-gu-rança da in-for-ma-ção, tem-se a [][]ISO/IEC 27001:2022[][]
@@ -892,7 +889,7 @@ Overfull \hbox (15.71564pt too wide) in paragraph at lines 25--29
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-<figuras/GQM.png, id=358, 542.025pt x 157.33781pt>
+<figuras/GQM.png, id=380, 542.025pt x 157.33781pt>
 File: figuras/GQM.png Graphic file (type png)
 <use figuras/GQM.png>
 Package pdftex.def Info: figuras/GQM.png  used on input line 112.
@@ -901,7 +898,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 12
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [29 <./figuras/GQM.png (PNG copy)>]
-<figuras/fluxo-atividades.png, id=367, 1445.4pt x 813.0375pt>
+<figuras/fluxo-atividades.png, id=389, 1445.4pt x 813.0375pt>
 File: figuras/fluxo-atividades.png Graphic file (type png)
 <use figuras/fluxo-atividades.png>
 Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 153.
@@ -910,7 +907,7 @@ Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 153.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/cronograma.png, id=368, 1445.4pt x 813.0375pt>
+<figuras/cronograma.png, id=390, 1445.4pt x 813.0375pt>
 File: figuras/cronograma.png Graphic file (type png)
 <use figuras/cronograma.png>
 Package pdftex.def Info: figuras/cronograma.png  used on input line 162.
@@ -923,7 +920,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ] [34
 
 ]
-<figuras/pico.png, id=405, 551.05875pt x 383.18156pt>
+<figuras/pico.png, id=427, 551.05875pt x 383.18156pt>
 File: figuras/pico.png Graphic file (type png)
 <use figuras/pico.png>
 Package pdftex.def Info: figuras/pico.png  used on input line 25.
@@ -1075,7 +1072,7 @@ Overfull \hbox (36.01765pt too wide) in paragraph at lines 252--272
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/fluxograma-artigos.png, id=432, 770.88pt x 578.16pt>
+<figuras/fluxograma-artigos.png, id=454, 770.88pt x 578.16pt>
 File: figuras/fluxograma-artigos.png Graphic file (type png)
 <use figuras/fluxograma-artigos.png>
 Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 280.
@@ -1084,7 +1081,7 @@ Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 280.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/volume-anual-artigos.png, id=527, 451.6875pt x 301.125pt>
+<figuras/volume-anual-artigos.png, id=549, 451.6875pt x 301.125pt>
 File: figuras/volume-anual-artigos.png Graphic file (type png)
 <use figuras/volume-anual-artigos.png>
 Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 430.
@@ -1092,7 +1089,7 @@ Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 43
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/artigos-publicados.png, id=529, 451.6875pt x 321.2pt>
+<figuras/artigos-publicados.png, id=551, 451.6875pt x 321.2pt>
 File: figuras/artigos-publicados.png Graphic file (type png)
 <use figuras/artigos-publicados.png>
 Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 444.
@@ -1101,7 +1098,7 @@ Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 444.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [43]
-<figuras/quantidade-experimental.png, id=534, 842.14626pt x 562.1pt>
+<figuras/quantidade-experimental.png, id=556, 842.14626pt x 562.1pt>
 File: figuras/quantidade-experimental.png Graphic file (type png)
 <use figuras/quantidade-experimental.png>
 Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 458.
@@ -1110,7 +1107,7 @@ Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/tipos-validacao.png, id=535, 451.6875pt x 301.125pt>
+<figuras/tipos-validacao.png, id=557, 451.6875pt x 301.125pt>
 File: figuras/tipos-validacao.png Graphic file (type png)
 <use figuras/tipos-validacao.png>
 Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 471.
@@ -1119,43 +1116,67 @@ Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 471.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44 <./figuras/volume-anual-artigos.png>] [45 <./figuras/artigos-publicados.png>] [46] [47] [48] [49] [50] [51] [52 <./figuras/quantidade-experimental.png> <./figuras/tipos-validacao.png>]) (./tcc.bbl (./tcc.brf)
+[44 <./figuras/volume-anual-artigos.png>] [45 <./figuras/artigos-publicados.png>] [46] [47] [48] [49] [50] [51] [52 <./figuras/quantidade-experimental.png> <./figuras/tipos-validacao.png>] [53
+
+]
+<figuras/arquitetura-geral.png, id=652, 778.5888pt x 316.0608pt>
+File: figuras/arquitetura-geral.png Graphic file (type png)
+<use figuras/arquitetura-geral.png>
+Package pdftex.def Info: figuras/arquitetura-geral.png  used on input line 31.
+(pdftex.def)             Requested size: 409.49722pt x 166.23341pt.
+<figuras/arquitetura-backend.png, id=653, 619.113pt x 237.5274pt>
+File: figuras/arquitetura-backend.png Graphic file (type png)
+<use figuras/arquitetura-backend.png>
+Package pdftex.def Info: figuras/arquitetura-backend.png  used on input line 47.
+(pdftex.def)             Requested size: 409.49722pt x 157.10925pt.
+ [54 <./figuras/arquitetura-geral.png>]
+<figuras/arquitetura-frontend.png, id=658, 778.5888pt x 302.0886pt>
+File: figuras/arquitetura-frontend.png Graphic file (type png)
+<use figuras/arquitetura-frontend.png>
+Package pdftex.def Info: figuras/arquitetura-frontend.png  used on input line 65.
+(pdftex.def)             Requested size: 409.49722pt x 158.88466pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [53
 
-] [54
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [55 <./figuras/arquitetura-backend.png>] [56 <./figuras/arquitetura-frontend.png>]
 bibitemlist
-[55] [56]) (./editaveis/apendices.tex [57] [58
+[57
+
+] [58]) (./editaveis/apendices.tex [59] [60
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[59
+[61
 
-] [60] [61
+] [62] [63
 
-] [62
+] [64
 
-]) (./editaveis/anexos.tex [63] [64
+]) (./editaveis/anexos.tex [65] [66
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[65
+[67
 
-] [66] [67
+] [68] [69
 
-] [68
+] [70
 
-]) (./tcc.ind) [69]
+]) (./tcc.ind) [71]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1173,21 +1194,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: A98547B08BC0268C3CADDC3DF0D01D39;3127.
+(rerunfilecheck)             Checksum: B2776F4777F666A18E8255DF07C88BCB;3178.
  ) 
 Here is how much of TeX's memory you used:
- 17766 strings out of 474222
- 285864 string characters out of 5748734
- 1974975 words of memory out of 5000000
- 39393 multiletter control sequences out of 15000+600000
+ 17811 strings out of 474222
+ 286909 string characters out of 5748734
+ 1973975 words of memory out of 5000000
+ 39425 multiletter control sequences out of 15000+600000
  642534 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,107p,1382b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (71 pages, 2297430 bytes).
+Output written on tcc.pdf (73 pages, 2481248 bytes).
 PDF statistics:
- 1031 PDF objects out of 1200 (max. 8388607)
- 912 compressed objects within 10 object streams
- 222 named destinations out of 1000 (max. 500000)
- 479 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1096 PDF objects out of 1200 (max. 8388607)
+ 972 compressed objects within 10 object streams
+ 235 named destinations out of 1000 (max. 500000)
+ 558 words of extra memory for PDF output out of 10000 (max. 10000000)
 
