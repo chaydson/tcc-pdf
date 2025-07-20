@@ -10,4 +10,118 @@
 {ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}: Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos --- apresenta{\c c}\~ao.
 Rio de Janeiro, 2011. 15~p.}
 
+\bibitem[Basili, Caldiera e Rombach 1994]{Basili1994}
+\abntrefinfo{Basili, Caldiera e Rombach}{BASILI; CALDIERA; ROMBACH}{1994}
+{BASILI, V.~R.; CALDIERA, G.; ROMBACH, H.~D. {The Goal Question Metric Approach}. In:  MARCINIAK, J.~J. (Ed.). \emph{Encyclopedia of Software Engineering}. [S.l.]: Wiley, 1994. v.~1, p. 528--532.}
+
+\bibitem[Boehm 1978]{Boehm1978}
+\abntrefinfo{Boehm}{BOEHM}{1978}
+{BOEHM, B.~W. \emph{{Characteristics of Software Quality}}. [S.l.]: North-Holland, 1978.  (TRW Series of Software Technology).}
+
+\bibitem[{Elsevier} 2025]{Scopus2025}
+\abntrefinfo{{Elsevier}}{{Elsevier}}{2025}
+{{Elsevier}. \emph{{Scopus}}. 2025. Disponível via Portal de Periódicos da CAPES. \url{https://www.scopus.com/}.
+Acesso em: 20 de julho de 2025.}
+
+\bibitem[ISO/IEC 25010:2023 2023]{ISO25010}
+\abntrefinfo{ISO/IEC 25010:2023}{ISO/IEC 25010:2023}{2023}
+{ISO/IEC 25010:2023. \emph{{ISO/IEC 25010:2023 Systems and software engineering --- Systems and software Quality Requirements and Evaluation (SQuaRE) --- System and software quality models}}.
+Geneva, CH, 2023.}
+
+\bibitem[ISO/IEC 27001:2022 2022]{ISO27001}
+\abntrefinfo{ISO/IEC 27001:2022}{ISO/IEC 27001:2022}{2022}
+{ISO/IEC 27001:2022. \emph{{ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection --- Information security management systems --- Requirements}}.
+Geneva, CH, 2022.}
+
+\bibitem[ISO/IEC 9126:2001 2001]{ISO9126}
+\abntrefinfo{ISO/IEC 9126:2001}{ISO/IEC 9126:2001}{2001}
+{ISO/IEC 9126:2001. \emph{{ISO/IEC 9126-1:2001 Software engineering --- Product quality --- Part 1: Quality model}}.
+Geneva, CH, 2001. Esta norma foi descontinuada e substituída pela ISO/IEC 25010:2023.}
+
+\bibitem[Joshi 2024]{Joshi20247}
+\abntrefinfo{Joshi}{JOSHI}{2024}
+{JOSHI, H. A secure software development methodology for enterprise business applications. In:  . [s.n.], 2024. p. 7 – 12. Cited by: 1. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85217554758&doi=10.1109\%2fICODSE63307.2024.10829891&partnerID=40&md5=aa77a0827de37592c910cb0f32cbb0fc}.}
+
+\bibitem[Kitchenham e Brereton 2013]{KITCHENHAM20132049}
+\abntrefinfo{Kitchenham e Brereton}{KITCHENHAM; BRERETON}{2013}
+{KITCHENHAM, B.; BRERETON, P. A systematic review of systematic review process research in software engineering.
+\emph{Information and Software Technology}, v.~55, n.~12, p. 2049--2075, 2013.
+ISSN 0950-5849.
+Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S0950584913001560}.}
+
+\bibitem[Kudriavtseva e Gadyatskaya 2024]{Kudriavtseva20241223}
+\abntrefinfo{Kudriavtseva e Gadyatskaya}{KUDRIAVTSEVA; GADYATSKAYA}{2024}
+{KUDRIAVTSEVA, A.; GADYATSKAYA, O. You cannot improve what you do not measure: A triangulation study of software security metrics. In:  . [s.n.], 2024. p. 1223 – 1232. Cited by: 6; All Open Access, Hybrid Gold Open Access. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85194836591&doi=10.1145\%2f3605098.3635892&partnerID=40&md5=0beecf2d8290ab7b673bdda3b6300a57}.}
+
+\bibitem[Kushwaha, David e Suseela 2024]{Kushwaha2024}
+\abntrefinfo{Kushwaha, David e Suseela}{KUSHWAHA; DAVID; SUSEELA}{2024}
+{KUSHWAHA, M.~K.; DAVID, P.; SUSEELA, G. Automation and devsecops: Streamlining security measures in financial system. In:  . [s.n.], 2024. Cited by: 0. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85205770194&doi=10.1109\%2fCONECCT62155.2024.10677271&partnerID=40&md5=6dd76e3d104de49d5559093b3f58c303}.}
+
+\bibitem[Lange e Kunz 2024]{Lange2024}
+\abntrefinfo{Lange e Kunz}{LANGE; KUNZ}{2024}
+{LANGE, F.; KUNZ, I. Evolution of secure development lifecycles and maturity models in the context of hosted solutions.
+\emph{Journal of Software: Evolution and Process}, v.~36, n.~12, 2024.
+Cited by: 0; All Open Access, Hybrid Gold Open Access.
+Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85200057398&doi=10.1002\%2fsmr.2711&partnerID=40&md5=9b0595cd71d28171da66b90852ed7301}.}
+
+\bibitem[Masood e Java 2015]{Masood2015}
+\abntrefinfo{Masood e Java}{MASOOD; JAVA}{2015}
+{MASOOD, A.; JAVA, J. Static analysis for web service security - tools \& techniques for a secure development life cycle. In:  . [S.l.: s.n.], 2015.}
+
+\bibitem[McCall, Richards e Walters 1977]{McCall1977}
+\abntrefinfo{McCall, Richards e Walters}{MCCALL; RICHARDS; WALTERS}{1977}
+{MCCALL, J.~A.; RICHARDS, P.~K.; WALTERS, G.~F. \emph{{Factors in Software Quality}}.
+[S.l.], 1977.}
+
+\bibitem[Nocera et al. 2023]{Nocera2023418}
+\abntrefinfo{Nocera et al.}{NOCERA et al.}{2023}
+{NOCERA, S. et al. A large-scale fine-grained empirical study on security concerns in open-source software. In:  . [s.n.], 2023. p. 418 – 425. Cited by: 3. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85183330517&doi=10.1109\%2fSEAA60479.2023.00069&partnerID=40&md5=cedd775ef204cc60b75b12f44bdda858}.}
+
+\bibitem[Pai et al. 2004]{Pai2004}
+\abntrefinfo{Pai et al.}{PAI et al.}{2004}
+{PAI, M. et al. {Systematic reviews and meta-analyses: an illustrated, step-by-step guide}.
+\emph{National Medical Journal of India}, v.~17, n.~2, p. 86--95, mar-apr 2004.
+PMID: 15141602.}
+
+\bibitem[Rajapakse et al. 2022]{Rajapakse2022}
+\abntrefinfo{Rajapakse et al.}{RAJAPAKSE et al.}{2022}
+{RAJAPAKSE, R.~N. et al. Challenges and solutions when adopting devsecops: A systematic review.
+\emph{Information and Software Technology}, v.~141, 2022.
+Cited by: 91; All Open Access, Green Open Access.
+Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85114377924&doi=10.1016\%2fj.infsof.2021.106700&partnerID=40&md5=8d37a7b4dea325db0f7ecd9a9ed17a0e}.}
+
+\bibitem[Ramirez, Aiello e Lincke 2020]{Ramirez2020}
+\abntrefinfo{Ramirez, Aiello e Lincke}{RAMIREZ; AIELLO; LINCKE}{2020}
+{RAMIREZ, A.; AIELLO, A.; LINCKE, S.~J. A survey and comparison of secure software development standards. In:  . [s.n.], 2020. Cited by: 17. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85100614059&doi=10.1109\%2fCMI51275.2020.9322704&partnerID=40&md5=8b4d0a69a6b627d3d34f5be03aa2c6ba}.}
+
+\bibitem[Rangnau et al. 2020]{Rangnau2020145}
+\abntrefinfo{Rangnau et al.}{RANGNAU et al.}{2020}
+{RANGNAU, T. et al. Continuous security testing: A case study on integrating dynamic security testing tools in ci/cd pipelines. In:  . [s.n.], 2020. p. 145 – 154. Cited by: 57; All Open Access, Green Open Access. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096513818&doi=10.1109\%2fEDOC49727.2020.00026&partnerID=40&md5=c40a98ef4d8eff4fb8b08e234290f023}.}
+
+\bibitem[Saeed et al. 2025]{Saeed2025139}
+\abntrefinfo{Saeed et al.}{SAEED et al.}{2025}
+{SAEED, H. et al. Review of techniques for integrating security in software development lifecycle.
+\emph{Computers, Materials and Continua}, v.~82, n.~1, p. 139 – 172, 2025.
+Cited by: 2; All Open Access, Gold Open Access.
+Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85214507365&doi=10.32604\%2fcmc.2024.057587&partnerID=40&md5=16c958450978504c24f727dbb66e06d5}.}
+
+\bibitem[Siavvas et al. 2021]{Siavvas2021431}
+\abntrefinfo{Siavvas et al.}{SIAVVAS et al.}{2021}
+{SIAVVAS, M. et al. A hierarchical model for quantifying software security based on static analysis alerts and software metrics.
+\emph{Software Quality Journal}, v.~29, n.~2, p. 431 – 507, 2021.
+Cited by: 21; All Open Access, Green Open Access.
+Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106207514&doi=10.1007\%2fs11219-021-09555-0&partnerID=40&md5=b0ecf71985d4ef4c10438eabe73da349}.}
+
+\bibitem[Wohlin et al. 2024]{Wohlin2024}
+\abntrefinfo{Wohlin et al.}{WOHLIN et al.}{2024}
+{WOHLIN, C. et al. \emph{{Experimentation in Software Engineering}}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2024.
+ISBN 978-3-662-69306-3. Dispon{\'\i}vel em: \url{https://link.springer.com/book/10.1007/978-3-662-69306-3}.}
+
+\bibitem[Zhang e Zhang 2024]{Zhang2024160317}
+\abntrefinfo{Zhang e Zhang}{ZHANG; ZHANG}{2024}
+{ZHANG, J.~Y.; ZHANG, Y. Quantitative devsecops metrics for cloud-based web microservices.
+\emph{IEEE Access}, v.~12, p. 160317 – 160342, 2024.
+Cited by: 2; All Open Access, Gold Open Access.
+Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85208091278&doi=10.1109\%2fACCESS.2024.3486314&partnerID=40&md5=cc74abbeeef3802bac7d726302f6c5e2}.}
+
 \end{thebibliography}

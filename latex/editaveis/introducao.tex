@@ -9,61 +9,61 @@ e a estrutura geral do documento e das atividades.
 
 Avaliar os fatores de qualidade de um software é de suma importância no desenvolvimento de software e, 
 para isso, faz-se necessária a utilização de um modelo que guie a avaliação, de forma a sistematizar o 
-processo e reduzir subjetividades (SIAVVAS et al., 2021). Nesse sentido, o modelo proposto por 
-McCall (MCCALL; RICHARDS; WALTERS, 1977) foi o primeiro modelo hierárquico para analisar a qualidade, 
+processo e reduzir subjetividades \cite{Siavvas2021431}. Nesse sentido, o modelo proposto por 
+\citeonline{McCall1977} foi o primeiro modelo hierárquico para analisar a qualidade, 
 no qual os diferentes fatores eram analisados por critérios e avaliados por métricas. Subsequentemente, 
-o modelo de Boehm (BOEHM, 1978) evoluiu as ideias de McCall, e ambos se tornaram modelos seminais, 
+o modelo de \citeonline{Boehm1978} evoluiu as ideias de McCall, e ambos se tornaram modelos seminais, 
 servindo de referência para os modelos subsequentes.
 
-A partir da ISO/IEC 9126 (2001), estabeleceu-se um padrão internacional para a qualidade de software que 
+A partir da \citeonline{ISO9126}, estabeleceu-se um padrão internacional para a qualidade de software que 
 decompunha essa qualidade em características e subcaracterísticas, em um modelo hierárquico, além de 
-definir os termos técnicos da área. A ISO/IEC 25010 (2011) surgiu como uma evolução da ISO 9126, expandindo
+definir os termos técnicos da área. A \citeonline{ISO25010} surgiu como uma evolução da \citeonline{ISO9126}, expandindo
 seus conceitos e adaptando o modelo para a nova realidade da qualidade de software moderno. Diferentemente
-da ISO 9126, na ISO 25010 a segurança já é definida como um dos pilares da qualidade,
+da \citeonline{ISO9126}, na \citeonline{ISO25010} a segurança já é definida como um dos pilares da qualidade,
 e não como uma subcaracterística.
 
-Como padrão internacional de segurança da informação, tem-se a ISO/IEC 27001 (2022). 
+Como padrão internacional de segurança da informação, tem-se a \citeonline{ISO27001}. 
 Ela se difere das normas de qualidade de software na medida em que seu foco está na especificação dos 
 requisitos necessários para estabelecer, implementar, manter e melhorar continuamente um Sistema de Gestão 
 de Segurança da Informação (SGSI).
 
-Contudo, tanto a ISO/IEC 25010 (2011) quanto a ISO/IEC 27001 (2022) não fornecem um método para avaliar a 
+Contudo, tanto a \citeonline{ISO25010} quanto a \citeonline{ISO27001} não fornecem um método para avaliar a 
 segurança de software de maneira quantitativa. Assim, torna-se necessário recorrer a outros modelos e 
 ferramentas que ofereçam uma abordagem numérica para medir a segurança, por meio da definição de métricas, 
 do seu cálculo e do estabelecimento de valores de referência para avaliá-las.
 
 
 O DevOps é um paradigma que visa remover as barreiras entre os times de desenvolvimento e operações, 
-a fim de construir um ambiente colaborativo e integrado (RAJAPAKSE et al., 2021). Seu objetivo é reduzir o ciclo 
+a fim de construir um ambiente colaborativo e integrado \cite{Rajapakse2022}. Seu objetivo é reduzir o ciclo 
 de vida do desenvolvimento de software, permitindo entregas mais frequentes. As principais práticas de 
 DevOps são a Integração Contínua (CI), que consiste em integrar o código desenvolvido na ramificação 
 principal com validação de build e testes de forma automática para detectar falhas, e a Entrega/Implantação
 Contínua (CD), que consiste em deixar o software pronto para entrar em produção e realizar o seu 
-lançamento de forma automatizada (RAJAPAKSE et al., 2021).
+lançamento de forma automatizada \cite{Rajapakse2022}.
 
 Já o DevSecOps integra os princípios e práticas do DevOps, adicionando o time de segurança ao processo. 
 Esse paradigma implementa uma abordagem de segurança chamada Shift-Left, na qual os processos de segurança
 são realizados desde o início do desenvolvimento, com o objetivo de evitar problemas decorrentes de uma 
 avaliação tardia. Além disso é formado por práticas de segurança como treinamento da equipe, 
-testes de segurança automatizados e feedback contínuo (RAJAPAKSE et al., 2021).
+testes de segurança automatizados e feedback contínuo \cite{Rajapakse2022}.
 
 Nesse sentido, o modelo de maturidade de segurança OWASP DSOMM (DevSecOps Maturity Model) é uma importante 
 ferramenta na construção e avaliação de projetos DevSecOps. Ele define atividades, métricas e tecnologias 
 que devem ser usadas para construir um ambiente DevSecOps, além de proporcionar o acompanhamento da 
 maturidade da segurança do projeto em cinco dimensões: Build and Deployment, Culture and Organization, 
-Implementation, Information Gathering e Test and Verification (LANGE; KUNZ, 2024).
+Implementation, Information Gathering e Test and Verification \cite{Lange2024}.
 
 \section{Problema}
 
-Medir a segurança de software representa um grande desafio(RAJAPAKSE et al., 2021). A literatura atual carece de modelos que apresentem 
+Medir a segurança de software representa um grande desafio \cite{Rajapakse2022}. A literatura atual carece de modelos que apresentem 
 formas sistematizadas de avaliação da segurança; frequentemente, os métodos são baseados em critérios 
 subjetivos, como a análise manual por especialistas, e não possuem validação empírica, o que afeta a 
-confiabilidade dos resultados (SIAVVAS et al., 2021).
+confiabilidade dos resultados \cite{Siavvas2021431}.
 
 No contexto DevOps, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
-são impraticáveis devido à velocidade das entregas (RAJAPAKSE et al., 2021). A medicao da seguranca se torna ainda
+são impraticáveis devido à velocidade das entregas \cite{Rajapakse2022}. A medicao da seguranca se torna ainda
 mais desafiador ao lidar ciclos continuos de lançamento. A segurança é uma propriedade multifacetada, 
-emergente e dependente do contexto, o que complica sua quantificação (KUDRIAVTSEVA; GADYATSKAYA, 2024).
+emergente e dependente do contexto, o que complica sua quantificação \cite{Kudriavtseva20241223}.
 
 \section{Questão de Pesquisa}
 
@@ -97,7 +97,7 @@ resultando na seguinte questão:
         No contexto de & Desenvolvimento de aplicações web seguras (software livre, organizações públicas e privadas) \\
         \hline
     \end{tabular} \\[0.5em]
-   	Fonte: Adaptado de BASILI, CALDIERA e ROMBACH (1994)
+   	Fonte: Adaptado de \citeonline{Basili1994}
 	\label{tab:gqm-adaptado}
 \end{table}
 
@@ -112,7 +112,7 @@ visões de qualidade interna e externa?
     \includegraphics[width=0.7\textwidth]{figuras/GQM.png}
 
     \label{fig:gqm}
-	Fonte: Adaptado de BASILI, CALDIERA e ROMBACH (1994)
+	Fonte: Adaptado de \citeonline{Basili1994}
 \end{figure}
 
 \section{Objetivos}
@@ -166,9 +166,9 @@ fluxo das atividades, enquanto a Figura 3 apresenta o cronograma correspondente.
 \end{figure}
 
 \begin{itemize}
-    \item Contextualização sobre Engenharia de Software Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de Software, como revisão sistemática da literatura, survey, experimentos e estudo de caso (WOHLIN et al., 2024), fundamentais para a condução do trabalho.
-    \item Definição do GQM: Aplicação da abordagem Goal Question Metric (GQM) (BASILI; CALDIERA; ROMBACH, 1994) para a construção da questão principal de pesquisa, suas subquestões e as métricas que orientarão a revisão da literatura.
-    \item Elaboração do Protocolo de Revisão: Estruturação de um protocolo de revisão sistemática da literatura (KITCHENHAM; BRERETON, 2013) para pesquisar, selecionar e analisar os artigos. Este processo inclui a definição da string de busca (baseada no framework PICO), a elaboração de sinônimos, a definição dos critérios de inclusão e exclusão e o método para extração de dados.
+    \item Contextualização sobre Engenharia de Software Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de Software, como revisão sistemática da literatura, survey, experimentos e estudo de caso, fundamentais para a condução do trabalho \cite{Wohlin2024}.
+    \item Definição do GQM: Aplicação da abordagem Goal Question Metric (GQM) para a construção da questão principal de pesquisa, suas subquestões e as métricas que orientarão a revisão da literatura \cite{Basili1994}.
+    \item Elaboração do Protocolo de Revisão: Estruturação de um protocolo de revisão sistemática da literatura para pesquisar, selecionar e analisar os artigos \cite{KITCHENHAM20132049}. Este processo inclui a definição da string de busca (baseada no framework PICO), a elaboração de sinônimos, a definição dos critérios de inclusão e exclusão e o método para extração de dados.
     \item Seleção dos Artigos: Execução da filtragem dos estudos por meio da leitura de títulos, resumos e palavras-chave, com a aplicação dos critérios de inclusão e exclusão definidos.
     \item Análise do Material Selecionado: Leitura completa dos artigos selecionados para aprofundar o conhecimento sobre o estado da arte em métodos de avaliação de segurança de sistemas web e práticas de desenvolvimento seguro.
     \item Definição da Proposta de Solução: Definição os modelos de segurança, as ferramentas e as atividades do estudo de caso.
