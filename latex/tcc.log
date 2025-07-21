@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  20 JUL 2025 07:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  21 JUL 2025 02:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1139,44 +1139,41 @@ Package pdftex.def Info: figuras/arquitetura-frontend.png  used on input line 65
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./tcc.bbl (./tcc.brf)
+[55 <./figuras/arquitetura-backend.png>] [56 <./figuras/arquitetura-frontend.png>]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
+ [57] [58
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55 <./figuras/arquitetura-backend.png>] [56 <./figuras/arquitetura-frontend.png>]
+]
 bibitemlist
-[57
-
-] [58]) (./editaveis/apendices.tex [59] [60
+[59] [60]) (./editaveis/apendices.tex [61] [62
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[61
+[63
 
-] [62] [63
+] [64] [65
 
-] [64
+] [66
 
-]) (./editaveis/anexos.tex [65] [66
+]) (./editaveis/anexos.tex [67] [68
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[67
+[69
 
-] [68] [69
+] [70] [71
 
-] [70
+] [72
 
-]) (./tcc.ind) [71]
+]) (./tcc.ind) [73]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1197,18 +1194,18 @@ Package rerunfilecheck Info: File `tcc.brf' has not changed.
 (rerunfilecheck)             Checksum: B2776F4777F666A18E8255DF07C88BCB;3178.
  ) 
 Here is how much of TeX's memory you used:
- 17811 strings out of 474222
- 286909 string characters out of 5748734
+ 17813 strings out of 474222
+ 286923 string characters out of 5748734
  1973975 words of memory out of 5000000
  39425 multiletter control sequences out of 15000+600000
  642534 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,1382b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,1382b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (73 pages, 2481248 bytes).
+Output written on tcc.pdf (75 pages, 2483421 bytes).
 PDF statistics:
- 1096 PDF objects out of 1200 (max. 8388607)
- 972 compressed objects within 10 object streams
- 235 named destinations out of 1000 (max. 500000)
+ 1104 PDF objects out of 1200 (max. 8388607)
+ 978 compressed objects within 10 object streams
+ 237 named destinations out of 1000 (max. 500000)
  558 words of extra memory for PDF output out of 10000 (max. 10000000)
 
