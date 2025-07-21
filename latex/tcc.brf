@@ -10,7 +10,7 @@
 \backcite {ISO27001}{{27}{1.1}{section.1.1}}
 \backcite {ISO25010}{{27}{1.1}{section.1.1}}
 \backcite {ISO27001}{{27}{1.1}{section.1.1}}
-\backcite {Rajapakse2022}{{28}{1.1}{section.1.1}}
+\backcite {Rajapakse2022}{{27}{1.1}{section.1.1}}
 \backcite {Rajapakse2022}{{28}{1.1}{section.1.1}}
 \backcite {Rajapakse2022}{{28}{1.1}{section.1.1}}
 \backcite {Lange2024}{{28}{1.1}{section.1.1}}
@@ -62,3 +62,5 @@
 \backcite {Kushwaha2024}{{51}{9}{table.3.9}}
 \backcite {Nocera2023418}{{51}{9}{table.3.9}}
 \backcite {Siavvas2021431}{{53}{4.2}{section.4.2}}
+\backcite {Basili1994}{{55}{4.5}{section.4.5}}
+\backcite {ISO25010}{{56}{4.5}{section.4.5}}

@@ -73,56 +73,62 @@ Esse novo estado é salvo na Store, que centraliza e armazena todas as informaç
 
 \section{Questão de Pesquisa}
 
+Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas espécificas derivadas da pergunta principal e suas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa de cada uma das perguntas derivadas da pergunta principal, que agora norteaiam o estudo de caso.
+
+A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema de impedir o acesso não autorizado às informações, assim, impedindo que os dados privados sejam visíveis para quem não possui as permissões necessárias. Ela será uma a sub-característica de segurança analisadas neste estudo de caso, por meio da análise de vulnerabilidades detectadas no pipeline de CI/CD. Para corroborar com essa análise e fazer a triangularização da coleta de dados, uma avaliação qualitativa com os membros do time é necessária para observar os impactos dessas novas práticas no processo de desenvolvimento.
+
+À vista disso, as seguintes perguntas específicas foram elaboradas:
+
 \begin{itemize}
-    \item Questão Específica 1: Qualidade Interna e Externa
+    \item Questão Específica 1: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
     \begin{itemize}
-        \item Métrica 1.1: SAST e SCA
-        \item Métrica 1.2: DAST
+        \item Métrica 1.1: Quantidade de vulnerabilidades identificadas por ferramentas SAST e SCA a cada execução do pipeline.
+        \item Métrica 1.2: Quantidade de vulnerabilidades identificadas por ferramentas DAST no ambiente de testes.
     \end{itemize}
-    \item Questão Específica 2: Análise da segurança
+    \item Questão Específica 2: A análise automatica da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
     \begin{itemize}
-        \item Métrica 2.1: builds
-        \item Métrica 2.2: ponto de vista do time
+        \item Métrica 2.1: Taxa de builds/deploys bloqueados devido à descoberta de vulnerabilidades.
+        \item Métrica 2.2: Feedback do time obtido por um questionário sobre os impactos das novas práticas.
     \end{itemize}
 \end{itemize}
 
 
 \section{Fonte de Dados}
 
-Código-fonte
+Para coletar os dados necessários para a posterior avaliação das métricas são necessárias diferentes fontes de dados. Primeiramente, as ferramentas SAST e SCA são executadas diretamente no código-fonte. 
+Outra fonte de dados é o sistema em uso, que será usado para a obtençao dos dados referentes às ferramentas DAST que analisam o software em execução.
+Adiconalmente, o orquestrador de CI/CD atuará como fonte de dados para coletar os tentativas falhas de integração do código, evidênciando a identificação de falhas pelas ferramentas.
 
-Sistema em uso
-
-Orquestrador de CI/CD
-
-Percepção da equipe
+Por fim, a equipe técnica será a fonte de dados dos formulários de avaliação ao final do estudo de caso, permitindo a análise qualitativa e triangularização dos resultados.
 
 \section{Procedimentos}
 
-Integração e configuração das ferramentas de segurança ao pipeline de CI/CD
+Primeiramente, é necessário realizar a integração e configuração das ferramentas de segurança ao pipeline de CI/CD, nesta etapa serão definidos os críterios para o bloqueio ou merge das novas versões do código para que o processo de desenvolvimento não torne oneroso devido as restrições de segurança.
 
-Análise de Baseline de Segurança (estado atual do projeto)
+Após a configuração das ferramentas, é preciso estabeler a linha de base de segurança do projeto, ou seja, avaliar o estado atual do aplicação e gerar o primeiro conjunto de dados que serão usados para comparação na conclusão da monografia.
 
-Execução Contínua da Análise de Segurança
+Então, a execução contínua da análise de segurança será iniciada, durante o segundo semestre letivo de 2025 os desenvolvedores utilizarão a nova pipeline em seu cotidiano, enquanto as métricas são coletads para análise futura.
 
-Análise dos Dados
-
-Coleta de Percepção da Equipe
+Ao final da observação, os dados quantitativos serão centralizados e analisados para produzir as métricas obtidas ao final do estudo, além de ser realizada a aplicação do questionário de coleta e da percepção da equipe para obter a opinião dos participantes do estudo.
 
 \section{Análise de Dados}
 
-Estatística Descritiva e Análise de Tendência
+Os dados quantitativos serão analisados usando estatística descritiva e análise de tendência. Para Métrica 1.1 e 1.2 será calculada a frequência absoluta de vulnerabilidades encontradas, ao passo que a Métrica 2.1 será calculada a taxa percentual de builds bloqueados em relação ao total de builds executados no período em avaliação. Esses dados serão dispostos em um gráfico de linhas em função do tempo para acompanhar como as ferramentas ajudaram na detecção de vulnerabilidades.
 
-Análise de Frequência de Respostas
+Para a análise de frequência de respostas do questionário, a frequência de cada das respostas de cada pergunta será registrada, de modo a possibilitar o cálculo da moda, pois ao ter a opinião da maioria dos participantes sobre o tópico solicitado será possível obter a percepção geral do impacto das atividades realizadas.
 
 \section{Instrumentação}
 
-SAST: SonarQube
+A instrumentação se refere às ferramentas que serão utilizadas para a realização do estudo de caso, aqui estão definidas as ferramentas usadas para a análise da segurança do sistema, controle de implementação do código, versionamento do código da pipeline feita e coleta de informações da equipe.
 
-SCA: Trivy
+O SonarQube é uma ferramenta de open-source de avalição da qualidade e segurança do código-fonte. Ele realiza análise estática para detectar bugs, vulnerabilidades e code smells em várias linguagens. Ele fará parte das ferramentas white-box integradas ao pipeline realizando a análise estática de segurança de aplicação (SAST). 
 
-DAST: OWASP ZAP
+O Trivy é um scanner de segurança de código aberto. Ele é utilizado na análise de composição de software, verificando as bibliotecas de terceiros do projeto, garantindo que componentes externos ao projeto não insiram vulnerabilidades no sistemas. Além disso, ele é capaz de buscar vulnerabilidades em containeres e configurações de infraestrutura como código. Ele complementará o SonarQube como ferramenta white-box.
 
-Bloqueio de Build/Deploy: GitLab CI/CD
+O OWASP ZAP foi desenvolvido para encontrar problemas de segurança em aplicações web em execução. Ele será empregado para realizar a Análise Dinâmica de Segurança de Aplicação (DAST) em um ambiente de testes.
 
-Questionário: Google Forms
+O GitLab CI/CD é uma ferramenta integrada ao GitLab que permite a automação das etapas do ciclo de vida do software, através dele que as ferramentas de segurança serão executadas automaticamente e ele servirá para bloquear o build/deploy caso vulnerabilidades sejam encontradas.
+
+O Git é um sistema de controle de versão e o GitHub é uma plataforma de hospedagem de código-fonte para controle de versão com Git. Eles serão utilizados para o versionamento e armazenamento dos artefatos por este estudo de caso.
+
+O Google Forms permite a criação rápida e fácil de formulários online, além de permitir a gestão e análise dos resultados. Ele será utilizado para a aplicação do questionário que coleta os dados qualitativos da equipe.
