@@ -1,51 +1,44 @@
 \chapter[Introdução]{Introdução}
 
-Este capítulo introduz os conceitos fundamentais que norteiam este trabalho: 
-experimentação em Engenharia de Software, segurança de produtos de software e DevSecOps. 
-Adicionalmente, são apresentados o escopo do problema, a questão de pesquisa que guia a investigação 
-e a estrutura geral do documento e das atividades.
+Neste capítulo são apresentados os conceitos fundamentais que norteiam este trabalho: segurança de produtos de software; Modelos de Qualidade; DevOps e; for fim; DevSecOps. 
+Adicionalmente, são apresentados o escopo do problema, a questão de pesquisa que guia essa investigação 
+e a estrutura geral do documento.
 
 \section{Contexto}
 
 Avaliar os fatores de qualidade de um software é de suma importância no desenvolvimento de software e, 
 para isso, faz-se necessária a utilização de um modelo que guie a avaliação, de forma a sistematizar o 
-processo e reduzir subjetividades (SIAVVAS et al., 2021). Nesse sentido, o modelo proposto por 
-McCall (MCCALL; RICHARDS; WALTERS, 1977) foi o primeiro modelo hierárquico para analisar a qualidade, 
-no qual os diferentes fatores eram analisados por critérios e avaliados por métricas. Subsequentemente, 
-o modelo de Boehm (BOEHM, 1978) evoluiu as ideias de McCall, e ambos se tornaram modelos seminais, 
-servindo de referência para os modelos subsequentes.
+processo e reduzir subjetividades \cite{Siavvas21}. Nesse sentido, o modelo proposto por \citeonline{McCall77}, foi o primeiro modelo proposto para analisar a qualidade de produto de software. Nesse trabalho, foram identicados aspectos e  propriedades do produto de software, chamados de fatores e seus respectivos subfatores. Também foi proposto um método de avaliação quantitativa, baseada nos fatores, critérios e métricas. Nesse modelo, aspetos relacionados à segurança, foi percebido como um subfator de Integridade. Tratou-se portanto, de um modelo hierárquico. Subsequentemente, 
+o modelo proposto por \citeonline{boehm1978characteristics} evoluiu as ideias de McCall, e ambos se tornaram modelos seminais, servindo de referência para os modelos subsequentes. Além de propor novas propriedades e aspectos, renomeou os fatores e subfatores para características e subcaracterísticas. Essa terminologia é utitilzada até hoje, em modelos de referência de qualidade contemporâneos.
 
-A partir da ISO/IEC 9126 (2001), estabeleceu-se um padrão internacional para a qualidade de software que 
-decompunha essa qualidade em características e subcaracterísticas, em um modelo hierárquico, além de 
-definir os termos técnicos da área. A ISO/IEC 25010 (2011) surgiu como uma evolução da ISO 9126, expandindo
-seus conceitos e adaptando o modelo para a nova realidade da qualidade de software moderno. Diferentemente
-da ISO 9126, na ISO 25010 a segurança já é definida como um dos pilares da qualidade,
-e não como uma subcaracterística.
+A partir da \citeonline{ISOIEC9126}, estabeleceu-se um uma norma padrão internacional para analisar a qualidade de produto de software. Essa norma foi baseada nos modelos de \citeonline{McCall77} e \citeonline{boehm1978characteristics} além de outros, como por exemplo o modelo de \citeonline{Dromey:1995:MSP:205302.205311}, que incoporava aspectos e propriedades específicas de código-fonte baseado no paradigma orientado a objetos-OO. Na \citeonline{ISOIEC9126} a segurança foi definida como uma subcaracterística de Funcionalidade. A \citeonline{ISOIEC25010} surgiu como uma evolução da ISO 9126, expandindo seus conceitos e adaptando o modelo para a realidade da qualidade de produto de software modernos. Uma relevante alteração foi transformação da até então, subcaracteristica de qualidade para característica, destacando-a como um dos pilares da qualidade do produto. Além de, reorganizar as características e suas respectivas subcaracteríticas na visão de qualidade interna, também foi incorporada ao modelo a visão da qualidade em uso.
+Tem-se ainda, a \citeonline{isoiec27001}, que define requisitos para implementar, manter e melhorar continuamente, a segurança da informação em uma organização; além, da \citeonline{isoiec27034}, que fornece diretrizes para as organizações sobre como integrar a segurança em suas aplicações, ao longo de todo o ciclo de vida de desenvolvimento, busacando  mitigar as potenciais ameaças cibernéticas. Contudo, nenhuma dessas normas ISO/IEC, fornecem um método para avaliar a 
+segurança de software de maneira quantitativa ou qualitativa. Assim, torna-se necessário recorrer a outros modelos e 
+ferramentas que ofereçam uma abordagem para operacionalizar os conceitos abstratos definidos  nessas normas, com  suas respectivas fórmulas de cálculo, medidas e métricas, valores de referência, ponderação e agregação numérica, possibilitando o cálculo de indicadores quantitativos e qualitativos de segurança. Entretanto, é importante destacar que existem alguns frameworks  e práticas que auxiliam a observação de aspcetos técnicos da segurança, quanto organizaçionais, como por exemplo:
+\begin{itemize}
+    \item o modelo de maturidade \textit{OWASP-DSOMM} \cite{owaspsamm} e a lista das dez vulnerabilidades de maior ocorrência \textit{OWASP Top 10} \cite{owasptop10_2021};
+     \item o catálogo de vulnerabilidades \textit{Common Weakness Enumeration-CWE}, mantido por uma comunidade que envolve a indústria, academia e governo norte americano \cite{cwe}
+\end{itemize}
 
-Como padrão internacional de segurança da informação, tem-se a ISO/IEC 27001 (2022). 
-Ela se difere das normas de qualidade de software na medida em que seu foco está na especificação dos 
-requisitos necessários para estabelecer, implementar, manter e melhorar continuamente um Sistema de Gestão 
-de Segurança da Informação (SGSI).
+Nos dias atuais, a segurança de sistemas e produtos de software é um dos fatores mais críticos. Os ataques cibernéticos explorando vulnerabilidades de produtos de software tem provocado impactos negativos, em ordem mundial. Recente, no Brasil, por exemplo, vivenciamos  a tida como maior invasão de dispositivo eletrônico do País, provocando prejuízos financeiros na ordem  R\$ 800 milhões \cite{uolpix} \cite{g1pix} \cite{vepix}. Portanto, torna-se imperativo promover a  cultura de desenvolvimento seguro, além de, incorporar práticas e técnicas de segurança, que tornem as análises e decisões mais sistemáticas, ao longo de todo ciclo de desenvolvimento.
 
-Contudo, tanto a ISO/IEC 25010 (2011) quanto a ISO/IEC 27001 (2022) não fornecem um método para avaliar a 
-segurança de software de maneira quantitativa. Assim, torna-se necessário recorrer a outros modelos e 
-ferramentas que ofereçam uma abordagem numérica para medir a segurança, por meio da definição de métricas, 
-do seu cálculo e do estabelecimento de valores de referência para avaliá-las.
+Nas últimas três décadas, a Engenharia de Software passou por uma profunda transformação na mameira de como se desenvolver produtos de software. Isso se deu por meio dos métodos ágeis, a filosofia de desenvolvimento Lean e práticas de comunidades de software livre \cite{Fitzgerald2017} \cite{LOPEZ2022111187}. Atualmente, a cadência do ciclo de desenvolvimento acontece em um pequeno intervalo de tempo (dias, semanas). Isso fez com que entrega e implantação de versões de produtos de software passassem a ser disponibilizas e implantadas, continuamente. Além disso, os antigos sistemas "monolito", transformaram em subsistemas com responsabilidades específicas, especializadas e, que se comunicam entre si. Assim, as versões dos produtos passaram a ser cada vez "menores" e independentes do ponto devista da implantação. Para lidar com essa nova realidade escala no desenvolvimento de produtos de software, é necessário dispormos de tecnologias que nos auxiliem com a automação e sistematização das análises, com efeito na tomada de decisão sobre novas implantações.
 
-
-O DevOps é um paradigma que visa remover as barreiras entre os times de desenvolvimento e operações, 
-a fim de construir um ambiente colaborativo e integrado (RAJAPAKSE et al., 2021). Seu objetivo é reduzir o ciclo 
-de vida do desenvolvimento de software, permitindo entregas mais frequentes. As principais práticas de 
+Na esteira da transformação ágil, em 2009, XXXX propôs o termo DevOps. Esse termo abarcou um conjunto de nuances que que em essência, buscava remover a barreira existente entre os times de desenvolvimento e operações, quando da implantação. A compreensão sobre esse termo passa por diferentes facetas como: cultura, automação; métodos e procedimentos de desenvolvimento e operações contínuos e integrados; colaboração \cite{10.1145} \cite{10.21203v1} \cite{DBLP:journals/jss/LuzPB19} . Um dos principais objetivos é reduzir o ciclo 
+de vida do desenvolvimento de software, permitindo entregas mais frequentes e automatizadas ou semi-automatizadas. As principais práticas de 
 DevOps são a Integração Contínua (CI), que consiste em integrar o código desenvolvido na ramificação 
 principal com validação de build e testes de forma automática para detectar falhas, e a Entrega/Implantação
 Contínua (CD), que consiste em deixar o software pronto para entrar em produção e realizar o seu 
-lançamento de forma automatizada (RAJAPAKSE et al., 2021).
+lançamento de forma automatizada (RAJAPAKSE et al., 2021). 
 
 Já o DevSecOps integra os princípios e práticas do DevOps, adicionando o time de segurança ao processo. 
 Esse paradigma implementa uma abordagem de segurança chamada Shift-Left, na qual os processos de segurança
 são realizados desde o início do desenvolvimento, com o objetivo de evitar problemas decorrentes de uma 
-avaliação tardia. Além disso é formado por práticas de segurança como treinamento da equipe, 
-testes de segurança automatizados e feedback contínuo (RAJAPAKSE et al., 2021).
+avaliação tardia. Além disso, é formado por práticas de segurança como treinamento da equipe, 
+testes de segurança automatizados e feedback contínuo . \textcolor{blue}{(RAJAPAKSE et al., 2021)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}
+
+
+\todo[inline, color=pink]{Levar esse parágafo abaixo para a seção o cap. de refencial teórico.}
 
 Nesse sentido, o modelo de maturidade de segurança OWASP DSOMM (DevSecOps Maturity Model) é uma importante 
 ferramenta na construção e avaliação de projetos DevSecOps. Ele define atividades, métricas e tecnologias 
@@ -55,15 +48,14 @@ Implementation, Information Gathering e Test and Verification (LANGE; KUNZ, 2024
 
 \section{Problema}
 
-Medir a segurança de software representa um grande desafio(RAJAPAKSE et al., 2021). A literatura atual carece de modelos que apresentem 
-formas sistematizadas de avaliação da segurança; frequentemente, os métodos são baseados em critérios 
-subjetivos, como a análise manual por especialistas, e não possuem validação empírica, o que afeta a 
-confiabilidade dos resultados (SIAVVAS et al., 2021).
+Medir a segurança de software representa um grande desafio \textcolor{blue}{(RAJAPAKSE et al., 2021)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}.  Embora já exista muito conhecimento acumulado na área, ainda carecemos de modelos que apresentem 
+formas sistematizadas de avaliação da segurança. Frequentemente, os métodos são baseados em critérios subjetivos, como a opnião de especialistas e não possuem validação empírica, o que afeta a 
+confiabilidade dos resultados \cite{Siavvas21}.
 
-No contexto DevOps, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
-são impraticáveis devido à velocidade das entregas (RAJAPAKSE et al., 2021). A medicao da seguranca se torna ainda
-mais desafiador ao lidar ciclos continuos de lançamento. A segurança é uma propriedade multifacetada, 
-emergente e dependente do contexto, o que complica sua quantificação (KUDRIAVTSEVA; GADYATSKAYA, 2024).
+No contexto do desenvolvimento e implantação contínua, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
+são impraticáveis devido à velocidade das entregas \textcolor{blue}{(RAJAPAKSE et al., 2021)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}. A medição da seguranca se torna ainda mais desafiadora ao lidar ciclos continuos de lançamentos de versões de produtos. A segurança é uma propriedade multifacetada, 
+emergente e dependente do contexto, o que complica sua quantificação . \textcolor{blue}{(KUDRIAVTSEVA; GADYATSKAYA, 2024)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}
+Em essência, a falta de compreensão sobre cultura e práticas de desenvolvimento contínuo e seguro, pode comprometer ou mesmo inviabilizar, a estratégia de negócio de várias organizações mundiais.
 
 \section{Questão de Pesquisa}
 
@@ -82,29 +74,30 @@ resultando na seguinte questão:
         \hline
         \textbf{Característica} & \textbf{Valor} \\
         \hline
-        Analisar & A característica de qualidade de produto de software: \textbf{segurança} \\
+        \textbf{Analisar} & a característica de qualidade de produto de software com foco na segurança e suas respectivas subcaracterísticas, nas visões interna e externa. \\ 
         \hline
-        Subcaracterísticas & Confidencialidade, integridade, autenticidade, responsabilidade, etc. \\
+        \textbf{Com o propósito de} & Caracterizar \\
         \hline
-        Visões & Interna e externa \\
+        \textbf{Com respeito ao} & desenvolvimento contínuo de produtos de software seguros (DevSecOps) \\
         \hline
-        Com o propósito de & Caracterizar \\
+        \textbf{Do ponto de vista de} & Pesquisador \\
         \hline
-        Com respeito a & Desenvolvimento e operação de produtos de software seguros (DevSecOps) \\
-        \hline
-        Do ponto de vista de & Pesquisador \\
-        \hline
-        No contexto de & Desenvolvimento de aplicações web seguras (software livre, organizações públicas e privadas) \\
+        \textbf{No contexto do} & desesenvolvimento de aplicações web seguras e de código-fonte aberto\\
         \hline
     \end{tabular} \\[0.5em]
    	Fonte: Adaptado de BASILI, CALDIERA e ROMBACH (1994)
 	\label{tab:gqm-adaptado}
 \end{table}
 
-\begin{center}
-Como analisar a característica de segurança no desenvolvimento contínuo de sistemas web, considerando as 
-visões de qualidade interna e externa? 
+Considerando essa perspectiva definimos a sguinte questão principal de pesquisa deste estudo
+
+\begin{center} 
+\textbf{\textit{Como analisar a característica de segurança no desenvolvimento contínuo de sistemas web, considerando as 
+visões de qualidade interna e externa?}}
 \end{center}
+
+
+\todo[inline, color=pink]{Refazer a fig. 1  ou utilizar uma imagem em português. Você pode reaproveitar a Fig. 1 no tcc do Senna, fazendo a citação.}
 
 \begin{figure}[h]
     \centering
@@ -117,16 +110,15 @@ visões de qualidade interna e externa?
 
 \section{Objetivos}
 
-O objetivo geral deste trabalho consiste em avaliar o impacto das práticas DevSecOps na qualidade interna 
-e externa de um produto de software, por meio de uma análise quantitativa. Para alcançar este propósito, 
+O objetivo geral deste trabalho consiste em analisar a adoção de práticas de DevSecOps no ciclo de devida de desenvolvimento do produto de software-livre \textcolor{blue}{(MEPA}\todo[color=yellow]{Inserir nota de rodapé com a url do MEPA}. Para alcançar este propósito, 
 foram definidos os seguintes objetivos específicos:
 
 \begin{itemize}
     \item Fundamentar teoricamente os conceitos de DevSecOps, modelos de segurança e metodologias de desenvolvimento seguro.
     \item Incorporar um conjunto de práticas DevSecOps ao ciclo de desenvolvimento do produto de software sob análise.
     \item Planejar um estudo de caso focado na observação das práticas implementadas.
-    \item Conduzir o estudo de caso, realizando a coleta e a análise das métricas de qualidade de software.
-    \item Apresentar as conclusões e os insights resultantes desta investigação.
+    \item Conduzir o estudo de caso, realizando a coleta e a análise das medidas e métricas segurança, que apoiem a discussão dos resultados alcançados.
+    \item Apresentar as conclusões e os \textit{insights} resultantes desta investigação.
 \end{itemize}
 
 \section{Estrutura do Trabalho}
@@ -135,10 +127,10 @@ A seguir, são apresentados os capítulos que compõem a estrutura deste trabalh
 
 \begin{itemize}
     \item Introdução: apresenta a contextualização do trabalho, o problema de pesquisa, a definição da questão de pesquisa e dos objetivos do trabalho. Por fim, descreve a estrutura das atividades realizadas.
+     \item Referencial Teórico: estabelece a fundamentação teórica da monografia, abordando os tópicos centrais da pesquisa: DevSecOps, qualidade de software, segurança de software e modelos de avaliação de maturidade.
     \item Revisão Estruturada da Literatura: explicita o processo empregado para seleção que fundamentam este trabalho incluindo o protocolo de pesquisa e filtragem dos estudos e os resultados obtidos.
-    \item Referencial Teórico: estabelece a fundamentação teórica da monografia, abordando os tópicos centrais da pesquisa: DevSecOps, qualidade de software, segurança de software e modelos de avaliação de maturidade.
     \item Estudo de caso: descreve o protocolo utilizado para a condução do estudo de caso, detalhando seus objetivos, perguntas de pesquisa, atividades e resultados alcançados.
-    \item Conclusão: consolida os achados obtidos ao final do estudo e como esses resultados respondem à questão de pesquisa principal, bem como as limitações do estudo e as possibilidades de aprofundamento de trabalhos futuros.
+    \item Conclusão: consolida os achados obtidos parcial ou integralmente e como esses resultados respondem à questão de pesquisa principal, bem como as limitações do estudo e as possibilidades de aprofundamento de trabalhos futuros.
 \end{itemize}
 
 \section{Cronograma e Atividades}
@@ -166,9 +158,9 @@ fluxo das atividades, enquanto a Figura 3 apresenta o cronograma correspondente.
 \end{figure}
 
 \begin{itemize}
-    \item Contextualização sobre Engenharia de Software Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de Software, como revisão sistemática da literatura, survey, experimentos e estudo de caso (WOHLIN et al., 2024), fundamentais para a condução do trabalho.
-    \item Definição do GQM: Aplicação da abordagem Goal Question Metric (GQM) (BASILI; CALDIERA; ROMBACH, 1994) para a construção da questão principal de pesquisa, suas subquestões e as métricas que orientarão a revisão da literatura.
-    \item Elaboração do Protocolo de Revisão: Estruturação de um protocolo de revisão sistemática da literatura (KITCHENHAM; BRERETON, 2013) para pesquisar, selecionar e analisar os artigos. Este processo inclui a definição da string de busca (baseada no framework PICO), a elaboração de sinônimos, a definição dos critérios de inclusão e exclusão e o método para extração de dados.
+    \item Contextualização sobre Engenharia de Software Experimental: Estudo sobre os métodos de pesquisa empírica em Engenharia de Software, como revisão sistemática da literatura, survey, experimentos e estudo de caso. Conceitos esses, fundamentais para a condução do trabalho proposto. \cite{Wohlin:2012:ESE:2349018} \cite{yin2015estudo} \cite{10.1007/s10664-008-9102-8}
+    \item Definição do GQM: Aplicação da abordagem Goal Question Metric (GQM) \cite{gqm} para a construção da questão principal de pesquisa, suas subquestões e as medidas a serem analisadas.
+    \item Elaboração do Protocolo de Revisão da Literatura: Estruturação e adaptação do protocolo de revisão sistemática da literatura proposto por \citeonline{kitchenham2007guidelines}. Essa sistematização organizará nosso processo de revivão da literatura pertinente. Este processo inclui a definição da string de busca baseada no protocolo PICO, adapatado da área da medicina \cite{pai_clinical_2004}. Por meio desse protocolo definimos sinônimos de termos, critérios de inclusão e exclusão de estudos, além do método de análise  e  extração de dados.
     \item Seleção dos Artigos: Execução da filtragem dos estudos por meio da leitura de títulos, resumos e palavras-chave, com a aplicação dos critérios de inclusão e exclusão definidos.
     \item Análise do Material Selecionado: Leitura completa dos artigos selecionados para aprofundar o conhecimento sobre o estado da arte em métodos de avaliação de segurança de sistemas web e práticas de desenvolvimento seguro.
     \item Definição da Proposta de Solução: Definição os modelos de segurança, as ferramentas e as atividades do estudo de caso.
