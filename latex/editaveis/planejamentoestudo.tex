@@ -22,7 +22,7 @@ Assim, o objetivo desse estudo consiste em descorbrir como as práticas DevSecOp
 O MEPA - Contratos de Energia é um sistema web open-source criado pelo Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS) da Universidade de Brasília (UnB) e que recebe contribuições de alunos durante o semestre, devido à sua integração com a disciplina de Gerência de Configuração e Evolução de Software, também ministrada na UnB.
 
 
-A arquitetura consiste em um frontend construído com o framework Next.js do React, que forma a interface com o usuário. Essa interface se comunica com um servidor Python construído com o framework Django. Os dados são persistidos em um banco de dados PostgreSQL que se conecta ao sistema pelo Django. A comunicação entre a interface e o servidor é feita por uma API REST; dessa forma, a interface gráfica se comunica apenas com o servidor, e este faz a comunicação com o banco de dados, fornecendo os dados necessários para a exibição na interface. Essa arquitetura pode ser observada na Figura 10.
+A arquitetura consiste em um frontend construído com o framework Next.js do React, que forma a interface com o usuário. Essa interface se comunica com um servidor Python construído com o framework Django. Os dados são persistidos em um banco de dados PostgreSQL que se conecta ao sistema pelo Django. A comunicação entre a interface e o servidor é feita por uma API REST; dessa forma, a interface gráfica se comunica apenas com o servidor, e este faz a comunicação com o banco de dados, fornecendo os dados necessários para a exibição na interface. Essa arquitetura pode ser observada na Figura \ref{fig:arquitetura-geral}.
 
 
 \begin{figure}[h]
@@ -39,7 +39,7 @@ A API (servidor) é composta por quatro módulos. O primeiro, chamado de Models,
 
 O módulo Serializer é responsável por serializar e desserializar os objetos definidos nos Models. Ele traduz e valida os dados entre o formato de comunicação da API (JSON) e o formato mais complexo usado internamente pelo framework.
 
-Após a tradução dos objetos, o módulo de visualização (Views) realiza o processamento das requisições e respostas HTTP, que são capturadas pelo módulo de roteamento de requisições. Essa arquitetura está ilustrada na Figura 11.
+Após a tradução dos objetos, o módulo de visualização (Views) realiza o processamento das requisições e respostas HTTP, que são capturadas pelo módulo de roteamento de requisições. Essa arquitetura está ilustrada na Figura \ref{fig:arquitetura-backend}.
 
 \begin{figure}[h]
     \centering
@@ -51,7 +51,7 @@ Após a tradução dos objetos, o módulo de visualização (Views) realiza o pr
 \end{figure}
 
 
-A Figura 12 representa a arquitetura da interface gráfica (frontend), construída com o framework Next.js e a biblioteca React para a criação de componentes. Utiliza-se também a biblioteca Redux para gerenciar os estados e manter a consistência do fluxo de dados da aplicação. Os componentes são a parte principal da interface, pois é através deles que o usuário interage com o sistema. Eles representam todos os elementos visuais e são utilizados para evitar o acoplamento do código e facilitar a resolução de problemas.
+A Figura \ref{fig:arquitetura-frontend} representa a arquitetura da interface gráfica (frontend), construída com o framework Next.js e a biblioteca React para a criação de componentes. Utiliza-se também a biblioteca Redux para gerenciar os estados e manter a consistência do fluxo de dados da aplicação. Os componentes são a parte principal da interface, pois é através deles que o usuário interage com o sistema. Eles representam todos os elementos visuais e são utilizados para evitar o acoplamento do código e facilitar a resolução de problemas.
 
 Quando o usuário executa uma ação em um componente, uma função criadora de ação é chamada. Essa função gera um objeto de ação que descreve o que aconteceu. Em seguida, essa ação é enviada para um redutor. O redutor, por sua vez, avalia a ação e determina como o estado da aplicação deve mudar, retornando um novo estado atualizado.
 

@@ -24,37 +24,28 @@ Nos dias atuais, a segurança de sistemas e produtos de software é um dos fator
 
 Nas últimas três décadas, a Engenharia de Software passou por uma profunda transformação na mameira de como se desenvolver produtos de software. Isso se deu por meio dos métodos ágeis, a filosofia de desenvolvimento Lean e práticas de comunidades de software livre \cite{Fitzgerald2017} \cite{LOPEZ2022111187}. Atualmente, a cadência do ciclo de desenvolvimento acontece em um pequeno intervalo de tempo (dias, semanas). Isso fez com que entrega e implantação de versões de produtos de software passassem a ser disponibilizas e implantadas, continuamente. Além disso, os antigos sistemas "monolito", transformaram em subsistemas com responsabilidades específicas, especializadas e, que se comunicam entre si. Assim, as versões dos produtos passaram a ser cada vez "menores" e independentes do ponto devista da implantação. Para lidar com essa nova realidade escala no desenvolvimento de produtos de software, é necessário dispormos de tecnologias que nos auxiliem com a automação e sistematização das análises, com efeito na tomada de decisão sobre novas implantações.
 
-Na esteira da transformação ágil, em 2009, XXXX propôs o termo DevOps. Esse termo abarcou um conjunto de nuances que que em essência, buscava remover a barreira existente entre os times de desenvolvimento e operações, quando da implantação. A compreensão sobre esse termo passa por diferentes facetas como: cultura, automação; métodos e procedimentos de desenvolvimento e operações contínuos e integrados; colaboração \cite{10.1145} \cite{10.21203v1} \cite{DBLP:journals/jss/LuzPB19} . Um dos principais objetivos é reduzir o ciclo 
+Na esteira da transformação ágil, em 2009, Patrick Debois propôs o termo DevOps. Esse termo abarcou um conjunto de nuances que que em essência, buscava remover a barreira existente entre os times de desenvolvimento e operações, quando da implantação. A compreensão sobre esse termo passa por diferentes facetas como: cultura, automação; métodos e procedimentos de desenvolvimento e operações contínuos e integrados; colaboração \cite{10.1145} \cite{10.21203v1} \cite{DBLP:journals/jss/LuzPB19} . Um dos principais objetivos é reduzir o ciclo 
 de vida do desenvolvimento de software, permitindo entregas mais frequentes e automatizadas ou semi-automatizadas. As principais práticas de 
 DevOps são a Integração Contínua (CI), que consiste em integrar o código desenvolvido na ramificação 
 principal com validação de build e testes de forma automática para detectar falhas, e a Entrega/Implantação
 Contínua (CD), que consiste em deixar o software pronto para entrar em produção e realizar o seu 
-lançamento de forma automatizada (RAJAPAKSE et al., 2021). 
+lançamento de forma automatizada \cite{Rajapakse2022}. 
 
 Já o \textit{DevSecOps} integra os princípios e práticas do \textit{DevOps}, adicionando o time de segurança ao processo. 
 Esse paradigma implementa uma abordagem de segurança chamada \textit{Shift-Left}, na qual os processos de segurança
 são realizados desde o início do desenvolvimento, com o objetivo de evitar problemas decorrentes de uma 
 avaliação tardia. Além disso, é formado por práticas de segurança como treinamento da equipe, 
-testes de segurança automatizados e feedback contínuo . \textcolor{blue}{(RAJAPAKSE et al., 2021)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}
-
-
-\todo[inline, color=pink]{Levar esse parágafo abaixo para a seção o cap. de refencial teórico.}
-
-Nesse sentido, o modelo de maturidade de segurança OWASP DSOMM (\textit{DevSecOps Maturity Model}) é uma importante 
-ferramenta na construção e avaliação de projetos \textit{DevSecOps}. Ele define atividades, métricas e tecnologias 
-que devem ser usadas para construir um ambiente \textit{DevSecOps}, além de proporcionar o acompanhamento da 
-maturidade da segurança do projeto em cinco dimensões: \textit{Build and Deployment}, \textit{Culture and Organization}, 
-\textit{Implementation}, \textit{Information Gathering} e \textit{Test and Verification} \cite{Lange2024}.
+testes de segurança automatizados e feedback contínuo \cite{Rajapakse2022}.
 
 \section{Problema}
 
-Medir a segurança de software representa um grande desafio \textcolor{blue}{(RAJAPAKSE et al., 2021)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}.  Embora já exista muito conhecimento acumulado na área, ainda carecemos de modelos que apresentem 
+Medir a segurança de software representa um grande desafio \cite{Rajapakse2022}. Embora já exista muito conhecimento acumulado na área, ainda carecemos de modelos que apresentem 
 formas sistematizadas de avaliação da segurança. Frequentemente, os métodos são baseados em critérios subjetivos, como a opnião de especialistas e não possuem validação empírica, o que afeta a 
 confiabilidade dos resultados \cite{Siavvas21}.
 
 No contexto do desenvolvimento e implantação contínua, esse desafio se torna ainda mais difícil. Métodos tradicionais de análise de segurança 
-são impraticáveis devido à velocidade das entregas \textcolor{blue}{(RAJAPAKSE et al., 2021)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}. A medição da seguranca se torna ainda mais desafiadora ao lidar ciclos continuos de lançamentos de versões de produtos. A segurança é uma propriedade multifacetada, 
-emergente e dependente do contexto, o que complica sua quantificação . \textcolor{blue}{(KUDRIAVTSEVA; GADYATSKAYA, 2024)}\todo[color=yellow]{Inserir o .bibtex e corrigir a citacao}
+são impraticáveis devido à velocidade das entregas \cite{Rajapakse2022}. A medição da seguranca se torna ainda mais desafiadora ao lidar ciclos continuos de lançamentos de versões de produtos. A segurança é uma propriedade multifacetada, 
+emergente e dependente do contexto, o que complica sua quantificação \cite{Kudriavtseva20241223}.
 Em essência, a falta de compreensão sobre cultura e práticas de desenvolvimento contínuo e seguro, pode comprometer ou mesmo inviabilizar, a estratégia de negócio de várias organizações mundiais.
 
 \section{Questão de Pesquisa}
@@ -63,8 +54,8 @@ A definição da questão de pesquisa foi elaborada utilizando a abordagem \text
 Question Metric} (GQM). Essa é uma abordagem que tem como objetivo definir, de 
 maneira \textit{top-down} e hierárquica, os objetivos a serem alcançados, as perguntas a 
 serem respondidas para cumprir tais objetivos e as métricas necessárias para 
-responder a cada pergunta de forma quantitativa, como mostra a Figura 1. Essa 
-estrutura foi adaptada para o contexto da pesquisa, conforme a Tabela 1, 
+responder a cada pergunta de forma quantitativa, como mostra a Figura \ref{fig:gqm}. Essa 
+estrutura foi adaptada para o contexto da pesquisa, conforme a Tabela \ref{tab:gqm-adaptado}, 
 resultando na seguinte questão:
 
 \begin{table}[h]
@@ -96,13 +87,10 @@ Considerando essa perspectiva definimos a sguinte questão principal de pesquisa
 visões de qualidade interna e externa?}}
 \end{center}
 
-
-\todo[inline, color=pink]{Refazer a fig. 1  ou utilizar uma imagem em português. Você pode reaproveitar a Fig. 1 no tcc do Senna, fazendo a citação.}
-
 \begin{figure}[h]
     \centering
 	\caption{Abordagem GQM}
-    \includegraphics[width=0.7\textwidth]{figuras/GQM.png}
+    \includegraphics[width=0.9\textwidth]{figuras/GQM.png}
 
     \label{fig:gqm}
 	Fonte: Adaptado de \citeonline{Basili1994}
@@ -110,7 +98,7 @@ visões de qualidade interna e externa?}}
 
 \section{Objetivos}
 
-O objetivo geral deste trabalho consiste em analisar a adoção de práticas de DevSecOps no ciclo de devida de desenvolvimento do produto de software-livre \textcolor{blue}{(MEPA}\todo[color=yellow]{Inserir nota de rodapé com a url do MEPA}. Para alcançar este propósito, 
+O objetivo geral deste trabalho consiste em analisar a adoção de práticas de DevSecOps no ciclo de devida de desenvolvimento do produto de software-livre \textcolor{blue}{MEPA}\footnote{\href{https://gitlab.com/lappis-unb/projetos-energia/mec-energia}{Link para o repositório do projeto}}. Para alcançar este propósito, 
 foram definidos os seguintes objetivos específicos:
 
 \begin{itemize}
@@ -136,8 +124,8 @@ A seguir, são apresentados os capítulos que compõem a estrutura deste trabalh
 \section{Cronograma e Atividades}
 
 \subsection{Primeira Etapa}
-Esta subseção detalha as atividades desenvolvidas na primeira etapa da monografia. A Figura 2 ilustra o 
-fluxo das atividades, enquanto a Figura 3 apresenta o cronograma correspondente.
+Esta subseção detalha as atividades desenvolvidas na primeira etapa da monografia. A Figura \ref{fig:fluxograma} ilustra o 
+fluxo das atividades, enquanto a Figura \ref{fig:cronograma} apresenta o cronograma correspondente.
 
 \begin{figure}[h]
     \centering

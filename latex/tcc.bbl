@@ -5,54 +5,88 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
-\abntrefinfo{ABNT}{ABNT}{2011}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}: Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos --- apresenta{\c c}\~ao.
-Rio de Janeiro, 2011. 15~p.}
+\bibitem[Basili et al. 1994]{gqm}
+\abntrefinfo{Basili et al.}{BASILI et al.}{1994}
+{BASILI, V. et al. Goal question metric (gqm) approach.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 1994.
+ISBN 9780471028956.}
 
 \bibitem[Basili, Caldiera e Rombach 1994]{Basili1994}
 \abntrefinfo{Basili, Caldiera e Rombach}{BASILI; CALDIERA; ROMBACH}{1994}
 {BASILI, V.~R.; CALDIERA, G.; ROMBACH, H.~D. {The Goal Question Metric Approach}. In:  MARCINIAK, J.~J. (Ed.). \emph{Encyclopedia of Software Engineering}. [S.l.]: Wiley, 1994. v.~1, p. 528--532.}
 
-\bibitem[Boehm 1978]{Boehm1978}
+\bibitem[Boehm 1978]{boehm1978characteristics}
 \abntrefinfo{Boehm}{BOEHM}{1978}
-{BOEHM, B.~W. \emph{{Characteristics of Software Quality}}. [S.l.]: North-Holland, 1978.  (TRW Series of Software Technology).}
+{BOEHM, B.~W. \emph{Characteristics of Software Quality}. North-Holland, 1978. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=jLFXswEACAAJ}.}
 
-\bibitem[{Elsevier} 2025]{Scopus2025}
-\abntrefinfo{{Elsevier}}{{Elsevier}}{2025}
-{{Elsevier}. \emph{{Scopus}}. 2025. Disponível via Portal de Periódicos da CAPES. \url{https://www.scopus.com/}.
-Acesso em: 20 de julho de 2025.}
+\bibitem[Dromey 1995]{Dromey:1995:MSP:205302.205311}
+\abntrefinfo{Dromey}{DROMEY}{1995}
+{DROMEY, R.~G. A model for software product quality.
+\emph{IEEE Trans. Softw. Eng.}, IEEE Press, v.~21, p. 146--162, 2 1995.
+ISSN 0098-5589.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1109/32.345830}.}
+
+\bibitem[Díaz et al. 2022]{10.21203v1}
+\abntrefinfo{Díaz et al.}{DíAZ et al.}{2022}
+{DíAZ, J. et al. Harmonizing devops taxonomies - a grounded theory study.
+08 2022.}
+
+\bibitem[Elsevier 2024]{elsevier2022}
+\abntrefinfo{Elsevier}{ELSEVIER}{2024}
+{ELSEVIER. \emph{Banco de dados de resumos e citações organizado por especialistas}. 2024.
+Disponível em: \url{https://www.periodicos.capes.gov.br/}.}
+
+\bibitem[Fitzgerald e Stol 2017]{Fitzgerald2017}
+\abntrefinfo{Fitzgerald e Stol}{FITZGERALD; STOL}{2017}
+{FITZGERALD, B.; STOL, K.-J. Continuous software engineering: A roadmap and agenda.
+\emph{The Journal of Systems \& Software}, v.~123, p. 176--189, 2017.}
+
+\bibitem[França, Junior e Travassos 2016]{10.1145}
+\abntrefinfo{França, Junior e Travassos}{FRANçA; JUNIOR; TRAVASSOS}{2016}
+{FRANçA, B.~B.; JUNIOR, H. J.; TRAVASSOS, G. Characterizing devops by hearing multiple voices. In:  . [S.l.: s.n.], 2016.}
+
+\bibitem[G1 2025]{g1pix}
+\abntrefinfo{G1}{G1}{2025}
+{G1, P. 2025. Https://g1.globo.com/sp/sao-paulo/noticia/2025/07/04/policia-ataque-hacker-ao-sistema-que-liga-bancos-ao-pix.ghtml.
+Acessado: 25-07-2025.}
 
 \bibitem[{Google} 2024]{DORA2024}
 \abntrefinfo{{Google}}{{Google}}{2024}
 {{Google}. \emph{{DORA}}.
 [S.l.], 2024. Acessado em: 20 de julho de 2025. Dispon{\'\i}vel em: \url{https://dora.dev}.}
 
+\bibitem[ISO/IEC-25010 2010]{ISOIEC25010}
+\abntrefinfo{ISO/IEC-25010}{ISO/IEC-25010}{2010}
+{ISO/IEC-25010. \emph{ISO/IEC 25010 System and software quality models}.
+[S.l.], 2010.}
+
 \bibitem[ISO/IEC 25010 2023]{ISO25010}
 \abntrefinfo{ISO/IEC 25010}{ISO/IEC 25010}{2023}
 {ISO/IEC 25010. \emph{{ISO/IEC 25010:2023 Systems and software engineering --- Systems and software Quality Requirements and Evaluation (SQuaRE) --- System and software quality models}}.
 Geneva, CH, 2023.}
 
-\bibitem[ISO/IEC 27001 2022]{ISO27001}
-\abntrefinfo{ISO/IEC 27001}{ISO/IEC 27001}{2022}
-{ISO/IEC 27001. \emph{{ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection --- Information security management systems --- Requirements}}.
-Geneva, CH, 2022.}
+\bibitem[ISO/IEC-27001 2022]{isoiec27001}
+\abntrefinfo{ISO/IEC-27001}{ISO/IEC-27001}{2022}
+{ISO/IEC-27001. \emph{Information technology -- Security techniques -- Information security management systems -- Requirements}. 2022.
+Available at: https://www.iso.org/standard/70032.html.}
 
-\bibitem[ISO/IEC 9126 2001]{ISO9126}
-\abntrefinfo{ISO/IEC 9126}{ISO/IEC 9126}{2001}
-{ISO/IEC 9126. \emph{{ISO/IEC 9126-1:2001 Software engineering --- Product quality --- Part 1: Quality model}}.
-Geneva, CH, 2001. Esta norma foi descontinuada e substituída pela ISO/IEC 25010:2023.}
+\bibitem[ISO/IEC-27034 2011]{isoiec27034}
+\abntrefinfo{ISO/IEC-27034}{ISO/IEC-27034}{2011}
+{ISO/IEC-27034. \emph{Information technology -- Security techniques -- Application security -- Part 1: Overview and concepts}. 2011.
+ISO/IEC 27034-1:2011.}
+
+\bibitem[ISO/IEC-9126 2001]{ISOIEC9126}
+\abntrefinfo{ISO/IEC-9126}{ISO/IEC-9126}{2001}
+{ISO/IEC-9126. \emph{ISO/IEC 9126. Software engineering -- Product quality}. [S.l.]: ISO/IEC, 2001.}
 
 \bibitem[Joshi 2024]{Joshi20247}
 \abntrefinfo{Joshi}{JOSHI}{2024}
 {JOSHI, H. A secure software development methodology for enterprise business applications. In:  . [s.n.], 2024. p. 7 – 12. Cited by: 1. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85217554758&doi=10.1109\%2fICODSE63307.2024.10829891&partnerID=40&md5=aa77a0827de37592c910cb0f32cbb0fc}.}
 
-\bibitem[Kitchenham e Brereton 2013]{KITCHENHAM20132049}
-\abntrefinfo{Kitchenham e Brereton}{KITCHENHAM; BRERETON}{2013}
-{KITCHENHAM, B.; BRERETON, P. A systematic review of systematic review process research in software engineering.
-\emph{Information and Software Technology}, v.~55, n.~12, p. 2049--2075, 2013.
-ISSN 0950-5849.
-Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S0950584913001560}.}
+\bibitem[Kitchenham, Charters et al. 2007]{kitchenham2007guidelines}
+\abntrefinfo{Kitchenham, Charters et al.}{KITCHENHAM; CHARTERS et al.}{2007}
+{KITCHENHAM, B.; CHARTERS, S. et al. Guidelines for performing systematic literature reviews in software engineering.
+Keele, UK, 2007.}
 
 \bibitem[Kudriavtseva e Gadyatskaya 2024]{Kudriavtseva20241223}
 \abntrefinfo{Kudriavtseva e Gadyatskaya}{KUDRIAVTSEVA; GADYATSKAYA}{2024}
@@ -69,21 +103,55 @@ Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S0950
 Cited by: 0; All Open Access, Hybrid Gold Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85200057398&doi=10.1002\%2fsmr.2711&partnerID=40&md5=9b0595cd71d28171da66b90852ed7301}.}
 
+\bibitem[Luz, Pinto e Bonif{\'{a}}cio 2019]{DBLP:journals/jss/LuzPB19}
+\abntrefinfo{Luz, Pinto e Bonif{\'{a}}cio}{LUZ; PINTO; BONIF{\'{A}}CIO}{2019}
+{LUZ, W.~P.; PINTO, G.; BONIF{\'{A}}CIO, R. Adopting devops in the real world: {A} theory, a model, and a case study.
+\emph{J. Syst. Softw.}, v.~157, 2019.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1016/j.jss.2019.07.083}.}
+
+\bibitem[López et al. 2022]{LOPEZ2022111187}
+\abntrefinfo{López et al.}{LóPEZ et al.}{2022}
+{LóPEZ, L. et al. Quality measurement in agile and rapid software development: A systematic mapping.
+\emph{Journal of Systems and Software}, v.~186, p. 111187, 2022.
+ISSN 0164-1212.
+Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S0164121221002661}.}
+
 \bibitem[Masood e Java 2015]{Masood2015}
 \abntrefinfo{Masood e Java}{MASOOD; JAVA}{2015}
 {MASOOD, A.; JAVA, J. Static analysis for web service security - tools \& techniques for a secure development life cycle. In:  . [S.l.: s.n.], 2015.}
 
-\bibitem[McCall, Richards e Walters 1977]{McCall1977}
+\bibitem[McCall, Richards e Walters 1977]{McCall77}
 \abntrefinfo{McCall, Richards e Walters}{MCCALL; RICHARDS; WALTERS}{1977}
-{MCCALL, J.~A.; RICHARDS, P.~K.; WALTERS, G.~F. \emph{{Factors in Software Quality}}.
-[S.l.], 1977.}
+{MCCALL, J.; RICHARDS, P.~K.; WALTERS, G.~F. Factors in software quality. volume i, ii and iii. concepts and definitions of software quality.
+\emph{US Rome Air Development Center Reports, US Department of Commerce, USA}, p.~168, 1977.}
+
+\bibitem[{Mitre Corporation} 1999]{cwe}
+\abntrefinfo{{Mitre Corporation}}{{Mitre Corporation}}{1999}
+{{Mitre Corporation}. \emph{Common Weakness Enumeration (CWE™)}. 1999.
+Acessado em: 24-07-2025.
+Dispon{\'\i}vel em: \url{http://web.archive.org/web/20080207010024/http://www.808multimedia.com/winnt/kernel.htm}.}
 
 \bibitem[Nocera et al. 2023]{Nocera2023418}
 \abntrefinfo{Nocera et al.}{NOCERA et al.}{2023}
 {NOCERA, S. et al. A large-scale fine-grained empirical study on security concerns in open-source software. In:  . [s.n.], 2023. p. 418 – 425. Cited by: 3. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85183330517&doi=10.1109\%2fSEAA60479.2023.00069&partnerID=40&md5=cedd775ef204cc60b75b12f44bdda858}.}
 
+\bibitem[OWASP 2020]{owaspsamm}
+\abntrefinfo{OWASP}{OWASP}{2020}
+{OWASP. \emph{OWASP Software Assurance Maturity Model (SAMM)}. 2020. Https://owaspsamm.org/.
+Acessado: 24-07-2025.}
+
+\bibitem[OWASP 2021]{owasptop10_2021}
+\abntrefinfo{OWASP}{OWASP}{2021}
+{OWASP. \emph{OWASP Top Ten 2021}. 2021. \url{https://owasp.org/TopTen/}.
+OWASP Top Ten 2021 Report.}
+
+\bibitem[Pai et al. 2004]{pai_clinical_2004}
+\abntrefinfo{Pai et al.}{PAI et al.}{2004a}
+{PAI, M. et al. Clinical research methods.
+\emph{THE NATIONAL MEDICAL JOURNAL OF INDIA}, v.~17, n.~2, 2004.}
+
 \bibitem[Pai et al. 2004]{Pai2004}
-\abntrefinfo{Pai et al.}{PAI et al.}{2004}
+\abntrefinfo{Pai et al.}{PAI et al.}{2004b}
 {PAI, M. et al. {Systematic reviews and meta-analyses: an illustrated, step-by-step guide}.
 \emph{National Medical Journal of India}, v.~17, n.~2, p. 86--95, mar-apr 2004.
 PMID: 15141602.}
@@ -103,6 +171,13 @@ Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-851
 \abntrefinfo{Rangnau et al.}{RANGNAU et al.}{2020}
 {RANGNAU, T. et al. Continuous security testing: A case study on integrating dynamic security testing tools in ci/cd pipelines. In:  . [s.n.], 2020. p. 145 – 154. Cited by: 57; All Open Access, Green Open Access. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096513818&doi=10.1109\%2fEDOC49727.2020.00026&partnerID=40&md5=c40a98ef4d8eff4fb8b08e234290f023}.}
 
+\bibitem[Runeson e H\"{o}st 2009]{10.1007/s10664-008-9102-8}
+\abntrefinfo{Runeson e H\"{o}st}{RUNESON; H\"{o}ST}{2009}
+{RUNESON, P.; H\"{o}ST, M. Guidelines for conducting and reporting case study research in software engineering.
+\emph{Empirical Softw. Engg.}, Kluwer Academic Publishers, USA, v.~14, n.~2, p. 131–164, abr. 2009.
+ISSN 1382-3256.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10664-008-9102-8}.}
+
 \bibitem[Saeed et al. 2025]{Saeed2025139}
 \abntrefinfo{Saeed et al.}{SAEED et al.}{2025}
 {SAEED, H. et al. Review of techniques for integrating security in software development lifecycle.
@@ -110,17 +185,39 @@ Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-851
 Cited by: 2; All Open Access, Gold Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85214507365&doi=10.32604\%2fcmc.2024.057587&partnerID=40&md5=16c958450978504c24f727dbb66e06d5}.}
 
+\bibitem[Siavvas et al. 2021]{Siavvas21}
+\abntrefinfo{Siavvas et al.}{SIAVVAS et al.}{2021a}
+{SIAVVAS, M. et al. A hierarchical model for quantifying software security based on static analysis alerts and software metrics.
+\emph{Software Quality Journal}, Kluwer Academic Publishers, USA, v.~29, n.~2, p. 431–507, jun. 2021.
+ISSN 0963-9314.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s11219-021-09555-0}.}
+
 \bibitem[Siavvas et al. 2021]{Siavvas2021431}
-\abntrefinfo{Siavvas et al.}{SIAVVAS et al.}{2021}
+\abntrefinfo{Siavvas et al.}{SIAVVAS et al.}{2021b}
 {SIAVVAS, M. et al. A hierarchical model for quantifying software security based on static analysis alerts and software metrics.
 \emph{Software Quality Journal}, v.~29, n.~2, p. 431 – 507, 2021.
 Cited by: 21; All Open Access, Green Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106207514&doi=10.1007\%2fs11219-021-09555-0&partnerID=40&md5=b0ecf71985d4ef4c10438eabe73da349}.}
 
-\bibitem[Wohlin et al. 2024]{Wohlin2024}
-\abntrefinfo{Wohlin et al.}{WOHLIN et al.}{2024}
-{WOHLIN, C. et al. \emph{{Experimentation in Software Engineering}}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2024.
-ISBN 978-3-662-69306-3. Dispon{\'\i}vel em: \url{https://link.springer.com/book/10.1007/978-3-662-69306-3}.}
+\bibitem[UOL 2025]{uolpix}
+\abntrefinfo{UOL}{UOL}{2025}
+{UOL, P. 2025. Https://economia.uol.com.br/noticias/estadao-conteudo/2025/07/05/entenda-golpe-que-desviou-r-800-milhoes-da-cm.htm.
+Acessado: 25-07-2025.}
+
+\bibitem[Valor-Economico 2025]{vepix}
+\abntrefinfo{Valor-Economico}{VALOR-ECONOMICO}{2025}
+{VALOR-ECONOMICO, P. 2025. Https://valor.globo.com/financas/noticia/2025/07/02/hackers-teriam-desviado-milhoes-de-reais-apos-invadir-empresa-que-conecta-instituicoes-financeiras-ao-pix.ghtml.
+Acessado: 25-07-2025.}
+
+\bibitem[Wohlin et al. 2012]{Wohlin:2012:ESE:2349018}
+\abntrefinfo{Wohlin et al.}{WOHLIN et al.}{2012}
+{WOHLIN, C. et al. \emph{Experimentation in Software Engineering}. [S.l.]: Springer Publishing Company, Incorporated, 2012.
+ISBN 3642290434, 9783642290435.}
+
+\bibitem[Yin 2015]{yin2015estudo}
+\abntrefinfo{Yin}{YIN}{2015}
+{YIN, R. \emph{Estudo de Caso - 5.Ed.: Planejamento e M{\'e}todos}. Bookman Editora, 2015.
+ISBN 9788582602324. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=EtOyBQAAQBAJ}.}
 
 \bibitem[Zhang e Zhang 2024]{Zhang2024160317}
 \abntrefinfo{Zhang e Zhang}{ZHANG; ZHANG}{2024}
