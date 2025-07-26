@@ -1,6 +1,134 @@
 \chapter[Planejamento do Estudo de Caso]{Planejamento do Estudo de Caso}
 
-Este capitulo apresenta 
+Neste capítulo é apresentado o planejamento do estudo de caso conduzido na segunda etapa do trabalho, aqui são estabelecidos os conceitos e definições relacionados a esse tipo de estudo, além de conter as estratégias adotadas para efetivamente responder as perguntas de pesquisa.
 
-\section{Protocolo}
+\section{Definição} 
 
+Yin (2001) define o estudo de caso como uma investigação empírica que analisa um determinado fenômeno da atualidade em seu contexto real, ou seja, o pesquisador se insere no ambiente cotidiano onde o objeto de estudo está sendo executado. Runeson e Höst (2009) defendem que esse método se adequa muito bem a diversas pesquisas realizadas na engenharia de software, devido a necessidade de analisar fenômenos contemporâneos interligados, o que dificulta sua análise de forma isolada.
+
+Também, de acordo com Yin (2001), o estudo de caso é flexível e iterativo, isso significa que a estrutura do estudo pode se adaptar no decorrer da pesquisa, pois o pesquisador ao realizar as iterações de coleta e análise dos dados, pode vir a perceber características do caso que não foram possíveis serem identificar a priori.
+
+Os estudos de caso devem coletar dados de múltiplas fontes, dessa forma, ao verificar que múltiplas fontes de dados apontam para a mesma conclusão, aumenta-se robustez e confiabilidade dos resultados, pois é diminuido a probabilidade de erro ou viés, além de fornecer uma visão mais ampla sobre o caso.
+
+\section{Objetivo}
+
+Segundo \cite{Siavvas2021431}, o desenvolvimento de software seguro é pautado na medição da qualidade da segurança de software, pois assim, é possível avaliar o nível da segurança do produto e conseguir traçar metas para guiar os processos de melhoria contínua do sistema. Porém, por diversas vezes são utilizados critérios de avaliação subjetivos ou que não possuem a devida validação, o que pode acarretar catastofrés relacionadas a segurança do produto.
+Situação essa que se agrava ao se tratar de práticas emergentes na indústria, como DevSecOps, que apesar de seu destaque no desenvolvimento ágil por muitas vezes carece de avaliação por metodologias apropriadas.
+
+Assim, o objetivo desse estudo consiste em descorbrir como as práticas DevSecOps afetam os aspectos relacionados a segurança de um projeto de software, usando métodos propostos por pesquisadores que compõe o estado da arte da engenharia de software para análise da segurança.
+
+\section{Caso}
+
+O MEPA - Contratos de Energia é um sistema web open-source criado pelo Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS) da Universidade de Brasília (UnB) e que recebe contribuições de alunos durante o semestre, devido à sua integração com a disciplina de Gerência de Configuração e Evolução de Software, também ministrada na UnB.
+
+
+A arquitetura consiste em um frontend construído com o framework Next.js do React, que forma a interface com o usuário. Essa interface se comunica com um servidor Python construído com o framework Django. Os dados são persistidos em um banco de dados PostgreSQL que se conecta ao sistema pelo Django. A comunicação entre a interface e o servidor é feita por uma API REST; dessa forma, a interface gráfica se comunica apenas com o servidor, e este faz a comunicação com o banco de dados, fornecendo os dados necessários para a exibição na interface. Essa arquitetura pode ser observada na Figura 10.
+
+
+\begin{figure}[h]
+    \centering
+	\caption{Arquitera Geral}
+    \includegraphics[width=0.9\textwidth]{figuras/arquitetura-geral.png}
+
+    \label{fig:arquitetura-geral}
+	Fonte: LAPPIS
+\end{figure}
+
+
+A API (servidor) é composta por quatro módulos. O primeiro, chamado de Models, contém as definições dos objetos que serão armazenados no banco de dados, incluindo seus atributos e os comportamentos básicos de criar, remover, atualizar e deletar.
+
+O módulo Serializer é responsável por serializar e desserializar os objetos definidos nos Models. Ele traduz e valida os dados entre o formato de comunicação da API (JSON) e o formato mais complexo usado internamente pelo framework.
+
+Após a tradução dos objetos, o módulo de visualização (Views) realiza o processamento das requisições e respostas HTTP, que são capturadas pelo módulo de roteamento de requisições. Essa arquitetura está ilustrada na Figura 11.
+
+\begin{figure}[h]
+    \centering
+	\caption{Arquitera do Backend}
+    \includegraphics[width=0.9\textwidth]{figuras/arquitetura-backend.png}
+
+    \label{fig:arquitetura-backend}
+	Fonte: LAPPIS
+\end{figure}
+
+
+A Figura 12 representa a arquitetura da interface gráfica (frontend), construída com o framework Next.js e a biblioteca React para a criação de componentes. Utiliza-se também a biblioteca Redux para gerenciar os estados e manter a consistência do fluxo de dados da aplicação. Os componentes são a parte principal da interface, pois é através deles que o usuário interage com o sistema. Eles representam todos os elementos visuais e são utilizados para evitar o acoplamento do código e facilitar a resolução de problemas.
+
+Quando o usuário executa uma ação em um componente, uma função criadora de ação é chamada. Essa função gera um objeto de ação que descreve o que aconteceu. Em seguida, essa ação é enviada para um redutor. O redutor, por sua vez, avalia a ação e determina como o estado da aplicação deve mudar, retornando um novo estado atualizado.
+
+Esse novo estado é salvo na Store, que centraliza e armazena todas as informações de estado da aplicação. Quando a interface detecta uma mudança na Store, os novos dados são passados para os componentes relevantes por meio das Propriedades (Props), garantindo que a interface do usuário reflita o estado atual da aplicação.
+
+
+
+\begin{figure}[h]
+    \centering
+	\caption{Arquitera do Backend}
+    \includegraphics[width=0.9\textwidth]{figuras/arquitetura-frontend.png}
+
+    \label{fig:arquitetura-frontend}
+	Fonte: LAPPIS
+\end{figure}
+
+\section{Trabalhos Relacionados}
+
+
+\section{Questão de Pesquisa}
+
+Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas espécificas derivadas da pergunta principal e suas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa de cada uma das perguntas derivadas da pergunta principal, que agora norteaiam o estudo de caso.
+
+A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema de impedir o acesso não autorizado às informações, assim, impedindo que os dados privados sejam visíveis para quem não possui as permissões necessárias. Ela será uma a sub-característica de segurança analisadas neste estudo de caso, por meio da análise de vulnerabilidades detectadas no pipeline de CI/CD. Para corroborar com essa análise e fazer a triangularização da coleta de dados, uma avaliação qualitativa com os membros do time é necessária para observar os impactos dessas novas práticas no processo de desenvolvimento.
+
+À vista disso, as seguintes perguntas específicas foram elaboradas:
+
+\begin{itemize}
+    \item Questão Específica 1: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
+    \begin{itemize}
+        \item Métrica 1.1: Quantidade de vulnerabilidades identificadas por ferramentas SAST e SCA a cada execução do pipeline.
+        \item Métrica 1.2: Quantidade de vulnerabilidades identificadas por ferramentas DAST no ambiente de testes.
+    \end{itemize}
+    \item Questão Específica 2: A análise automatica da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
+    \begin{itemize}
+        \item Métrica 2.1: Taxa de builds/deploys bloqueados devido à descoberta de vulnerabilidades.
+        \item Métrica 2.2: Feedback do time obtido por um questionário sobre os impactos das novas práticas.
+    \end{itemize}
+\end{itemize}
+
+
+\section{Fonte de Dados}
+
+Para coletar os dados necessários para a posterior avaliação das métricas são necessárias diferentes fontes de dados. Primeiramente, as ferramentas SAST e SCA são executadas diretamente no código-fonte. 
+Outra fonte de dados é o sistema em uso, que será usado para a obtençao dos dados referentes às ferramentas DAST que analisam o software em execução.
+Adiconalmente, o orquestrador de CI/CD atuará como fonte de dados para coletar os tentativas falhas de integração do código, evidênciando a identificação de falhas pelas ferramentas.
+
+Por fim, a equipe técnica será a fonte de dados dos formulários de avaliação ao final do estudo de caso, permitindo a análise qualitativa e triangularização dos resultados.
+
+\section{Procedimentos}
+
+Primeiramente, é necessário realizar a integração e configuração das ferramentas de segurança ao pipeline de CI/CD, nesta etapa serão definidos os críterios para o bloqueio ou merge das novas versões do código para que o processo de desenvolvimento não torne oneroso devido as restrições de segurança.
+
+Após a configuração das ferramentas, é preciso estabeler a linha de base de segurança do projeto, ou seja, avaliar o estado atual do aplicação e gerar o primeiro conjunto de dados que serão usados para comparação na conclusão da monografia.
+
+Então, a execução contínua da análise de segurança será iniciada, durante o segundo semestre letivo de 2025 os desenvolvedores utilizarão a nova pipeline em seu cotidiano, enquanto as métricas são coletads para análise futura.
+
+Ao final da observação, os dados quantitativos serão centralizados e analisados para produzir as métricas obtidas ao final do estudo, além de ser realizada a aplicação do questionário de coleta e da percepção da equipe para obter a opinião dos participantes do estudo.
+
+\section{Análise de Dados}
+
+Os dados quantitativos serão analisados usando estatística descritiva e análise de tendência. Para Métrica 1.1 e 1.2 será calculada a frequência absoluta de vulnerabilidades encontradas, ao passo que a Métrica 2.1 será calculada a taxa percentual de builds bloqueados em relação ao total de builds executados no período em avaliação. Esses dados serão dispostos em um gráfico de linhas em função do tempo para acompanhar como as ferramentas ajudaram na detecção de vulnerabilidades.
+
+Para a análise de frequência de respostas do questionário, a frequência de cada das respostas de cada pergunta será registrada, de modo a possibilitar o cálculo da moda, pois ao ter a opinião da maioria dos participantes sobre o tópico solicitado será possível obter a percepção geral do impacto das atividades realizadas.
+
+\section{Instrumentação}
+
+A instrumentação se refere às ferramentas que serão utilizadas para a realização do estudo de caso, aqui estão definidas as ferramentas usadas para a análise da segurança do sistema, controle de implementação do código, versionamento do código da pipeline feita e coleta de informações da equipe.
+
+O SonarQube é uma ferramenta de open-source de avalição da qualidade e segurança do código-fonte. Ele realiza análise estática para detectar bugs, vulnerabilidades e code smells em várias linguagens. Ele fará parte das ferramentas white-box integradas ao pipeline realizando a análise estática de segurança de aplicação (SAST). 
+
+O Trivy é um scanner de segurança de código aberto. Ele é utilizado na análise de composição de software, verificando as bibliotecas de terceiros do projeto, garantindo que componentes externos ao projeto não insiram vulnerabilidades no sistemas. Além disso, ele é capaz de buscar vulnerabilidades em containeres e configurações de infraestrutura como código. Ele complementará o SonarQube como ferramenta white-box.
+
+O OWASP ZAP foi desenvolvido para encontrar problemas de segurança em aplicações web em execução. Ele será empregado para realizar a Análise Dinâmica de Segurança de Aplicação (DAST) em um ambiente de testes.
+
+O GitLab CI/CD é uma ferramenta integrada ao GitLab que permite a automação das etapas do ciclo de vida do software, através dele que as ferramentas de segurança serão executadas automaticamente e ele servirá para bloquear o build/deploy caso vulnerabilidades sejam encontradas.
+
+O Git é um sistema de controle de versão e o GitHub é uma plataforma de hospedagem de código-fonte para controle de versão com Git. Eles serão utilizados para o versionamento e armazenamento dos artefatos por este estudo de caso.
+
+O Google Forms permite a criação rápida e fácil de formulários online, além de permitir a gestão e análise dos resultados. Ele será utilizado para a aplicação do questionário que coleta os dados qualitativos da equipe.
