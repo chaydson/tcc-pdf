@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex tcc"] 1753566720.92452 "tcc.aux" "tcc.bbl" "tcc" 1753566726.96656 0
-  "./bibliografia.bib" 1753554248.42852 21646 ab132bc9af7e8414a13d9894366f7bec ""
+["bibtex tcc"] 1753628208.55753 "tcc.aux" "tcc.bbl" "tcc" 1753628210.87331 0
+  "./bibliografia.bib" 1753627975.98888 21921 d2237f61a93a565c0e5bc661184be51f ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "tcc.aux" 1753566725.69203 48145 07bcebb74e1b0d17903890623167b4a1 "pdflatex"
+  "tcc.aux" 1753628210.29962 49130 12b7ffe395db04793bfa8d8d14233c69 "pdflatex"
   (generated)
   "tcc.bbl"
   "tcc.blg"
   (rewritten before read)
-["makeindex tcc.idx"] 1753557430.09361 "tcc.idx" "tcc.ind" "tcc" 1753566726.96625 0
-  "tcc.idx" 1753566723.06809 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex tcc.idx"] 1753590188.3973 "tcc.idx" "tcc.ind" "tcc" 1753628210.87318 0
+  "tcc.idx" 1753628209.3486 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "tcc.ilg"
   "tcc.ind"
   (rewritten before read)
-["pdflatex"] 1753566721.23412 "/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex" "tcc.pdf" "tcc" 1753566726.96709 0
+["pdflatex"] 1753628208.70173 "/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex" "tcc.pdf" "tcc" 1753628210.87348 0
   "/etc/texmf/web2c/texmf.cnf" 1752028036.7173 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/chaydson/Workspace/UnB/TCC/monografia/latex/tcc.tex" 1752994356.2853 974 0c9693423222c441838deabdcc6bcf55 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -267,10 +267,10 @@
   "editaveis/errata.tex" 1752027398.28175 840 9736dfb1ec6c21db6031c2c7d8c643be ""
   "editaveis/informacoes.tex" 1753554248.42952 641 ecefb105af5f6ed27b8c610b3e1dee5c ""
   "editaveis/introducao.tex" 1753565194.96652 15710 2cc534b25eb0108f99ad349c4dacf420 ""
-  "editaveis/planejamentoestudo.tex" 1753564892.49563 13149 1df9af3c4b70bb24e677cfdd2006a294 ""
+  "editaveis/planejamentoestudo.tex" 1753628205.96955 17649 6ff899e3eaa9bc4fb3bb270f6240b336 ""
   "editaveis/referencialteorico.tex" 1753556717.13137 800 e61208204b07e52bc57eeda12b53aedb ""
   "editaveis/resumo.tex" 1752626400.16063 834 509a9ee5198999277833c736a7df29cf ""
-  "editaveis/revisaodaliteratura.tex" 1753566714.02032 33730 9beffb71a211c745711a5294d1e050b0 ""
+  "editaveis/revisaodaliteratura.tex" 1753583499.32758 33730 9beffb71a211c745711a5294d1e050b0 ""
   "editaveis/simbolos.tex" 1752027398.28175 170 04d69b66c41be80da8dba8fa94a74c0e ""
   "figuras/GQM.png" 1753556890.57775 67616 39b20d666afd7386aad5dcaef67f0065 ""
   "figuras/arquitetura-backend.png" 1753553617.10643 70704 a8c3a3be8768769a0e2b0299b0afbca3 ""
@@ -294,14 +294,14 @@
   "fixos/listasAutomaticas.tex" 1752027398.34675 140 3d9123a8ba3eeb3da4258aa67285a406 ""
   "fixos/pacotes.tex" 1753554248.43052 470 adbb535fd14a3dd2f420169611a1d758 ""
   "fixos/setup.tex" 1752027398.34675 641 ad68ffb8f767383eb90edeeb2a1db271 ""
-  "tcc.aux" 1753566725.69203 48145 07bcebb74e1b0d17903890623167b4a1 "pdflatex"
-  "tcc.bbl" 1753566721.22114 13671 63a0dc017be9cf66009949bd1c6ef6ec "bibtex tcc"
-  "tcc.brf" 1753566725.71603 3949 eddcafe0c5371cdfe32943993bc3a763 "pdflatex"
-  "tcc.ind" 1753557430.42773 0 d41d8cd98f00b204e9800998ecf8427e "makeindex tcc.idx"
-  "tcc.lof" 1753566725.71703 1235 c3efd393703a17b622de7ad261681abd "pdflatex"
-  "tcc.lot" 1753566725.71703 445 e83702d88d16a3ed8f92a7d15648047a "pdflatex"
+  "tcc.aux" 1753628210.29962 49130 12b7ffe395db04793bfa8d8d14233c69 "pdflatex"
+  "tcc.bbl" 1753628208.69259 13946 2f8a851f5689b4ec12589a842b22ad97 "bibtex tcc"
+  "tcc.brf" 1753628210.30762 4437 03ed365a272342e4849da71f2d521c56 "pdflatex"
+  "tcc.ind" 1753590188.69923 0 d41d8cd98f00b204e9800998ecf8427e "makeindex tcc.idx"
+  "tcc.lof" 1753628210.30762 1235 8cecb217b248b0c9bf0bafba1abac39b "pdflatex"
+  "tcc.lot" 1753628210.30762 445 e83702d88d16a3ed8f92a7d15648047a "pdflatex"
   "tcc.tex" 1752994356.2853 974 0c9693423222c441838deabdcc6bcf55 ""
-  "tcc.toc" 1753566725.71703 6794 7a9e7e39ec5eaf311384877cd51e1399 "pdflatex"
+  "tcc.toc" 1753628210.30762 6794 45bfd51b88e48cca57e48b820a11299f "pdflatex"
   (generated)
   "tcc.aux"
   "tcc.brf"

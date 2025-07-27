@@ -20,6 +20,7 @@ Warning--entry type for "isoiec27034" isn't style-file defined
 Warning--entry type for "cwe" isn't style-file defined
 --line 110 of file bibliografia.bib
 Warning--I didn't find a database entry for "NBR14724:2011"
+Warning--I didn't find a database entry for "10.1007/s10664-008-9102-8"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -29,45 +30,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 43 entries,
+You've used 44 entries,
             6714 wiz_defined-function locations,
-            1483 strings with 19572 characters,
-and the built_in function-call counts, 74219 in all, are:
-= -- 9020
+            1489 strings with 19779 characters,
+and the built_in function-call counts, 74633 in all, are:
+= -- 9054
 > -- 1298
 < -- 2113
 + -- 2595
 - -- 390
-* -- 4492
-:= -- 8848
-add.period$ -- 193
-call.type$ -- 43
-change.case$ -- 472
-chr.to.int$ -- 83
-cite$ -- 42
-duplicate$ -- 7881
-empty$ -- 2545
+* -- 4515
+:= -- 8888
+add.period$ -- 196
+call.type$ -- 44
+change.case$ -- 477
+chr.to.int$ -- 84
+cite$ -- 43
+duplicate$ -- 7906
+empty$ -- 2601
 format.name$ -- 1879
-if$ -- 14691
+if$ -- 14810
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 753
-newline$ -- 229
+missing$ -- 767
+newline$ -- 234
 num.names$ -- 206
-pop$ -- 1011
+pop$ -- 1025
 preamble$ -- 1
-purify$ -- 173
+purify$ -- 176
 quote$ -- 0
-skip$ -- 8106
+skip$ -- 8135
 stack$ -- 1
-substring$ -- 3188
-swap$ -- 2923
+substring$ -- 3205
+swap$ -- 2932
 text.length$ -- 56
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 286
+while$ -- 287
 width$ -- 0
-write$ -- 689
-(There were 4 warnings)
+write$ -- 703
+(There were 5 warnings)

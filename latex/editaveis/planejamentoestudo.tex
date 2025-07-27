@@ -4,25 +4,31 @@ Neste capítulo é apresentado o planejamento do estudo de caso conduzido na seg
 
 \section{Definição} 
 
-Yin (2001) define o estudo de caso como uma investigação empírica que analisa um determinado fenômeno da atualidade em seu contexto real, ou seja, o pesquisador se insere no ambiente cotidiano onde o objeto de estudo está sendo executado. Runeson e Höst (2009) defendem que esse método se adequa muito bem a diversas pesquisas realizadas na engenharia de software, devido a necessidade de analisar fenômenos contemporâneos interligados, o que dificulta sua análise de forma isolada.
+\citeonline{yin2015estudo} define o estudo de caso como uma investigação empírica que analisa um determinado fenômeno da atualidade em seu contexto real, ou seja, o pesquisador se insere no ambiente cotidiano onde o objeto de estudo está sendo executado. Essa abordagem é particularmente relevante para a Engenharia de Software, pois frequentemente os fenômenos analisados nessa área são complexos e interligados, o que dificulta analisá-los isoladamente do seu ambiente de execução \cite{Runeson2009}.
 
-Também, de acordo com Yin (2001), o estudo de caso é flexível e iterativo, isso significa que a estrutura do estudo pode se adaptar no decorrer da pesquisa, pois o pesquisador ao realizar as iterações de coleta e análise dos dados, pode vir a perceber características do caso que não foram possíveis serem identificar a priori.
+Adicionalmente, \citeonline{yin2015estudo} destaca que o estudo de caso é flexível e iterativo, isso significa que a estrutura do estudo pode se adaptar no decorrer da pesquisa, pois o pesquisador ao realizar as iterações de coleta e análise dos dados, pode vir a perceber características do caso que não foram possíveis serem identificar a priori.
 
-Os estudos de caso devem coletar dados de múltiplas fontes, dessa forma, ao verificar que múltiplas fontes de dados apontam para a mesma conclusão, aumenta-se robustez e confiabilidade dos resultados, pois é diminuido a probabilidade de erro ou viés, além de fornecer uma visão mais ampla sobre o caso.
+Ademais, visando assegurar o rigor e a confiabilidade da investigação, os estudos de caso devem coletar dados de múltiplas fontes, dessa forma, ao verificar que conclusões obtidas através de dados obtidos em diferentes locais apontam para o mesmo resultado, aumenta-se robustez e confiabilidade dos resultados, pois esse processo de triangulação diminui a probabilidade de erro ou viés é, além de fornecer uma visão mais ampla sobre o caso \cite{yin2015estudo}.
+
+Verifica-se, também, a necessidade de determinar se o estudo será holístico ou incorporado \cite{yin2015estudo}. Os estudos de caso holísticos analisam o caso como um todo, ou seja, o fenômeno é visto como um sistema único e integrado, portanto, o pesquisador obtém uma visão ampla e geral do caso. Já os estudos incorporados, tem como principal característica o aprofundamento em múltiplas unidades de análise dentro de um mesmo caso, permitindo uma análise mais aprofundada.
+
+Para além disso, \cite{Runeson2009} explicita a necessidade de considerar as ameaças a validade do estudo desde o início da pesquisa, pois ignorar tais fatores interfere na confiabilidade dos resultados. A primeira ameaça definida pelo autor está relacionada à validade do constructo, 
+que representa em qual extensão as medidas operacionais realmente representam o que o pesquisador tem em mente e o que está sendo investigado de acordo com as perguntas de pesquisa. Já a ameaça a validade interna, refere-se ao risco de existir um fator não mapeado pelo pesquisador que cause interferência na relação causal entre os fatores selecionados.
+As ameaças externas, por outro lado, estão relacionadas a capacidade de generalização do estudo, ou seja, deseja-se que os achados do estudo tenham relevância para casos com características semelhantes. Por fim, a confiabilidade refere-se ao grau em que os dados e a análise dependem de pesquisadores específicos, isto é, se outro pesquisador conduzisse o mesmo estudo, o resultado deveria ser o mesmo.
 
 \section{Objetivo}
 
-Segundo \cite{Siavvas2021431}, o desenvolvimento de software seguro é pautado na medição da qualidade da segurança de software, pois assim, é possível avaliar o nível da segurança do produto e conseguir traçar metas para guiar os processos de melhoria contínua do sistema. Porém, por diversas vezes são utilizados critérios de avaliação subjetivos ou que não possuem a devida validação, o que pode acarretar catastofrés relacionadas a segurança do produto.
+Segundo \citeonline{Siavvas2021431}, o desenvolvimento de software seguro é pautado na medição da qualidade da segurança de software, pois assim, é possível avaliar o nível da segurança do produto e conseguir traçar metas para guiar os processos de melhoria contínua do sistema. Porém, por diversas vezes são utilizados critérios de avaliação subjetivos ou que não possuem a devida validação, o que pode acarretar catastofrés relacionadas a segurança do produto.
 Situação essa que se agrava ao se tratar de práticas emergentes na indústria, como DevSecOps, que apesar de seu destaque no desenvolvimento ágil por muitas vezes carece de avaliação por metodologias apropriadas.
 
 Assim, o objetivo desse estudo consiste em descorbrir como as práticas DevSecOps afetam os aspectos relacionados a segurança de um projeto de software, usando métodos propostos por pesquisadores que compõe o estado da arte da engenharia de software para análise da segurança.
 
 \section{Caso}
+O \textcolor{blue}{MEPA}\footnote{\href{https://mepaenergia.org/}{Página do institucional da plataforma}} é uma plataforma de software livre focada na recomendação, gestão e otimização de contratos de energia, desenvolvida pela Universidade de Brasília (UnB) com financiamento do Governo Federal. A solução foi criada para aprimorar os contratos de fornecimento de energia em instituições públicas, sendo reconhecida pelo Tribunal de Contas da União (TCU) como referência na gestão de energia elétrica para as Instituições Federais de Ensino Superior (IFES).
 
-O MEPA - Contratos de Energia é um sistema web open-source criado pelo Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS) da Universidade de Brasília (UnB) e que recebe contribuições de alunos durante o semestre, devido à sua integração com a disciplina de Gerência de Configuração e Evolução de Software, também ministrada na UnB.
+Empregando inteligência artificial, o sistema realiza uma análise pormenorizada de dados de consumo, como o histórico de faturas das unidades consumidoras, para identificar as opções contratuais mais vantajosas e economicamente eficientes para cada instituição. Adicionalmente, a plataforma também gera relatórios estratégicos com gráficos detalhados sobre o consumo, possibilitando que os gestores a identifiquem padrões e permitindo a tomada de decisões assertivas relaciondas a otimização de custos.
 
-
-A arquitetura consiste em um frontend construído com o framework Next.js do React, que forma a interface com o usuário. Essa interface se comunica com um servidor Python construído com o framework Django. Os dados são persistidos em um banco de dados PostgreSQL que se conecta ao sistema pelo Django. A comunicação entre a interface e o servidor é feita por uma API REST; dessa forma, a interface gráfica se comunica apenas com o servidor, e este faz a comunicação com o banco de dados, fornecendo os dados necessários para a exibição na interface. Essa arquitetura pode ser observada na Figura \ref{fig:arquitetura-geral}.
+A arquitetura consiste em um frontend construído com o framework Next.js do React, que forma a interface com o usuário. Essa interface se comunica com um servidor Python construído com o framework Django. Os dados são persistidos em um banco de dados PostgreSQL que se conecta ao sistema pelo Django. A comunicação entre a interface e o servidor é feita por uma API REST; dessa forma, a interface gráfica se comunica apenas com o servidor, e este faz a comunicação com o banco de dados, fornecendo os dados necessários para a exibição na interface. Essa arquitetura pode ser observada na Figura \ref{fig:arquitetura-geral} e o seu código-fonte está disponibilizado no GitLab\footnote{\href{https://gitlab.com/lappis-unb/projetos-energia/mec-energia}{Repositórios do MEPA}}.
 
 
 \begin{figure}[h]
@@ -82,12 +88,13 @@ A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema d
 \begin{itemize}
     \item Questão Específica 1: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
     \begin{itemize}
-        \item Métrica 1.1: Quantidade de vulnerabilidades identificadas por ferramentas SAST e SCA a cada execução do pipeline.
-        \item Métrica 1.2: Quantidade de vulnerabilidades identificadas por ferramentas DAST no ambiente de testes.
+        \item Métrica 1.1: Média de vulnerabilidades encontradas por ferramentas SAST, por nível de severidade.
+        \item Métrica 1.2: Média de vulnerabilidades encontradas por ferramentas DAST, por nível de severidade.
+        \item Métrica 1.3: Proporção de vulnerabilidades em bibliotecas encontradas por ferramentas SCA, por nível de severidade.
     \end{itemize}
-    \item Questão Específica 2: A análise automatica da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
+    \item Questão Específica 2: A análise automática da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
     \begin{itemize}
-        \item Métrica 2.1: Taxa de builds/deploys bloqueados devido à descoberta de vulnerabilidades.
+        \item Métrica 2.1: Taxa de builds/deploys bloqueados devido à descoberta de vulnerabilidades de criticidade média ou superior.
         \item Métrica 2.2: Feedback do time obtido por um questionário sobre os impactos das novas práticas.
     \end{itemize}
 \end{itemize}
@@ -103,7 +110,12 @@ Por fim, a equipe técnica será a fonte de dados dos formulários de avaliaçã
 
 \section{Procedimentos}
 
-Primeiramente, é necessário realizar a integração e configuração das ferramentas de segurança ao pipeline de CI/CD, nesta etapa serão definidos os críterios para o bloqueio ou merge das novas versões do código para que o processo de desenvolvimento não torne oneroso devido as restrições de segurança.
+Para atender à complexidade das questões de pesquisa, este trabalho aptou pelo método de estudo de caso incorporado, fundamentado por \citeonline{yin2015estudo}. 
+Esta abordagem foi escolhida, pois permite que o caso principal seja investigado por meio da análise aprofundada de múltiplas subunidades de análise. Especificamente, o estudo se debruça sobre diferentes faces do projeto, como
+o impacto na qualidade da segurança interna e externa do produto, e a percepção da equipe sobre as mudanças implementadas. Ao examinar cada um desses componentes seguindo o protocolo de estudo de caso, é possível construir uma visão detalhada e triangulada que
+fortalece a validade das conclusões e oferece uma resposta mais completa ao problema investigado.
+
+Desse modo, é necessário realizar a integração e configuração das ferramentas de segurança ao pipeline de CI/CD, nesta etapa serão definidos os críterios para o bloqueio ou merge das novas versões do código para que o processo de desenvolvimento não se torne oneroso devido as restrições de segurança.
 
 Após a configuração das ferramentas, é preciso estabeler a linha de base de segurança do projeto, ou seja, avaliar o estado atual do aplicação e gerar o primeiro conjunto de dados que serão usados para comparação na conclusão da monografia.
 
@@ -113,9 +125,13 @@ Ao final da observação, os dados quantitativos serão centralizados e analisad
 
 \section{Análise de Dados}
 
-Os dados quantitativos serão analisados usando estatística descritiva e análise de tendência. Para Métrica 1.1 e 1.2 será calculada a frequência absoluta de vulnerabilidades encontradas, ao passo que a Métrica 2.1 será calculada a taxa percentual de builds bloqueados em relação ao total de builds executados no período em avaliação. Esses dados serão dispostos em um gráfico de linhas em função do tempo para acompanhar como as ferramentas ajudaram na detecção de vulnerabilidades.
+A análise dos dados quantitativos será fundamentada em estatísticas descritivas e em análise de tendência, visando avaliar a evolução da segurança da aplicação ao longo do tempo. Para as métricas de detecção de vulnerabilidades por ferramentas SAST e DAST, Métrica 1.1 e Métrica 1.2, adaptadas da métrica B.30 Vulnerability landscape da norma \citeonline{ISO27004}, será calculado um indicador de tendência para permitir avaliar o volume de vulnerabilidades, por nível de severidade, a cada sprint.
 
-Para a análise de frequência de respostas do questionário, a frequência de cada das respostas de cada pergunta será registrada, de modo a possibilitar o cálculo da moda, pois ao ter a opinião da maioria dos participantes sobre o tópico solicitado será possível obter a percepção geral do impacto das atividades realizadas.
+O cálculo do indicador é obtido através da razão entre a média de vulnerabilidades das últimas duas sprints concluídas e a média das últimas seis sprints concluídas, sendo que, um valor inferior a 1.0 indica uma tendência de melhoria, entre 1.0 e 1.3 sinaliza uma tendência de estabilidade e superior a 1.3 indica uma piora significativa.
+
+Para a Métrica 1.3, adaptada da métrica Shared or Unknown Library Ratio proposta por \citeonline{Zhang2024160317}, será calculada a proporção de bibliotecas com vulnerabilidades em relação ao total. Por sua vez, a Métrica 2.1, uma adaptação da métrica Change Fail Percentage elaborado pelo \citeonline{DORA2024}, será calculada pela taxa percentual de builds/deploys bloqueados por vulnerabilidades de criticidade média ou superior. O acompanhamento destas métricas será realizado continuamente, visando observar tendência ao longo do tempo.
+
+Para a análise de frequência de respostas do questionário, Métrica 2.2, a frequência de cada das respostas de cada pergunta será registrada, de modo a possibilitar o cálculo da moda, pois ao ter a opinião da maioria dos participantes sobre o tópico solicitado será possível obter a percepção geral do impacto das atividades realizadas.
 
 \section{Instrumentação}
 

@@ -70,6 +70,11 @@ Geneva, CH, 2023.}
 {ISO/IEC-27001. \emph{Information technology -- Security techniques -- Information security management systems -- Requirements}. 2022.
 Available at: https://www.iso.org/standard/70032.html.}
 
+\bibitem[ISO/IEC 27004 2016]{ISO27004}
+\abntrefinfo{ISO/IEC 27004}{ISO/IEC 27004}{2016}
+{ISO/IEC 27004. \emph{{ISO/IEC 27004:2016 Information technology — Security techniques — Information security management — Monitoring, measurement, analysis and evaluation}}.
+Geneva, CH, 2016.}
+
 \bibitem[ISO/IEC-27034 2011]{isoiec27034}
 \abntrefinfo{ISO/IEC-27034}{ISO/IEC-27034}{2011}
 {ISO/IEC-27034. \emph{Information technology -- Security techniques -- Application security -- Part 1: Overview and concepts}. 2011.
@@ -171,7 +176,7 @@ Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-851
 \abntrefinfo{Rangnau et al.}{RANGNAU et al.}{2020}
 {RANGNAU, T. et al. Continuous security testing: A case study on integrating dynamic security testing tools in ci/cd pipelines. In:  . [s.n.], 2020. p. 145 – 154. Cited by: 57; All Open Access, Green Open Access. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096513818&doi=10.1109\%2fEDOC49727.2020.00026&partnerID=40&md5=c40a98ef4d8eff4fb8b08e234290f023}.}
 
-\bibitem[Runeson e H\"{o}st 2009]{10.1007/s10664-008-9102-8}
+\bibitem[Runeson e H\"{o}st 2009]{Runeson2009}
 \abntrefinfo{Runeson e H\"{o}st}{RUNESON; H\"{o}ST}{2009}
 {RUNESON, P.; H\"{o}ST, M. Guidelines for conducting and reporting case study research in software engineering.
 \emph{Empirical Softw. Engg.}, Kluwer Academic Publishers, USA, v.~14, n.~2, p. 131–164, abr. 2009.

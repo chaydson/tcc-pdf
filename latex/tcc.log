@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  26 JUL 2025 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  27 JUL 2025 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1208,12 +1208,15 @@ Package pdftex.def Info: figuras/cronograma.png  used on input line 142.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: Citation `10.1007/s10664-008-9102-8' on page 31 undefined on input line 149.
+
 [31] [32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.154     \item D
-                 efinição da Proposta de Solução: Definição os modelos... <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/referencialteorico.tex [33
+l.155     \item R
+                 edação da Monografia: Escrita do texto da monografia, con... <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/referencialteorico.tex [33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1223,7 +1226,7 @@ l.1 \chapter
 ]) (./editaveis/revisaodaliteratura.tex [35] [36
 
 ]
-<figuras/pico.png, id=483, 1002.74625pt x 966.61125pt>
+<figuras/pico.png, id=480, 1002.74625pt x 966.61125pt>
 File: figuras/pico.png Graphic file (type png)
 <use figuras/pico.png>
 Package pdftex.def Info: figuras/pico.png  used on input line 23.
@@ -1390,7 +1393,7 @@ Overfull \hbox (36.01765pt too wide) in alignment at lines 165--242
  []
 
 [43] [44] [45]
-<figuras/fluxograma-artigos.png, id=579, 770.88pt x 578.16pt>
+<figuras/fluxograma-artigos.png, id=576, 770.88pt x 578.16pt>
 File: figuras/fluxograma-artigos.png Graphic file (type png)
 <use figuras/fluxograma-artigos.png>
 Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 247.
@@ -1426,7 +1429,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 3977) has occurred while \output is active []
 
  [51]
-<figuras/volume-anual-artigos.png, id=680, 451.6875pt x 301.125pt>
+<figuras/volume-anual-artigos.png, id=677, 451.6875pt x 301.125pt>
 File: figuras/volume-anual-artigos.png Graphic file (type png)
 <use figuras/volume-anual-artigos.png>
 Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 398.
@@ -1440,7 +1443,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) ha
                                                   \__shipout_drop_firstpage_...
 l.403 
       ]
-<figuras/artigos-publicados.png, id=691, 451.6875pt x 321.2pt>
+<figuras/artigos-publicados.png, id=688, 451.6875pt x 321.2pt>
 File: figuras/artigos-publicados.png Graphic file (type png)
 <use figuras/artigos-publicados.png>
 Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 412.
@@ -1459,12 +1462,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) h
                                                   \__shipout_drop_firstpage_...
 l.422 
        <./figuras/volume-anual-artigos.png> <./figuras/artigos-publicados.png>]
-<figuras/quantidade-experimental.png, id=700, 842.14626pt x 562.1pt>
+<figuras/quantidade-experimental.png, id=697, 842.14626pt x 562.1pt>
 File: figuras/quantidade-experimental.png Graphic file (type png)
 <use figuras/quantidade-experimental.png>
 Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 426.
 (pdftex.def)             Requested size: 318.49861pt x 212.58813pt.
-<figuras/tipos-validacao.png, id=702, 451.6875pt x 301.125pt>
+<figuras/tipos-validacao.png, id=699, 451.6875pt x 301.125pt>
 File: figuras/tipos-validacao.png Graphic file (type png)
 <use figuras/tipos-validacao.png>
 Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 440.
@@ -1484,57 +1487,47 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) h
 l.1 \chapter
             [Planejamento do Estudo de Caso]{Planejamento do Estudo de Caso} <./figuras/tipos-validacao.png>] [56
 
-] [57]
-<figuras/arquitetura-geral.png, id=725, 778.5888pt x 316.0608pt>
+] [57] [58]
+<figuras/arquitetura-geral.png, id=744, 778.5888pt x 316.0608pt>
 File: figuras/arquitetura-geral.png Graphic file (type png)
 <use figuras/arquitetura-geral.png>
-Package pdftex.def Info: figuras/arquitetura-geral.png  used on input line 31.
+Package pdftex.def Info: figuras/arquitetura-geral.png  used on input line 37.
 (pdftex.def)             Requested size: 409.49722pt x 166.23341pt.
-<figuras/arquitetura-backend.png, id=727, 619.113pt x 237.5274pt>
+<figuras/arquitetura-backend.png, id=746, 619.113pt x 237.5274pt>
 File: figuras/arquitetura-backend.png Graphic file (type png)
 <use figuras/arquitetura-backend.png>
-Package pdftex.def Info: figuras/arquitetura-backend.png  used on input line 47.
+Package pdftex.def Info: figuras/arquitetura-backend.png  used on input line 53.
 (pdftex.def)             Requested size: 409.49722pt x 157.10925pt.
- [58
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.51 \end{figure}
-                  <./figuras/arquitetura-geral.png>]
-<figuras/arquitetura-frontend.png, id=733, 778.5888pt x 302.0886pt>
-File: figuras/arquitetura-frontend.png Graphic file (type png)
-<use figuras/arquitetura-frontend.png>
-Package pdftex.def Info: figuras/arquitetura-frontend.png  used on input line 65.
-(pdftex.def)             Requested size: 409.49722pt x 158.88466pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [59
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.63 
+      <./figuras/arquitetura-geral.png>]
+<figuras/arquitetura-frontend.png, id=754, 778.5888pt x 302.0886pt>
+File: figuras/arquitetura-frontend.png Graphic file (type png)
+<use figuras/arquitetura-frontend.png>
+Package pdftex.def Info: figuras/arquitetura-frontend.png  used on input line 71.
+(pdftex.def)             Requested size: 409.49722pt x 158.88466pt.
+ [60
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.79 
-      <./figuras/arquitetura-backend.png>]
-Overfull \hbox (5.13521pt too wide) in paragraph at lines 85--86
-[]\T1/lmr/m/n/12 M�trica 1.1: Quan-ti-dade de vul-ne-ra-bi-li-da-des iden-ti-fi-ca-das por fer-ra-men-tas SAST
- []
-
-
-Overfull \hbox (7.25482pt too wide) in paragraph at lines 86--87
-[]\T1/lmr/m/n/12 M�trica 1.2: Quan-ti-dade de vul-ne-ra-bi-li-da-des iden-ti-fi-ca-das por fer-ra-men-tas DAST
- []
-
-[60
+l.83 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.101 
-       <./figuras/arquitetura-frontend.png>] [61]) (./tcc.bbl (./tcc.brf)
+l.83 
+      <./figuras/arquitetura-backend.png> <./figuras/arquitetura-frontend.png>] [61] [62] [63]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write6
 \openout6 = `tcc.brf'.
 
- [62]
+ [64]
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--67
@@ -1546,39 +1539,49 @@ Overfull \hbox (422.15277pt too wide) in paragraph at lines 67--67
 |   []\T1/lmr/m/n/12 . 
  []
 
-[63
 
-] [64] [65]
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]\T1/lmr/m/n/12 ISO/IEC 27004. 
+ []
+
+
+Overfull \hbox (368.29608pt too wide) in paragraph at lines 77--77
+|   []\T1/lmr/m/n/12 . 
+ []
+
+[65
+
+] [66] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []\T1/lmr/m/n/12 VALOR-ECONOMICO, P. 2025. 
  []
 
-) (./editaveis/apendices.tex [66]
+) (./editaveis/apendices.tex [68]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[67
+[69
 
 
-] [68] [69
+] [70] [71
 
-] [70
+] [72
 
-]) (./editaveis/anexos.tex [71] [72
+]) (./editaveis/anexos.tex [73] [74
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[73
+[75
 
-] [74] [75
+] [76] [77
 
-] [76
+] [78
 
-]) (./tcc.ind) [77]
+]) (./tcc.ind) [79]
 \tf@lof=\write7
 \openout7 = `tcc.lof'.
 
@@ -1600,21 +1603,21 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: EDDCAFE0C5371CDFE32943993BC3A763;3949.
+(rerunfilecheck)             Checksum: 03ED365A272342E4849DA71F2D521C56;4437.
  ) 
 Here is how much of TeX's memory you used:
- 29389 strings out of 474222
- 533110 string characters out of 5748734
+ 29410 strings out of 474222
+ 533350 string characters out of 5748734
  1984975 words of memory out of 5000000
- 50728 multiletter control sequences out of 15000+600000
+ 50744 multiletter control sequences out of 15000+600000
  647224 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,12n,107p,1516b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,13n,107p,1516b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (79 pages, 2473262 bytes).
+Output written on tcc.pdf (81 pages, 2485783 bytes).
 PDF statistics:
- 1219 PDF objects out of 1440 (max. 8388607)
- 1085 compressed objects within 11 object streams
- 257 named destinations out of 1000 (max. 500000)
+ 1264 PDF objects out of 1440 (max. 8388607)
+ 1127 compressed objects within 12 object streams
+ 262 named destinations out of 1000 (max. 500000)
  578 words of extra memory for PDF output out of 10000 (max. 10000000)
 
