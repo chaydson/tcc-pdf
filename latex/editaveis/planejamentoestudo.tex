@@ -18,7 +18,7 @@ As ameaças externas, por outro lado, estão relacionadas a capacidade de genera
 \section{Objetivo}
 
 Segundo \citeonline{Siavvas2021431}, o desenvolvimento de software seguro é pautado na medição da qualidade da segurança de software, pois assim, é possível avaliar o nível da segurança do produto e conseguir traçar metas para guiar os processos de melhoria contínua do sistema. Porém, por diversas vezes são utilizados critérios de avaliação subjetivos ou que não possuem a devida validação, o que pode acarretar catastofrés relacionadas a segurança do produto.
-Situação essa que se agrava ao se tratar de práticas emergentes na indústria, como DevSecOps, que apesar de seu destaque no desenvolvimento ágil por muitas vezes carece de avaliação por metodologias apropriadas.
+Situação essa que se agrava ao se tratar de práticas emergentes na indústria, como DevSecOps, que apesar de seu destaque no desenvolvimento ágil, por muitas vezes, carece de avaliação por metodologias apropriadas.
 
 Assim, o objetivo desse estudo consiste em descorbrir como as práticas DevSecOps afetam os aspectos relacionados a segurança de um projeto de software, usando métodos propostos por pesquisadores que compõe o estado da arte da engenharia de software para análise da segurança.
 
@@ -46,7 +46,7 @@ O módulo Serializer é responsável por serializar e desserializar os objetos d
 
 Após a tradução dos objetos, o módulo de visualização (Views) realiza o processamento das requisições e respostas HTTP, que são capturadas pelo módulo de roteamento de requisições. Essa arquitetura está ilustrada na Figura \ref{fig:arquitetura-backend}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
 	\caption{Arquitera do Backend}
     \includegraphics[width=0.9\textwidth]{figuras/arquitetura-backend.png}
@@ -64,7 +64,7 @@ Esse novo estado é salvo na Store, que centraliza e armazena todas as informaç
 
 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
 	\caption{Arquitera do Backend}
     \includegraphics[width=0.9\textwidth]{figuras/arquitetura-frontend.png}
@@ -88,7 +88,7 @@ A revisão sistemática feita por \citeonline{Rajapakse2022}, identifica os desa
 
 \section{Questão de Pesquisa}
 
-Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas espécificas derivadas da pergunta principal e suas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa de cada uma das perguntas derivadas da pergunta principal, que agora norteaiam o estudo de caso.
+Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas específicas, derivadas da pergunta principal e suas respectivas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa de cada uma das perguntas derivadas da pergunta principal, que agora norteaiam o estudo de caso.
 
 A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema de impedir o acesso não autorizado às informações, assim, impedindo que os dados privados sejam visíveis para quem não possui as permissões necessárias. Ela será uma a sub-característica de segurança analisadas neste estudo de caso, por meio da análise de vulnerabilidades detectadas no pipeline de CI/CD. Para corroborar com essa análise e fazer a triangularização da coleta de dados, uma avaliação qualitativa com os membros do time é necessária para observar os impactos dessas novas práticas no processo de desenvolvimento.
 
@@ -119,7 +119,7 @@ Por fim, a equipe técnica será a fonte de dados dos formulários de avaliaçã
 
 \section{Procedimentos}
 
-Para atender à complexidade das questões de pesquisa, este trabalho aptou pelo método de estudo de caso incorporado, fundamentado por \citeonline{yin2015estudo}. 
+Para atender à complexidade das questões de pesquisa deste trabalho, optou-se pelo método de estudo de caso incorporado, fundamentado por \citeonline{yin2015estudo}. 
 Esta abordagem foi escolhida, pois permite que o caso principal seja investigado por meio da análise aprofundada de múltiplas subunidades de análise. Especificamente, o estudo se debruça sobre diferentes faces do projeto, como
 o impacto na qualidade da segurança interna e externa do produto, e a percepção da equipe sobre as mudanças implementadas. Ao examinar cada um desses componentes seguindo o protocolo de estudo de caso, é possível construir uma visão detalhada e triangulada que
 fortalece a validade das conclusões e oferece uma resposta mais completa ao problema investigado.
