@@ -20,7 +20,7 @@ As ameaças externas, por outro lado, estão relacionadas a capacidade de genera
 Segundo \citeonline{Siavvas2021431}, o desenvolvimento de software seguro é pautado na medição da qualidade da segurança de software, pois assim, é possível avaliar o nível da segurança do produto e conseguir traçar metas para guiar os processos de melhoria contínua do sistema. Porém, por diversas vezes são utilizados critérios de avaliação subjetivos ou que não possuem a devida validação, o que pode acarretar catastofrés relacionadas a segurança do produto.
 Situação essa que se agrava ao se tratar de práticas emergentes na indústria, como DevSecOps, que apesar de seu destaque no desenvolvimento ágil, por muitas vezes, carece de avaliação por metodologias apropriadas.
 
-Assim, o objetivo desse estudo consiste em descorbrir como as práticas DevSecOps afetam os aspectos relacionados a segurança de um projeto de software, usando métodos propostos por pesquisadores que compõe o estado da arte da engenharia de software para análise da segurança.
+Assim, o objetivo desse estudo consiste em investigar como as práticas DevSecOps afetam os aspectos relacionados a segurança de um projeto de software livre em desenvolvimento. Para tanto serão utilizados métodos, técnicas e ferramentas, observadas e propostos na literatura específica da área de segurança e em consonância com o estado da prática na indústria.
 
 \section{Caso}
 O \textcolor{blue}{MEPA}\footnote{\href{https://mepaenergia.org/}{Página do institucional da plataforma}} é uma plataforma de software livre focada na recomendação, gestão e otimização de contratos de energia, desenvolvida pela Universidade de Brasília (UnB) com financiamento do Governo Federal. A solução foi criada para aprimorar os contratos de fornecimento de energia em instituições públicas, sendo reconhecida pelo Tribunal de Contas da União (TCU) como referência na gestão de energia elétrica para as Instituições Federais de Ensino Superior (IFES).
@@ -36,7 +36,7 @@ A arquitetura consiste em um frontend construído com o framework Next.js do Rea
     \includegraphics[width=0.9\textwidth]{figuras/arquitetura-geral.png}
 
     \label{fig:arquitetura-geral}
-	Fonte: LAPPIS
+	Fonte: LAPP1S
 \end{figure}
 
 
@@ -75,7 +75,7 @@ Esse novo estado é salvo na Store, que centraliza e armazena todas as informaç
 
 \section{Trabalhos Relacionados}
 
-Alguns trabalhos, obtidos através do protocolo de revisão da literatura explanado no Capítulo \ref{chap:revisao}, foram utilizado como referência para a realização deste trabalho. Esses artigos foram escolhidos, pois abordam os temas pertinentes para o planejamento e execução da pesquisa, colaborando com o ampliamento das percepções em relação ao tema. 
+Alguns trabalhos obtidos por meio da revisão da literatura foram utilizados como referência para a realização desta pesquisa. Esses artigos foram selecionados, pois abordam os temas pertinentes e correlatos, para o planejamento e execução da pesquisa deste estudo de caso. 
 
 O estudo realizado por \citeonline{Siavvas2021431} foi o estudo central para a elaboração da monografia. Sua relevância se dá, pois ele apresenta um modelo hierárquico de avaliação de segurança que quantifica a segurança interna do software com base em alertas de análise estática (SAST) e métricas de software.
 O autor demonstrou que é possível avaliar a segurança de forma confiável e quantiativa usando modelos de qualidade e análise estática.
@@ -86,9 +86,12 @@ A revisão sistemática feita por \citeonline{Rajapakse2022}, identifica os desa
 
 \citeonline{Saeed2025139} aborda técnicas para integrar a segurança no ciclo de desenvolvimento de software, enfatizando a necessidade de uma abordagem colaborativa e ferramentas automatizadas para análise de ameaças e testes de segurança.
 
+\todo[inline, color=pink]{Essa subseção ficou muito simples. Só alguns exemplos de trabalhos relacionados que não foram apresentados: não foi mencionado os modelos Quamoco e principalmente o Qatch, também proposto pelo Siavas, antes desse modelo de segurança. Além do mais, ninguem melhor do que você que leu os 40 artigos selecionados para poder discutir isso.}
+
 \section{Questão de Pesquisa}
 
-Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas específicas, derivadas da pergunta principal e suas respectivas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa de cada uma das perguntas derivadas da pergunta principal, que agora norteaiam o estudo de caso.
+Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas específicas, derivadas da pergunta principal e suas respectivas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa ou qualitativa, de cada uma das questões de pesquisa secundárias, que agora norteaiam o estudo de caso.
+
 
 A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema de impedir o acesso não autorizado às informações, assim, impedindo que os dados privados sejam visíveis para quem não possui as permissões necessárias. Ela será uma a sub-característica de segurança analisadas neste estudo de caso, por meio da análise de vulnerabilidades detectadas no pipeline de CI/CD. Para corroborar com essa análise e fazer a triangularização da coleta de dados, uma avaliação qualitativa com os membros do time é necessária para observar os impactos dessas novas práticas no processo de desenvolvimento.
 
@@ -146,35 +149,72 @@ Para a análise de frequência de respostas do questionário, Métrica 2.2, a fr
 
 A instrumentação se refere às ferramentas que serão utilizadas para a realização do estudo de caso, aqui estão definidas as ferramentas usadas para a análise da segurança do sistema, controle de implementação do código, versionamento do código da pipeline feita e coleta de informações da equipe.
 
-O SonarQube é uma ferramenta de open-source de avalição da qualidade e segurança do código-fonte. Ele realiza análise estática para detectar bugs, vulnerabilidades e code smells em várias linguagens. Ele fará parte das ferramentas white-box integradas ao pipeline realizando a análise estática de segurança de aplicação (SAST). 
+O SonarQube \footnote{\href{https://www.sonarsource.com/products/sonarqube/}{www.sonarsource.com/products/sonarqube/}} é uma ferramenta de open-source de avalição da qualidade e segurança do código-fonte. Ele realiza análise estática para detectar bugs, vulnerabilidades e code smells em várias linguagens. Ele fará parte das ferramentas white-box integradas ao pipeline realizando a análise estática de segurança de aplicação (SAST). 
 
-O Trivy é um scanner de segurança de código aberto. Ele é utilizado na análise de composição de software, verificando as bibliotecas de terceiros do projeto, garantindo que componentes externos ao projeto não insiram vulnerabilidades no sistemas. Além disso, ele é capaz de buscar vulnerabilidades em containeres e configurações de infraestrutura como código. Ele complementará o SonarQube como ferramenta white-box.
 
-O OWASP ZAP foi desenvolvido para encontrar problemas de segurança em aplicações web em execução. Ele será empregado para realizar a Análise Dinâmica de Segurança de Aplicação (DAST) em um ambiente de testes.
+O Trivy \footnote{\href{https://trivy.dev/latest/}{https://trivy.dev/latest/}}
+ é um scanner de segurança de código aberto. Ele é utilizado na análise de composição de software, verificando as bibliotecas de terceiros do projeto, garantindo que componentes externos ao projeto não insiram vulnerabilidades no sistemas. Além disso, ele é capaz de buscar vulnerabilidades em containeres e configurações de infraestrutura como código. Ele complementará o SonarQube como ferramenta white-box.
 
-O GitLab CI/CD é uma ferramenta integrada ao GitLab que permite a automação das etapas do ciclo de vida do software, através dele que as ferramentas de segurança serão executadas automaticamente e ele servirá para bloquear o build/deploy caso vulnerabilidades sejam encontradas.
+O Zed Attach Proxy-ZAP \footnote{\href{https://www.zaproxy.org/}{https://www.zaproxy.org/}} foi desenvolvido para encontrar problemas de segurança em aplicações web em execução. Ele será empregado para realizar a Análise Dinâmica de Segurança de Aplicação (DAST) em um ambiente de testes.
 
-O Git é um sistema de controle de versão e o GitHub é uma plataforma de hospedagem de código-fonte para controle de versão com Git. Eles serão utilizados para o versionamento e armazenamento dos artefatos por este estudo de caso.
+O GitLab CI/CD \footnote{\href{https://docs.gitlab.com/install/}{https://docs.gitlab.com/install/}} é uma ferramenta integrada ao GitLab que permite a automação das etapas do ciclo de vida do software, através dele que as ferramentas de segurança serão executadas automaticamente e ele servirá para bloquear o build/deploy caso vulnerabilidades sejam encontradas.
 
-O Google Forms permite a criação rápida e fácil de formulários online, além de permitir a gestão e análise dos resultados. Ele será utilizado para a aplicação do questionário que coleta os dados qualitativos da equipe.
+O Git \footnote{\href{https://git-scm.com/downloads}{https://git-scm.com/downloads}} é um sistema de controle de versão e o GitHub \footnote{\href{https://github.com/}{https://github.com/}} é uma plataforma de hospedagem de código-fonte para controle de versão com Git. Eles serão utilizados para o versionamento e armazenamento dos artefatos por este estudo de caso.
+
+O Google Forms\footnote{\href{https://docs.google.com/forms/u/0/}{https://docs.google.com/forms/u/0/}} permite a criação rápida e fácil de formulários online, além de permitir a gestão e análise dos resultados. Ele será utilizado para a aplicação do questionário que coleta os dados qualitativos da equipe.
 
 
 \section{Ameaças à Validade do Estudo}
 
 Conforme destacado por \citeonline{Runeson2009}, é essencial considerar as ameaças à validade desde o início da pesquisa para garantir a confiabilidade dos resultados. Nesta seção, são identificadas as principais ameaças à validade deste estudo de caso e as estratégias adotadas para sua mitigação.
 
+Há quatro preocupações centrais para avaliar a qualidade dos resultados obtidos em uma pesquisa. São conhecidas como testes às ameaças: de constructo; interna, externa e de confiabilidade.  Ao conduzir estudos de caso, podemos aplicar diversas estratégias para atender a esses testes. Contudo, nem todas essas estratégias são usadas apenas na fase de planejamento formal. Algumas delas são aplicadas durante a coleta e análise dos dados, ou mesmo nas etapas de estruturação da pesquisa \cite{yin2015estudo}.
+
+Com o objetivo de gerenciar os riscos inerentes ao estudo de caso proposto, planejamos tratar algumas das principais ameaças a validade do estudo:
+
 \subsection{Ameaças à Validade do Constructo}
 
-As métricas selecionadas podem não capturar completamente os aspectos de segurança que se pretende avaliar. Para mitigar essa ameaça, foram selecionadas métricas baseadas em padrões internacionais como a \citeonline{ISO27004} e em trabalhos do estado-da-arte da literatura, como o trabalho de \citeonline{Zhang2024160317}.
+A ameça a validade do constructo diz respeito a capacidade do pesquisador intrepretar as alterações e variações, observadas na execução do estudo de caso de forma a garantir fidedignamente a representação da realidade. Em outras palavras, o pesquisador precisa garantir que os eventos observados \textit{in loco}, realmente refletem o fenômeno de forma inequívoca, ou se aconteceram apenas com base nas impressões do pesquisador.
+
+Para realizar esse teste, o pesquisador o pesquisador precisa assegurar o cumprir duas etapas:
+
+\begin{enumerate}
+  \item selecionar os tipos específicos de mudanças que devem ser estudadas;
+  \item demonstrar que as medidas operacionais selecionadas  fornecem uma percepção quantitativa dessas mudanças e que, são corretas para os conceitos que estão sob estudo.;
+\end{enumerate}
+
+
+Dessa maneira, as medidas selecionadas podem não capturar completamente os aspectos de segurança que se pretende avaliar. Para mitigar essa ameaça, foram selecionadas medidas baseadas em modelos e normas de referência na literatura, como a \citeonline{ISO27004} e estudos que apresentam evidências experimentais dos seus "achados" como discuto por \citeonline{Zhang2024160317}.
+
+Além disso, para garantir esse alinhamento, foi adotada a abordagem GQM (detalhada
+na subseção \ref{qp_principal}. Com isso, há uma questão de pesquisa principal, norteadora de todo o trabalho e há outras questões específicas, secundárias, da revisão estruturada da literatura e do estudo de caso. Essas questões possuem suas respectivas métricas que que por sua vez, auxiliam a quantificar ou qualificar as percepções da segurança, por meio os dados coletados e analisados.
 
 \subsection{Ameaças à Validade Interna}
 
-Mudanças na equipe e alterações no escopo do projeto podem influenciar os resultados. Para mitigar essa ameaça, será mantido um registro detalhado de quaisquer mudanças significativas durante o período do estudo.
+As ameaças a validade interna tratam das relações de causalidade. Portanto, analisa a relação de causa e efeito entre as variáveis observadas.
+
+Por se tratar de um estudo do tipo exploratório, que procura observar e compreender um fenômeno específico, ocorrendo em seu ambiente real, o foco é a perpeção de todo o contexto. Por isso,  esse teste não se aplica a esta pesquisa. \cite{yin2015estudo}. 
 
 \subsection{Ameaças à Validade Externa}
 
-O estudo está limitado a um único projeto e o MEPA possui características específicas que podem não ser adequadas para outros sistemas de software. Para mitigar essa ameaça, é fornecida uma descrição detalhada do contexto do estudo para que outros pesquisadores possam avaliar a aplicabilidade dos resultados em seus próprios contextos.
+A validade externa, por sua vez, refere-se ao grau de generalização dos resultados observados \cite{yin2015estudo}.
+
+
+Estudos de caso costumam ser criticados em virtude do baixo poder de generalização dos seus resultados, principalmente em comparação a análises quantitativas. No entanto, essa analogia, que considera amostra e população é equivocada quando se fala em estudos de caso.
+
+Análises puramente quantitativas,  utilizam a generalização estatística, onde uma amostra, se bem representada, pode ser facilmente estendida a uma população maior.
+
+Já nos estudos de caso, o objetivo do pesquisador é usar um conjunto específico de resultados para corroborar ou expandir uma teoria mais abrangente, em vez de aplicá-los diretamente a um universo estatístico.
+
+Este estudo está limitado a um caso único, o projeto MEPA, que possui características específicas que podem não ser compatíveis ou aplicáveis em outros sistemas de software ou contextos. Embora as conclusões sejam específicas deste caso, como forma de mitigar essa ameaça, toda a descrição metodológica e documentação necessária para a compreensão das singularidades do caso MEPA  estarão disponíveis em reposítórios públicos. Dessa forma, outros pesquisadores podem analisar a viabilidade da replicação dos resultados em seus contextos específicos.
+
 
 \subsection{Ameaças à Confiabilidade}
 
-Variações na forma como os dados são coletados e analisados podem afetar os resultados. Para mitigar essa ameaça, serão estabelecidos procedimentos claros e, quando possível, automatizados, para a coleta de dados, minimizando a intervenção manual e sistematizando a análise.
+Por fim, a ameaça a confiabilidade refere-se a capacidade de repodução dos procedimentos por outros pesquisadores. Com isso,  verifica-se se os resultados observados são consistentes, caso a reprodução obtenha os mesmos resultados \cite{yin2015estudo} \cite{Wohlin:2012:ESE:2349018}.
+
+Variações na forma como os dados são coletados e analisados podem afetar os resultados. Para mitigar essa ameaça, serão fornecidas informações detalhadas sobre o produto, o processo, o contexto, o time de desenvolvimento, o conjunto de dados coletados e analisados, além do código-fonte e scripts utilizados na construção do tratamento proposto. Todas essas informações ficarão disponíveis em repositórios públicos. Serão estabelecidos procedimentos claros e, quando possível, automatizados, para a coleta de dados, minimizando a intervenção manual e sistematizando a análise. Além disso, todas as ferramentas utilizadas na instrumentação são produtos de software de código-fonte livre ou aberto.
+
+\todo[inline, color=pink]{Falta o cap da conclusão do TCC1. Dentre outras questões, a discussão do cronograma apresentado na introdução, bem como o cronograma do tcc 2 deve aparecer. É importante destacar os resultados parciais já obtidos, como o estudo da revisão de literatura.}
+
+
