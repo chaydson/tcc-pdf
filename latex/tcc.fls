@@ -334,6 +334,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 INPUT ./fixos/comandos.tex
 INPUT ./fixos/comandos.tex
 INPUT ./fixos/comandos.tex
@@ -512,6 +514,7 @@ INPUT fixos/indiceAutomatico.tex
 INPUT ./tcc.toc
 INPUT ./tcc.toc
 INPUT tcc.toc
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi12.tfm
@@ -608,6 +611,16 @@ INPUT ./figuras/arquitetura-frontend.png
 INPUT ./figuras/arquitetura-frontend.png
 INPUT ./figuras/arquitetura-frontend.png
 INPUT ./figuras/arquitetura-frontend.png
+INPUT ./editaveis/conclusao.tex
+INPUT ./editaveis/conclusao.tex
+INPUT ./editaveis/conclusao.tex
+INPUT ./editaveis/conclusao.tex
+INPUT editaveis/conclusao.tex
+INPUT ./figuras/cronograma-tcc-2.png
+INPUT ./figuras/cronograma-tcc-2.png
+INPUT ./figuras/cronograma-tcc-2.png
+INPUT ./figuras/cronograma-tcc-2.png
+INPUT ./figuras/cronograma-tcc-2.png
 INPUT ./tcc.bbl
 INPUT ./tcc.bbl
 INPUT tcc.bbl
@@ -647,6 +660,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr7.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
