@@ -5,6 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Aljohani e Alqahtani 2023]{Aljohani2023}
+\abntrefinfo{Aljohani e Alqahtani}{ALJOHANI; ALQAHTANI}{2023}
+{ALJOHANI, M.~A.; ALQAHTANI, S.~S. A unified framework for automating software security analysis in devsecops. In:  . [s.n.], 2023. Cited by: 9. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85153866654&doi=10.1109\%2fICSCA57840.2023.10087568&partnerID=40&md5=ddab1036dfd21896853bbfa52e8bf3ad}.}
+
 \bibitem[Basili et al. 1994]{gqm}
 \abntrefinfo{Basili et al.}{BASILI et al.}{1994}
 {BASILI, V. et al. Goal question metric (gqm) approach.
@@ -203,6 +207,13 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s11219-021-09555-0}.}
 \emph{Software Quality Journal}, v.~29, n.~2, p. 431 – 507, 2021.
 Cited by: 21; All Open Access, Green Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85106207514&doi=10.1007\%2fs11219-021-09555-0&partnerID=40&md5=b0ecf71985d4ef4c10438eabe73da349}.}
+
+\bibitem[Sinan, Shahin e Gondal 2025]{Sinan2025}
+\abntrefinfo{Sinan, Shahin e Gondal}{SINAN; SHAHIN; GONDAL}{2025}
+{SINAN, M.; SHAHIN, M.; GONDAL, I. Integrating security controls in devsecops: Challenges, solutions, and future research directions.
+\emph{Journal of Software: Evolution and Process}, v.~37, n.~6, 2025.
+Cited by: 0; All Open Access, Hybrid Gold Open Access.
+Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-105007632373&doi=10.1002\%2fsmr.70029&partnerID=40&md5=cbcf15029b0648ce3192ffaeaf651643}.}
 
 \bibitem[UOL 2025]{uolpix}
 \abntrefinfo{UOL}{UOL}{2025}

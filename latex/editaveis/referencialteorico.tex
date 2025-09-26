@@ -79,13 +79,43 @@ WIP
 
 \section{Segurança de Software}
 
-WIP
+A segurança de software é um aspecto fundamental da qualidade de software, sendo um dos atributos principais do modelo de qualidade \citeonline{ISOIEC25010}. 
+Ela é definida como o grau em que um sistema ou produto de software protege informações e dados, armazenados ou em trânsito, de forma a impedir o acesso não autorizado por diferentes entes, sejam pessoas, programas ou outros sistemas, de acordo
+com os seus respectivos níveis de permissão, assim contribuindo para a confiança do sistema \cite{ISOIEC25010}. 
+
+Para possibilitar a sua análise detalhada, a \citeonline{ISOIEC25010} define cinco sub-características de segurança fundamentais. A primeira delas é a confidencialidade, que se refere à capacidade do sistema de proteger informações contra acessos não autorizados. 
+A segunda é a integridade, que diz respeito à capacidade do sistema de proteger informações contra modificações não autorizadas. A terceira sub-característica é o não-repúdio, que se refere à capacidade do sistema de garantir que as ações realizadas por um usuário ou sistema não possam ser negadas posteriormente. 
+A quarta sub-característica é a responsabilidade, que diz respeito à capacidade do sistema de rastrear e registrar as ações realizadas por usuários ou sistemas. Por fim, a quinta sub-característica é a autenticidade, que se refere à capacidade do sistema de garantir que os usuários ou sistemas são quem dizem ser.
+
 
 \section{DevOps}
 
-WIP
+A origem do termo e do movimento DevOps remonta a dois eventos distintos no ano de 2009. O primeiro deles aconteceu em julho daquele ano, quando John Allspaw e Paul Hammond apresentaram a palestra "10 deploys por dia: cooperação entre Dev \& Ops no Flickr" na conferência Velocity. 
+Poucos meses depois, Patrick Debois organizou a conferência "DevOps Days" em Ghent, Bélgica, que é considerada o primeiro evento oficial do movimento DevOps. Desde então, o termo e o movimento DevOps ganharam popularidade e se tornaram uma abordagem amplamente adotada para o desenvolvimento e operação de software \cite{DORA2024}.
+
+Em suma, DevOps é um conjunto de práticas e valores culturais que visa encurtar o ciclo de vida de desenvolvimento de software, aumentar a qualidade do software produzido e facilitar a sua evolução contínua. Para alcançar esses objetivos, o DevOps promove a colaboração e a comunicação entre as equipes de desenvolvimento e operações \cite{Aljohani2023}.
+
+\citeonline{Sinan2025} definem como práticas basilares a automação e o monitoramento. A automação é essencial para realizar tarefas repetitivas de forma eficiente e consistente, reduzindo erros humanos e aumentando a velocidade de entrega. 
+Já o monitoramento é fundamental para garantir o funcionamento correto, desempenho e segurança dos sistemas em produção, permitindo a identificação e resolução rápida de problemas. Ademais, essas duas práticas se beneficiam mutuamente, uma vez que o monitoramento possibilidade observar o comportamento da automação e a automação permite que o processo de monitoramento seja mais eficiente.
+
+Segundo \citeonline{Sinan2025}, o pipeline de CI/CD é a implementação prática dos princípios de automação e monitoramento. Ele funciona como uma esteira de produção de software, onde o código é continuamente integrado, testado e entregue de forma automatizada. 
+O pipeline de CI/CD é composto por duas etapas princípais, a Integração Contínua (CI) e a Entrega Contínua (CD). 
+
+A primeira fase é a Integração Contínua, aqui o código é frequentemente integrado em um repositório central compartilhado, onde é automaticamente testado para garantir que ele funcione corretamente. 
+A etapa seguinte é a Entrega Contínua. Nessa fase, o código que passou pelos testes na etapa de CI é automaticamente implantado no ambientes de produção e entregue aos usuários finais \cite{Sinan2025}.
 
 \section{DevSecOps}
+
+Nos modelos tradicionais de desenvolvimento de software, a segurança é frequentemente tratada como uma etapa separada, realizada por uma equipe isolada e realizada no fim do ciclo de vida do desenvolvimento. Isso pode levar a atrasos na entrega do software, aumento dos custos e vulnerabilidades de segurança não detectadas.
+Essa situação é ainda mais acentuada em ambientes DevOps, onde a velocidade e a integração contínua são priorizadas e essa metodologia acaba representando um gargalo no processo de desenvolvimento \cite{Sinan2025}.
+
+Para superar esses desafios, surgiu o conceito de DevSecOps, que integra práticas de segurança diretamente no ciclo de vida do desenvolvimento de software. O objetivo do DevSecOps é garantir que a segurança seja uma responsabilidade compartilhada entre as equipes de desenvolvimento, operações e segurança, promovendo uma cultura de colaboração e comunicação contínua \cite{Sinan2025}.
+
+Assim, a implementação de práticas DevSecOps consiste na inserção de ferramentas e processos de segurança em diferentes etapas do pipeline de CI/CD. Essa prática ficou conhecida como deslocar a segurança para a esquerda (\textit{shift-left security}), que significa incorporar a segurança já nas fases iniciais do desenvolvimento.
+
+Como primeira barreira de defesa, a análise estática de código (\textit{Static Application Security Testing} - SAST) é utilizada para identificar vulnerabilidades diretamente no código-fonte, abordagem conhecida como caixa-branca. Ferramentas SAST analisam o código em busca de padrões inseguros, práticas de codificação inadequadas e possíveis falhas de segurança.
+
+Além disso, a análise dinâmica de código (\textit{Dynamic Application Security Testing} - DAST) é empregada para testar a aplicação em execução, simulando ataques reais e identificando vulnerabilidades que podem ser exploradas por agentes maliciosos. Essa abordagem é conhecida como caixa-preta, pois ela testa a aplicação em execução \cite{Sinan2025}.
 
 O modelo de maturidade de segurança OWASP DSOMM (\textit{DevSecOps Maturity Model}) é uma importante 
 ferramenta na construção e avaliação de projetos \textit{DevSecOps}. Ele define atividades, métricas e tecnologias 
