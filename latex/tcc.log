@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  26 SEP 2025 01:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  26 SEP 2025 02:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1627,7 +1627,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 4570F71AC2324F7E3F24305CBB3232D3;5895.
+(rerunfilecheck)             Checksum: D983C7ED8BEFEF31EB51A475C8D4E95C;5895.
  ) 
 Here is how much of TeX's memory you used:
  29548 strings out of 474222
@@ -1638,7 +1638,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  104i,13n,107p,1516b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (95 pages, 2667969 bytes).
+Output written on tcc.pdf (95 pages, 2668051 bytes).
 PDF statistics:
  1529 PDF objects out of 1728 (max. 8388607)
  1374 compressed objects within 14 object streams
