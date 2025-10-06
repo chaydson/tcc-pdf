@@ -106,6 +106,19 @@ Para possibilitar a sua análise detalhada, a \citeonline{ISOIEC25010} define ci
 A segunda é a integridade, que diz respeito à capacidade do sistema de proteger informações contra modificações não autorizadas. A terceira sub-característica é o não-repúdio, que se refere à capacidade do sistema de garantir que as ações realizadas por um usuário ou sistema não possam ser negadas posteriormente. 
 A quarta sub-característica é a responsabilidade, que diz respeito à capacidade do sistema de rastrear e registrar as ações realizadas por usuários ou sistemas. Por fim, a quinta sub-característica é a autenticidade, que se refere à capacidade do sistema de garantir que os usuários ou sistemas são quem dizem ser.
 
+Por outro lado, a família de normas \citeonline{ISO27000} é um conjunto de padrões internacionais que fornecem diretrizes e melhores práticas para a gestão da segurança da informação. Elas definem termos e definições, estabelecem requisitos para um sistema de gestão de segurança da informação (SGSI) e fornecem orientações para a implementação e manutenção de controles de segurança da informação.
+
+Desse modo, a norma \citeonline{ISO27001} é a referência internacional para gestão da segurança da informação. Ela especifica os requisitos para estabelecer, implementar, manter e melhorar continuamente um SGSI dentro do contexto organizacional, ajudando a proteger as informações de maneira eficaz. 
+A norma também define confidencialidade, integridade e disponibilidade como os três pilares da segurança da informação. Segundo a \citeonline{ISO27000}, a confidencialidade garante que as informações sejam acessíveis apenas por pessoas autorizadas, a integridade assegura que as informações sejam precisas e completas, e a disponibilidade garante que as informações estejam acessíveis quando necessário.
+
+Atualmente, monitorar, medir, analisar e avaliar a eficácia da segurança da informação é uma tarefa essencial para a engenharia de software. Visando atender essa necessidade, a \citeonline{ISO27004} estabelece como realizar esses procedimentos, além de fornecer orientações para verificar o desempenho dos mesmos. Com o apoio da norma \citeonline{ISO27004}, as organizações conseguem desenvolver e selecionar métricas, estabelecer processos de medição e avaliação, e implementar melhorias contínuas na segurança da informação.
+
+A OWASP (Open Web Application Security Project) é uma fundação internacional sem fins lucrativos que tem como objetivo conscientizar desenvolvedores, promover boas práticas e melhorar a segurança de software através da elaboração de documentos, ferramentas, frameworks e pesquisas disponibilizadas de maneira gratuita \cite{owasp}. Um dos documentos mais importantes produzidos pela OWASP é o OWASP Top 10, que lista as dez principais vulnerabilidades de segurança em aplicações web. A lista é atualizada periodicamente e serve como um guia para desenvolvedores e profissionais de segurança, facilitando identificar e mitigar os riscos comuns nos sistemas de software \cite{owasptop10_2021}.
+
+
+De maneira complementar, o CWE (Common Weakness Enumeration) feito pela \citeonline{cwe}, é uma lista categorizada de tipos de fraquezas de software e hardware que estabelece uma linguagem padrão para descrever as causas das vulnerabilidades. Já o CVE (Common Vulnerabilities and Exposures) é um dicionário público de vulnerabilidades de segurança conhecidas, também mantido pela \cite{CVE}, descreve as vulnerabilidades encontradas nos sistemas de maneira individual. 
+Por último, o CVSS (Common Vulnerability Scoring System) é um padrão aberto para avaliar a gravidade das vulnerabilidades de segurança em sistemas de software, fornecendo uma pontuação numérica que ajuda as organizações a priorizar suas ações de mitigação, por exemplo, as vulnerabilidades são enumeradas de zero à dez e acompanhadas de um nível de severidade (Nenhum, Baixo, Médio, Alto, Crítico) \cite{CVSS}.
+
 
 \section{DevOps}
 
@@ -137,7 +150,7 @@ Como primeira barreira de defesa, a análise estática de código (\textit{Stati
 Além disso, a análise dinâmica de código (\textit{Dynamic Application Security Testing} - DAST) é empregada para testar a aplicação em execução, simulando ataques reais e identificando vulnerabilidades que podem ser exploradas por agentes maliciosos. Essa abordagem é conhecida como caixa-preta, pois ela testa a aplicação em execução \cite{Sinan2025}.
 
 O modelo de maturidade de segurança OWASP DSOMM (\textit{DevSecOps Maturity Model}) é uma importante 
-ferramenta na construção e avaliação de projetos \textit{DevSecOps}. Ele define atividades, métricas e tecnologias 
+ferramenta na construção e avaliação de projetos \textit{DevSecOps}. Por ter sido contruido com base na norma \citeonline{ISO27001}, ele define atividades, métricas e tecnologias 
 que devem ser usadas para construir um ambiente \textit{DevSecOps}, além de proporcionar o acompanhamento da 
 maturidade da segurança do projeto em cinco dimensões: \textit{Build and Deployment}, \textit{Culture and Organization}, 
 \textit{Implementation}, \textit{Information Gathering} e \textit{Test and Verification} \cite{Lange2024}.

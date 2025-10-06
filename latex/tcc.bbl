@@ -49,6 +49,12 @@ Disponível em: \url{https://www.periodicos.capes.gov.br/}.}
 {FITZGERALD, B.; STOL, K.-J. Continuous software engineering: A roadmap and agenda.
 \emph{The Journal of Systems \& Software}, v.~123, p. 176--189, 2017.}
 
+\bibitem[{Forum of Incident Response and Security Teams (FIRST)} 2015]{CVSS}
+\abntrefinfo{{Forum of Incident Response and Security Teams (FIRST)}}{{Forum of Incident Response and Security Teams (FIRST)}}{2015}
+{{Forum of Incident Response and Security Teams (FIRST)}. \emph{Common Vulnerability Scoring System}. 2015.
+Acesso em: 06 de outubro de 2025.
+Dispon{\'\i}vel em: \url{https://www.first.org/cvss/}.}
+
 \bibitem[França, Junior e Travassos 2016]{10.1145}
 \abntrefinfo{França, Junior e Travassos}{FRANçA; JUNIOR; TRAVASSOS}{2016}
 {FRANçA, B.~B.; JUNIOR, H. J.; TRAVASSOS, G. Characterizing devops by hearing multiple voices. In:  . [S.l.: s.n.], 2016.}
@@ -78,10 +84,20 @@ Geneva, CH, 2014.}
 {ISO/IEC 25010. \emph{{ISO/IEC 25010:2023 Systems and software engineering --- Systems and software Quality Requirements and Evaluation (SQuaRE) --- System and software quality models}}.
 Geneva, CH, 2023.}
 
+\bibitem[ISO/IEC 27000 2018]{ISO27000}
+\abntrefinfo{ISO/IEC 27000}{ISO/IEC 27000}{2018}
+{ISO/IEC 27000. \emph{{ISO/IEC 27000:2018 Information technology — Security techniques — Information security management systems — Overview and vocabulary}}.
+Geneva, CH, 2018.}
+
 \bibitem[ISO/IEC-27001 2022]{isoiec27001}
 \abntrefinfo{ISO/IEC-27001}{ISO/IEC-27001}{2022}
 {ISO/IEC-27001. \emph{Information technology -- Security techniques -- Information security management systems -- Requirements}. 2022.
 Available at: https://www.iso.org/standard/70032.html.}
+
+\bibitem[ISO/IEC 27001 2022]{ISO27001}
+\abntrefinfo{ISO/IEC 27001}{ISO/IEC 27001}{2022}
+{ISO/IEC 27001. \emph{{ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection --- Information security management systems --- Requirements}}.
+Geneva, CH, 2022.}
 
 \bibitem[ISO/IEC 27004 2016]{ISO27004}
 \abntrefinfo{ISO/IEC 27004}{ISO/IEC 27004}{2016}
@@ -181,6 +197,12 @@ Acessado: 24-07-2025.}
 {OWASP. \emph{OWASP Top Ten 2021}. 2021. \url{https://owasp.org/TopTen/}.
 OWASP Top Ten 2021 Report.}
 
+\bibitem[{OWASP Foundation} 2025]{owasp}
+\abntrefinfo{{OWASP Foundation}}{{OWASP Foundation}}{2025}
+{{OWASP Foundation}. \emph{OWASP Foundation, the Open Source Foundation for Application Security}. 2025.
+Acesso em: 06 de outubro de 2025.
+Dispon{\'\i}vel em: \url{https://owasp.org/}.}
+
 \bibitem[Pai et al. 2004]{pai_clinical_2004}
 \abntrefinfo{Pai et al.}{PAI et al.}{2004a}
 {PAI, M. et al. Clinical research methods.
@@ -246,6 +268,12 @@ Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-851
 \emph{Journal of Software: Evolution and Process}, v.~37, n.~6, 2025.
 Cited by: 0; All Open Access, Hybrid Gold Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-105007632373&doi=10.1002\%2fsmr.70029&partnerID=40&md5=cbcf15029b0648ce3192ffaeaf651643}.}
+
+\bibitem[{The MITRE Corporation} 1999]{CVE}
+\abntrefinfo{{The MITRE Corporation}}{{The MITRE Corporation}}{1999}
+{{The MITRE Corporation}. \emph{CVE - Common Vulnerabilities and Exposures}. 1999.
+Acesso em: 06 de outubro de 2025.
+Dispon{\'\i}vel em: \url{https://www.cve.org/}.}
 
 \bibitem[UOL 2025]{uolpix}
 \abntrefinfo{UOL}{UOL}{2025}
