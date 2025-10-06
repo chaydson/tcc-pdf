@@ -20,8 +20,12 @@ ISBN 9780471028956.}
 {BASILI, V.~R.; CALDIERA, G.; ROMBACH, H.~D. {The Goal Question Metric Approach}. In:  MARCINIAK, J.~J. (Ed.). \emph{Encyclopedia of Software Engineering}. [S.l.]: Wiley, 1994. v.~1, p. 528--532.}
 
 \bibitem[Boehm 1978]{boehm1978characteristics}
-\abntrefinfo{Boehm}{BOEHM}{1978}
+\abntrefinfo{Boehm}{BOEHM}{1978a}
 {BOEHM, B.~W. \emph{Characteristics of Software Quality}. North-Holland, 1978. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=jLFXswEACAAJ}.}
+
+\bibitem[Boehm 1978]{Boehm1978}
+\abntrefinfo{Boehm}{BOEHM}{1978b}
+{BOEHM, B.~W. \emph{{Characteristics of Software Quality}}. [S.l.]: North-Holland, 1978.  (TRW Series of Software Technology).}
 
 \bibitem[Dromey 1995]{Dromey:1995:MSP:205302.205311}
 \abntrefinfo{Dromey}{DROMEY}{1995}
@@ -59,6 +63,11 @@ Acessado: 25-07-2025.}
 {{Google}. \emph{{DORA}}.
 [S.l.], 2024. Acessado em: 20 de julho de 2025. Dispon{\'\i}vel em: \url{https://dora.dev}.}
 
+\bibitem[ISO/IEC 25000 2014]{ISO25000}
+\abntrefinfo{ISO/IEC 25000}{ISO/IEC 25000}{2014}
+{ISO/IEC 25000. \emph{{ISO/IEC 25000:2014 Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Guide to SQuaRE}}.
+Geneva, CH, 2014.}
+
 \bibitem[ISO/IEC-25010 2010]{ISOIEC25010}
 \abntrefinfo{ISO/IEC-25010}{ISO/IEC-25010}{2010}
 {ISO/IEC-25010. \emph{ISO/IEC 25010 System and software quality models}.
@@ -83,6 +92,11 @@ Geneva, CH, 2016.}
 \abntrefinfo{ISO/IEC-27034}{ISO/IEC-27034}{2011}
 {ISO/IEC-27034. \emph{Information technology -- Security techniques -- Application security -- Part 1: Overview and concepts}. 2011.
 ISO/IEC 27034-1:2011.}
+
+\bibitem[ISO/IEC 9126 2001]{ISO9126}
+\abntrefinfo{ISO/IEC 9126}{ISO/IEC 9126}{2001}
+{ISO/IEC 9126. \emph{{ISO/IEC 9126-1:2001 Software engineering --- Product quality --- Part 1: Quality model}}.
+Geneva, CH, 2001. Esta norma foi descontinuada e substituída pela ISO/IEC 25010:2023.}
 
 \bibitem[ISO/IEC-9126 2001]{ISOIEC9126}
 \abntrefinfo{ISO/IEC-9126}{ISO/IEC-9126}{2001}
@@ -112,6 +126,10 @@ Keele, UK, 2007.}
 Cited by: 0; All Open Access, Hybrid Gold Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85200057398&doi=10.1002\%2fsmr.2711&partnerID=40&md5=9b0595cd71d28171da66b90852ed7301}.}
 
+\bibitem[Letouzey e Coq 2010]{sqale}
+\abntrefinfo{Letouzey e Coq}{LETOUZEY; COQ}{2010}
+{LETOUZEY, J.-L.; COQ, T. The sqale method for evaluating technical debt. In:  \emph{14th European Conference on Software Maintenance and Reengineering (CSMR)}. [S.l.]: IEEE, 2010. p. 195--198.}
+
 \bibitem[Luz, Pinto e Bonif{\'{a}}cio 2019]{DBLP:journals/jss/LuzPB19}
 \abntrefinfo{Luz, Pinto e Bonif{\'{a}}cio}{LUZ; PINTO; BONIF{\'{A}}CIO}{2019}
 {LUZ, W.~P.; PINTO, G.; BONIF{\'{A}}CIO, R. Adopting devops in the real world: {A} theory, a model, and a case study.
@@ -125,14 +143,23 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1016/j.jss.2019.07.083}.}
 ISSN 0164-1212.
 Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S0164121221002661}.}
 
+\bibitem[López et al. 2018]{qrapids}
+\abntrefinfo{López et al.}{LóPEZ et al.}{2018}
+{LóPEZ, L. et al. Q-rapids tool prototype: Supporting decision-makers in managing quality in rapid software development. In:  \emph{Forum at the 30th International Conference on Advanced Information Systems Engineering (CAiSE)}. [S.l.]: Springer, 2018.  (Lecture Notes in Business Information Processing, v.~317), p. 157--164.}
+
 \bibitem[Masood e Java 2015]{Masood2015}
 \abntrefinfo{Masood e Java}{MASOOD; JAVA}{2015}
 {MASOOD, A.; JAVA, J. Static analysis for web service security - tools \& techniques for a secure development life cycle. In:  . [S.l.: s.n.], 2015.}
 
 \bibitem[McCall, Richards e Walters 1977]{McCall77}
-\abntrefinfo{McCall, Richards e Walters}{MCCALL; RICHARDS; WALTERS}{1977}
+\abntrefinfo{McCall, Richards e Walters}{MCCALL; RICHARDS; WALTERS}{1977a}
 {MCCALL, J.; RICHARDS, P.~K.; WALTERS, G.~F. Factors in software quality. volume i, ii and iii. concepts and definitions of software quality.
 \emph{US Rome Air Development Center Reports, US Department of Commerce, USA}, p.~168, 1977.}
+
+\bibitem[McCall, Richards e Walters 1977]{McCall1977}
+\abntrefinfo{McCall, Richards e Walters}{MCCALL; RICHARDS; WALTERS}{1977b}
+{MCCALL, J.~A.; RICHARDS, P.~K.; WALTERS, G.~F. \emph{{Factors in Software Quality}}.
+[S.l.], 1977.}
 
 \bibitem[{Mitre Corporation} 1999]{cwe}
 \abntrefinfo{{Mitre Corporation}}{{Mitre Corporation}}{1999}
@@ -194,6 +221,11 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10664-008-9102-8}.}
 Cited by: 2; All Open Access, Gold Open Access.
 Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85214507365&doi=10.32604\%2fcmc.2024.057587&partnerID=40&md5=16c958450978504c24f727dbb66e06d5}.}
 
+\bibitem[Siavvas, Ampatzoglou e Stamelos 2017]{qatch}
+\abntrefinfo{Siavvas, Ampatzoglou e Stamelos}{SIAVVAS; AMPATZOGLOU; STAMELOS}{2017}
+{SIAVVAS, M.; AMPATZOGLOU, A.; STAMELOS, I. Qatch: A framework for software product quality assessment using fuzzy multi-criteria decision making.
+\emph{Expert Systems with Applications}, Elsevier, v.~86, p. 350--366, 2017.}
+
 \bibitem[Siavvas et al. 2021]{Siavvas21}
 \abntrefinfo{Siavvas et al.}{SIAVVAS et al.}{2021a}
 {SIAVVAS, M. et al. A hierarchical model for quantifying software security based on static analysis alerts and software metrics.
@@ -224,6 +256,10 @@ Acessado: 25-07-2025.}
 \abntrefinfo{Valor-Economico}{VALOR-ECONOMICO}{2025}
 {VALOR-ECONOMICO, P. 2025. Https://valor.globo.com/financas/noticia/2025/07/02/hackers-teriam-desviado-milhoes-de-reais-apos-invadir-empresa-que-conecta-instituicoes-financeiras-ao-pix.ghtml.
 Acessado: 25-07-2025.}
+
+\bibitem[Wagner et al. 2012]{Quamoco}
+\abntrefinfo{Wagner et al.}{WAGNER et al.}{2012}
+{WAGNER, S. et al. The quamoco product quality modeling and assessment approach. In:  \emph{Proceedings of the 34th International Conference on Software Engineering (ICSE)}. [S.l.]: IEEE Press, 2012. p. 1133--1142.}
 
 \bibitem[Wohlin et al. 2024]{Wohlin2024}
 \abntrefinfo{Wohlin et al.}{WOHLIN et al.}{2024}

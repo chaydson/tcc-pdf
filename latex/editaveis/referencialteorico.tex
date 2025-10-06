@@ -75,17 +75,26 @@ Aqui são apresentados os resultados que os pesquisadores conseguiram obter com 
   
 \section{Modelos de Qualidade de Software}
  
-ISO 25010
+O modelo de \citeonline{McCall1977} é considerado pioneiro na avaliação da qualidade de software. O modelo propõe uma estrutura hierárquica para avaliar a qualidade do software a partir de fatores de qualidade, ou seja, ele permite que a qualidade de um determinado sistema seja avaliada de maneira mensurável. 
+Os fatores são grupados nas categorias principais de operação, revisão e transição, porém cada categoria de fator é decomposta em vários subfatores para tornar possível a sua análise. A categoria de operação está relacionada com os fatores referentes ao uso efetivo do software, já a revisão está ligada a capacidade do software de ser mantido e modificado, por fim, a transição à adaptação do software em novos ambientes \cite{McCall1977}.
 
-McCall e Boehm
+Posteriormente, \citeonline{Boehm1978} expandiu o modelo de \citeonline{McCall1977}. Ele propôs uma abordagem hierárquica, mas com uma estrutura e terminologia diferente, terminologia essa que se tornou o padrão na engenharia de software. As fatores de \citeonline{McCall1977}, agora chamados de características de alto nível, que representam o valor do software, características de nível intermidiário, que detalham as características de alto nível, e as características primitivas, que podem ser avalidas diretamente no código \cite{Boehm1978}.
 
-Dromey e Coleman
+Com o avanço da engenharia de software, novos modelos de qualidade foram propostos. Entre eles, destacam-se o modelo de \citeonline{Dromey:1995:MSP:205302.205311}, que enfatiza a importância de vincular as características de qualidade diretamente aos componentes do software. Ele utiliza a abordagem bottom-up, ou seja, os componentes de software de baixo nível são determinam diretamente as características de qualidade de alto nível do sistema \cite{Dromey:1995:MSP:205302.205311}.
 
-SIG e SQALE
+No processo de desenvolvimento de software, é fundamental garantir o uso consistente e correto de terminologias, métricas e métodos para a avaliação de qualidade. Nesse sentido, a norma \citeonline{ISO25010} se estabelece como o documento que determina o padrão internacional que orienta a avaliação de sistemas de software.
+Esta norma integra a família \citeonline{ISO25000}, conhecida como SQuaRE (Requisitos e Avaliação de Qualidade de Sistemas e Software). O objetivo da série SQuaRE é estruturar a avaliação da qualidade de software por meio de um modelo de qualidade hierárquico e adaptável  ao contexto de cada organização \cite{ISO25010}. 
 
-Quamoco e Q-Rapids
+A \citeonline{ISO25010} substitui a versão anterior do modelo de qualidade, a \citeonline{ISO9126}, e define a qualidade de um produto de software com base em oito características principais, que por sua vez são subdivididas em subcaracterísticas. As características de qualidade de produto são: adequação funcional, desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade. 
+Adicionalmente, a norma também define as características de qualidade em uso, que avaliam o impacto do produto da perspectiva do usuário. São elas: eficácia, eficiência, satisfação, liberdade de risco e contexto de cobertura \cite{ISOIEC25010}.
 
-QATCH
+O modelo SQALE proposto por \cite{sqale}, inspirado por \citeonline{McCall1977} e pela \citeonline{ISO9126}, deu um passo além de apenas medir, pois ele fornece um caminho para aumentar a qualidade do software. Para atingir esse objetivo, o SQALE define um conjunto de práticas que orientam a avaliação e a melhoria da qualidade do software. Elas fornecem diretrizes técnicas aos desenvolvedores apontadas por um sistema de pontuação adaptável que enfatiza com notas baixas as partes mais problemáticas do sistema \cite{sqale}.
+
+O Quamoco é um metamodelo desenvolvido por \citeonline{Quamoco} baseado na \citeonline{ISO25010} que utiliza um método de avaliação de qualidade baseado na Teoria de Utilidade de Múltiplos Atributos/Valores (MAUT/MAVT). Por ser um metamodelo, ele permite que sejam construídos modelos que adaptados a realidade de uma organização, em vez de aplicar uma análise rígida como visto nos outros modelos. Ademais, o modelo possui validação empírica em relação à detecção de diferenças de qualidade e visibilidade de melhorias ao longo do tempo \cite{Quamoco}.
+
+Buscando atender às necessidades do desenvolvimento moderno \citeonline{qrapids} desenvolveram o modelo Q-Rapids. Apesar de baseado no Quamoco, ele incorpora aspectos adicionais relacionados ao desenvolvimento ágil e DevOps. O modelo Q-Rapids integra dados de diversas fontes, como respositórios de código, ferramentas de análise estática, sistemas de rastreamento de defeitos, ferramentas de integração contínua e o resultado de testes para fornecer uma visão abrangente da qualidade do software ao longo do ciclo de vida do desenvolvimento \cite{qrapids}.
+
+Também baseado na norma \citeonline{ISO25010}, o modelo QATCH \citeonline{qatch} fornece uma abordagem de avaliação de qualidade de software que leva em conta a natureza subjetiva da qualidade de software. Segundo os autores, o modelo deve ser capaz de ser ajustado às necessidades específicas dos stakeholders, permitindo a personalização dos critérios de avaliação e a adaptação às particularidades do contexto em que o software será utilizado. Para isso, ele utiliza análise estática em repositórios de referência e opinião de especialistas para definir os limiares e pesos \cite{qatch}.
 
 \section{Segurança de Software}
 
