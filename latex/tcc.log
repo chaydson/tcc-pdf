@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  6 OCT 2025 05:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  9 OCT 2025 21:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1177,7 +1177,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-<figuras/GQM.png, id=441, 1666.225pt x 307.1475pt>
+<figuras/GQM.png, id=435, 1666.225pt x 307.1475pt>
 File: figuras/GQM.png Graphic file (type png)
 <use figuras/GQM.png>
 Package pdftex.def Info: figuras/GQM.png  used on input line 94.
@@ -1193,7 +1193,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) h
                                                   \__shipout_drop_firstpage_...
 l.107     \item I
                  ncorporar um conjunto de práticas \textit{DevSecOps} ao ci... <./figuras/GQM.png>]
-<figuras/fluxo-atividades.png, id=459, 1445.4pt x 813.0375pt>
+<figuras/fluxo-atividades.png, id=453, 1445.4pt x 813.0375pt>
 File: figuras/fluxo-atividades.png Graphic file (type png)
 <use figuras/fluxo-atividades.png>
 Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 135.
@@ -1202,7 +1202,7 @@ Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 135.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/cronograma.png, id=460, 1445.4pt x 813.0375pt>
+<figuras/cronograma.png, id=454, 1445.4pt x 813.0375pt>
 File: figuras/cronograma.png Graphic file (type png)
 <use figuras/cronograma.png>
 Package pdftex.def Info: figuras/cronograma.png  used on input line 144.
@@ -1234,7 +1234,7 @@ Underfull \vbox (badness 1867) has occurred while \output is active []
  [42]) (./editaveis/revisaodaliteratura.tex [43] [44
 
 ]
-<figuras/pico.png, id=682, 1002.74625pt x 966.61125pt>
+<figuras/pico.png, id=676, 1002.74625pt x 966.61125pt>
 File: figuras/pico.png Graphic file (type png)
 <use figuras/pico.png>
 Package pdftex.def Info: figuras/pico.png  used on input line 24.
@@ -1401,7 +1401,7 @@ Overfull \hbox (36.01765pt too wide) in alignment at lines 166--247
  []
 
 [51] [52] [53]
-<figuras/fluxograma-artigos.png, id=778, 770.88pt x 578.16pt>
+<figuras/fluxograma-artigos.png, id=772, 770.88pt x 578.16pt>
 File: figuras/fluxograma-artigos.png Graphic file (type png)
 <use figuras/fluxograma-artigos.png>
 Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 254.
@@ -1439,12 +1439,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) ha
                                                   \__shipout_drop_firstpage_...
 l.395 \end{itemize}
                    ]
-<figuras/volume-anual-artigos.png, id=888, 451.6875pt x 301.125pt>
+<figuras/volume-anual-artigos.png, id=882, 451.6875pt x 301.125pt>
 File: figuras/volume-anual-artigos.png Graphic file (type png)
 <use figuras/volume-anual-artigos.png>
 Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 405.
 (pdftex.def)             Requested size: 318.49861pt x 212.34369pt.
-<figuras/artigos-publicados.png, id=890, 451.6875pt x 321.2pt>
+<figuras/artigos-publicados.png, id=884, 451.6875pt x 321.2pt>
 File: figuras/artigos-publicados.png Graphic file (type png)
 <use figuras/artigos-publicados.png>
 Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 419.
@@ -1458,7 +1458,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) h
                                                   \__shipout_drop_firstpage_...
 l.424 
        <./figuras/volume-anual-artigos.png>]
-<figuras/quantidade-experimental.png, id=897, 842.14626pt x 562.1pt>
+<figuras/quantidade-experimental.png, id=891, 842.14626pt x 562.1pt>
 File: figuras/quantidade-experimental.png Graphic file (type png)
 <use figuras/quantidade-experimental.png>
 Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 433.
@@ -1477,7 +1477,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) h
                                                   \__shipout_drop_firstpage_...
 l.443 
        <./figuras/artigos-publicados.png> <./figuras/quantidade-experimental.png>]
-<figuras/tipos-validacao.png, id=905, 451.6875pt x 301.125pt>
+<figuras/tipos-validacao.png, id=899, 451.6875pt x 301.125pt>
 File: figuras/tipos-validacao.png Graphic file (type png)
 <use figuras/tipos-validacao.png>
 Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 447.
@@ -1490,55 +1490,20 @@ l.1 \chapter
             [Planejamento do Estudo de Caso]{Planejamento do Estudo de Caso} <./figuras/tipos-validacao.png>] [64
 
 ] [65] [66]
-<figuras/arquitetura-geral.png, id=947, 778.5888pt x 316.0608pt>
-File: figuras/arquitetura-geral.png Graphic file (type png)
-<use figuras/arquitetura-geral.png>
-Package pdftex.def Info: figuras/arquitetura-geral.png  used on input line 36.
-(pdftex.def)             Requested size: 409.49722pt x 166.23341pt.
-<figuras/arquitetura-backend.png, id=949, 619.113pt x 237.5274pt>
-File: figuras/arquitetura-backend.png Graphic file (type png)
-<use figuras/arquitetura-backend.png>
-Package pdftex.def Info: figuras/arquitetura-backend.png  used on input line 52.
-(pdftex.def)             Requested size: 409.49722pt x 157.10925pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.57 
-      <./figuras/arquitetura-geral.png>]
-<figuras/arquitetura-frontend.png, id=956, 778.5888pt x 302.0886pt>
-File: figuras/arquitetura-frontend.png Graphic file (type png)
-<use figuras/arquitetura-frontend.png>
-Package pdftex.def Info: figuras/arquitetura-frontend.png  used on input line 70.
-(pdftex.def)             Requested size: 409.49722pt x 158.88466pt.
+ [67]
+Underfull \vbox (badness 1655) has occurred while \output is active []
 
-Underfull \vbox (badness 1048) has occurred while \output is active []
+ [68] [69] [70] [71] [72]) (./editaveis/conclusao.tex [73] [74
 
- [68
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.79 
-     
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.79 
-      <./figuras/arquitetura-backend.png> <./figuras/arquitetura-frontend.png>] [69] [70] [71] [72] [73]
-Underfull \vbox (badness 1178) has occurred while \output is active []
-
- [74]) (./editaveis/conclusao.tex [75] [76
-
-] [77
+] [75
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.47 
      ]
-<figuras/cronograma-tcc-2.png, id=1071, 1445.4pt x 813.0375pt>
+<figuras/cronograma-tcc-2.png, id=1047, 1445.4pt x 813.0375pt>
 File: figuras/cronograma-tcc-2.png Graphic file (type png)
 <use figuras/cronograma-tcc-2.png>
 Package pdftex.def Info: figuras/cronograma-tcc-2.png  used on input line 60.
@@ -1551,107 +1516,106 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \tf@brf=\write6
 \openout6 = `tcc.brf'.
 
- [78] [79
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.13}) has been already used, duplicate ignored
+ [76] [77
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
-                                                   <./figuras/cronograma-tcc-2.png (PNG copy)>] [80
+                                                   <./figuras/cronograma-tcc-2.png (PNG copy)>] [78
 
 ]
 bibitemlist
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\T1/lmr/m/n/12 ISO/IEC 25000. 
  []
 
 
-Overfull \hbox (330.9702pt too wide) in paragraph at lines 76--76
+Overfull \hbox (330.9702pt too wide) in paragraph at lines 86--86
 |   []\T1/lmr/m/n/12 . 
  []
 
-[81]
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 []\T1/lmr/m/n/12 ISO/IEC 25010. 
  []
 
 
-Overfull \hbox (422.15277pt too wide) in paragraph at lines 86--86
-|   []\T1/lmr/m/n/12 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
-[]\T1/lmr/m/n/12 ISO/IEC 27000. 
- []
-
-
-Overfull \hbox (284.09032pt too wide) in paragraph at lines 91--91
+Overfull \hbox (422.15277pt too wide) in paragraph at lines 96--96
 |   []\T1/lmr/m/n/12 . 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]\T1/lmr/m/n/12 ISO/IEC 27001. 
+[]\T1/lmr/m/n/12 ISO/IEC 27000. 
  []
 
 
-Overfull \hbox (283.7281pt too wide) in paragraph at lines 101--101
+Overfull \hbox (284.09032pt too wide) in paragraph at lines 101--101
 |   []\T1/lmr/m/n/12 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
-[]\T1/lmr/m/n/12 ISO/IEC 27004. 
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]\T1/lmr/m/n/12 ISO/IEC 27001. 
  []
 
 
-Overfull \hbox (368.29608pt too wide) in paragraph at lines 106--106
+Overfull \hbox (283.7281pt too wide) in paragraph at lines 111--111
 |   []\T1/lmr/m/n/12 . 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\T1/lmr/m/n/12 ISO/IEC 27004. 
+ []
+
+
+Overfull \hbox (368.29608pt too wide) in paragraph at lines 116--116
+|   []\T1/lmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/lmr/m/n/12 ISO/IEC 9126. 
  []
 
 
-Overfull \hbox (2.09378pt too wide) in paragraph at lines 116--116
+Overfull \hbox (2.09378pt too wide) in paragraph at lines 126--126
 |   []\T1/lmr/m/n/12 . 
  []
 
-[82] [83] [84]
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+[80] [81] [82]
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
 []\T1/lmr/m/n/12 VALOR-ECONOMICO, P. 2025. 
  []
 
-) (./editaveis/apendices.tex [85] [86
+[83]) (./editaveis/apendices.tex [84]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 4.
+
+[85
+
+
+] [86] [87
+
+] [88
+
+]) (./editaveis/anexos.tex [89] [90
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[87
+[91
 
-] [88] [89
+] [92] [93
 
-] [90
+] [94
 
-]) (./editaveis/anexos.tex [91] [92
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 4.
-
-[93
-
-] [94] [95
-
-] [96
-
-]) (./tcc.ind) [97]
+]) (./tcc.ind) [95]
 \tf@lof=\write7
 \openout7 = `tcc.lof'.
 
@@ -1673,21 +1637,21 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 61C1BD818E5006057B73DB29385B9419;7589.
+(rerunfilecheck)             Checksum: BA91CC6B18FB42ADDC31E57CD670967F;7745.
  ) 
 Here is how much of TeX's memory you used:
- 29682 strings out of 474222
- 537176 string characters out of 5748734
+ 29671 strings out of 474222
+ 536607 string characters out of 5748734
  1986975 words of memory out of 5000000
- 50949 multiletter control sequences out of 15000+600000
+ 50943 multiletter control sequences out of 15000+600000
  649994 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,13n,107p,1516b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (99 pages, 2684211 bytes).
+Output written on tcc.pdf (97 pages, 2506954 bytes).
 PDF statistics:
- 1673 PDF objects out of 1728 (max. 8388607)
- 1512 compressed objects within 16 object streams
- 321 named destinations out of 1000 (max. 500000)
- 695 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1659 PDF objects out of 1728 (max. 8388607)
+ 1503 compressed objects within 16 object streams
+ 316 named destinations out of 1000 (max. 500000)
+ 680 words of extra memory for PDF output out of 10000 (max. 10000000)
 

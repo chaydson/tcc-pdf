@@ -23,55 +23,13 @@ Situação essa que se agrava ao se tratar de práticas emergentes na indústria
 Assim, o objetivo desse estudo consiste em investigar como as práticas DevSecOps afetam os aspectos relacionados a segurança de um projeto de software livre em desenvolvimento. Para tanto serão utilizados métodos, técnicas e ferramentas, observadas e propostos na literatura específica da área de segurança e em consonância com o estado da prática na indústria.
 
 \section{Caso}
-O \textcolor{blue}{MEPA}\footnote{\href{https://mepaenergia.org/}{Página do institucional da plataforma}} é uma plataforma de software livre focada na recomendação, gestão e otimização de contratos de energia, desenvolvida pela Universidade de Brasília (UnB) com financiamento do Governo Federal. A solução foi criada para aprimorar os contratos de fornecimento de energia em instituições públicas, sendo reconhecida pelo Tribunal de Contas da União (TCU) como referência na gestão de energia elétrica para as Instituições Federais de Ensino Superior (IFES).
+O objeto de estudo do trabalho é a plataforma Brasil Participativo. Ela se trata de uma plataforma digital de participação social de software livre desenvolvida pelo Governo Federal do Brasil, que tem como objetivo promover a interação entre cidadãos e o governo, permitindo que a população participe de consultas públicas, conferências, planos e enquetes sobre políticas públicas. O projeto é uma iniciativa da Secetraria-Geral da Presidência da República, desenvolvido pela Universidade de Brasília, hospedado pela Dataprev e tendo como base o Decidim \cite{BrasilParticipativo}.
 
-Empregando inteligência artificial, o sistema realiza uma análise pormenorizada de dados de consumo, como o histórico de faturas das unidades consumidoras, para identificar as opções contratuais mais vantajosas e economicamente eficientes para cada instituição. Adicionalmente, a plataforma também gera relatórios estratégicos com gráficos detalhados sobre o consumo, possibilitando que os gestores a identifiquem padrões e permitindo a tomada de decisões assertivas relaciondas a otimização de custos.
+O Brasil Participativo possibilitou que 1.619.015 pessoas de diversas regiões do país contribuíssem com ideias de impacto nacional de forma simples, segura e transparente. A plataforma conta com, aproximadamente, 9.200.013 acessos e um total de 47 processos desde o seu laçamento, o que evidencia o seu caráter fundamental na democracia brasileira ao promover a diversidade e inclusão no desenvolvimento de políticas públicas \cite{BrasilParticipativo}.
 
-A arquitetura consiste em um frontend construído com o framework Next.js do React, que forma a interface com o usuário. Essa interface se comunica com um servidor Python construído com o framework Django. Os dados são persistidos em um banco de dados PostgreSQL que se conecta ao sistema pelo Django. A comunicação entre a interface e o servidor é feita por uma API REST; dessa forma, a interface gráfica se comunica apenas com o servidor, e este faz a comunicação com o banco de dados, fornecendo os dados necessários para a exibição na interface. Essa arquitetura pode ser observada na Figura \ref{fig:arquitetura-geral} e o seu código-fonte está disponibilizado no GitLab\footnote{\href{https://gitlab.com/lappis-unb/projetos-energia/mec-energia}{Repositórios do MEPA}}.
+O Decidim é um framework democrático participativo genérico baseado em Ruby on Rails. Trata-se de um software livre desenvolvido pelo governo de Barcelona para promover a participação cidadã e a democracia participativa. Ele permite que qualquer organização faça uma adaptação de seus componentes para a própia realidade, desse modo, tornou-se uma referência em tecnologia cívica. \cite{Decidim}
 
-
-\begin{figure}[h]
-    \centering
-	\caption{Arquitera Geral}
-    \includegraphics[width=0.9\textwidth]{figuras/arquitetura-geral.png}
-
-    \label{fig:arquitetura-geral}
-	Fonte: LAPP1S
-\end{figure}
-
-
-A API (servidor) é composta por quatro módulos. O primeiro, chamado de Models, contém as definições dos objetos que serão armazenados no banco de dados, incluindo seus atributos e os comportamentos básicos de criar, remover, atualizar e deletar.
-
-O módulo Serializer é responsável por serializar e desserializar os objetos definidos nos Models. Ele traduz e valida os dados entre o formato de comunicação da API (JSON) e o formato mais complexo usado internamente pelo framework.
-
-Após a tradução dos objetos, o módulo de visualização (Views) realiza o processamento das requisições e respostas HTTP, que são capturadas pelo módulo de roteamento de requisições. Essa arquitetura está ilustrada na Figura \ref{fig:arquitetura-backend}.
-
-\begin{figure}[H]
-    \centering
-	\caption{Arquitera do Backend}
-    \includegraphics[width=0.9\textwidth]{figuras/arquitetura-backend.png}
-
-    \label{fig:arquitetura-backend}
-	Fonte: LAPPIS
-\end{figure}
-
-
-A Figura \ref{fig:arquitetura-frontend} representa a arquitetura da interface gráfica (frontend), construída com o framework Next.js e a biblioteca React para a criação de componentes. Utiliza-se também a biblioteca Redux para gerenciar os estados e manter a consistência do fluxo de dados da aplicação. Os componentes são a parte principal da interface, pois é através deles que o usuário interage com o sistema. Eles representam todos os elementos visuais e são utilizados para evitar o acoplamento do código e facilitar a resolução de problemas.
-
-Quando o usuário executa uma ação em um componente, uma função criadora de ação é chamada. Essa função gera um objeto de ação que descreve o que aconteceu. Em seguida, essa ação é enviada para um redutor. O redutor, por sua vez, avalia a ação e determina como o estado da aplicação deve mudar, retornando um novo estado atualizado.
-
-Esse novo estado é salvo na Store, que centraliza e armazena todas as informações de estado da aplicação. Quando a interface detecta uma mudança na Store, os novos dados são passados para os componentes relevantes por meio das Propriedades (Props), garantindo que a interface do usuário reflita o estado atual da aplicação.
-
-
-
-\begin{figure}[H]
-    \centering
-	\caption{Arquitera do Backend}
-    \includegraphics[width=0.9\textwidth]{figuras/arquitetura-frontend.png}
-
-    \label{fig:arquitetura-frontend}
-	Fonte: LAPPIS
-\end{figure}
+Esse projeto foi escolhido por ser um software livre que conta com equipes de segurança e desenvolvimento acessíveis e ativas, o que facilita a comunicação e a colaboração durante o estudo de caso. Além disso, o laboratório responsável pelo projeto possui um ambiente de desenvolvimento ágil, cultura DevSecOps e entregas em andamento, o que é fundamental para a avaliação das práticas implementadas. Por fim, o software é de grande relevância social, o que reforça a importância de garantir sua segurança e confiabilidade.
 
 \section{Trabalhos Relacionados}
 
@@ -118,20 +76,18 @@ Adiconalmente, o orquestrador de CI/CD atuará como fonte de dados para coletar 
 
 Por fim, a equipe técnica será a fonte de dados dos formulários de avaliação ao final do estudo de caso, permitindo a análise qualitativa e triangularização dos resultados.
 
-\section{Procedimentos}
+\section{Unidades de Análise e Procedimentos}
 
-Para atender à complexidade das questões de pesquisa deste trabalho, optou-se pelo método de estudo de caso incorporado, fundamentado por \citeonline{yin2015estudo}. 
+Para atender à complexidade das questões de pesquisa deste trabalho, optou-se pelo método de estudo de caso incorporado ou embutido, fundamentado por \citeonline{yin2015estudo}. 
 Esta abordagem foi escolhida, pois permite que o caso principal seja investigado por meio da análise aprofundada de múltiplas subunidades de análise. Especificamente, o estudo se debruça sobre diferentes faces do projeto, como
 o impacto na qualidade da segurança interna e externa do produto, e a percepção da equipe sobre as mudanças implementadas. Ao examinar cada um desses componentes seguindo o protocolo de estudo de caso, é possível construir uma visão detalhada e triangulada que
 fortalece a validade das conclusões e oferece uma resposta mais completa ao problema investigado.
 
-Desse modo, é necessário realizar a integração e configuração das ferramentas de segurança ao pipeline de CI/CD, nesta etapa serão definidos os críterios para o bloqueio ou merge das novas versões do código para que o processo de desenvolvimento não se torne oneroso devido as restrições de segurança.
+Desse modo, a primeira unidade de análise é constituída pelo produto em si, ou seja, os artefatos da plataforma Brasil Participativo e seus componentes, como o código-fonte, as bibliotecas de terceiros e o sistema em execução. A coleta de dados para esta unidade é composta por uma análise quantitativa independente de artefatos de trabalho no código e suas bibliotecas, por meio de ferramentas SAST e SCA, além da análise do sistema em execução por ferramentas DAST.
 
-Após a configuração das ferramentas, é preciso estabeler a linha de base de segurança do projeto, ou seja, avaliar o estado atual do aplicação e gerar o primeiro conjunto de dados que serão usados para comparação na conclusão da monografia.
+A segunda unidade de análise é composta pelos processos adotadas pela equipe de desenvolvimento, incluindo a pipeline de CI/CD e as práticas DevSecOps implementadas. O estudo visa investigar o efeito dessas práticas no fluxo de trabalho e tomada de decisões do time. Esta unidade terá como dados quantitativos as métricas coletadas do orquestrador de CI/CD, que indicam as entregas bloqueadas devido à detecção de vulnerabilidades críticas. 
 
-Então, a execução contínua da análise de segurança será iniciada, durante o segundo semestre letivo de 2025 os desenvolvedores utilizarão a nova pipeline em seu cotidiano, enquanto as métricas são coletads para análise futura.
-
-Ao final da observação, os dados quantitativos serão centralizados e analisados para produzir as métricas obtidas ao final do estudo, além de ser realizada a aplicação do questionário de coleta e da percepção da equipe para obter a opinião dos participantes do estudo.
+Por último, a terceira unidade de análise envolve a equipe técnica responsável pelo desenvolvimento e manutenção do software, cuja percepção sobre as mudanças será avaliada por meio de um questionário. O objetivo é coletar o feedback da equipe sobre o impacto das práticas DevSecOps no processo de desenvolvimento, identificando benefícios, desafios e sugestões de melhoria. Esta unidade de análise fornecerá dados qualitativos que complementarão as análises quantitativas das outras unidades.
 
 \section{Análise de Dados}
 
@@ -204,7 +160,7 @@ Análises puramente quantitativas,  utilizam a generalização estatística, ond
 
 Já nos estudos de caso, o objetivo do pesquisador é usar um conjunto específico de resultados para corroborar ou expandir uma teoria mais abrangente, em vez de aplicá-los diretamente a um universo estatístico.
 
-Este estudo está limitado a um caso único, o projeto MEPA, que possui características específicas que podem não ser compatíveis ou aplicáveis em outros sistemas de software ou contextos. Embora as conclusões sejam específicas deste caso, como forma de mitigar essa ameaça, toda a descrição metodológica e documentação necessária para a compreensão das singularidades do caso MEPA  estarão disponíveis em reposítórios públicos. Dessa forma, outros pesquisadores podem analisar a viabilidade da replicação dos resultados em seus contextos específicos.
+Este estudo está limitado a um caso único, o projeto Brasil Participativo, que possui características específicas que podem não ser compatíveis ou aplicáveis em outros sistemas de software ou contextos. Embora as conclusões sejam específicas deste caso, como forma de mitigar essa ameaça, toda a descrição metodológica e documentação necessária para a compreensão das singularidades do caso Brasil Participativo estarão disponíveis em reposítórios públicos. Dessa forma, outros pesquisadores podem analisar a viabilidade da replicação dos resultados em seus contextos específicos.
 
 
 \subsection{Ameaças à Confiabilidade}

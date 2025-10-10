@@ -27,6 +27,16 @@ ISBN 9780471028956.}
 \abntrefinfo{Boehm}{BOEHM}{1978b}
 {BOEHM, B.~W. \emph{{Characteristics of Software Quality}}. [S.l.]: North-Holland, 1978.  (TRW Series of Software Technology).}
 
+\bibitem[{Brasil. Presidência da República} 2025]{BrasilParticipativo}
+\abntrefinfo{{Brasil. Presidência da República}}{{Brasil. Presidência da República}}{2025}
+{{Brasil. Presidência da República}. \emph{Plataforma Brasil Participativo}. 2025.
+Dispon{\'\i}vel em: \url{https://brasilparticipativo.presidencia.gov.br/processes/brasilparticipativo/f/1400/}.}
+
+\bibitem[{Decidim} 2025]{Decidim}
+\abntrefinfo{{Decidim}}{{Decidim}}{2025}
+{{Decidim}. \emph{About Decidim - Decidim Docs}. 2025.
+Dispon{\'\i}vel em: \url{https://docs.decidim.org/en/develop/understand/about}.}
+
 \bibitem[Dromey 1995]{Dromey:1995:MSP:205302.205311}
 \abntrefinfo{Dromey}{DROMEY}{1995}
 {DROMEY, R.~G. A model for software product quality.
