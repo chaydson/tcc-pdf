@@ -1,0 +1,174 @@
+\chapter[Execução do Estudo de Caso]{Execução do Estudo de Caso}
+
+Aqui serão apresentados os processos e etapas, bem como as ferramentas construídas para a realização do estudo de caso proposto nesta pesquisa. Adicionalmente, serão detalhadas as atividades desenvolvidas para a coleta e análise dos dados necessários para a validação dos objetivos estabelecidos, bem como uma discussão sobre o que foi possível observar durante o estudo. Todos os códigos citados podem ser encontrados no repositório \footnote{\href{https://github.com/chaydson/tcc-code}{https://github.com/chaydson/tcc-code}}  destinado a guardar os artefatos produzidos durante essa etapa.
+
+\section{Configuração da Pipeline de CI/CD Localmente}
+
+Primeiramente, é importante ressaltar a necessidade de desenvolver um método para executar a pipeline de CI/CD localmente, visto que o projeto original não contempla uma etapa de deploy em sua esteira. Essa etapa é crucial para a análise proposta, pois a ferramenta de análise dinâmica requer uma versão do projeto em execução para ser aplicada. Com o intuito de suprir essa lacuna, a biblioteca gitlab-ci-local \footnote{\href{https://github.com/firecow/gitlab-ci-local}{https://github.com/firecow/gitlab-ci-local}} foi utilizada para viabilizar a execução local da pipeline. Essa ferramenta permite que as etapas definidas no arquivo .gitlab-ci.yml sejam reproduzidas em um ambiente local, de maneira análoga ao GitLab CI.
+
+Dessa forma, elaborou-se um script Shell que executa individualmente cada etapa da pipeline, uma vez que certas fases demandam adaptações para operarem localmente. Por exemplo, a etapa de análise estática exige variáveis e caminhos específicos devido ao uso de Docker in Docker na configuração original. Já para a análise dinâmica, foi necessário implementar um health-check para assegurar que a ferramenta inicie apenas quando o build da versão analisada estiver ativo. Adicionalmente, o script é responsável por organizar os resultados das análises em diretórios específicos, facilitando a posterior coleta de dados. Vale destacar que o script também realiza os logs de cada uma das etapas, armazenando-os em um arquivos que auxilia na identificação de falhas e na análise dos resultados.
+
+O Código \ref{lst:pipeline-local} apresenta os principais trechos do script desenvolvido para a execução local da pipeline de CI/CD.
+
+\begin{lstlisting}[language=Python, caption=Shell Script para Pipeline Local, label={lst:pipeline-local}]
+    #!/bin/bash
+    # --- SAST ---
+    run_and_capture "SAST" \
+        gitlab-ci-local --volume "/var/run/docker.sock:/var/run/docker.sock" --variable "DOCKER_HOST=unix:///var/run/docker.sock" SAST
+    if [ $? -ne 0 ]; then
+        echo "Job 'SAST' falhou, mas continuando..."
+        OVERALL_STATUS=1
+    fi
+
+    # --- SCA ---
+    run_and_capture "SCA" \
+      gitlab-ci-local SCA
+    if [ $? -ne 0 ]; then
+      echo "Job 'SCA' falhou, mas continuando..."
+      OVERALL_STATUS=1
+    fi
+
+    # --- DAST ---
+    if [ "$APP_IS_READY_FOR_DAST" = true ]; then
+    echo "Iniciando DAST."
+    run_and_capture "DAST (ZAP Baseline)" \
+      sudo docker run --network="host" --rm \
+      -v $(pwd):/zap/wrk/:rw -t \
+      ghcr.io/zaproxy/zaproxy:stable \
+      zap-baseline.py \
+        -t http://localhost:3000/ \
+        -r "$REPORTS_TOOLS_DIR/zap-report.html" \
+        -J "$REPORTS_TOOLS_DIR/zap-report.json" \
+        -l WARN
+\end{lstlisting}
+
+\section{Elaboração dos Scripts para Automação da Coleta de Dados}
+
+Para viabilizar a coleta do grande volume de dados gerado pela execução da pipeline na unidade de análise escolhida, os Merge Requests (MRs) integrados ao ramo principal do repositório, fez-se necessária a criação de scripts que extraíssem automaticamente as informações de cada MR. Dessa forma, foram desenvolvidos scripts em Python para cada uma das ferramentas (SAST, SCA e DAST) utilizadas na pipeline, visto que cada uma gera relatórios em formatos distintos, sendo preciso padronizar a extração para o cálculo das métricas.
+
+Esses scripts seguem uma lógica comum, que consiste em acessar o diretório onde os relatórios estão armazenados, contabilizar a quantidade de vulnerabilidades por severidade (crítico, alto, médio e baixo) em cada merge e consolidar essas informações em um DataFrame Pandas. O Código \ref{lst:script-sast} exemplifica esse processo por meio do script desenvolvido para a extração dos dados do SAST.
+\begin{lstlisting}[language=Python, caption=Script de Extração (SAST), label={lst:script-sast}]
+    def parse_brakeman(base_path):
+    print("--- Processando Brakeman ---")
+    files = glob.glob(os.path.join(base_path, "*", "artifacts", "brakeman-report.json"))
+    results = []
+
+    for filepath in files:
+        try:
+            path_parts = os.path.normpath(filepath).split(os.sep)
+            commit_hash = path_parts[-3]
+            
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            row = {'commit_hash': commit_hash}
+            warnings = data.get("warnings", [])
+            
+            if warnings:
+                df_temp = pd.DataFrame(warnings)
+                if "confidence" in df_temp.columns:
+                    counts = df_temp['confidence'].value_counts().to_dict()
+                    row.update({f"brakeman_{k}": v for k, v in counts.items()})
+            
+            row['brakeman_total'] = data.get("scan_info", {}).get("security_warnings", 0)
+            results.append(row)
+        except Exception:
+            continue
+\end{lstlisting}
+
+Entretanto, para coletar os dados referentes ao resultado da execução da pipeline o processo é diferente. Nesse caso, um script Python acessa os logs gerados por cada execução da pipeline e verifica se as etapas executaram com sucesso ou falha, bem como se vulnerabilidades foram encontradas. Esses dados são então organizados em um Data Frame Pandas para facilitar a análise posterior. O código \ref{lst:script-logs} ilustra o processo de extração dos dados referentes ao resultado da execução.
+
+\begin{lstlisting}[language=Python, caption=Script de Extração (Logs), label={lst:script-logs}]
+    def parse_brakeman(base_path):
+    print("--- Processando Brakeman ---")
+    files = glob.glob(os.path.join(base_path, "*", "artifacts", "brakeman-report.json"))
+    results = []
+
+    for filepath in files:
+        try:
+            path_parts = os.path.normpath(filepath).split(os.sep)
+            commit_hash = path_parts[-3]
+            
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            row = {'commit_hash': commit_hash}
+            warnings = data.get("warnings", [])
+            
+            if warnings:
+                df_temp = pd.DataFrame(warnings)
+                if "confidence" in df_temp.columns:
+                    counts = df_temp['confidence'].value_counts().to_dict()
+                    row.update({f"brakeman_{k}": v for k, v in counts.items()})
+            
+            row['brakeman_total'] = data.get("scan_info", {}).get("security_warnings", 0)
+            results.append(row)
+        except Exception:
+            continue
+        if not results:
+        return pd.DataFrame(columns=['commit_hash', 'pipeline_has_issue'])
+        
+        return pd.DataFrame(results)
+\end{lstlisting}
+
+\section{Consolidação dos Dados Coletados}
+
+Conforme preconiza a medida Security incidents trend - B.34 da norma \citeonline{ISO27004}, é necessário definir um intervalo temporal para observar o fenômeno estudado, calculando a média de cada período e comparando os dois mais recentes com os seis anteriores. Com base nessa diretriz, definiu-se que a janela de análise seria de 14 dias, contados retroativamente a partir do último dia da coleta (22/11/2025).
+
+Posteriormente, os dados foram consolidados em uma linha do tempo que agrega as informações coletadas por cada um dos scripts desenvolvidos. Para tal, um script em Python percorre os diretórios onde os dados extraídos foram armazenados e identifica a data de cada alteração. Em seguida, realiza-se o agrupamento das entregas em ciclos de 14 dias, utilizando a divisão inteira entre a data da alteração e a data de término da coleta.
+
+Outro ponto a ser destacado é que, para cada merge, foi extraída a quantidade total de bibliotecas do projeto, conforme demonstra o Código \ref{lst:script-libs}. Esse dado é fundamental para calcular a proporção entre as bibliotecas vulneráveis e o total de bibliotecas utilizadas, viabilizando assim a aferição da métrica relacionada ao SCA (Software Composition Analysis).
+
+\begin{lstlisting}[language=Python, caption=Script de Extração das Bibliotecas, label={lst:script-libs}]
+    def parse_dependency_counts(repo_path, commit_hashes):
+    print("Contando Bibliotecas")
+    
+    results = []
+    gem_regex = re.compile(r'^\s{4}[\w\-_]+ \(')
+
+    for commit_hash in commit_hashes:
+        total_libs = 0
+        gems_count = 0
+        npm_count = 0
+        
+        try:
+            cmd = ["git", "show", f"{commit_hash}:Gemfile.lock"]
+            output = subprocess.check_output(cmd, cwd=repo_path, stderr=subprocess.DEVNULL).decode('utf-8')
+            gems_count = len([line for line in output.splitlines() if gem_regex.match(line)])
+        except subprocess.CalledProcessError:
+            pass
+
+        try:
+            cmd = ["git", "show", f"{commit_hash}:package-lock.json"]
+            output = subprocess.check_output(cmd, cwd=repo_path, stderr=subprocess.DEVNULL).decode('utf-8')
+            pkg_lock = json.loads(output)
+            
+            if "packages" in pkg_lock:
+                npm_count = len([k for k in pkg_lock["packages"].keys() if k != ""])
+            elif "dependencies" in pkg_lock:
+                npm_count = len(pkg_lock["dependencies"])
+                
+        except (subprocess.CalledProcessError, json.JSONDecodeError):
+            try:
+                cmd = ["git", "show", f"{commit_hash}:package.json"]
+                output = subprocess.check_output(cmd, cwd=repo_path, stderr=subprocess.DEVNULL).decode('utf-8')
+                pkg_json = json.loads(output)
+                npm_count = len(pkg_json.get('dependencies', {})) + len(pkg_json.get('devDependencies', {}))
+            except:
+                pass
+
+        total_libs = gems_count + npm_count
+
+        results.append({
+            'commit_hash': commit_hash,
+            'total_libs': total_libs,
+            'ruby_libs': gems_count,
+            'npm_libs': npm_count
+        })
+
+    return pd.DataFrame(results)
+\end{lstlisting}
+
+\section{Aplicação do Questionário} 
+
+Infelizmente, devido a limitações de tempo e recursos, não foi possível aplicar o questionário planejado para coletar dados qualitativos dos desenvolvedores envolvidos no projeto. A aplicação do questionário ou de outro método de coleta de dados qualitativos exigiria um planejamento detalhado, o que não pôde ser realizado dentro do cronograma estabelecido para este estudo de caso. Portanto, a análise se concentrou exclusivamente nos dados quantitativos coletados através das ferramentas automatizadas descritas anteriormente.

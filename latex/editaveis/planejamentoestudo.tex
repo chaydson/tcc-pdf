@@ -45,6 +45,7 @@ A revisão sistemática feita por \citeonline{Rajapakse2022}, identifica os desa
 \citeonline{Saeed2025139} aborda técnicas para integrar a segurança no ciclo de desenvolvimento de software, enfatizando a necessidade de uma abordagem colaborativa e ferramentas automatizadas para análise de ameaças e testes de segurança.
 
 \section{Questão de Pesquisa}
+\label{sec:questoes-caso}
 
 Similar ao processo realizado no planejamento da revisão da literatura, a metodologia GQM \citeonline{Basili1994} foi usada para definição das perguntas específicas, derivadas da pergunta principal e suas respectivas métricas para conduzir o estudo, de modo a não desviar do objetivo principal e estabelecer a avaliação quantitativa ou qualitativa, de cada uma das questões de pesquisa secundárias, que agora norteaiam o estudo de caso.
 
@@ -56,13 +57,13 @@ A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema d
 \begin{itemize}
     \item Questão Específica 1: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
     \begin{itemize}
-        \item Métrica 1.1: Média de vulnerabilidades encontradas por ferramentas SAST, por nível de severidade.
-        \item Métrica 1.2: Média de vulnerabilidades encontradas por ferramentas DAST, por nível de severidade.
-        \item Métrica 1.3: Proporção de vulnerabilidades em bibliotecas encontradas por ferramentas SCA, por nível de severidade.
+        \item Métrica 1.1: Média de vulnerabilidades encontradas por ferramentas SAST, por nível de severidade, por merge.
+        \item Métrica 1.2: Média de vulnerabilidades encontradas por ferramentas DAST, por nível de severidade, por merge.
+        \item Métrica 1.3: Proporção de vulnerabilidades em bibliotecas encontradas por ferramentas SCA, por nível de severidade, por merge.
     \end{itemize}
     \item Questão Específica 2: A análise automática da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
     \begin{itemize}
-        \item Métrica 2.1: Taxa de builds/deploys bloqueados devido à descoberta de vulnerabilidades de criticidade média ou superior.
+        \item Métrica 2.1: Taxa de pipelines sinalizadas devido à descoberta de vulnerabilidades de criticidade média ou superior, por merge.
         \item Métrica 2.2: Feedback do time obtido por um questionário sobre os impactos das novas práticas.
     \end{itemize}
 \end{itemize}
@@ -91,7 +92,7 @@ Por último, a terceira unidade de análise envolve a equipe técnica responsáv
 
 \section{Análise de Dados}
 
-A análise dos dados quantitativos será fundamentada em estatísticas descritivas e em análise de tendência, visando avaliar a evolução da segurança da aplicação ao longo do tempo. Para as métricas de detecção de vulnerabilidades por ferramentas SAST e DAST, Métrica 1.1 e Métrica 1.2, adaptadas da métrica B.30 Vulnerability landscape da norma \citeonline{ISO27004}, será calculado um indicador de tendência para permitir avaliar o volume de vulnerabilidades, por nível de severidade, a cada sprint.
+A análise dos dados quantitativos será fundamentada em estatísticas descritivas e em análise de tendência, visando avaliar a evolução da segurança da aplicação ao longo do tempo. Para as métricas de detecção de vulnerabilidades por ferramentas SAST e DAST, Métrica 1.1 e Métrica 1.2, adaptadas da métrica B.34 - Security Incidents Trend da norma \citeonline{ISO27004}, será calculado um indicador de tendência para permitir avaliar o volume de vulnerabilidades, por nível de severidade, a cada sprint.
 
 O cálculo do indicador é obtido através da razão entre a média de vulnerabilidades das últimas duas sprints concluídas e a média das últimas seis sprints concluídas, sendo que, um valor inferior a 1.0 indica uma tendência de melhoria, entre 1.0 e 1.3 sinaliza uma tendência de estabilidade e superior a 1.3 indica uma piora significativa.
 
@@ -140,8 +141,7 @@ Para realizar esse teste, o pesquisador o pesquisador precisa assegurar o cumpri
 
 Dessa maneira, as medidas selecionadas podem não capturar completamente os aspectos de segurança que se pretende avaliar. Para mitigar essa ameaça, foram selecionadas medidas baseadas em modelos e normas de referência na literatura, como a \citeonline{ISO27004} e estudos que apresentam evidências experimentais dos seus "achados" como discuto por \citeonline{Zhang2024160317}.
 
-Além disso, para garantir esse alinhamento, foi adotada a abordagem GQM (detalhada
-na subseção \ref{qp_principal}. Com isso, há uma questão de pesquisa principal, norteadora de todo o trabalho e há outras questões específicas, secundárias, da revisão estruturada da literatura e do estudo de caso. Essas questões possuem suas respectivas métricas que que por sua vez, auxiliam a quantificar ou qualificar as percepções da segurança, por meio os dados coletados e analisados.
+Além disso, para garantir esse alinhamento, foi adotada a abordagem GQM detalhada na subseção \ref{qp_principal}. Com isso, há uma questão de pesquisa principal, norteadora de todo o trabalho e há outras questões específicas, secundárias, da revisão estruturada da literatura e do estudo de caso. Essas questões possuem suas respectivas métricas que que por sua vez, auxiliam a quantificar ou qualificar as percepções da segurança, por meio os dados coletados e analisados.
 
 \subsection{Ameaças à Validade Interna}
 

@@ -1,0 +1,142 @@
+\chapter[Resultados do Estudo de Caso]{Resultados do Estudo de Caso}
+
+Neste capítulo, são apresentados os resultados obtidos a partir do estudo de caso realizado. A análise dos dados coletados é detalhada, destacando as métricas calculadas e os principais insights relevantes obtidos com o estudo.
+
+\section{Análise dos Dados} 
+
+A Figura \ref{fig:grafico-total-falhas} ilustra o volume de merges realizados em cada uma das quinzenas analisadas, bem como a quantidade total de vulnerabilidades identificadas pelos três tipos de análise (SAST, DAST e SCA). Observa-se que, a despeito de oscilações temporais, o volume de vulnerabilidades tende a acompanhar linearmente o número de merges. Tal comportamento ocorre porque as vulnerabilidades são contabilizadas de forma cumulativa a cada merge, sem que haja um processo de deduplicação das falhas recorrentes. Esse cenário evidencia a importância de definir métricas fundamentadas em estudos ou normas técnicas, visto que, embora aparente ser informativo, esse gráfico pode induzir a interpretações equivocadas sobre o real estado de segurança do software.
+
+\begin{figure}[H]
+    \centering
+	\caption{Volume de Vulnerabilidades por Quinzena}
+    \includegraphics[width=1.0\textwidth]{figuras/total_absoluto_de_falhas.png}
+
+    \label{fig:grafico-total-falhas}
+	Fonte: Autor
+\end{figure}
+
+\subsection{Identificação de Vulnerabilidades de Segurança} 
+Retomando a questão específica definida na subseção \ref{sec:questoes-caso}: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
+
+Para responder a essa questão, foram analisadas as métricas relacionadas à identificação de vulnerabilidades de segurança, conforme detalhado a seguir. As Figuras \ref{fig:grafico-brakeman}, \ref{fig:grafico-zap}, \ref{fig:grafico-trivy} e \ref{fig:grafico-densidade-falhas} apresentam as médias de vulnerabilidades identificadas por merge para cada tipo de análise (SAST, DAST e SCA) ao longo das quinzenas analisadas.
+
+Observa-se que, apesar de algumas variações, as médias de vulnerabilidades por merge tendem a se manter relativamente estáveis ao longo do tempo. Isso indica que as práticas DevSecOps implementadas estão contribuindo para a identificação consistente de vulnerabilidades, tanto na qualidade interna (SAST e SCA) quanto na qualidade externa (DAST) do produto. Um dos motivos para essa estabilidade foi a priorização do time em relação às vulnerabilidades encontradas, pois não foi possível observar a sprint em que as correções foram realizadas, apenas o momento em que foram detectadas.
+
+Além disso, as vulnerabilidades não foram analisadas pelo time de segurança, apenas reportadas, o que pode ter impactado a priorização e a correção das mesmas. Isso reforça a importância de uma abordagem contínua e integrada de segurança no ciclo de desenvolvimento, alinhada aos princípios DevSecOps, para garantir a identificação e mitigação eficaz de vulnerabilidades ao longo do tempo. Outro fator impactado por esse fato é a quantidade de falsos positivos, que não foi possível analisar, mas que pode ter influenciado os dados e, posteriormente, a resolução desses problemas de segurança.
+
+\begin{figure}[H]
+    \centering
+	\caption{SAST - Média de Vulnerabilidades por Merge}
+    \includegraphics[width=1.1\textwidth]{figuras/grafico_brakeman.png}
+
+    \label{fig:grafico-brakeman}
+	Fonte: Autor
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+	\caption{DAST - Média de Vulnerabilidades por Merge}
+    \includegraphics[width=1.1\textwidth]{figuras/grafico_zap.png}
+
+    \label{fig:grafico-zap}
+	Fonte: Autor
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+	\caption{SCA - Média de Vulnerabilidades por Merge}
+    \includegraphics[width=1.1\textwidth]{figuras/grafico_trivy.png}
+
+    \label{fig:grafico-trivy}
+	Fonte: Autor
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+	\caption{Proporção de Bibliotecas com Vulnerabilidades por Merge}
+    \includegraphics[width=1.1\textwidth]{figuras/densidade_de_falhas.png}
+
+    \label{fig:grafico-densidade-falhas}
+	Fonte: Autor
+\end{figure}
+
+
+\subsection{Análise Automática da Segurança e Tomada de Decisões} 
+Na seção \ref{sec:questoes-caso}, foi levantada a questão: De que forma a análise automática da segurança pode influenciar na tomada de decisões durante o desenvolvimento do software?
+
+Para responder a essa questão, foram analisadas as métricas relacionadas à estabilidade da pipeline de CI/CD, conforme detalhado a seguir. A Figura \ref{fig:grafico-estabilidade-pipeline} apresenta as taxas de aviso ou falha na pipeline por quinzena ao longo do período analisado.
+
+Como foram implementadas ferramentas que analisaram aspectos do sistema que até então não tinham sido submetidos a esse tipo de análise e o time de desenvolvimento não teve tempo hábil para corrigir todas as vulnerabilidades encontradas, é possível observar que a pipeline encontrou falhas de segurança em todas as suas execuções. No entanto, é importante destacar que essas variações refletem o processo de adaptação do time de desenvolvimento às novas práticas DevSecOps implementadas e que, conforme a cultura do time for se integrando ao novo modo de enxergar a segurança, é provável que eles consigam reduzir esses índices.
+
+\begin{figure}[H]
+    \centering
+	\caption{Taxas de Aviso ou Falha por Quinzena}
+    \includegraphics[width=1.1\textwidth]{figuras/estabilidade_da_pipeline.png}
+
+    \label{fig:grafico-estabilidade-pipeline}
+	Fonte: Autor
+\end{figure}
+
+\section{Avaliação das Métricas} 
+
+As duas primeiras métricas definidas pela primeira questão específica do estudo de caso usam como base a métrica B.34 - Security Incidents Trend da norma \citeonline{ISO27004} que fornece um método de cálculo e valores de referência para avaliar a tendência da segurança de um sistema ao longo do tempo. Observando as informações das Figuras \ref{fig:grafico-brakeman} e \ref{fig:grafico-zap} é possível extraír os dados necessários para realizar o cálculo dessas métricas.
+
+Para a análise de tendência, definimos a média recente ($M_{rec}$) e a média histórica ($M_{hist}$) como:
+
+\begin{equation}
+    M_{rec} = \frac{1}{2} \sum_{i=n-1}^{n} x_i
+\end{equation}
+
+\begin{equation}
+    M_{hist} = \frac{1}{6} \sum_{i=n-5}^{n} x_i
+\end{equation}
+
+Onde $x_i$ representa o valor da métrica no intervalo de tempo $i$ e $n$ é o intervalo atual. A razão de tendência ($R$) é dada por:
+
+\begin{equation}
+    R = \frac{M_{rec}}{M_{hist}}
+\end{equation}
+
+Os critérios de classificação de tendência foram definidos conforme abaixo:
+\begin{itemize}
+    \item \textbf{Melhora (Verde):} se $R < 1.00$
+    \item \textbf{Estabilidade (Amarelo):} se $1.00 \leq R \leq 1.30$
+    \item \textbf{Degradação (Vermelho):} se $R > 1.30$
+\end{itemize}
+
+\begin{table}[h]
+    \centering
+    \caption{Análise de Tendência de Vulnerabilidades - SAST (Brakeman)}
+    \label{tab:sast-trend}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Categoria} & \textbf{Média Hist. (6)} & \textbf{Média Rec. (2)} & \textbf{Razão ($R$)} & \textbf{Status} \\
+        \midrule
+        High   & 5.77 & 5.30 & 0.92 & \textcolor{green!60!black}{\textbf{Verde}} \\
+        Medium & 8.00 & 8.00 & 1.00 & \textcolor{yellow!80!black}{\textbf{Amarelo}} \\
+        \bottomrule
+    \end{tabular}
+    \small{\\ Fonte: Autor}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Análise de Tendência de Alertas - DAST (ZAP)}
+    \label{tab:dast-trend}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Categoria} & \textbf{Média Hist. (6)} & \textbf{Média Rec. (2)} & \textbf{Razão ($R$)} & \textbf{Status} \\
+        \midrule
+        Medium & 24.68 & 26.15 & 1.06 & \textcolor{yellow!80!black}{\textbf{Amarelo}} \\
+        \bottomrule
+    \end{tabular}
+    \small{\\ Fonte: Autor}
+\end{table}
+
+Pode-se perceber que a análise de tendência das vulnerabilidades identificadas pelas ferramentas SAST e DAST indicam uma estabilidade na segurança do software ao longo do tempo, sendo que as vulnerabilidades de alta criticidade identificadas pelo Brakeman apresentaram uma ligeira queda, conforme apresentado nas Tabelas \ref{tab:sast-trend} e \ref{tab:dast-trend}. Esses resultados fornecem insights valiosos para a equipe de desenvolvimento e segurança, permitindo que eles monitorem e priorizem as demandas de segurança do software.
+
+Já a terceira métrica está relacionada à proporção de bibliotecas vulneráveis. Essa métrica é calculada dividindo o número de bibliotecas com vulnerabilidades pelo número total de bibliotecas utilizadas no projeto, conforme apresentado na Figura \ref{fig:grafico-densidade-falhas}. A análise dessa métrica ao longo do tempo permite avaliar a eficácia das práticas de gerenciamento de dependências e a adoção de medidas para mitigar riscos associados a bibliotecas vulneráveis. Apesar da pequena redução, 0,1\%, observada na proporção de bibliotecas vulneráveis ao longo do período analisado, é importante destacar que a métrica ainda indica uma presença significativa de vulnerabilidades nas dependências do projeto, aproximadamente 26,4\% das bibliotecas foram marcadas pelo Trivy com vulnerabilidades médias ou superiores.
+
+O gerencimento de bibliotecas é fundamental, pois até grandes projetos são sucetíveis abrir brechas na segurança, como por exemplo o \citeonline{react2025Vulnerability} divulgou a vulnerabilidade CVE-2025-55182 que permite execução não autenticada de código remotamente em aplicações que utilizam a biblioteca React nas versões 19.0, 19.1.0, 19.1.1, and 19.2.0.
+
+Por fim, a quarta métrica avalia a estabilidade da pipeline de CI/CD, conforme ilustrado na Figura \ref{fig:grafico-estabilidade-pipeline}. A análise dessa métrica ao longo do tempo revela um padrão de variação nas taxas de aviso, refletindo o processo de adaptação do time de desenvolvimento às novas práticas DevSecOps implementadas. Embora a pipeline tenha apresentado falhas em todas as execuções devido à implementação recente das ferramentas de análise de segurança, é esperado que, com o tempo e a integração contínua dessas práticas na cultura do time, haja uma redução gradual nas taxas de aviso ou falha, indicando uma melhoria na qualidade e segurança do software desenvolvido.

@@ -239,6 +239,12 @@ Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-851
 \abntrefinfo{Rangnau et al.}{RANGNAU et al.}{2020}
 {RANGNAU, T. et al. Continuous security testing: A case study on integrating dynamic security testing tools in ci/cd pipelines. In:  . [s.n.], 2020. p. 145 – 154. Cited by: 57; All Open Access, Green Open Access. Dispon{\'\i}vel em: \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85096513818&doi=10.1109\%2fEDOC49727.2020.00026&partnerID=40&md5=c40a98ef4d8eff4fb8b08e234290f023}.}
 
+\bibitem[{React Team} 2025]{react2025Vulnerability}
+\abntrefinfo{{React Team}}{{React Team}}{2025}
+{{React Team}. \emph{Critical Security Vulnerability in React Server Components}. 2025.
+Acesso em: 07 dez. 2025.
+Dispon{\'\i}vel em: \url{https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components}.}
+
 \bibitem[Runeson e H\"{o}st 2009]{Runeson2009}
 \abntrefinfo{Runeson e H\"{o}st}{RUNESON; H\"{o}ST}{2009}
 {RUNESON, P.; H\"{o}ST, M. Guidelines for conducting and reporting case study research in software engineering.
