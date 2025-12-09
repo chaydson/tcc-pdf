@@ -30,6 +30,30 @@ O Brasil Participativo possibilitou que 1.619.015 pessoas de diversas regiões d
 
 O Decidim é um framework democrático participativo genérico baseado em Ruby on Rails. Trata-se de um software livre desenvolvido pelo governo de Barcelona para promover a participação cidadã e a democracia participativa. Ele permite que qualquer organização faça uma adaptação de seus componentes para a própia realidade, desse modo, tornou-se uma referência em tecnologia cívica. \cite{Decidim}
 
+O Brasil Participativo é desenvolvido por várias equipes multidisciplinares, compostas por analistas de requisitos, designers, desenvolvedores, especialistas em segurança da informação, especialistas em infraestrutura, gerentes de projeto e líderes técnicos. Cada um dos times tem um líder responsável por coordenar as atividades e garantir a qualidade do trabalho realizado. A Figura \ref{fig:organograma-equipes} apresenta o organograma das equipes envolvidas no projeto. A equipe de desenvolvimento é composta por 9 desenvolvedores, enquanto a equipe de segurança conta com 5 especialistas dedicados a garantir a integridade e proteção do sistema.
+
+\begin{figure}[h]
+    \centering
+	\caption{Organograma das equipes do projeto Brasil Participativo}
+    \includegraphics[width=1.0\textwidth]{figuras/organograma-equipes.png}
+
+    \label{fig:organograma-equipes}
+	Fonte: Autor
+\end{figure}
+
+Já a Figura \ref{fig:bpmn} apresenta o modelo BPMN do processo de desenvolvimento do Brasil Participativo. Estão representadas na figura as atividades envolvidas no processo de melhoria contínua do projeto, dado que esse é o foco deste trabalho. O início do fluxo se dá com a definição dos novos requisitos a serem implementados, sendo que os mesmos são escritos como histórias de usuário. Posteriosmente, essas histórias são documentadas e repassadas para o time de desenvolvimento, que é responsável por implementar as mudanças no código-fonte. Após a implementação, o código é submetido a uma série de testes automatizados e manuais para garantir sua qualidade e segurança. Após os testes serem feitos, a time de segurança divulga os resultados para o time de desenvolvimento, que é responsável por corrigir as vulnerabilidades encontradas. Por fim, o código é  integrado ao sistema principal pelo time de infraestrutura, concluindo o ciclo. 
+
+Este estudo de caso focará nas etapas pós-desenvolvimento e antes de entrar em produção, em que ferramentas serão aplicadas na pipeline de CI/CD para analisar a segurança do código-fonte e do sistema em execução.
+
+\begin{figure}[h]
+    \centering
+	\caption{BPMN do processo de desenvolvimento do Brasil Participativo}
+    \includegraphics[width=1.0\textwidth]{figuras/bpmn.png}
+
+    \label{fig:bpmn}
+	Fonte: Autor
+\end{figure}
+
 Esse projeto foi escolhido por ser um software livre que conta com equipes de segurança e desenvolvimento acessíveis e ativas, o que facilita a comunicação e a colaboração durante o estudo de caso. Além disso, o laboratório responsável pelo projeto possui um ambiente de desenvolvimento ágil, cultura DevSecOps e entregas em andamento, o que é fundamental para a avaliação das práticas implementadas. Por fim, o software é de grande relevância social, o que reforça a importância de garantir sua segurança e confiabilidade.
 
 \section{Trabalhos Relacionados}
@@ -58,13 +82,13 @@ A \citeonline{ISO25010} define como confidencialidade, a capacidade do sistema d
 \begin{itemize}
     \item Questão Específica 1: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
     \begin{itemize}
-        \item Métrica 1.1: Média de vulnerabilidades encontradas por ferramentas SAST, por nível de severidade, por merge.
-        \item Métrica 1.2: Média de vulnerabilidades encontradas por ferramentas DAST, por nível de severidade, por merge.
-        \item Métrica 1.3: Proporção de vulnerabilidades em bibliotecas encontradas por ferramentas SCA, por nível de severidade, por merge.
+        \item Métrica 1.1: Média de vulnerabilidades encontradas por ferramentas SAST, por nível de severidade, por merge \cite{ISO27004}.
+        \item Métrica 1.2: Média de vulnerabilidades encontradas por ferramentas DAST, por nível de severidade, por merge \cite{ISO27004}.
+        \item Métrica 1.3: Proporção de vulnerabilidades em bibliotecas encontradas por ferramentas SCA, por nível de severidade, por merge \cite{Zhang2024160317}.
     \end{itemize}
     \item Questão Específica 2: A análise automática da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
     \begin{itemize}
-        \item Métrica 2.1: Taxa de pipelines sinalizadas devido à descoberta de vulnerabilidades de criticidade média ou superior, por merge.
+        \item Métrica 2.1: Taxa de pipelines sinalizadas devido à descoberta de vulnerabilidades de criticidade média ou superior, por merge \cite{DORA2024}.
         \item Métrica 2.2: Feedback do time obtido por um questionário sobre os impactos das novas práticas.
     \end{itemize}
 \end{itemize}
@@ -85,11 +109,9 @@ Esta abordagem foi escolhida, pois permite que o caso principal seja investigado
 o impacto na qualidade da segurança interna e externa do produto, e a percepção da equipe sobre as mudanças implementadas. Ao examinar cada um desses componentes seguindo o protocolo de estudo de caso, é possível construir uma visão detalhada e triangulada que
 fortalece a validade das conclusões e oferece uma resposta mais completa ao problema investigado.
 
-Desse modo, a primeira unidade de análise é constituída pelo produto em si, ou seja, os artefatos da plataforma Brasil Participativo e seus componentes, como o código-fonte, as bibliotecas de terceiros e o sistema em execução. A coleta de dados para esta unidade é composta por uma análise quantitativa independente de artefatos de trabalho no código e suas bibliotecas, por meio de ferramentas SAST e SCA, além da análise do sistema em execução por ferramentas DAST.
+A unidade de análise primária envolve a avaliação quantitativa da segurança do software. As métricas de segurança serão coletadas automaticamente nos Merges Requests (MRs) integrados na branch principal (main) do projeto. Dessa forma, será possível monitorar a evolução da segurança do software ao longo do tempo, permitindo a identificação de tendências e padrões relacionados à detecção de vulnerabilidades. Os MRs no foram adotados como unidade de análise, pois eles fornecem a granularidade ideal para o tempo previsto para o estudo ao mesmo tempo que conseguem transmitir a situação das principais alterações no código-fonte.
 
-A segunda unidade de análise é composta pelos processos adotadas pela equipe de desenvolvimento, incluindo a pipeline de CI/CD e as práticas DevSecOps implementadas. O estudo visa investigar o efeito dessas práticas no fluxo de trabalho e tomada de decisões do time. Esta unidade terá como dados quantitativos as métricas coletadas do orquestrador de CI/CD, que indicam as entregas bloqueadas devido à detecção de vulnerabilidades críticas. 
-
-Por último, a terceira unidade de análise envolve a equipe técnica responsável pelo desenvolvimento e manutenção do software, cuja percepção sobre as mudanças será avaliada por meio de um questionário. O objetivo é coletar o feedback da equipe sobre o impacto das práticas DevSecOps no processo de desenvolvimento, identificando benefícios, desafios e sugestões de melhoria. Esta unidade de análise fornecerá dados qualitativos que complementarão as análises quantitativas das outras unidades.
+A outra unidade de análise envolve a equipe técnica responsável pelo desenvolvimento e manutenção do software, cuja percepção sobre as mudanças será avaliada por meio de um questionário. O objetivo é coletar o feedback da equipe sobre o impacto das práticas DevSecOps no processo de desenvolvimento, identificando benefícios, desafios e sugestões de melhoria. Esta unidade de análise fornecerá dados qualitativos que complementarão as análises quantitativas das outras unidades.
 
 \section{Análise de Dados}
 
@@ -105,8 +127,7 @@ Para a análise de frequência de respostas do questionário, Métrica 2.2, a fr
 
 A instrumentação se refere às ferramentas que serão utilizadas para a realização do estudo de caso, aqui estão definidas as ferramentas usadas para a análise da segurança do sistema, controle de implementação do código, versionamento do código da pipeline feita e coleta de informações da equipe.
 
-O SonarQube \footnote{\href{https://www.sonarsource.com/products/sonarqube/}{www.sonarsource.com/products/sonarqube/}} é uma ferramenta de open-source de avalição da qualidade e segurança do código-fonte. Ele realiza análise estática para detectar bugs, vulnerabilidades e code smells em várias linguagens. Ele fará parte das ferramentas white-box integradas ao pipeline realizando a análise estática de segurança de aplicação (SAST). 
-
+O Brakeman \footnote{\href{https://brakemanscanner.org/}{https://brakemanscanner.org/}} é uma ferramenta de open-source de avalição da qualidade e segurança do código-fonte. Ele realiza análise estática para detectar bugs, vulnerabilidades e code smells em várias linguagens. Ele fará parte das ferramentas white-box integradas ao pipeline realizando a análise estática de segurança de aplicação (SAST). Sua escolha deu-se em função da equipe já possuir experiência prévia com a ferramenta.
 
 O Trivy \footnote{\href{https://trivy.dev/latest/}{https://trivy.dev/latest/}}
  é um scanner de segurança de código aberto. Ele é utilizado na análise de composição de software, verificando as bibliotecas de terceiros do projeto, garantindo que componentes externos ao projeto não insiram vulnerabilidades no sistemas. Além disso, ele é capaz de buscar vulnerabilidades em containeres e configurações de infraestrutura como código. Ele complementará o SonarQube como ferramenta white-box.
@@ -142,7 +163,7 @@ Para realizar esse teste, o pesquisador o pesquisador precisa assegurar o cumpri
 
 Dessa maneira, as medidas selecionadas podem não capturar completamente os aspectos de segurança que se pretende avaliar. Para mitigar essa ameaça, foram selecionadas medidas baseadas em modelos e normas de referência na literatura, como a \citeonline{ISO27004} e estudos que apresentam evidências experimentais dos seus "achados" como discuto por \citeonline{Zhang2024160317}.
 
-Além disso, para garantir esse alinhamento, foi adotada a abordagem GQM detalhada na subseção \ref{qp_principal}. Com isso, há uma questão de pesquisa principal, norteadora de todo o trabalho e há outras questões específicas, secundárias, da revisão estruturada da literatura e do estudo de caso. Essas questões possuem suas respectivas métricas que que por sua vez, auxiliam a quantificar ou qualificar as percepções da segurança, por meio os dados coletados e analisados.
+Além disso, para garantir esse alinhamento, foi adotada a abordagem GQM detalhada na subseção \ref{sec:qp_principal}. Com isso, há uma questão de pesquisa principal, norteadora de todo o trabalho e há outras questões específicas, secundárias, da revisão estruturada da literatura e do estudo de caso. Essas questões possuem suas respectivas métricas que que por sua vez, auxiliam a quantificar ou qualificar as percepções da segurança, por meio os dados coletados e analisados.
 
 \subsection{Ameaças à Validade Interna}
 
