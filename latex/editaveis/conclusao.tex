@@ -1,11 +1,109 @@
 \chapter[Conclusão]{Conclusão}
 
+Neste capítulo, será apresentado o resultado do trabalho desenvolvido, destacando os resultados obtidos e as atividades concluídas. Além disso, serão discutidos os objetivos específicos alcançados, as limitações do estudo e sugestões para trabalhos futuros.
+
 \section{Resultados Obtidos}
+
+Retomando a questão de pesquisa proposta no início deste trabalho: como analisar a característica de segurança no desenvolvimento contínuo de sistemas web, considerando as visões de qualidade interna e externa? 
+Para responder a essa questão, foi realizada uma revisão da literatura com o objetivo de obter embasamento teórico sobre DevSecOps, segurança em desenvolvimento contínuo e métricas de segurança. Depois de obter um panorama geral sobre o assunto, foi proposto um estudo de caso em um projeto de software livre desenvolvido pela Universidade de Brasília.
+
+O estudo de caso foi estruturado usando a metodologia GQM (Goal Question Metric) para definir metas, questões e métricas necessárias para avaliar as práticas analisadas. Assim, foram estabelecidas duas questões específicas: a aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto? Que possui as seguintes métricas associadas: 
+média de vulnerabilidades encontradas por ferramentas SAST e DAST, ambas por nível de severidade e por merge, e a proporção de vulnerabilidades em bibliotecas encontradas por, também avaliadas por nível de severidade e por merge.
+E como segunda questão específica: a análise automática da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto? E as seguintes métricas: taxa de pipelines sinalizadas devido à descoberta de vulnerabilidades de criticidade média ou superior, por merge, e feedback do time obtido por um questionário sobre os impactos das novas práticas.
+
+Então, para fundamentar a escolha e análise das métricas coletadas, a \citeonline{ISO27004} foi utilizada como referência para a definição das métricas, pois ela estabelece um conjunto de métricas para avaliar a segurança de software durante todo o seu ciclo de vida e em diferentes aspectos. Já os estudos \citeonline{Zhang2024160317} e \citeonline{DORA2024}, foram usados como referência devido que apresentam métricas relacionadas ao desenvolvimento contínuo seguro de projetos de software. Foi a partir deles que as métricas relacionadas ao contexto de integração contínua foram definidas.
+
+Nesse sentido, foram construídas e integradas ao pipeline de CI/CD do projeto as ferramentas para coletar as métricas propostas. Em primeiro momento, a pipeline oficial do projeto teve o funcionamento da ferramenta SAST alterada para permitir analisar o projeto como um todo e também foi adicionado a ferramenta de SCA para identificar vulnerabilidades em bibliotecas de terceiros. Posteriormente, foi implementada uma pipeline paralela para realizar análises DAST, dada a impossibilidade da integração de testes dinâmicos na pipeline do projeto devido a ausência de integração automática em um ambiente de homologação. Dessa forma, foi possível coletar as métricas propostas para responder as questões do estudo de caso.
+
+Desse modo, conclui-se da análise que tanto na perspectiva de qualidade interna quanto na externa, a aplicação das práticas DevSecOps permitiu identificar vulnerabilidades de segurança no projeto analisado. Na perspectiva de qualidade interna, as ferramentas SAST e SCA integradas ao pipeline de CI/CD possibilitaram a detecção precoce de vulnerabilidades no código-fonte e nas bibliotecas utilizadas. Já na perspectiva de qualidade externa, a ferramenta DAST permitiu identificar vulnerabilidades que poderiam ser exploradas em um ambiente de produção, proporcionando uma visão mais abrangente da segurança do sistema.
+
+Adicionalmente, o estudo de caso indicou que a análise automática da segurança do pipeline e as métricas coletadas fornecem parâmetros quantitativos para a tomada de decisões relacionadas ao projeto. A taxa de pipelines sinalizadas devido à descoberta de vulnerabilidades forneceu insights valiosos para o time de desenvolvimento, permitindo priorizar correções e melhorias no código, além de permitir obter uma visão geral da segurança do projeto ao longo do tempo. Apesar de não ter sido possível coletar a opinião das equipes em relação as novas práticas implementadas por meio do questionário, durante as reunições de alinhamento com os times foi relatado, em caráter pessoal, o contentamento com as práticas DevSecOps implementadas que serão de grande valia para o projeto.
 
 \section{Atividades Concluídas}
 
+As atividades planejadas para este trabalho foram definidas na primeira etapa do estudo e podem ser encontradas na Seção \ref{sec:cronograma-atividaes}. A Tabela \ref{tab:atividades-concluidas} lista todas as atividades, além de apresentar a situação atual de cada uma e onde os resultados de cada atividade pode ser encontrado.
+
+\begin{table}[h]
+    \centering
+	\caption{Atividades Concluídas}
+    \begin{tabular}{|p{9cm}|p{1.8cm}|p{2.2cm}|}
+        \hline
+        \textbf{Atividade} & \textbf{Situação} & \textbf{Resultados} \\
+        \hline
+        Contextualização sobre Engenharia de Software Experimental & Concluída & \ref{sec:engenharia-software-experimental} \\
+        \hline
+        Definição do GQM & Concluída & \ref{sec:qp_principal} \\
+        \hline
+        Elaboração do Protocolo de Revisão da Literatura & Concluída & \ref{sec:protocolo} \\
+        \hline
+        Seleção dos Artigos & Concluída & \ref{sec:selecao-artigos} \\
+        \hline
+        Análise do Material Selecionado & Concluída & \ref{sec:resultados-revisao} \\
+        \hline
+        Definição da Proposta de Solução & Concluída & \ref{chap:planejamento-estudo-caso} \\
+        \hline
+        Redação da Monografia & Concluída & - \\
+        \hline
+        Revisão & Concluída & - \\
+        \hline
+        Primeira Defesa & Concluída & - \\
+        \hline
+        Evolução do Trabalho & Concluída & - \\
+        \hline
+        Preparação e Coleta de Dados & Concluída & \ref{chap:execucao-estudo-caso} \\
+        \hline
+        Tratamento dos Dados & Concluída & \ref{chap:execucao-estudo-caso} \\
+        \hline
+        Documentação e Análise dos Resultados & Concluída & \ref{chap:resultados-estudo-caso} \\
+        \hline
+        Redação da monografia & Concluída & - \\
+        \hline
+        Revisão & Concluída & - \\
+        \hline
+        Apresentação Final & Agendada & - \\
+        \hline
+    \end{tabular} \\[0.5em]
+   	Fonte: Autor
+	\label{tab:atividades-concluidas}
+\end{table}
+
+
 \section{Objetivos Específicos}
+
+Os objetivos do trabalho definidos na Seção \ref{sec:objetivos} foram atingidos com sucesso. A Tabela \ref{tab:objetivos-concluidos} registra cada um deles e indica a situação atual e onde os resultados foram registrados.
+
+\begin{table}[h]
+    \centering
+	\caption{Objetivos Concluídos}
+    \begin{tabular}{|p{9cm}|p{2cm}|p{2.2cm}|}
+        \hline
+        \textbf{Objetivo} & \textbf{Situação} & \textbf{Resultados} \\
+        \hline
+        Fundamentar teoricamente os conceitos de DevSecOps, modelos de segurança e metodologias de desenvolvimento seguro & Alcançado & \ref{chap:revisao} e \ref{chap:referencial-teorico} \\
+        \hline
+        Incorporar um conjunto de práticas DevSecOps ao ciclo de desenvolvimento do produto de software sob análise & Alcançado & \ref{chap:execucao-estudo-caso} \\
+        \hline
+        Planejar um estudo de caso focado na observação das práticas implementadas & Alcançado & \ref{chap:planejamento-estudo-caso} \\
+        \hline
+        Conduzir o estudo de caso, realizando a coleta e a análise das medidas e métricas segurança, que apoiem a discussão dos resultados alcançados & Alcançado & \ref{chap:execucao-estudo-caso} e \ref{chap:resultados-estudo-caso} \\
+        \hline
+        Apresentar as conclusões e os insights resultantes desta investigação. & Alcançado & \ref{chap:resultados-estudo-caso} \\
+        \hline
+    \end{tabular} \\[0.5em]
+   	Fonte: Autor
+	\label{tab:objetivos-concluidos}
+\end{table}
 
 \section{Limitações}
 
+Apesar dos resultados positivos obtidos neste trabalho, algumas limitações foram identificadas durante o desenvolvimento do estudo de caso. Primeiramente, a análise foi realizada em um único projeto de software livre, o que pode limitar a generalização dos resultados para outros contextos e tipos de projetos. Além disso, a ausência de um ambiente de homologação automatizado impediu a integração direta da ferramenta DAST na pipeline oficial do projeto, o que poderia ter proporcionado uma análise mais integrada e contínua.
+
+Ademais, a coleta de feedback do time por meio de um questionário não foi possível, o que limitou a avaliação qualitativa das percepções dos desenvolvedores em relação às práticas DevSecOps implementadas. Essa limitação pode ter impactado a compreensão completa dos benefícios e desafios enfrentados pela equipe durante a adoção dessas práticas.
+
+Outrossim, a necessidade de adaptação das métricas propostas para o contexto específico do projeto analisado pode ter influenciado os resultados obtidos, uma vez que algumas métricas podem não ter sido totalmente adequadas para avaliar a segurança no desenvolvimento contínuo do sistema em questão.
+
 \section{Trabalhos Futuros}
+
+Os trabalhos subsequentes, além de superar as limitações identificadas, podem explorar diversas direções para aprofundar a compreensão e a aplicação das práticas DevSecOps no desenvolvimento contínuo de sistemas web. Primeiramente, usar diferentes ferramentas de análise de segurança, tanto SAST quanto DAST, pode proporcionar uma visão mais abrangente das vulnerabilidades presentes no código e no ambiente de execução. A comparação entre diferentes ferramentas também pode ajudar a identificar aquelas que melhor se adaptam às necessidades específicas do projeto.
+
+Também é importante que seja elaborado um relatório detalhado das vulnerabilidades encontradas, visando identificar falsos positivos e ajudar na priorização das correções. Esse relatório pode servir como base para futuras análises e melhorias no processo de desenvolvimento seguro.

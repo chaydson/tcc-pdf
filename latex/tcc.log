@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  7 DEC 2025 07:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.8)  9 DEC 2025 02:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1182,34 +1182,34 @@ LaTeX Warning: Citation `NBR14724:2011' on page 3 undefined on input line 2.
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [24
 
 ]) (./fixos/indiceAutomatico.tex (./tcc.toc
-Underfull \hbox (badness 7468) in paragraph at lines 42--42
+Underfull \hbox (badness 7468) in paragraph at lines 43--43
  [][] [][][]\T1/lmss/m/n/12 Que ti-pos de vul-ne-ra-bi-li-da-des s�o mi-ti-ga-das pe-las pr�-ti-cas de 
  []
 
 [25]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 89.
-
-Overfull \hbox (1.5877pt too wide) detected at line 93
- \T1/lmss/bx/n/12 101
- []
-
-
-Underfull \vbox (badness 1308) has occurred while \output is active []
+Underfull \vbox (badness 7613) has occurred while \output is active []
 
  [26]
-Overfull \hbox (1.5877pt too wide) detected at line 97
- \T1/lmss/bx/n/12 103
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 90.
+
+Overfull \hbox (1.5877pt too wide) detected at line 94
+ \T1/lmss/bx/n/12 105
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 106
+Overfull \hbox (1.5877pt too wide) detected at line 98
  \T1/lmss/bx/n/12 107
  []
 
 
-Overfull \hbox (1.5877pt too wide) detected at line 110
- \T1/lmss/bx/n/12 109
+Overfull \hbox (1.5877pt too wide) detected at line 107
+ \T1/lmss/bx/n/12 111
+ []
+
+
+Overfull \hbox (1.5877pt too wide) detected at line 111
+ \T1/lmss/bx/n/12 113
  []
 
 ) [27] [28
@@ -1224,7 +1224,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-<figuras/GQM.png, id=479, 1666.225pt x 307.1475pt>
+<figuras/GQM.png, id=489, 1666.225pt x 307.1475pt>
 File: figuras/GQM.png Graphic file (type png)
 <use figuras/GQM.png>
 Package pdftex.def Info: figuras/GQM.png  used on input line 94.
@@ -1233,422 +1233,456 @@ Package pdftex.def Info: figuras/GQM.png  used on input line 94.
 pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.107     \item I
+l.108     \item I
                  ncorporar um conjunto de práticas \textit{DevSecOps} ao ci...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.107     \item I
-                 ncorporar um conjunto de práticas \textit{DevSecOps} ao ci... <./figuras/GQM.png>]
-<figuras/fluxo-atividades.png, id=498, 1445.4pt x 813.0375pt>
+l.108     \item I
+                 ncorporar um conjunto de práticas \textit{DevSecOps} ao ci... <./figuras/GQM.png>] [33]
+<figuras/fluxo-atividades.png, id=512, 1445.4pt x 813.0375pt>
 File: figuras/fluxo-atividades.png Graphic file (type png)
 <use figuras/fluxo-atividades.png>
-Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 135.
+Package pdftex.def Info: figuras/fluxo-atividades.png  used on input line 139.
 (pdftex.def)             Requested size: 455.0pt x 255.93448pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/cronograma.png, id=499, 1445.4pt x 813.0375pt>
+<figuras/cronograma.png, id=513, 1445.4pt x 813.0375pt>
 File: figuras/cronograma.png Graphic file (type png)
 <use figuras/cronograma.png>
-Package pdftex.def Info: figuras/cronograma.png  used on input line 144.
+Package pdftex.def Info: figuras/cronograma.png  used on input line 148.
 (pdftex.def)             Requested size: 455.0pt x 255.93448pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `10.1007/s10664-008-9102-8' on page 33 undefined on input line 151.
+LaTeX Warning: Citation `10.1007/s10664-008-9102-8' on page 34 undefined on input line 155.
 
-[33] [34
+[34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.157     \item R
-                 edação da Monografia: Escrita do texto da monografia, con... <./figuras/fluxo-atividades.png (PNG copy)>]) (./editaveis/referencialteorico.tex [35
+l.159     \item A
+                 nálise do Material Selecionado: Leitura completa dos artig... <./figuras/fluxo-atividades.png (PNG copy)>]
+<figuras/fluxograma-segunda-etapa.png, id=538, 1445.4pt x 813.0375pt>
+File: figuras/fluxograma-segunda-etapa.png Graphic file (type png)
+<use figuras/fluxograma-segunda-etapa.png>
+Package pdftex.def Info: figuras/fluxograma-segunda-etapa.png  used on input line 173.
+(pdftex.def)             Requested size: 455.0pt x 255.93448pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/cronograma-tcc-2.png, id=539, 1445.4pt x 813.0375pt>
+File: figuras/cronograma-tcc-2.png Graphic file (type png)
+<use figuras/cronograma-tcc-2.png>
+Package pdftex.def Info: figuras/cronograma-tcc-2.png  used on input line 182.
+(pdftex.def)             Requested size: 455.0pt x 255.93448pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1 \chapter
-            [Referencial Teórico]{Referencial Teórico} <./figuras/cronograma.png (PNG copy)>] [36
+l.190     \item P
+                 reparação e Coleta de Dados: Configuração do ambiente e... <./figuras/cronograma.png (PNG copy)>]
+Overfull \hbox (10.2299pt too wide) in paragraph at lines 191--192
+[]\T1/lmr/m/n/12 Tratamento dos Da-dos: Pro-ces-sa-mento e or-ga-ni-za-��o dos da-dos co-le-ta-dos, preparando-
+ []
 
-] [37] [38] [39] [40] [41]
+) (./editaveis/referencialteorico.tex [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            [Referencial Teórico]{Referencial Teórico} <./figuras/fluxograma-segunda-etapa.png (PNG copy)>] [37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            [Referencial Teórico]{Referencial Teórico} <./figuras/cronograma-tcc-2.png (PNG copy)>] [38
+
+] [39] [40] [41] [42] [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42] [43]
+ [44] [45]
 Underfull \vbox (badness 1867) has occurred while \output is active []
 
- [44]) (./editaveis/revisaodaliteratura.tex [45] [46
+ [46]) (./editaveis/revisaodaliteratura.tex [47] [48
 
 ]
-<figuras/pico.png, id=720, 1002.74625pt x 966.61125pt>
+<figuras/pico.png, id=746, 1002.74625pt x 966.61125pt>
 File: figuras/pico.png Graphic file (type png)
 <use figuras/pico.png>
-Package pdftex.def Info: figuras/pico.png  used on input line 24.
+Package pdftex.def Info: figuras/pico.png  used on input line 25.
 (pdftex.def)             Requested size: 318.49861pt x 307.02103pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+ [49]
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
 []|\T1/lmr/m/n/12 software de-ve-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 []|\T1/lmr/m/n/12 software sys-tems, on-line
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 []|\T1/lmr/m/n/12 cybersecurity prac-ti-ces,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 \T1/lmr/m/n/12 se-cu-rity au-to-ma-tion, se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 \T1/lmr/m/n/12 CI/CD, con-ti-nu-ous in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 \T1/lmr/m/n/12 te-gra-tion, con-ti-nu-ous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 \T1/lmr/m/n/12 de-ploy-ment, con-ti-nu-ous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 []|\T1/lmr/m/n/12 software se-cu-rity, ap-pli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \T1/lmr/m/n/12 ca-tion se-cu-rity, se-cu-rity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \T1/lmr/m/n/12 im-pro-ve-ment, se-cu-rity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \T1/lmr/m/n/12 th-re-ats, sys-tem se-cu-rity,
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 49--50
+Underfull \hbox (badness 4181) in paragraph at lines 50--51
 \T1/lmr/m/n/12 qua-lity cha-rac-te-ris-tic, in-
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 49--50
+Underfull \hbox (badness 1184) in paragraph at lines 50--51
 \T1/lmr/m/n/12 jec-tion, cross site re-quest
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \T1/lmr/m/n/12 for-gery, XSRF, bro-ken
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \T1/lmr/m/n/12 authen-ti-ca-tion, data ex-
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 49--50
+Underfull \hbox (badness 6575) in paragraph at lines 50--51
 \T1/lmr/m/n/12 po-sure, ex-ter-nal en-ti-ties,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \T1/lmr/m/n/12 SQL In-jec-tion, CSRF,
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 49--50
+Underfull \hbox (badness 2205) in paragraph at lines 50--51
 \T1/lmr/m/n/12 Path Tra-ver-sal, Di-rec-tory
  []
 
 
-Underfull \hbox (badness 6268) in paragraph at lines 49--50
+Underfull \hbox (badness 6268) in paragraph at lines 50--51
 \T1/lmr/m/n/12 Tra-ver-sal, OS Com-mand
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+ [50
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.55 
-      <./figuras/pico.png>] [49
+l.56 
+      <./figuras/pico.png>] [51
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.62 \end{center}
+l.63 \end{center}
                  ]
-Underfull \hbox (badness 6493) in paragraph at lines 92--92
+Underfull \hbox (badness 6493) in paragraph at lines 94--94
 []|\T1/lmr/m/n/12 Quest�es Se-cun-d�-rias de
  []
 
-[50] [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[52] [53] [54]
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []|\T1/lmr/bx/n/12 Publicado em
  []
 
 
-Overfull \hbox (36.01765pt too wide) in alignment at lines 151--156
+Overfull \hbox (36.01765pt too wide) in alignment at lines 153--158
  [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 []|\T1/lmr/bx/n/12 Publicado em
  []
 
 
-Overfull \hbox (36.01765pt too wide) in alignment at lines 156--162
+Overfull \hbox (36.01765pt too wide) in alignment at lines 158--164
  [] [] [] [] 
  []
 
 
-Overfull \hbox (36.01765pt too wide) in alignment at lines 162--166
+Overfull \hbox (36.01765pt too wide) in alignment at lines 164--168
  [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 174--174
+Underfull \hbox (badness 6236) in paragraph at lines 176--176
 []|\T1/lmr/m/n/12 Implementing and Au-to-ma-ting Se-cu-rity
  []
 
 
-Underfull \hbox (badness 5847) in paragraph at lines 198--198
+Underfull \hbox (badness 5847) in paragraph at lines 200--200
 []|\T1/lmr/m/n/12 Microservices-based Dev-Se-cOps Plat-form
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 220--220
+Underfull \hbox (badness 1960) in paragraph at lines 222--222
 []|\T1/lmr/m/n/12 Challenges and so-lu-ti-ons when adop-ting
  []
 
 
-Overfull \hbox (36.01765pt too wide) in alignment at lines 166--247
+Overfull \hbox (36.01765pt too wide) in alignment at lines 168--249
  [] [] [] [] 
  []
 
-[53] [54] [55]
-<figuras/fluxograma-artigos.png, id=816, 770.88pt x 578.16pt>
+[55] [56] [57]
+<figuras/fluxograma-artigos.png, id=841, 770.88pt x 578.16pt>
 File: figuras/fluxograma-artigos.png Graphic file (type png)
 <use figuras/fluxograma-artigos.png>
-Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 254.
+Package pdftex.def Info: figuras/fluxograma-artigos.png  used on input line 256.
 (pdftex.def)             Requested size: 318.49861pt x 238.87328pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+ [58]
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
  [][] [][][]\T1/lmr/m/n/10 Planilha com o re-sul-tado da re-vi-s�o: [][]$<[]https : / / docs . google . com / spreadsheets / d /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
  \T1/lmr/m/n/10 1sGjU2aB8CTqvINyPxsv-[]z _ gWZCGzmErr / edit ? usp = sharing & ouid = 103637687294157542932 &
  []
 
-[57
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
+[59
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.275         \item C
-                     ontinuos Vulnerability Assessment: Juntamente com Shift... <./figuras/fluxograma-artigos.png (PNG copy)>] [58] [59] [60] [61]
-Underfull \hbox (badness 2229) in paragraph at lines 345--345
+l.278         \item C
+                     ontinuos Vulnerability Assessment: Juntamente com Shift... <./figuras/fluxograma-artigos.png (PNG copy)>] [60] [61] [62] [63]
+Underfull \hbox (badness 2229) in paragraph at lines 348--348
 []\T1/lmss/m/n/14.4 Que ti-pos de vul-ne-ra-bi-li-da-des s�o mi-ti-ga-das pe-las pr�-ti-cas de
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\kernel@ifnextchar' on input line 345.
+(hyperref)                removing `\kernel@ifnextchar' on input line 348.
 
-[62
+[64
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.395 \end{itemize}
+l.398 \end{itemize}
                    ]
-<figuras/volume-anual-artigos.png, id=926, 451.6875pt x 301.125pt>
+<figuras/volume-anual-artigos.png, id=951, 451.6875pt x 301.125pt>
 File: figuras/volume-anual-artigos.png Graphic file (type png)
 <use figuras/volume-anual-artigos.png>
-Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 405.
+Package pdftex.def Info: figuras/volume-anual-artigos.png  used on input line 408.
 (pdftex.def)             Requested size: 318.49861pt x 212.34369pt.
-<figuras/artigos-publicados.png, id=928, 451.6875pt x 321.2pt>
+<figuras/artigos-publicados.png, id=953, 451.6875pt x 321.2pt>
 File: figuras/artigos-publicados.png Graphic file (type png)
 <use figuras/artigos-publicados.png>
-Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 419.
+Package pdftex.def Info: figuras/artigos-publicados.png  used on input line 422.
 (pdftex.def)             Requested size: 318.49861pt x 226.49994pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) has been already used, duplicate ignored
+ [65
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.424 
+l.427 
        <./figuras/volume-anual-artigos.png>]
-<figuras/quantidade-experimental.png, id=936, 842.14626pt x 562.1pt>
+<figuras/quantidade-experimental.png, id=961, 842.14626pt x 562.1pt>
 File: figuras/quantidade-experimental.png Graphic file (type png)
 <use figuras/quantidade-experimental.png>
-Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 433.
+Package pdftex.def Info: figuras/quantidade-experimental.png  used on input line 436.
 (pdftex.def)             Requested size: 318.49861pt x 212.58813pt.
 
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
- [64
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.443 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.443 
-       <./figuras/artigos-publicados.png> <./figuras/quantidade-experimental.png>]
-<figuras/tipos-validacao.png, id=944, 451.6875pt x 301.125pt>
-File: figuras/tipos-validacao.png Graphic file (type png)
-<use figuras/tipos-validacao.png>
-Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 447.
-(pdftex.def)             Requested size: 318.49861pt x 212.34369pt.
-) (./editaveis/planejamentoestudo.tex [65
+ [66
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+l.446 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.446 
+       <./figuras/artigos-publicados.png> <./figuras/quantidade-experimental.png>]
+<figuras/tipos-validacao.png, id=969, 451.6875pt x 301.125pt>
+File: figuras/tipos-validacao.png Graphic file (type png)
+<use figuras/tipos-validacao.png>
+Package pdftex.def Info: figuras/tipos-validacao.png  used on input line 450.
+(pdftex.def)             Requested size: 318.49861pt x 212.34369pt.
+) (./editaveis/planejamentoestudo.tex [67
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.1 \chapter
-            [Planejamento do Estudo de Caso]{Planejamento do Estudo de Caso} <./figuras/tipos-validacao.png>] [66
+            [Planejamento do Estudo de Caso]{Planejamento do Estudo de Caso} <./figuras/tipos-validacao.png>] [68
 
-] [67] [68]
+] [69] [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
+ [71]
 Underfull \vbox (badness 1655) has occurred while \output is active []
 
- [70] [71] [72] [73] [74]) (./editaveis/execucaoestudo.tex [75] [76
+ [72] [73] [74] [75]
+
+LaTeX Warning: Reference `qp_principal' on page 76 undefined on input line 145.
+
+[76]) (./editaveis/execucaoestudo.tex [77] [78
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 13.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 13.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 14.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 14.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [77] [78] [79] [80]
+) [79] [80] [81] [82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]) (./editaveis/resultadosestudo.tex [82]
-<figuras/total_absoluto_de_falhas.png, id=1262, 1004.7939pt x 498.663pt>
+ [83]) (./editaveis/resultadosestudo.tex [84]
+<figuras/total_absoluto_de_falhas.png, id=1286, 1004.7939pt x 498.663pt>
 File: figuras/total_absoluto_de_falhas.png Graphic file (type png)
 <use figuras/total_absoluto_de_falhas.png>
-Package pdftex.def Info: figuras/total_absoluto_de_falhas.png  used on input line 12.
+Package pdftex.def Info: figuras/total_absoluto_de_falhas.png  used on input line 13.
 (pdftex.def)             Requested size: 455.0pt x 225.80392pt.
- [83
+ [85
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.21 P
-      ara responder a essa questão, foram analisadas as métricas relaciona... <./figuras/total_absoluto_de_falhas.png>]
-<figuras/grafico_brakeman.png, id=1274, 716.4366pt x 426.1521pt>
-File: figuras/grafico_brakeman.png Graphic file (type png)
-<use figuras/grafico_brakeman.png>
-Package pdftex.def Info: figuras/grafico_brakeman.png  used on input line 30.
-(pdftex.def)             Requested size: 500.50278pt x 297.7192pt.
-
-Overfull \hbox (45.50278pt too wide) in paragraph at lines 30--31
- [][] 
- []
-
-<figuras/grafico_zap.png, id=1275, 715.473pt x 426.1521pt>
-File: figuras/grafico_zap.png Graphic file (type png)
-<use figuras/grafico_zap.png>
-Package pdftex.def Info: figuras/grafico_zap.png  used on input line 39.
-(pdftex.def)             Requested size: 500.50278pt x 298.10934pt.
-
-Overfull \hbox (45.50278pt too wide) in paragraph at lines 39--40
- [][] 
- []
-
-[84
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6.11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.44 
-      <./figuras/grafico_brakeman.png>]
-<figuras/grafico_trivy.png, id=1281, 860.7357pt x 498.4221pt>
-File: figuras/grafico_trivy.png Graphic file (type png)
-<use figuras/grafico_trivy.png>
-Package pdftex.def Info: figuras/grafico_trivy.png  used on input line 48.
-(pdftex.def)             Requested size: 500.50278pt x 289.82274pt.
-
-Overfull \hbox (45.50278pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-<figuras/densidade_de_falhas.png, id=1282, 854.9541pt x 426.393pt>
-File: figuras/densidade_de_falhas.png Graphic file (type png)
-<use figuras/densidade_de_falhas.png>
-Package pdftex.def Info: figuras/densidade_de_falhas.png  used on input line 57.
-(pdftex.def)             Requested size: 500.50278pt x 249.61781pt.
-
-Overfull \hbox (45.50278pt too wide) in paragraph at lines 57--58
- [][] 
- []
-
-[85
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.62 
-     
+l.22 P
+      ara responder a essa questão, foram analisadas as métricas relaciona... <./figuras/total_absoluto_de_falhas.png>]
+<figuras/grafico_brakeman.png, id=1297, 716.4366pt x 426.1521pt>
+File: figuras/grafico_brakeman.png Graphic file (type png)
+<use figuras/grafico_brakeman.png>
+Package pdftex.def Info: figuras/grafico_brakeman.png  used on input line 31.
+(pdftex.def)             Requested size: 500.50278pt x 297.7192pt.
+
+Overfull \hbox (45.50278pt too wide) in paragraph at lines 31--32
+ [][] 
+ []
+
+<figuras/grafico_zap.png, id=1298, 715.473pt x 426.1521pt>
+File: figuras/grafico_zap.png Graphic file (type png)
+<use figuras/grafico_zap.png>
+Package pdftex.def Info: figuras/grafico_zap.png  used on input line 40.
+(pdftex.def)             Requested size: 500.50278pt x 298.10934pt.
+
+Overfull \hbox (45.50278pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+[86
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.62 
+l.45 
+      <./figuras/grafico_brakeman.png>]
+<figuras/grafico_trivy.png, id=1304, 860.7357pt x 498.4221pt>
+File: figuras/grafico_trivy.png Graphic file (type png)
+<use figuras/grafico_trivy.png>
+Package pdftex.def Info: figuras/grafico_trivy.png  used on input line 49.
+(pdftex.def)             Requested size: 500.50278pt x 289.82274pt.
+
+Overfull \hbox (45.50278pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+<figuras/densidade_de_falhas.png, id=1305, 854.9541pt x 426.393pt>
+File: figuras/densidade_de_falhas.png Graphic file (type png)
+<use figuras/densidade_de_falhas.png>
+Package pdftex.def Info: figuras/densidade_de_falhas.png  used on input line 58.
+(pdftex.def)             Requested size: 500.50278pt x 249.61781pt.
+
+Overfull \hbox (45.50278pt too wide) in paragraph at lines 58--59
+ [][] 
+ []
+
+[87
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.63 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.63 
       <./figuras/grafico_zap.png> <./figuras/grafico_trivy.png>]
-<figuras/estabilidade_da_pipeline.png, id=1291, 855.4359pt x 426.393pt>
+<figuras/estabilidade_da_pipeline.png, id=1314, 855.4359pt x 426.393pt>
 File: figuras/estabilidade_da_pipeline.png Graphic file (type png)
 <use figuras/estabilidade_da_pipeline.png>
-Package pdftex.def Info: figuras/estabilidade_da_pipeline.png  used on input line 74.
+Package pdftex.def Info: figuras/estabilidade_da_pipeline.png  used on input line 75.
 (pdftex.def)             Requested size: 500.50278pt x 249.48119pt.
 
-Overfull \hbox (45.50278pt too wide) in paragraph at lines 74--75
+Overfull \hbox (45.50278pt too wide) in paragraph at lines 75--76
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6.14}) has been already used, duplicate ignored
+ [88
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.79 
-      <./figuras/densidade_de_falhas.png>] [87
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6.15}) has been already used, duplicate ignored
+l.80 
+      <./figuras/densidade_de_falhas.png>] [89
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.103     \item \textbf
-                       {Estabilidade (Amarelo):} se $1.00 \leq R \leq 1.30${/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./figuras/estabilidade_da_pipeline.png>]) (./editaveis/conclusao.tex [88
+l.104     \item \textbf
+                       {Estabilidade (Amarelo):} se $1.00 \leq R \leq 1.30${/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./figuras/estabilidade_da_pipeline.png>]) (./editaveis/conclusao.tex [90
 pdfTeX warning (ext4): destination with the same identifier (name{table.6.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1658,17 +1692,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.7}) ha
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \chapter
-            [Conclusão]{Conclusão}] [89] [90
+            [Conclusão]{Conclusão}] [91] [92
 
-]) (./tcc.bbl (./tcc.brf)
+] [93]
+Overfull \hbox (1.5965pt too wide) in paragraph at lines 31--32
+[]|\T1/lmr/bx/n/12 Resultados| 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.5965pt too wide) in paragraph at lines 80--81
+[]|\T1/lmr/bx/n/12 Resultados| 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+ [94]
+Underfull \vbox (badness 2564) has occurred while \output is active []
+
+ [95
+pdfTeX warning (ext4): destination with the same identifier (name{table.7.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.100 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.7.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.100 
+      ]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write6
 \openout6 = `tcc.brf'.
 
- [91] [92
+ [96]
+bibitemlist
+[97
 
 ]
-bibitemlist
-[93]
 Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\T1/lmr/m/n/12 ISO/IEC 25000. 
  []
@@ -1728,37 +1794,37 @@ Overfull \hbox (2.09378pt too wide) in paragraph at lines 126--126
 |   []\T1/lmr/m/n/12 . 
  []
 
-[94] [95] [96]
+[98] [99] [100]
 Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []\T1/lmr/m/n/12 VALOR-ECONOMICO, P. 2025. 
  []
 
-[97]) (./editaveis/apendices.tex [98]
+[101]) (./editaveis/apendices.tex [102]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[99
+[103
 
 
-] [100] [101
+] [104] [105
 
-] [102
+] [106
 
-]) (./editaveis/anexos.tex [103] [104
+]) (./editaveis/anexos.tex [107] [108
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[105
+[109
 
-] [106] [107
+] [110] [111
 
-] [108
+] [112
 
-]) (./tcc.ind) [109]
+]) (./tcc.ind) [113]
 \tf@lof=\write7
 \openout7 = `tcc.lof'.
 
@@ -1780,21 +1846,21 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 80C476DEF0C862789813D6CD19DC6DB8;7892.
+(rerunfilecheck)             Checksum: DD780535C9D1431F97D1372E5170DDDA;8034.
  ) 
 Here is how much of TeX's memory you used:
- 31879 strings out of 474222
- 567071 string characters out of 5748734
+ 31918 strings out of 474222
+ 568082 string characters out of 5748734
  2283975 words of memory out of 5000000
- 52951 multiletter control sequences out of 15000+600000
+ 52981 multiletter control sequences out of 15000+600000
  650631 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,13n,107p,1516b,2225s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (111 pages, 3582231 bytes).
+Output written on tcc.pdf (115 pages, 3739202 bytes).
 PDF statistics:
- 2022 PDF objects out of 2073 (max. 8388607)
- 1835 compressed objects within 19 object streams
- 490 named destinations out of 1000 (max. 500000)
- 801 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2089 PDF objects out of 2487 (max. 8388607)
+ 1896 compressed objects within 19 object streams
+ 499 named destinations out of 1000 (max. 500000)
+ 819 words of extra memory for PDF output out of 10000 (max. 10000000)
 
