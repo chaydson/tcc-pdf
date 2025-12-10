@@ -74,81 +74,102 @@ Ao todo foram analisados 291 artigos resultantes da string de busca, onde 38 des
 foi realizada uma busca manual com o objetivo de responder de maneira mais acertiva as perguntas de pesquisa, resultando em mais dois artigos selecionados, Accelerate State of DevOps 2024 \cite{DORA2024} e Quantitative DevSecOps Metrics for Cloud-Based Web Microservices \cite{Zhang2024160317}, usados para compor o referencial teórico, totalizando 40 artigos.
 Os artigos selecionados estão dispostos na Tabela \ref{tab:artigos-selecionados}. Para facilitar a compreensão do protocolo de seleção de artigos pode-se observar a Figura \ref{fig:fluxograma-artigos}, que ilustra todas as etapas explanadas anteriormente.
 
+
+\setlist{nosep} % listas mais compactas dentro das células
+
 \begin{longtable}{|p{5cm}|p{10cm}|}
-    \caption{Protocolo de Busca} \label{tab:protocolo} \\
+    \caption{Protocolo de Busca}\label{tab:protocolo} \\
     \hline
     \textbf{Item} & \textbf{Descrição} \\
     \hline
     \endfirsthead
-    
-    \multicolumn{2}{c}{\tablename\ \thetable{} -- Continuação} \\
+
+    \multicolumn{2}{p{15cm}}{\centering \tablename\ \thetable{} -- Continuação} \\
     \hline
     \textbf{Item} & \textbf{Descrição} \\
     \hline
     \endhead
-    
+
     \hline
-    \multicolumn{2}{c}{Fonte: Autor} \\
+    \multicolumn{2}{p{15cm}}{\centering Fonte: Autor} \\
     \endlastfoot
-    
+
+    % --- Linha: Questões Secundárias de Pesquisa ---
     Questões Secundárias de Pesquisa &
-    \begin{enumerate}[leftmargin=*, label=\arabic*.]
+    \begin{minipage}[t]{\linewidth}
+      \begin{enumerate}[leftmargin=*, label=\arabic*.]
         \item Como o aspecto de segurança no desenvolvimento contínuo de sistemas web pode ser analisado considerando perspectivas de qualidade interna e externa?
         \item Quais práticas de DevSecOps são mais prevalentes nas organizações?
         \item Quais modelos de segurança são mais comumente empregados em ambientes DevSecOps?
-        \item Quais medidas são comumente usadas para avaliação de segurança?	
-        \item Como as práticas de segurança são avaliadas?	
-        \item De que maneiras as medidas de segurança são avaliadas nas organizações?	
-        \item Quais tipos de vulnerabilidades são mitigados pelas práticas de DevSecOps?	
+        \item Quais medidas são comumente usadas para avaliação de segurança?
+        \item Como as práticas de segurança são avaliadas?
+        \item De que maneiras as medidas de segurança são avaliadas nas organizações?
+        \item Quais tipos de vulnerabilidades são mitigados pelas práticas de DevSecOps?
         \item Quais ferramentas e tecnologias são utilizadas em DevSecOps?
-        \item Qual é o volume anual de publicações sobre DevSecOps de 2009 a 2025?	
-        \item Quantos artigos foram publicados em revistas acadêmicas?	
-        \item Quantos estudos possuem validação experimental?	
-        \item Se o estudo possui validação experimental, de que tipo?	
-    \end{enumerate} \\
+        \item Qual é o volume anual de publicações sobre DevSecOps de 2009 a 2025?
+        \item Quantos artigos foram publicados em revistas acadêmicas?
+        \item Quantos estudos possuem validação experimental?
+        \item Se o estudo possui validação experimental, de que tipo?
+      \end{enumerate}
+    \end{minipage} \\
     \hline
+
+    % --- Linha: String de Busca ---
     String de Busca & Vide Tabela \ref{tab:picoadaptado} \\
     \hline
-    Critérios de Inclusão & 
-    \begin{enumerate}[leftmargin=*, label=\arabic*.]
+
+    % --- Linha: Critérios de Inclusão ---
+    Critérios de Inclusão &
+    \begin{minipage}[t]{\linewidth}
+      \begin{enumerate}[leftmargin=*, label=\arabic*.]
         \item Aborda o uso de práticas de desenvolvimento seguro
         \item Enfatiza a qualidade de segurança de sistemas web
         \item Avalia modelos de qualidade com foco em segurança
         \item Concentra-se em produtos de software
         \item Inclui validação experimental
-    \end{enumerate} \\
+      \end{enumerate}
+    \end{minipage} \\
     \hline
+
+    % --- Linha: Critérios de Exclusão ---
     Critérios de Exclusão &
-    \begin{enumerate}[leftmargin=*, label=\arabic*.]
+    \begin{minipage}[t]{\linewidth}
+      \begin{enumerate}[leftmargin=*, label=\arabic*.]
         \item Artigos em idiomas diferentes de inglês ou português
         \item Publicações duplicadas
         \item Publicações com data de lançamento anterior a 2009
         \item Estudos com foco em hardware, dispositivos móveis, segurança de IoT ou outros tópicos não relacionados a sistemas web
-    \end{enumerate} \\
+      \end{enumerate}
+    \end{minipage} \\
     \hline
-    Formulário de Extração & 
-    \begin{enumerate}[leftmargin=*, label=\arabic*.]
+
+    % --- Linha: Formulário de Extração ---
+    Formulário de Extração &
+    \begin{minipage}[t]{\linewidth}
+      \begin{enumerate}[leftmargin=*, label=\arabic*.]
         \item Título
         \item Resumo
-        \item Ano de Publicação	
-        \item Fonte de Publicação	
+        \item Ano de Publicação
+        \item Fonte de Publicação
         \item Autores
         \item Palavras-chave
-        \item Práticas de DevSecOps Prevalentes	
-        \item Modelos de Segurança Empregados	
-        \item Medidas de Avaliação de Segurança	
-        \item Avaliação de Práticas de Segurança	
-        \item Análise de Modelos de Segurança	
-        \item Avaliação de Segurança Organizacional	
-        \item Vulnerabilidades Mitigadas	
+        \item Práticas de DevSecOps Prevalentes
+        \item Modelos de Segurança Empregados
+        \item Medidas de Avaliação de Segurança
+        \item Avaliação de Práticas de Segurança
+        \item Análise de Modelos de Segurança
+        \item Avaliação de Segurança Organizacional
+        \item Vulnerabilidades Mitigadas
         \item Ferramentas e Tecnologias
-        \item Publicado em Revista Acadêmica	
-        \item Validação Experimental	
-        \item Tipo de Validação Experimental	
-        \item Pesquisa Secundária	
-    \end{enumerate} \\
+        \item Publicado em Revista Acadêmica
+        \item Validação Experimental
+        \item Tipo de Validação Experimental
+        \item Pesquisa Secundária
+      \end{enumerate}
+    \end{minipage} \\
     \hline
 \end{longtable}
+
 
 \begin{longtable}{|p{1cm}|p{8cm}|p{3.5cm}|p{3cm}|}
     \caption{Artigos Selecionados} \label{tab:artigos-selecionados} \\
