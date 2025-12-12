@@ -115,8 +115,33 @@ Entretanto, para coletar os dados referentes ao resultado da execução da pipel
 \section{Consolidação dos Dados Coletados}
 
 Conforme preconiza a medida Security incidents trend - B.34 da norma \citeonline{ISO27004}, é necessário definir um intervalo temporal para observar o fenômeno estudado, calculando a média de cada período e comparando os dois mais recentes com os seis anteriores. Com base nessa diretriz, definiu-se que a janela de análise seria de 14 dias, contados retroativamente a partir do último dia da coleta (22/11/2025).
+A quantidade de dias foi escolhida depois de um alinhamento com o time de desenvolvimento, que indicou que ciclos quinzenais seriam mais adequados para observar as variações nas métricas de segurança, considerando o ritmo de desenvolvimento, demandas atuais e a possibilidade de analisar e, se possível, iniciar a correção das vulnerabilidades encontradas.
 
-\todo[inline, color=pink]{É importante explicar que fizemos esse recorte de duas semanas para tentar contemplar o tamanho do sprint realizado pelo time. Além disso monte uma tabela listando as datas de todos os períodos. }
+\begin{table}[h]
+    \centering
+    \caption{Períodos Analisados}
+    \begin{tabular}{|p{2cm}|p{5cm}|}
+        \hline
+        \textbf{Grupo} & \textbf{Intervalo} \\
+        \hline
+        1 & 17/08/25 até 30/08/25 \\
+        \hline
+        2 & 31/08/25 até 13/09/25 \\
+        \hline
+        3 & 14/09/25 até 27/09/25 \\
+        \hline
+        4 & 28/09/25 até 11/10/25 \\
+        \hline
+        5 & 12/10/25 até 25/10/25 \\
+        \hline
+        6 & 26/10/25 até 08/11/25 \\
+        \hline
+        7 & 09/11/25 até 22/11/25 \\
+        \hline
+    \end{tabular} \\[0.5em]
+    \label{tab:periodos-analisados}
+    \small Fonte: Autor
+\end{table}
 
 Posteriormente, os dados foram consolidados em uma linha do tempo que agrega as informações coletadas por cada um dos scripts desenvolvidos. Para tal, um script em Python percorre os diretórios onde os dados extraídos foram armazenados e identifica a data de cada alteração. Em seguida, realiza-se o agrupamento das entregas em ciclos de 14 dias, utilizando a divisão inteira entre a data da alteração e a data de término da coleta.
 
@@ -174,6 +199,4 @@ Outro ponto a ser destacado é que, para cada merge, foi extraída a quantidade 
 
 \section{Aplicação do Questionário} 
 
-Infelizmente, devido a limitações de tempo e recursos, não foi possível aplicar o questionário planejado para coletar dados qualitativos sobre a opinião dos desenvolvedores envolvidos no projeto. A aplicação do questionário ou de outro método de coleta de dados qualitativos exigiria um planejamento detalhado, o que não pôde ser realizado dentro do cronograma estabelecido para este estudo de caso. Portanto, a análise se concentrou exclusivamente nos dados quantitativos coletados através das ferramentas automatizadas descritas anteriormente.
-
-\todo[inline, color=pink]{Importante explicar que o time de desenvolvimento não recebia esses dados já tratados de forma a orientar a tomada de decisão com mais clareza. }
+Infelizmente, devido a limitações de tempo e recursos, não foi possível aplicar o questionário planejado para coletar dados qualitativos sobre a opinião dos desenvolvedores envolvidos no projeto. A aplicação do questionário ou de outro método de coleta de dados qualitativos exigiria um planejamento detalhado, o que não pôde ser realizado dentro do cronograma estabelecido para este estudo de caso. Ademais, o time de desenvolvimento não recebia os dados já tratados por parte do time de segurança, de forma a orientar a tomada de decisão com mais clareza, o que demandaria um grande trabalho por parte da equipe que já se encontrava em um ciclo de entrega intenso. Portanto, a análise se concentrou exclusivamente nos dados quantitativos coletados através das ferramentas automatizadas descritas anteriormente.

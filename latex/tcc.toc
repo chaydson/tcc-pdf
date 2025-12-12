@@ -53,27 +53,27 @@
 \contentsline {section}{\numberline {4.3}Caso}{68}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Trabalhos Relacionados}{71}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Questão de Pesquisa}{72}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Fonte de Dados}{73}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Fonte de Dados}{72}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Unidades de Análise e Procedimentos}{73}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Análise de Dados}{74}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Instrumentação}{74}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Ameaças à Validade do Estudo}{75}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Ameaças à Validade do Constructo}{76}{subsection.4.10.1}%
-\contentsline {subsection}{\numberline {4.10.2}Ameaças à Validade Interna}{76}{subsection.4.10.2}%
-\contentsline {subsection}{\numberline {4.10.3}Ameaças à Validade Externa}{77}{subsection.4.10.3}%
-\contentsline {subsection}{\numberline {4.10.4}Ameaças à Confiabilidade}{77}{subsection.4.10.4}%
+\contentsline {section}{\numberline {4.9}Instrumentação}{75}{section.4.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Execução do Estudo de Caso}}{79}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Configuração da Pipeline de CI/CD Localmente}{79}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Elaboração dos Scripts para Automação da Coleta de Dados}{80}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Consolidação dos Dados Coletados}{82}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Aplicação do Questionário}{84}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Execução do Estudo de Caso}}{77}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Configuração da Pipeline de CI/CD Localmente}{77}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Elaboração dos Scripts para Automação da Coleta de Dados}{78}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Consolidação dos Dados Coletados}{80}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Aplicação do Questionário}{82}{section.5.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Resultados do Estudo de Caso}}{85}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Análise dos Dados}{85}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Identificação de Vulnerabilidades de Segurança}{85}{subsection.6.1.1}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Resultados do Estudo de Caso}}{83}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Análise dos Dados}{83}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Identificação de Vulnerabilidades de Segurança}{83}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}Análise Automática da Segurança e Tomada de Decisões}{88}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Avaliação das Métricas}{89}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Análise do Indicador}{89}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Ameaças à Validade do Estudo}{89}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Ameaças à Validade do Constructo}{90}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Ameaças à Validade Interna}{90}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Ameaças à Validade Externa}{91}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Ameaças à Confiabilidade}{91}{subsection.6.3.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusão}}{93}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Resultados Obtidos}{93}{section.7.1}%
@@ -83,11 +83,11 @@
 \contentsline {section}{\numberline {7.5}Trabalhos Futuros}{96}{section.7.5}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{97}{section*.23}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{97}{section*.20}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{103}{section*.24}%
+\contentsline {part}{\uppercase {Ap\^endices}}{103}{section*.21}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -100,7 +100,7 @@
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{109}{section*.25}%
+\contentsline {part}{\uppercase {Anexos}}{109}{section*.22}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}

@@ -34,9 +34,7 @@ O Decidim é um produto de software livre disponibilizado sob a licença GNU AGP
 
 O Brasil Participativo \footnote{https://gitlab.com/lappis-unb/decidimbr/decidim-govbr} é desenvolvido por várias equipes multidisciplinares, compostas principalmente pelos perfis de  jornalistas, redatores publicitários, designers gráficos, desenvolvedores, especialistas em segurança da informação, especialistas em infraestrutura, gerentes de projeto e líderes técnicos. Cada um dos times tem um líder responsável por coordenar as atividades e garantir a qualidade do trabalho realizado. Em acesso ao repositório do código-fonte da plataforma, no dia 10/11/2025, haviam 4.192 commits\footnote{https://gitlab.com/lappis-unb/decidimbr/decidim-govbr/-/commits/main} e 103 versões de produto(releases)\footnote{https://gitlab.com/lappis-unb/decidimbr/decidim-govbr/-/tags?page=5} disponibilizadas.
 
- A \textcolor{blue}{Figura}\todo[color=yellow]{Essa imagem precisa ser refeita. }  \ref{fig:organograma-equipes} apresenta o organograma das equipes envolvidas no projeto. A equipe de desenvolvimento é composta por 9 desenvolvedores, enquanto a equipe de segurança conta com 5 especialistas dedicados a garantir a integridade e proteção do sistema.
-
-\todo[inline, color=pink]{A figura 12 não representa a realidade. Ela passa uma ideia de uma hierarquia linear. Converse com o prof. Renato e entenda a estrutura   correta dos times.}
+ A  \ref{fig:organograma-equipes} apresenta o organograma das equipes envolvidas no projeto. A equipe de desenvolvimento é composta por 9 desenvolvedores, enquanto a equipe de segurança conta com 5 especialistas dedicados a garantir a integridade e proteção do sistema.
 
 \begin{figure}[h]
     \centering
@@ -60,9 +58,11 @@ Este estudo de caso concentra-se nas etapas posteriores ao desenvolvimento e ant
 	Fonte: Autor
 \end{figure}
 
-\todo[inline, color=pink]{Você conversou com o prof. Renato sobre esse processo?}
+Esse projeto foi escolhido por conveniência da observação do fenômeno. Trata-se de um poduto de software livre que conta com equipes de segurança e desenvolvimento acessíveis e ativas, o que facilita a comunicação e a colaboração durante o estudo de caso. Além disso, o LAPP1S possui um ambiente de desenvolvimento ágil, cultura DevSecOps e entregas contínuas, o que é fundamental para a avaliação das práticas implementadas, além de o software ser de grande relevância social, o que reforça a importância de garantir sua segurança e confiabilidade.
 
-Esse projeto foi escolhido por conveniência da observação do fenômeno. Trata-se de um poduto de software livre que conta com equipes de segurança e desenvolvimento acessíveis e ativas, o que facilita a comunicação e a colaboração durante o estudo de caso. Além disso, o LAPP1S possui um ambiente de desenvolvimento ágil, cultura DevSecOps e entregas contínuas, o que é fundamental para a avaliação das práticas implementadas. Por fim, o software é de grande relevância social, o que reforça a importância de garantir sua segurança e confiabilidade.
+Porém, apesar de já possuir o Brakeman, uma ferramenta SAST, implementada em sua pipeline de CI/CD, foi identificado que ela só analisa três diretórios em todo o projeto. Nesse sentido, foi fundamental a conversa com o time de segurança para mudar a abordagem de análise da ferramenta para o contexto do projeto como um todo, o que apesar de representar uma mudança na cultura do projeto, é fundamental para uma análise quantitativa de fato representativa. 
+
+Ademais, outro aspecto fundamental para a realização do estudo foi optar por marcar a pipeline como sinalizada ao encontrar uma vulnerabilidade, ou seja, a pipeline executa até o fim mesmo se encontrar problemas de segurança, porém fica marcada com uma sinalização de aviso. Essa decisão foi tomada, pois ao implementar novas ferramentas que analisam pontos até então não abarcados por testes de segurança é esperado que muitas vulnerabilidades sejam descobertas, e levando em consideração o volume de trabalho que o time está submetido, falhar a pipeline significaria bloquear a produtividade nas demandas atuais.
 
 \section{Trabalhos Relacionados}
 
@@ -87,16 +87,17 @@ A \citeonline{ISO25010} define a confidencialidade, como a capacidade do sistema
 À vista disso, foram elaboradas as seguintes questões específicas deste estudo:
 
 \begin{itemize}
-    \item Questão Específica 1: A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
+    \item Questão Específica 1 (QE-1): A aplicação de práticas DevSecOps permitiu identificar vulnerabilidades de segurança sob as perspectivas da qualidade interna e externa do produto?
     \begin{itemize}
         \item Métrica 1.1: Média de vulnerabilidades encontradas por ferramentas SAST, por nível de severidade, por merge \cite{ISO27004}.
         \item Métrica 1.2: Média de vulnerabilidades encontradas por ferramentas DAST, por nível de severidade, por merge \cite{ISO27004}.
         \item Métrica 1.3: Proporção de vulnerabilidades em bibliotecas encontradas por ferramentas SCA, por nível de severidade, por merge \cite{Zhang2024160317}.
+        \item Métrica 1.4: Security Incidents Trend pelas ferramentas SAST e DAST, por nível de severidade, por merge \cite{ISO27004}.
     \end{itemize}
-    \item Questão Específica 2: A análise automática da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
+    \item Questão Específica 2 (QE-2): A análise automática da segurança do pipeline e as métricas coletadas ajudaram na tomada de decisões relacionadas ao projeto?
     \begin{itemize}
-        \item Métrica 2.1: Taxa de pipelines sinalizadas devido à descoberta de vulnerabilidades de criticidade média ou superior, por merge \cite{DORA2024}.
-        \item Métrica 2.2: Feedback do time obtido por um questionário sobre os impactos das novas práticas.
+        \item Métrica 2.1: Change Fail Rate, por merge \cite{DORA2024}.
+        \item Métrica 2.2: Opinião do time obtido por um questionário sobre os impactos das novas práticas.
     \end{itemize}
 \end{itemize}
 
@@ -123,11 +124,37 @@ A outra unidade de análise envolve a equipe técnica responsável pelo desenvol
 
 \section{Análise de Dados}
 
-A análise dos dados quantitativos será fundamentada em estatísticas descritivas e em análise de tendência, visando avaliar a evolução da segurança da aplicação ao longo do tempo. Para as métricas de detecção de vulnerabilidades por ferramentas SAST e DAST, Métrica 1.1 e Métrica 1.2, adaptadas da métrica B.34 - Security Incidents Trend da norma \citeonline{ISO27004}, será calculado um indicador de tendência para permitir avaliar o volume de vulnerabilidades, por nível de severidade, a cada sprint.
+A análise dos dados quantitativos será fundamentada em estatísticas descritivas e em análise de tendência, visando avaliar a evolução da segurança da aplicação ao longo do tempo. Para as métricas de detecção de vulnerabilidades por ferramentas SAST e DAST, Métrica 1.1 e Métrica 1.2, referentes a métrica B.34 - Security Incidents Trend da norma \citeonline{ISO27004}, será calculado um indicador de tendência para permitir avaliar o volume de vulnerabilidades de criticidade média ou superior, por nível de severidade.
 
 O cálculo do indicador é obtido através da razão entre a média de vulnerabilidades das últimas duas sprints concluídas e a média das últimas seis sprints concluídas, sendo que, um valor inferior a 1.0 indica uma tendência de melhoria, entre 1.0 e 1.3 sinaliza uma tendência de estabilidade e superior a 1.3 indica uma piora significativa.
 
-Para a Métrica 1.3, adaptada da métrica Shared or Unknown Library Ratio proposta por \citeonline{Zhang2024160317}, será calculada a proporção de bibliotecas com vulnerabilidades em relação ao total. Por sua vez, a Métrica 2.1, uma adaptação da métrica Change Fail Percentage elaborado pelo \citeonline{DORA2024}, será calculada pela taxa percentual de builds/deploys bloqueados por vulnerabilidades de criticidade média ou superior. O acompanhamento destas métricas será realizado continuamente, visando observar tendência ao longo do tempo.
+Para a análise de tendência, definimos a média recente ($M_{rec}$) e a média histórica ($M_{hist}$) como:
+
+\begin{equation}
+    M_{rec} = \frac{1}{2} \sum_{i=n-1}^{n} x_i
+\end{equation}
+
+\begin{equation}
+    M_{hist} = \frac{1}{6} \sum_{i=n-5}^{n} x_i
+\end{equation}
+
+Onde $x_i$ representa o valor da métrica no intervalo de tempo $i$ e $n$ é o intervalo atual. A razão de tendência ($R$) é dada por:
+
+\begin{equation}
+    R = \frac{M_{rec}}{M_{hist}}
+\end{equation}
+
+Para a Métrica 1.3, adaptada da métrica Shared or Unknown Library Ratio proposta por \citeonline{Zhang2024160317}, será calculada a proporção de bibliotecas com vulnerabilidades em relação ao total. \citeonline{Zhang2024160317} argumento que o uso de bibliotecas de terceiros aumenta o vetor de ataque e dependência de terceiros no código da aplicação. Porém, o foco desse estudo é avaliar a segurança do software em si, portanto, a métrica será adaptada para considerar apenas as bibliotecas que apresentam vulnerabilidades de criticidade média ou superior. A métrica será calculada conforme a Equação \ref{eq:metrica-1-3}:
+\begin{equation}
+\label{eq:metrica-1-3}
+    P_{vuln} = \frac{N_{vuln\_libs}}{N_{total\_libs}} \times 100
+\end{equation}
+
+Por sua vez, a Métrica 2.1, uma adaptação da métrica Change Fail Rate elaborado pelo \citeonline{DORA2024}, será calculada pela taxa percentual de merges sinalizados por vulnerabilidades de criticidade média ou superior. Se trata de uma adaptação, pois a métrica original considera falhas em produção, o que não é o foco deste estudo. A métrica será calculada conforme a Equação \ref{eq:metrica-2-1}:
+\begin{equation}
+\label{eq:metrica-2-1}
+    CFR = \frac{N_{merges\_sinalizados}}{N_{total\_merges}} \times 100
+\end{equation}
 
 Para a análise de frequência de respostas do questionário, Métrica 2.2, a frequência de cada das respostas de cada pergunta será registrada, de modo a possibilitar o cálculo da moda, pois ao ter a opinião da maioria dos participantes sobre o tópico solicitado será possível obter a percepção geral do impacto das atividades realizadas.
 
@@ -147,55 +174,3 @@ O GitLab CI/CD \footnote{\href{https://docs.gitlab.com/install/}{https://docs.gi
 O Git \footnote{\href{https://git-scm.com/downloads}{https://git-scm.com/downloads}} é um sistema de controle de versão e o GitHub \footnote{\href{https://github.com/}{https://github.com/}} é uma plataforma de hospedagem de código-fonte para controle de versão com Git. Eles serão utilizados para o versionamento e armazenamento dos artefatos por este estudo de caso.
 
 O Google Forms\footnote{\href{https://docs.google.com/forms/u/0/}{https://docs.google.com/forms/u/0/}} permite a criação rápida e fácil de formulários online, além de permitir a gestão e análise dos resultados. Ele será utilizado para a aplicação do questionário que coleta os dados qualitativos da equipe.
-
-
-\section{Ameaças à Validade do Estudo}
-
-Conforme destacado por \citeonline{Runeson2009}, é essencial considerar as ameaças à validade desde o início da pesquisa para garantir a confiabilidade dos resultados. Nesta seção, são identificadas as principais ameaças à validade deste estudo de caso e as estratégias adotadas para sua mitigação.
-
-Há quatro preocupações centrais para avaliar a qualidade dos resultados obtidos em uma pesquisa. São conhecidas como testes às ameaças: de constructo; interna, externa e de confiabilidade.  Ao conduzir estudos de caso, podemos aplicar diversas estratégias para atender a esses testes. Contudo, nem todas essas estratégias são usadas apenas na fase de planejamento formal. Algumas delas são aplicadas durante a coleta e análise dos dados, ou mesmo nas etapas de estruturação da pesquisa \cite{yin2015estudo}.
-
-Com o objetivo de gerenciar os riscos inerentes ao estudo de caso proposto, planejamos tratar algumas das principais ameaças a validade do estudo:
-
-\subsection{Ameaças à Validade do Constructo}
-
-A ameça a validade do constructo diz respeito a capacidade do pesquisador intrepretar as alterações e variações, observadas na execução do estudo de caso de forma a garantir fidedignamente a representação da realidade. Em outras palavras, o pesquisador precisa garantir que os eventos observados \textit{in loco}, realmente refletem o fenômeno de forma inequívoca, ou se aconteceram apenas com base nas impressões do pesquisador.
-
-Para realizar esse teste, o pesquisador o pesquisador precisa assegurar o cumprir duas etapas:
-
-\begin{enumerate}
-  \item selecionar os tipos específicos de mudanças que devem ser estudadas;
-  \item demonstrar que as medidas operacionais selecionadas  fornecem uma percepção quantitativa dessas mudanças e que, são corretas para os conceitos que estão sob estudo.;
-\end{enumerate}
-
-
-Dessa maneira, as medidas selecionadas podem não capturar completamente os aspectos de segurança que se pretende avaliar. Para mitigar essa ameaça, foram selecionadas medidas baseadas em modelos e normas de referência na literatura, como a \citeonline{ISO27004} e estudos que apresentam evidências experimentais dos seus "achados" como discuto por \citeonline{Zhang2024160317}.
-
-Além disso, para garantir esse alinhamento, foi adotada a abordagem GQM detalhada na subseção \ref{sec:qp_principal}. Com isso, há uma questão de pesquisa principal, norteadora de todo o trabalho e há outras questões específicas, secundárias, da revisão estruturada da literatura e do estudo de caso. Essas questões possuem suas respectivas métricas que que por sua vez, auxiliam a quantificar ou qualificar as percepções da segurança, por meio os dados coletados e analisados.
-
-\subsection{Ameaças à Validade Interna}
-
-As ameaças a validade interna tratam das relações de causalidade. Portanto, analisa a relação de causa e efeito entre as variáveis observadas.
-
-Por se tratar de um estudo do tipo exploratório, que procura observar e compreender um fenômeno específico, ocorrendo em seu ambiente real, o foco é a perpeção de todo o contexto. Por isso,  esse teste não se aplica a esta pesquisa. \cite{yin2015estudo}. 
-
-\subsection{Ameaças à Validade Externa}
-
-A validade externa, por sua vez, refere-se ao grau de generalização dos resultados observados \cite{yin2015estudo}.
-
-
-Estudos de caso costumam ser criticados em virtude do baixo poder de generalização dos seus resultados, principalmente em comparação a análises quantitativas. No entanto, essa analogia, que considera amostra e população é equivocada quando se fala em estudos de caso.
-
-Análises puramente quantitativas,  utilizam a generalização estatística, onde uma amostra, se bem representada, pode ser facilmente estendida a uma população maior.
-
-Já nos estudos de caso, o objetivo do pesquisador é usar um conjunto específico de resultados para corroborar ou expandir uma teoria mais abrangente, em vez de aplicá-los diretamente a um universo estatístico.
-
-Este estudo está limitado a um caso único, o projeto Brasil Participativo, que possui características específicas que podem não ser compatíveis ou aplicáveis em outros sistemas de software ou contextos. Embora as conclusões sejam específicas deste caso, como forma de mitigar essa ameaça, toda a descrição metodológica e documentação necessária para a compreensão das singularidades do caso Brasil Participativo estarão disponíveis em reposítórios públicos. Dessa forma, outros pesquisadores podem analisar a viabilidade da replicação dos resultados em seus contextos específicos.
-
-
-\subsection{Ameaças à Confiabilidade}
-
-Por fim, a ameaça a confiabilidade refere-se a capacidade de repodução dos procedimentos por outros pesquisadores. Com isso,  verifica-se se os resultados observados são consistentes, caso a reprodução obtenha os mesmos resultados \cite{yin2015estudo} \cite{Wohlin:2012:ESE:2349018}.
-
-Variações na forma como os dados são coletados e analisados podem afetar os resultados. Para mitigar essa ameaça, serão fornecidas informações detalhadas sobre o produto, o processo, o contexto, o time de desenvolvimento, o conjunto de dados coletados e analisados, além do código-fonte e scripts utilizados na construção do tratamento proposto. Todas essas informações ficarão disponíveis em repositórios públicos. Serão estabelecidos procedimentos claros e, quando possível, automatizados, para a coleta de dados, minimizando a intervenção manual e sistematizando a análise. Além disso, todas as ferramentas utilizadas na instrumentação são produtos de software de código-fonte livre ou aberto.
-
