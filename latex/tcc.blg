@@ -25,7 +25,6 @@ Warning--entry type for "CVE" isn't style-file defined
 --line 667 of file bibliografia.bib
 Warning--entry type for "CVSS" isn't style-file defined
 --line 675 of file bibliografia.bib
-Warning--I didn't find a database entry for "NBR14724:2011"
 Warning--I didn't find a database entry for "10.1007/s10664-008-9102-8"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -38,7 +37,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 63 entries,
             6714 wiz_defined-function locations,
-            1596 strings with 23672 characters,
+            1594 strings with 23646 characters,
 and the built_in function-call counts, 100579 in all, are:
 = -- 12062
 > -- 1746
@@ -77,4 +76,4 @@ warning$ -- 0
 while$ -- 402
 width$ -- 0
 write$ -- 994
-(There were 8 warnings)
+(There were 7 warnings)
